@@ -2,7 +2,7 @@
 html/app/plugins/*
 !html/app/plugins/.gitkeep
 html/app/mu-plugins/*/
-!html/app/mu-plugins/field-groups/*
+!html/app/mu-plugins/field-groups/
 html/app/upgrade
 html/app/uploads/*
 !html/app/uploads/.gitkeep
