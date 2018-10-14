@@ -15,7 +15,7 @@
       "./styles/gutenberg.scss"
     ]
   },
-  "publicPath": "/wp-content/themes/philco-jcf",
+  "publicPath": "/app/themes/philco-jcf",
   "devUrl": "https://jcf.philclients.com",
   "proxyUrl": "https://jcf.philclients.com:3000",
   "cacheBusting": "[name]_[hash:8]",
