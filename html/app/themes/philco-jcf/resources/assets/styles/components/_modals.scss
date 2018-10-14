@@ -1,0 +1,22 @@
+.close {
+    opacity: 1;
+    transition: $transition-default;
+
+    &:hover,
+    &:focus {
+        color: $seafoam-green;
+        opacity: 1;
+    }
+}
+
+.modal--iframe {
+    .modal-header {
+        padding-right: 0;
+    }
+
+    .modal-body {
+        background: $black;
+        box-shadow: $box-shadow-lg;
+        padding: 0;
+    }
+}

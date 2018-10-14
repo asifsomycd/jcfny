@@ -1,0 +1,50 @@
+// Typography
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+        em {
+            font-family: $font-family-sans-serif;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        h1,
+        .h1 {
+            font-size: $h2-font-size;
+        }
+    }
+
+
+// Transitions
+
+    .btn,
+    a {
+        transition: $transition-default;
+    }
+
+
+// Imagery
+
+    img {
+        @extend .img-fluid;
+    }
+
+    @mixin background-cover {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .background-cover {
+        @include background-cover;
+    }

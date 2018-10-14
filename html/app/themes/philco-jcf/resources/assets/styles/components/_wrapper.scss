@@ -1,0 +1,45 @@
+$wrapper-spacing: 4rem;
+
+@mixin wrapper( $color, $inverse: false ) {
+    background-color: $color;
+    padding: $wrapper-spacing 0;
+
+    @if $inverse == true {
+        &,
+        h1,
+        .h1,
+        h2,
+        .h2,
+        h3,
+        .h3,
+        h4,
+        .h4,
+        h5,
+        .h5,
+        h6,
+        .h6,
+        p {
+            color: $white;
+        }
+    }
+}
+
+.wrapper--gray-100 {
+   @include wrapper($gray-100);
+}
+
+.wrapper--blueberry {
+   @include wrapper($blueberry, true);
+}
+
+.wrapper--pale-gray {
+   @include wrapper($pale-gray);
+}
+
+.wrapper--seafoam-green {
+	@include wrapper($seafoam-green, true);
+}
+
+.wrapper--white {
+   @include wrapper($white);
+}

@@ -1,0 +1,81 @@
+// Links
+
+    @mixin link-underline {
+        display: inline-block;
+        position: relative;
+
+        &::after {
+            background-color: $link-color;
+            border-radius: 500px;
+            content: '';
+            display: block;
+            height: 3px;
+            margin-top: 3px;
+            transition: $transition-default;
+            width: 100%;
+        }
+
+        &:hover::after {
+            background-color: $link-hover-color;
+        }
+    }
+
+    .link-underline {
+        @include link-underline;
+    }
+
+    @mixin link-body-color {
+        color: $body-color;
+
+        &:hover {
+            color: $link-hover-color;
+        }
+    }
+
+    .link-body-color {
+        @include link-body-color;
+    }
+
+    @mixin link-inverse {
+        color: $link-hover-color;
+
+        &:hover {
+            color: $link-color;
+        }
+    }
+
+    .link-inverse {
+        @include link-inverse;
+    }
+
+    @mixin link-seafoam-green {
+        color: $seafoam-green;
+
+        &::after {
+            background-color: $seafoam-green;
+        }
+
+        &:hover {
+            color: $link-hover-color;
+
+            &::after {
+                background-color: $link-hover-color;
+            }
+        }
+    }
+
+    .link-seafoam-green {
+        @include link-seafoam-green;
+    }
+
+    @mixin link-white {
+        color: $white;
+
+        &:hover {
+            color: $seafoam-green;
+        }
+    }
+
+    .link-white {
+        @include link-white;
+    }

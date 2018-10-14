@@ -1,0 +1,38 @@
+.site-footer {
+	@include wrapper($pale-gray);
+
+	.social {
+		@extend .text-lg-right;
+		@extend .mt-md-5;
+
+		a {
+			@include link-inverse;
+
+			@extend .ml-1;
+			@extend .mr-1;
+		}
+	}
+}
+
+.archive,
+.category,
+.blog,
+.home {
+	.site-footer {
+		margin-top: 0;
+	}
+}
+
+#colophon {
+	font-size: $font-size-md;
+	margin-top: $wrapper-spacing - $paragraph-margin-bottom;
+}
+
+.menu-colophon-links-container {
+	display: inline-block;
+
+	.menu-item a {
+		padding: 0 1rem;
+		text-decoration: underline;
+	}
+}

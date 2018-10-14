@@ -1,0 +1,131 @@
+/**
+ * Gutenberg block classes for backend
+ * Mostly overrides of the front styles
+ */
+
+.editor-post-title__block .editor-post-title__input {
+    font-family: $font-family-display;
+}
+
+.editor-block-list__layout {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $headings-color;
+        font-family: $font-family-display;
+    }
+
+    h1 {
+        font-size: $h1-font-size;
+    }
+
+    h2 {
+        font-size: $h2-font-size;
+    }
+
+    h3 {
+        font-size: $h3-font-size;
+    }
+
+    h4 {
+        font-size: $h4-font-size;
+    }
+
+    h5 {
+        font-size: $h5-font-size;
+    }
+
+    h6 {
+        font-size: $h6-font-size;
+    }
+
+    .editor-block-list__block {
+        color: $body-color;
+        font-family: $font-family-sans-serif;
+    }
+
+    [data-mce-href] {
+        @include link-seafoam-green;
+
+        font-style: italic;
+        font-weight: $font-weight-bold;
+    }
+
+    .editor-block-list__block-edit {
+        li {
+            color: $seafoam-green;
+            font-weight: $font-weight-bold;
+            line-height: $line-height-base;
+            margin-bottom: 0;
+        }
+    }
+
+    .wp-block-button .wp-block-button__link {
+        @extend .btn;
+    }
+
+    .wp-block-button__link:not(.has-background) {
+        @extend .btn-primary;
+    }
+
+    .wp-block-heading {
+        color: $headings-color;
+    }
+
+    .wp-block-pullquote {
+        border: none;
+        float: none;
+        margin-top: $paragraph-margin-bottom;
+        margin-bottom: $paragraph-margin-bottom;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+        padding: 0;
+        width: 75%;
+
+        blockquote {
+            margin: 0;
+        }
+
+        p {
+            color: $headings-color;
+            font-family: $font-family-display;
+            font-size: $h3-font-size;
+            margin-bottom: 0;
+        }
+
+        .wp-block-pullquote__citation {
+            color: $headings-color;
+            font-size: $font-size-base;
+            font-weight: $font-weight-bold;
+            text-transform: none;
+        }
+    }
+
+    .wp-block-quote {
+        &,
+        &:not(.is-large),
+        &:not(.is-style-large) {
+            clear: both;
+            font-style: italic;
+            border-left: 3px solid $seafoam-green;
+            padding: 0 2rem 0 1rem;
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .wp-block-quote__citation,
+    .wp-block-quote cite,
+    .wp-block-quote footer {
+        color: $body-color;
+        font-size: $font-size-base;
+        font-style: italic;
+        margin-top: 0;
+    }
+}

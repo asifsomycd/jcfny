@@ -1,0 +1,25 @@
+.btn-outline-light {
+    border-color: $seafoam-green;
+
+    &:hover {
+        border-color: $seafoam-green;
+        background-color: $seafoam-green;
+        color: $white;
+    }
+}
+
+.btn-primary {
+    &:hover {
+        background-color: $dark-lavender;
+        border-color: $blueberry;
+    }
+}
+
+.btn-seafoam-green {
+    background-color: $seafoam-green;
+
+    &:hover {
+        background-color: $dark-lavender;
+        border-color: $seafoam-green;
+    }
+}
