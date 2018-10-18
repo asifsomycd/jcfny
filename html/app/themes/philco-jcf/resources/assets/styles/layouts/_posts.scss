@@ -34,13 +34,13 @@
     }
 
     a {
-        @include link-seafoam-green;
+        @include link-tealish;
     }
 }
 
 .read-more {
     @include link-underline;
-    @include link-seafoam-green;
+    @include link-tealish;
 
     font-size: $font-size-lg;
 }

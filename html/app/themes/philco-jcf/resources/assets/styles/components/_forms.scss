@@ -33,7 +33,7 @@
 
     .action-form {
         .lead {
-            color: $seafoam-green;
+            color: $tealish;
             margin-bottom: $paragraph-margin-bottom / 3;
         }
 
@@ -42,7 +42,7 @@
         }
 
         .no-spam {
-            color: $seafoam-green;
+            color: $tealish;
             font-weight: $font-weight-bold;
         }
 
@@ -312,7 +312,7 @@
         .gform_previous_button {
             @extend .btn-outline-light;
 
-            color: $seafoam-green;
+            color: $tealish;
             margin-right: 1rem;
         }
 

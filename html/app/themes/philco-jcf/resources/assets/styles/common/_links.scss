@@ -2,6 +2,7 @@
 
     @mixin link-underline {
         display: inline-block;
+        font-weight: $font-weight-bold;
         position: relative;
 
         &::after {
@@ -48,11 +49,11 @@
         @include link-inverse;
     }
 
-    @mixin link-seafoam-green {
-        color: $seafoam-green;
+    @mixin link-tealish {
+        color: $tealish;
 
         &::after {
-            background-color: $seafoam-green;
+            background-color: $tealish;
         }
 
         &:hover {
@@ -64,15 +65,15 @@
         }
     }
 
-    .link-seafoam-green {
-        @include link-seafoam-green;
+    .link-tealish {
+        @include link-tealish;
     }
 
     @mixin link-white {
         color: $white;
 
         &:hover {
-            color: $seafoam-green;
+            color: $tealish;
         }
     }
 

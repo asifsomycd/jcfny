@@ -1,9 +1,9 @@
 .btn-outline-light {
-    border-color: $seafoam-green;
+    border-color: $tealish;
 
     &:hover {
-        border-color: $seafoam-green;
-        background-color: $seafoam-green;
+        border-color: $tealish;
+        background-color: $tealish;
         color: $white;
     }
 }
@@ -15,11 +15,11 @@
     }
 }
 
-.btn-seafoam-green {
-    background-color: $seafoam-green;
+.btn-tealish {
+    background-color: $tealish;
 
     &:hover {
         background-color: $dark-lavender;
-        border-color: $seafoam-green;
+        border-color: $tealish;
     }
 }

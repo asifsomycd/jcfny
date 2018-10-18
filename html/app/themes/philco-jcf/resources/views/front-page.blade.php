@@ -7,20 +7,20 @@
                 <div class="row justify-content-between">
                     <main class="main col-12">
                         <h1 class="entry-title">{{ get_the_title() }}</h1>
-                        <div class="entry-content lead row">
+                        <div class="entry-content lead row justify-content-between align-items-center">
                             <div class="col-12 col-md-8 col-lg-6 col-xl-5">
                                 @while(have_posts()) @php the_post() @endphp
                                     @php the_content() @endphp
                                 @endwhile
                             </div>
 
-                            <div class="col-12">
+                            <div class="home-block__headline_cta col-12 col-lg-4">
                                 @include('partials.acf-link', $fields['headline_button'])
                                 
                                 <div class="d-sm-none"><br></div>
                                 
                                 <a href="#1" 
-                                    class="acf-link link-seafoam-green link-underline ml-sm-5" 
+                                    class="acf-link link-tealish link-underline ml-sm-5" 
                                     data-toggle="modal" 
                                     data-target=".headline-modal">
                                     {!! $fields['headline_video']['text'] !!}
@@ -48,14 +48,17 @@
         </div>
 
         @if ( $fields['image_text'] )
-            <div class="home-block__image" data-scroll>
-                <div class="container">
-                    <div class="row justify-content-between align-items-center">
-                        <div class="col-12 col-lg-7">
-                            {{-- TODO --}}
-                            <img src="{{ $fields['image']['sizes']['col-6'] }}">
+            <div class="home-block__image position-relative" data-scroll>
+                <div class="home-block__image_container">
+                    <div class="container-fluid h-100">
+                        <div class="row h-100">
+                            <div class="home-block__image_block col-12 col-lg-7 h-100" style="background-image: url({{ $fields['image']['sizes']['col-6'] }});"></div>
                         </div>
-                        <div class="col-12 col-lg-4 font-size-md">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-end align-items-center">
+                        <div class="col-12 col-lg-4 font-size-md pt-5 pb-5">
                             <div class="wrapper">
                                 {!! $fields['image_text'] !!}
 
@@ -176,7 +179,7 @@
                             <div class="d-sm-none"><br></div>
                             @include('partials.acf-link', array_merge(
                                 $fields['advisors_link'],
-                                [ 'class' => 'link-seafoam-green link-underline ml-sm-5' ]
+                                [ 'class' => 'link-tealish link-underline ml-sm-5' ]
                             ) )
                         </div>
                     </div>

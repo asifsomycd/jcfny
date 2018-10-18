@@ -36,8 +36,8 @@ $wrapper-spacing: 4rem;
    @include wrapper($pale-gray);
 }
 
-.wrapper--seafoam-green {
-	@include wrapper($seafoam-green, true);
+.wrapper--tealis {
+	@include wrapper($tealish, true);
 }
 
 .wrapper--white {
