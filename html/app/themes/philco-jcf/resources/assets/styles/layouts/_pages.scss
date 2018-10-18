@@ -72,13 +72,14 @@
                 background-color: $cloudy-blue;
                 background-position: center center;
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size: contain;
 
-                @include media-breakpoint-down(lg) {
+                @include media-breakpoint-down(md) {
                     padding-top: 56.25%;
                 }
 
                 @media (min-width: 1600px) {
+                    background-position: right center;
                     max-width: 50%;
                 }
             }

@@ -95,6 +95,7 @@ add_filter( 'sage/display_sidebar', function ( $display ) {
     isset( $display ) || $display = in_array( true, [
       // The sidebar will be displayed if any of the following return true
       is_single(),
+      get_field( 'jcf_sidebar' ) !== false,
       'page.blade.php' == basename( get_page_template() ) && ! is_404(),
     ] );
 

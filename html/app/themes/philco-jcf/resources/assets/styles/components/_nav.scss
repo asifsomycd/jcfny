@@ -44,13 +44,13 @@
         }
 
         .nav-link {
-            color: $link-color;
+            color: $blueberry;
             font-size: $font-size-lg;
             font-weight: $font-weight-bold;
 
             &:hover {
                 background-color: $pale-gray;
-                color: $link-color;
+                color: $blueberry;
             }
         }
 

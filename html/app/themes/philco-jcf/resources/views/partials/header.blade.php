@@ -1,7 +1,7 @@
 <header class="site-header d-none d-xl-block">
 	<div class="container">
 		<div class="row justify-content-between">
-			<div class="col-8 col-sm-6 col-md-4">
+			<div class="col-8 col-sm-6 col-md-5">
 				<a class="brand" href="{{ home_url('/') }}"><img src="@asset('images/jcf-horizontal.svg')" alt="{{ get_bloginfo('name', 'display') }}"></a>
 			</div>
 			<div class="col-auto">
