@@ -14,6 +14,11 @@ class App extends Controller
         return get_field( 'jcf_page_scripts' );
     }
 
+    public function showSidebar() {
+        // Sidebar: is_null() for pages that haven't been saved since this ACF was added
+        return is_null( get_field( 'jcf_sidebar' ) ) || get_field( 'jcf_sidebar' );
+    }
+
     public function showFooterForm() {
         // Footer form: is_null() for pages that haven't been saved since this ACF was added
         return is_null( get_field( 'jcf_footer_form' ) ) || get_field( 'jcf_footer_form' );
