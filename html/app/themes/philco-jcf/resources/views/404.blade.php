@@ -12,11 +12,7 @@
     @if (!have_posts())
         <div class="row">
             <div class="the-content col-12 col-md-8 col-lg-6 offset-lg-1">
-                <div class="alert alert-warning">
-                    {{ __('Sorry, but the page you were trying to view does not exist.', 'sage') }}
-                </div>
-                <p>We are happy to assist you. You can contact us by phone during normal business hours (9 am-5 pm).</p>
-                <h1>{{ $site_phone }}</h1>
+                {!! $error_text !!}
                 {{-- get_search_form(false) --}}
             </div>
         </div>

@@ -8,8 +8,8 @@
 >
 
     @section('form-text')
-        <p class="lead"><strong>Have more questions?</strong></p>
-        <h3>Decide if a JCF Fund is right for you</h3>
+        <p class="lead"><strong>{{ $site_action_form_text['line_1'] }}</strong></p>
+        <h3>{{ $site_action_form_text['line_2'] }}</h3>
     @endsection
 
     @section('form')

@@ -7,6 +7,17 @@ export default {
 	init() {
 		// JavaScript to be fired on all pages
 
+        // Attempt to automatically remove text widows from headings
+        // Replaces the last space in a heading with non-breaking space
+
+            $( 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6' ).each( 
+                ( i, el ) => $( el ).text(
+                    function() {
+                        return $( this ).text().replace( /\s([^\s<]+)\s*$/,'\u00A0$1' );
+                    } 
+                ) 
+            );
+
 		$( '.wrap' ).imagesLoaded( { background: true }, () => {
 			$( window ).enllax();
 		} );

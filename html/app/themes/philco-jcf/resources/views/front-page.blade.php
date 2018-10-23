@@ -6,7 +6,7 @@
             <div class="content container">
                 <div class="row justify-content-between">
                     <main class="main col-12">
-                        <h1 class="entry-title">{{ get_the_title() }}</h1>
+                        <h1 class="entry-title">{!! get_the_title() !!}</h1>
                         <div class="entry-content lead row justify-content-between align-items-center">
                             <div class="col-12 col-md-8 col-lg-6 col-xl-5">
                                 @while(have_posts()) @php the_post() @endphp
@@ -99,20 +99,30 @@
             </div>
         @endif
 
-        @if ( $fields['quote'] )
+        @if ( $fields['quotes'] )
             <div class="home-block__quote" data-enllax-ratio="-0.2" data-enllax-background-align="right" data-scroll>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-md-10 col-lg-7">
-                            <h2 class="mb-4">{!! $fields['quote'] !!}</h2>
-                            <div class="float-left home-block__quote-author">
-                                &ndash;
+                <div id="quote-carousel" class="carousel slide" data-ride="carousel" data-interval="{{ $fields['quote_interval'] * 1000 }}">
+                    <div class="carousel-inner">
+                        @foreach ( $fields['quotes'] as $quote )
+                            <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 col-md-10 col-lg-7">
+                                            <h2 class="mb-4">{!! $quote['quote'] !!}</h2>
+                                            <div class="float-left home-block__quote-author">
+                                                &ndash;
+                                            </div>
+                                            <div class="float-left ml-1">
+                                                <div class="home-block__quote-author">{{ $quote['name'] }}</div>
+                                                <div class="home-block__quote-title">{!! $quote['title'] !!}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
-                            <div class="float-left ml-1">
-                                <div class="home-block__quote-author">{{ $fields['quote_name'] }}</div>
-                                <div class="home-block__quote-title">{!! $fields['quote_title'] !!}</div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>

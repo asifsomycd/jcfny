@@ -24,6 +24,10 @@ class App extends Controller
         return is_null( get_field( 'jcf_footer_form' ) ) || get_field( 'jcf_footer_form' );
     }
 
+    public function siteActionFormText() {
+        return get_field( 'jcf_action_form_text', 'options' );
+    }
+
     public function siteActionForm() {
         return \App\get_form( get_field( 'jcf_action_form', 'options' ) );
     }

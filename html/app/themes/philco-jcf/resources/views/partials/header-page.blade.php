@@ -7,7 +7,7 @@
 				@elseif ( get_the_title() )
 					<h1 class="entry-title h2" data-scroll>{!! get_the_title() !!}</h1>
 				@else
-					<h1 class="entry-title h2" data-scroll>Not Found</h1>
+					<h1 class="entry-title h2" data-scroll>{!! $error_title !!}</h1>
 				@endif
 			</div>
 		</div>
