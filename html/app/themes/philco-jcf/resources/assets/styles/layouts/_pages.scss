@@ -196,6 +196,20 @@
             @include wrapper($white);
 
             background-image: url(../images/background-arrows-d.svg);
+            position: relative;
+        }
+
+        .parallax-badge {
+            background-image: url(../images/jcf-badge-green.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: px-to-rem(296px) auto;
+            opacity: 0.4;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 50%;
         }
 
 
@@ -311,7 +325,7 @@
             }
 
 
-        // Structure 
+        // Structure
 
             .hfeed {
                 padding-bottom: 0;

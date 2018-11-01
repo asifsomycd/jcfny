@@ -19,3 +19,7 @@ html/.htaccess
 # Composer
 vendor/*
 !vendor/.gitkeep
+
+# Never keep
+.vscode
+.DS_Store

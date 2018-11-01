@@ -9,28 +9,33 @@ export default {
 
         // Attempt to automatically remove text widows from headings
         // Replaces the last space in a heading with non-breaking space
+        // Add data-widow-skip to any heading to skip processing
 
-            $( 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6' ).each( 
+            $( 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6' ).not( '[data-widow-skip]' ).each(
                 ( i, el ) => $( el ).text(
                     function() {
                         return $( this ).text().replace( /\s([^\s<]+)\s*$/,'\u00A0$1' );
-                    } 
-                ) 
+                    }
+                )
             );
 
-		$( '.wrap' ).imagesLoaded( { background: true }, () => {
-			$( window ).enllax();
-		} );
 
-		$( window ).on( 'window:resize', () => {
+        // Enllax (parallax)
 
-			if ( $( '.background-arrows' ).length ) {
-				$( '.background-arrows' ).css( {
-					right: ( window.innerWidth - $( '.wrap .content' )[0].clientWidth ) / 2,
-					opacity: 1,
-				} );
-			}
-		} );
+            $( '.wrap' ).imagesLoaded( { background: true }, () => {
+                $( window ).enllax();
+            } );
+
+            $( window ).on( 'window:resize', () => {
+
+                if ( $( '.background-arrows' ).length ) {
+                    $( '.background-arrows' ).css( {
+                        right: ( window.innerWidth - $( '.wrap .content' )[0].clientWidth ) / 2,
+                        opacity: 1,
+                    } );
+                }
+            } );
+
 
         // Nav
 
@@ -149,14 +154,14 @@ export default {
                         $( '.nav-mobile__primary .menu-item-has-children.active' ).removeClass( 'active' )
                             .find( '.sub-menu' ).stop().slideUp();
                         $( this ).parent().addClass( 'active' );
-                        $( this ).next( '.sub-menu' ).stop().slideDown();                        
+                        $( this ).next( '.sub-menu' ).stop().slideDown();
                     }
                 } );
 
 
 		// Modal -- Video
 
-            $( '.modal--iframe-video' ).on( 'show.bs.modal', function () { 
+            $( '.modal--iframe-video' ).on( 'show.bs.modal', function () {
                 // set the video to src
                 $( '.modal--iframe-video iframe' ).attr( 'src', $( '.modal--iframe-video iframe' ).data( 'src' ) );
             });

@@ -10,7 +10,7 @@
             <div class="content container">
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-5">
-                        <h1 class="entry-title" data-scroll>{!! get_the_title() !!}</h1>
+                        <h1 class="entry-title" data-scroll data-widow-skip>{!! get_the_title() !!}</h1>
                     </div>
                     <main class="main col-12 col-lg-5 offset-lg-1" data-scroll>
                         @while(have_posts()) @php the_post() @endphp

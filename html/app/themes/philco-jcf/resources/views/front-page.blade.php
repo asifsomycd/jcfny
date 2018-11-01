@@ -16,30 +16,32 @@
 
                             <div class="home-block__headline_cta col-12 col-lg-4">
                                 @include('partials.acf-link', $fields['headline_button'])
-                                
-                                <div class="d-sm-none"><br></div>
-                                
-                                <a href="#1" 
-                                    class="acf-link link-tealish link-underline ml-sm-5" 
-                                    data-toggle="modal" 
-                                    data-target=".headline-modal">
-                                    {!! $fields['headline_video']['text'] !!}
-                                </a>
 
-                                @section('modal-body')
-                                    <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe data-src="https://www.youtube.com/embed/{{ $fields['headline_video']['video_id'] }}?rel=0&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                    </div>
-                                @overwrite
+                                @if ( $fields['headline_video']['video_id'] )
+                                    <div class="d-sm-none"><br></div>
 
-                                @section('modals')
-                                    @parent
+                                    <a href="#1"
+                                        class="acf-link link-tealish link-underline ml-sm-5"
+                                        data-toggle="modal"
+                                        data-target=".headline-modal">
+                                        {!! $fields['headline_video']['text'] !!}
+                                    </a>
 
-                                    @include('partials.modal', [
-                                        'type'      => 'iframe-video',
-                                        'class'     => 'headline-modal',
-                                    ] )
-                                @endsection
+                                    @section('modal-body')
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe data-src="https://www.youtube.com/embed/{{ $fields['headline_video']['video_id'] }}?rel=0&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                        </div>
+                                    @overwrite
+
+                                    @section('modals')
+                                        @parent
+
+                                        @include('partials.modal', [
+                                            'type'      => 'iframe-video',
+                                            'class'     => 'headline-modal',
+                                        ] )
+                                    @endsection
+                                @endif
                             </div>
                         </div>
                     </main>
@@ -141,11 +143,11 @@
                                 @foreach ( $fields['faq_faqs'] as $faq )
                                     <div class="faq">
                                         <div class="faq__question" id="faq-q-{{ $loop->iteration }}">
-                                            <button class="btn btn-link collapsed" 
-                                                data-toggle="collapse" 
-                                                data-target="#faq-a-{{ $loop->iteration }}" 
-                                                aria-expanded="false" 
-                                                aria-controls="faq-a-{{ $loop->iteration }}"> 
+                                            <button class="btn btn-link collapsed"
+                                                data-toggle="collapse"
+                                                data-target="#faq-a-{{ $loop->iteration }}"
+                                                aria-expanded="false"
+                                                aria-controls="faq-a-{{ $loop->iteration }}">
                                                 <div class="row">
                                                     <div class="col-auto pr-0">
                                                         <div class="faq__indicator fa-fw">
@@ -160,9 +162,9 @@
                                             </button>
                                         </div>
 
-                                        <div id="faq-a-{{ $loop->iteration }}" 
-                                            class="collapse" 
-                                            aria-labelledby="faq-q-{{ $loop->iteration }}" 
+                                        <div id="faq-a-{{ $loop->iteration }}"
+                                            class="collapse"
+                                            aria-labelledby="faq-q-{{ $loop->iteration }}"
                                             data-parent="#faqs">
                                             <div class="faq__answer lead">
                                                 {!! $faq['text'] !!}
@@ -179,8 +181,9 @@
 
         @if ( $fields['advisors_text'] )
             <div class="home-block__advisors" data-enllax-ratio="0.1" data-enllax-background-align="right" data-scroll>
+                <div class="parallax-badge d-none d-md-block" data-enllax-ratio="-0.1"></div>
                 <div class="container">
-                    <div class="row">
+                    <div class="row justify-content-between">
                         <div class="col-12 col-md-8 col-lg-6 col-xl-5 font-size-md">
                             {!! $fields['advisors_text'] !!}
                         </div>

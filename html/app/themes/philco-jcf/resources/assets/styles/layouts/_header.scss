@@ -2,6 +2,8 @@
 
     .site-header {
         border-bottom: 2px solid $pale-gray;
+        position: relative;
+        z-index: 2; // Addresses odd z-index dropdown bug when page is left open for a time
     }
 
     .brand {
@@ -51,6 +53,7 @@
     .hfeed {
         padding-bottom: $wrapper-spacing;
         position: relative;
+        z-index: 1; // Addresses odd z-index dropdown bug when page is left open for a time
 
         .background-arrows {
             background-image: url(../images/background-arrows-f.svg);
