@@ -51,7 +51,7 @@
       "type": "package",
       "package": {
         "name": "gravityforms/gravityforms",
-        "version": "2.3.4.3",
+        "version": "2.3.6",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
@@ -118,7 +118,7 @@
     "roots/wp-password-bcrypt": "1.0.0",
     "roots/wp-config": "1.0.0",
     "advanced-custom-fields/advanced-custom-fields-pro": "*",
-    "gravityforms/gravityforms": "2.3.4.3",
+    "gravityforms/gravityforms": "2.3.6",
     "gravityforms/gravityformsrestapi": "^2.0",
     "gravityforms/gravityformsgutenberg": "^1.0",
     "wpackagist-plugin/acf-gravityforms-add-on": "^1.2",

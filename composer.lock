@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c2bff1e1dfd9da0eda9996e3a21670d3",
+    "content-hash": "48170edaf896f7757eb794d483fa1610",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -19,7 +19,7 @@
                 "composer/installers": "^1.0",
                 "philippbaschke/acf-pro-installer": "^1.0"
             },
-            "type": "wordpress-plugin"
+            "type": "wordpress-muplugin"
         },
         {
             "name": "composer/installers",
@@ -143,7 +143,7 @@
         },
         {
             "name": "gravityforms/gravityforms",
-            "version": "2.3.4.3",
+            "version": "2.3.6",
             "dist": {
                 "type": "zip",
                 "url": "https://s3.amazonaws.com/gravityforms/releases/gravityforms_2.3.6.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1541363406&Signature=s%2FlHNgc4n2NmcS2lA%2FeQ%2BzLofBE%3D",
