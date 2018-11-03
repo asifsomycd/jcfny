@@ -14,7 +14,7 @@ use Roots\WPConfig\Config;
 $root_dir = dirname(__DIR__);
 
 /** @var string Document Root */
-$webroot_dir = $root_dir . '/html';
+$webroot_dir = $root_dir . '/web';
 
 /**
  * Expose global env() function from oscarotero/env
@@ -80,7 +80,7 @@ Config::define('DISABLE_WP_CRON', env('DISABLE_WP_CRON') ?: false);
 // Disable the plugin and theme file editor in the admin
 Config::define('DISALLOW_FILE_EDIT', true);
 // Disable plugin and theme updates and installation from the admin
-Config::define('DISALLOW_FILE_MODS', true);
+Config::define('DISALLOW_FILE_MODS', false);
 
 /**
  * Debugging Settings

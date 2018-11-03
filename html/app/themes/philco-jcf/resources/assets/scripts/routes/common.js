@@ -11,10 +11,10 @@ export default {
         // Replaces the last space in a heading with non-breaking space
         // Add data-widow-skip to any heading to skip processing
 
-            $( 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6' ).not( '[data-widow-skip]' ).each(
+            $( 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6' ).not( '.fix-widow-skip' ).each(
                 ( i, el ) => $( el ).text(
                     function() {
-                        return $( this ).text().replace( /\s([^\s<]+)\s*$/,'\u00A0$1' );
+                        return $( this ).text().replace( /\s([^\s<]+)\s*$/, '\u00A0$1' );
                     }
                 )
             );
