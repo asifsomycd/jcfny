@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "48170edaf896f7757eb794d483fa1610",
+    "content-hash": "cb97bd65419536aab4a2f41eb6b3945f",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -19,7 +19,7 @@
                 "composer/installers": "^1.0",
                 "philippbaschke/acf-pro-installer": "^1.0"
             },
-            "type": "wordpress-muplugin"
+            "type": "wordpress-plugin"
         },
         {
             "name": "composer/installers",

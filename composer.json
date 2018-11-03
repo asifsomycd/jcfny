@@ -117,7 +117,7 @@
     "oscarotero/env": "^1.1.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "roots/wp-config": "1.0.0",
-    "advanced-custom-fields/advanced-custom-fields-pro": "*",
+    "advanced-custom-fields/advanced-custom-fields-pro": ">5.7",
     "gravityforms/gravityforms": "2.3.6",
     "gravityforms/gravityformsrestapi": "^2.0",
     "gravityforms/gravityformsgutenberg": "^1.0",
