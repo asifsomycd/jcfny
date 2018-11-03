@@ -36,7 +36,7 @@
       "package": {
         "name": "advanced-custom-fields/advanced-custom-fields-pro",
         "version": "5.7.7",
-        "type": "wordpress-muplugin",
+        "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
           "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download"
@@ -52,10 +52,10 @@
       "package": {
         "name": "gravityforms/gravityforms",
         "version": "2.3.4.3",
-        "type": "wordpress-muplugin",
+        "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://s3.amazonaws.com/gravityforms/releases/gravityforms_2.3.4.3.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1539546679&Signature=NyZYP1Kc5B5zpJpojicn%2Ft6mKwM%3D"
+          "url": "https://s3.amazonaws.com/gravityforms/releases/gravityforms_2.3.6.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1541363406&Signature=s%2FlHNgc4n2NmcS2lA%2FeQ%2BzLofBE%3D"
         }
       }
     },
@@ -64,10 +64,10 @@
       "package": {
         "name": "gravityforms/gravityformsgutenberg",
         "version": "1.0.0",
-        "type": "wordpress-muplugin",
+        "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://s3.amazonaws.com/gravityforms/addons/gutenberg/gravityformsgutenberg_1.0-beta-5.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1539541290&Signature=%2Bkl9BYq6LzlblZT7PYqhJ%2FEoN%2Bc%3D"
+          "url": "https://s3.amazonaws.com/gravityforms/addons/gutenberg/gravityformsgutenberg_1.0-beta-5.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1541291407&Signature=uykn5Ifll5pAfcZH22So8OUTrZM%3D"
         }
       }
     },
@@ -76,10 +76,10 @@
       "package": {
         "name": "gravityforms/gravityformsrestapi",
         "version": "2.0.0",
-        "type": "wordpress-muplugin",
+        "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://s3.amazonaws.com/gravityforms/addons/restapi/gravityformsrestapi_2.0-rc-1.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1539541290&Signature=uAWKRPZ6Q3579cXG3T8ma7CFrxQ%3D"
+          "url": "https://s3.amazonaws.com/gravityforms/addons/restapi/gravityformsrestapi_2.0-rc-1.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1541291407&Signature=vPcWE8PUs9uca7GiCDJ9%2BB5aJrc%3D"
         }
       }
     },
@@ -128,7 +128,7 @@
     "wpackagist-plugin/page-links-to": "^3.0",
     "wpackagist-plugin/quick-pagepost-redirect-plugin": "^5.1",
     "wpackagist-plugin/safe-svg": "^1.7",
-    "wpackagist-plugin/wordpress-seo": "^8.4",
+    "wpackagist-plugin/wordpress-seo": ">9.0",
     "mdsimpson/contact-form-7-to-database-extension": "^2.10",
     "wp-sync-db/wp-sync-db-media-files": "dev-master",
     "wp-sync-db/wp-sync-db": "dev-master",

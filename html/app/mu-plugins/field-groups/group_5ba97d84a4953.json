@@ -301,6 +301,23 @@
             "endpoint": 0
         },
         {
+            "key": "field_5bde15541d350",
+            "label": "Scripts and marketing tags",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "This site uses Google Tag Manager. It's recommended that any tracking code or 3rd-party scripts be implemented via GTM versus adding them below.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
             "key": "field_5ba97e66c8edb",
             "label": "&lt;\/head&gt; Scripts",
             "name": "jcf_header_scripts",
@@ -436,5 +453,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Options: Site Settings",
-    "modified": 1540253550
+    "modified": 1541281195
 }
