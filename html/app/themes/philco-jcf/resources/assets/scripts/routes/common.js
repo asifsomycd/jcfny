@@ -2,6 +2,7 @@ import '../util/jquery.enllax';
 import 'imagesloaded';
 import ScrollOut from "scroll-out";
 import '../util/ios';
+import pushHistory from '../util/pushHistory';
 
 export default {
 	init() {
@@ -170,6 +171,34 @@ export default {
                 // stop the video
                 $( '.modal--iframe-video iframe' ).attr( 'src', null );
             });
+
+
+        // .collapsible pushState
+
+            $( '.collapsible__trigger' ).on( 'click', function() {
+                let targetHash =    $( this ).find( '.btn' ).data( 'target' ),
+                    $trigger =      $( this ).find( '.btn' ),
+                    locationHref =  window.location.href;
+
+                if ( window.location.hash ) {
+                    locationHref = locationHref.replace( window.location.hash, '' );
+                }
+
+                pushHistory(
+                    locationHref + targetHash,
+                    $.trim( $trigger.text() ) + ' | ' + window.jcf.site_title,
+                    $trigger.attr( 'href' )
+                );
+            } );
+
+
+        // Expand .collapsible on page load
+
+            let $collapsibleTrigger = $( '.collapsible__trigger a[href="' + window.location.hash + '"]' );
+
+            if ( window.location.hash && $collapsibleTrigger.length ) {
+                $collapsibleTrigger.trigger( 'click' );
+            }
 
 
         setTimeout( () => $( window ).scroll().trigger( 'window:resize' ), 250 );

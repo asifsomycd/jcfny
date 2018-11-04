@@ -127,7 +127,7 @@
     "wpackagist-plugin/gutenberg": ">=4.0",
     "wpackagist-plugin/page-links-to": "^3.0",
     "wpackagist-plugin/quick-pagepost-redirect-plugin": "^5.1",
-    "wpackagist-plugin/safe-svg": "^1.7",
+    "wpackagist-plugin/safe-svg": "^1.8",
     "wpackagist-plugin/wordpress-seo": ">9.0",
     "mdsimpson/contact-form-7-to-database-extension": "^2.10",
     "wp-sync-db/wp-sync-db-media-files": "dev-master",

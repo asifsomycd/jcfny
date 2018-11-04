@@ -17,7 +17,12 @@ add_action( 'init', function () {
 add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style( 'google-fonts' );
     wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
-    wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
+
+    wp_register_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
+    wp_localize_script('sage/main.js', 'jcf', [
+        'site_title' => get_bloginfo('name'),
+    ] );
+    wp_enqueue_script('sage/main.js');
 
     if (is_single() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
@@ -139,7 +144,7 @@ add_action('after_setup_theme', function () {
 
     /**
      * Image sizes
-     * 
+     *
      */
     add_image_size( 'col-12', 1600, 0, false );
     add_image_size( 'col-6', 800, 0, false );

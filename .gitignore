@@ -6,6 +6,7 @@ html/app/mu-plugins/*/
 html/app/upgrade
 html/app/uploads/*
 !html/app/uploads/.gitkeep
+html/app/db.php
 
 # WordPress
 html/wp

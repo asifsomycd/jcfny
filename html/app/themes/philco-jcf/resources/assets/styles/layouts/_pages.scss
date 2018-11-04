@@ -10,6 +10,12 @@
         .acf-link {
             font-size: $font-size-md;
         }
+
+        @include media-breakpoint-down(md) {
+            .btn {
+                width: 100%;
+            }
+        }
     }
 
 

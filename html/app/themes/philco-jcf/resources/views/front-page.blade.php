@@ -78,9 +78,9 @@
             <div class="home-block__how" data-enllax-ratio="0.1" data-enllax-background-align="right" data-scroll>
                 <div class="container text-center text-md-left">
                     <h2>How It Works</h2>
-                    <div class="row mt-4 mb-3">
+                    <div class="row justify-content-center mt-4 mb-3">
                         @foreach ( $fields['how_columns'] as $column )
-                            <div class="col-6 col-md-4 offset-3 offset-md-0 mb-4 mb-lg-0 pl-lg-4 pr-lg-4 text-center">
+                            <div class="col-8 col-md-4 mb-4 mb-lg-0 pl-lg-4 pr-lg-4 text-center">
                                 <div class="row">
                                     <div class="col-12 col-lg-4 mb-4">
                                         <img src="{{ $column['image']['sizes']['col-4'] }}">
@@ -139,11 +139,12 @@
                         </div>
 
                         <div class="col-12 col-lg-8">
-                            <div id="faqs">
+                            <div id="faqs" class="collapsible">
                                 @foreach ( $fields['faq_faqs'] as $faq )
                                     <div class="faq">
-                                        <div class="faq__question" id="faq-q-{{ $loop->iteration }}">
-                                            <button class="btn btn-link collapsed"
+                                        <div class="faq__question collapsible__trigger" id="faq-q-{{ $loop->iteration }}">
+                                            <a class="btn btn-link collapsed"
+                                                href="#faq-a-{{ $loop->iteration }}"
                                                 data-toggle="collapse"
                                                 data-target="#faq-a-{{ $loop->iteration }}"
                                                 aria-expanded="false"
@@ -159,11 +160,11 @@
                                                         {!! $faq['title'] !!}
                                                     </div>
                                                 </div>
-                                            </button>
+                                            </a>
                                         </div>
 
                                         <div id="faq-a-{{ $loop->iteration }}"
-                                            class="collapse"
+                                            class="collapse collapsible__target"
                                             aria-labelledby="faq-q-{{ $loop->iteration }}"
                                             data-parent="#faqs">
                                             <div class="faq__answer lead">
@@ -187,7 +188,7 @@
                         <div class="col-12 col-md-8 col-lg-6 col-xl-5 font-size-md">
                             {!! $fields['advisors_text'] !!}
                         </div>
-                        <div class="col-12 mt-3">
+                        <div class="col-12">
                             @include('partials.acf-link', $fields['advisors_button'])
                             <div class="d-sm-none"><br></div>
                             @include('partials.acf-link', array_merge(

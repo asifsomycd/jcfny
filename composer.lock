@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "cb97bd65419536aab4a2f41eb6b3945f",
+    "content-hash": "eace9b9974835011925fc352329bb075",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -798,15 +798,15 @@
         },
         {
             "name": "wpackagist-plugin/safe-svg",
-            "version": "1.7.1",
+            "version": "1.8.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/safe-svg/",
-                "reference": "tags/1.7.1"
+                "reference": "tags/1.8.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/safe-svg.1.7.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/safe-svg.1.8.0.zip",
                 "reference": null,
                 "shasum": null
             },

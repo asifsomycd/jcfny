@@ -31,8 +31,11 @@
 <header class="sticky-header">
 	<div class="container">
 		<div class="row">
-			<div class="sticky-header__brand col-6 col-xl-1 align-self-center">
-				<a class="brand" href="{{ home_url('/') }}"><img src="@asset('images/jcf-badge.svg')" alt="{{ get_bloginfo('name', 'display') }}"></a>
+			<div class="sticky-header__brand col-9 col-xl-1 align-self-center">
+				<a class="brand" href="{{ home_url('/') }}">
+					<img class="d-none d-xl-block" src="@asset('images/jcf-badge.svg')" alt="{{ get_bloginfo('name', 'display') }}">
+					<img class="d-xl-none" src="@asset('images/jcf-horizontal.svg')" alt="{{ get_bloginfo('name', 'display') }}">
+				</a>
 			</div>
 			<div class="sticky-header__nav-primary col-6 d-none d-xl-block align-self-center"></div>
 			<div class="sticky-header__nav-top col-5 d-none d-xl-block ml-auto"></div>
