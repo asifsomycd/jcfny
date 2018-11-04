@@ -22,5 +22,6 @@ vendor/*
 !vendor/.gitkeep
 
 # Never keep
+iworx-backup
 .vscode
 .DS_Store

@@ -55,7 +55,7 @@
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://s3.amazonaws.com/gravityforms/releases/gravityforms_2.3.6.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1541363406&Signature=s%2FlHNgc4n2NmcS2lA%2FeQ%2BzLofBE%3D"
+          "url": "https://s3.amazonaws.com/gravityforms/releases/gravityforms_2.3.6.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1541458119&Signature=B61IDXnS6ZUkPXR8WGwT%2F6ghuGM%3D"
         }
       }
     },
@@ -67,7 +67,7 @@
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://s3.amazonaws.com/gravityforms/addons/gutenberg/gravityformsgutenberg_1.0-beta-5.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1541291407&Signature=uykn5Ifll5pAfcZH22So8OUTrZM%3D"
+          "url": "https://s3.amazonaws.com/gravityforms/addons/gutenberg/gravityformsgutenberg_1.0-beta-5.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1541386119&Signature=aVtBNWDl6cLc1fH9QVWdppC9MOc%3D"
         }
       }
     },
@@ -79,7 +79,7 @@
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://s3.amazonaws.com/gravityforms/addons/restapi/gravityformsrestapi_2.0-rc-1.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1541291407&Signature=vPcWE8PUs9uca7GiCDJ9%2BB5aJrc%3D"
+          "url": "https://s3.amazonaws.com/gravityforms/addons/restapi/gravityformsrestapi_2.0-rc-1.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1541386119&Signature=s1ddNzWAoTF4r6dUmDr1VRdEYqM%3D"
         }
       }
     },
