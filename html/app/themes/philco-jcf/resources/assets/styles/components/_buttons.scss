@@ -1,0 +1,25 @@
+.btn-outline-light {
+    border-color: $tealish;
+
+    &:hover {
+        border-color: $tealish;
+        background-color: $tealish;
+        color: $white;
+    }
+}
+
+.btn-primary {
+    &:hover {
+        background-color: $dark-lavender;
+        border-color: $blueberry;
+    }
+}
+
+.btn-tealish {
+    background-color: $tealish;
+
+    &:hover {
+        background-color: $dark-lavender;
+        border-color: $tealish;
+    }
+}

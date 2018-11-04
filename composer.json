@@ -1,0 +1,157 @@
+{
+  "name": "roots/bedrock",
+  "type": "project",
+  "license": "MIT",
+  "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
+  "homepage": "https://roots.io/bedrock/",
+  "authors": [
+    {
+      "name": "Scott Walkinshaw",
+      "email": "scott.walkinshaw@gmail.com",
+      "homepage": "https://github.com/swalkinshaw"
+    },
+    {
+      "name": "Ben Word",
+      "email": "ben@benword.com",
+      "homepage": "https://github.com/retlehs"
+    }
+  ],
+  "keywords": [
+    "bedrock", "roots", "wordpress", "stack", "composer", "vagrant", "wp"
+  ],
+  "support": {
+    "issues": "https://github.com/roots/bedrock/issues",
+    "forum": "https://discourse.roots.io/category/bedrock"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "advanced-custom-fields/advanced-custom-fields-pro",
+        "version": "5.7.7",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download"
+        },
+        "require": {
+          "philippbaschke/acf-pro-installer": "^1.0",
+          "composer/installers": "^1.0"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "gravityforms/gravityforms",
+        "version": "2.3.6",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://s3.amazonaws.com/gravityforms/releases/gravityforms_2.3.6.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1541363406&Signature=s%2FlHNgc4n2NmcS2lA%2FeQ%2BzLofBE%3D"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "gravityforms/gravityformsgutenberg",
+        "version": "1.0.0",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://s3.amazonaws.com/gravityforms/addons/gutenberg/gravityformsgutenberg_1.0-beta-5.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1541291407&Signature=uykn5Ifll5pAfcZH22So8OUTrZM%3D"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "gravityforms/gravityformsrestapi",
+        "version": "2.0.0",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://s3.amazonaws.com/gravityforms/addons/restapi/gravityformsrestapi_2.0-rc-1.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1541291407&Signature=vPcWE8PUs9uca7GiCDJ9%2BB5aJrc%3D"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "mdsimpson/contact-form-7-to-database-extension",
+        "version": "master",
+        "type": "wordpress-plugin",
+        "source": {
+          "url": "https://github.com/mdsimpson/contact-form-7-to-database-extension.git",
+          "type": "git",
+          "reference":"master"
+        }
+      }
+    },
+    {
+      "url": "https://github.com/joshuafredrickson/wp-sync-db.git",
+      "type": "git"
+    },
+    {
+      "url": "https://github.com/joshuafredrickson/wp-sync-db-media-files.git",
+      "type": "git"
+    },
+    {
+      "url": "https://github.com/joshuafredrickson/wp-sync-db-cli.git",
+      "type": "git"
+    }
+  ],
+  "require": {
+    "php": ">=5.6",
+    "composer/installers": "^1.4",
+    "vlucas/phpdotenv": "^2.0.1",
+    "johnpbloch/wordpress": "4.9.8",
+    "oscarotero/env": "^1.1.0",
+    "roots/wp-password-bcrypt": "1.0.0",
+    "roots/wp-config": "1.0.0",
+    "advanced-custom-fields/advanced-custom-fields-pro": ">5.7",
+    "gravityforms/gravityforms": "2.3.6",
+    "gravityforms/gravityformsrestapi": "^2.0",
+    "gravityforms/gravityformsgutenberg": "^1.0",
+    "wpackagist-plugin/acf-gravityforms-add-on": "^1.2",
+    "wpackagist-plugin/akismet": "^4.0",
+    "wpackagist-plugin/clickdesk-live-support-chat-plugin": "^4.41",
+    "wpackagist-plugin/gutenberg": ">=4.0",
+    "wpackagist-plugin/page-links-to": "^3.0",
+    "wpackagist-plugin/quick-pagepost-redirect-plugin": "^5.1",
+    "wpackagist-plugin/safe-svg": "^1.8",
+    "wpackagist-plugin/wordpress-seo": ">9.0",
+    "mdsimpson/contact-form-7-to-database-extension": "^2.10",
+    "wp-sync-db/wp-sync-db-media-files": "dev-master",
+    "wp-sync-db/wp-sync-db": "dev-master",
+    "wp-sync-db/wp-sync-db-cli": "dev-master"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.0.2",
+    "roave/security-advisories": "dev-master"
+  },
+  "extra": {
+    "installer-paths": {
+      "html/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "html/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "html/app/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "html/wp"
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "php -r \"copy('.env.example', '.env');\""
+    ],
+    "test": [
+      "phpcs"
+    ]
+  }
+}

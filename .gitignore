@@ -1,35 +1,26 @@
-# Ignore everything in the root except the "wp-content" directory.
-/*
-!.gitignore
-!wp-content/
-!deploy/
-!LICENSE.md
-!README.md
-!package.json
-!gulpfile.js
-!_activate.sh
-!favicon.*
+# Application
+html/app/plugins/*
+!html/app/plugins/.gitkeep
+html/app/mu-plugins/*/
+!html/app/mu-plugins/field-groups/
+html/app/upgrade
+html/app/uploads/*
+!html/app/uploads/.gitkeep
+html/app/db.php
 
-# Keep these files out of the repo
-.sass-cache/
-/wp-content/advanced-cache.php
-/wp-content/ai1wm-backups
-/wp-content/backupwordpress*
-/wp-content/cache/*
-/wp-content/mu-plugins
-/wp-content/mu-plugins.bak
-/wp-content/object-cache.*
-/wp-content/tablepress-*
-/wp-content/plugins
-/wp-content/themes/*/node_modules
-/wp-content/themes/twenty*
-/wp-content/upgrade
-/wp-content/uploads
-/wp-config.php
-*.sql
+# WordPress
+html/wp
+html/.htaccess
 
-# Hidden files
-*.DS_Store
-*Thumbs.db
-*~imageoptim*
-understrap.diff
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Composer
+vendor/*
+!vendor/.gitkeep
+
+# Never keep
+.vscode
+.DS_Store

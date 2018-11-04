@@ -1,0 +1,61 @@
+.blog {
+    .hfeed {
+        padding-bottom: 0;
+    }
+
+    .wrap {
+        @include wrapper($gray-100);
+    }
+}
+
+.post {
+    margin-bottom: $wrapper-spacing;
+}
+
+.wp-post-image {
+    margin: 0 $paragraph-margin-bottom $paragraph-margin-bottom 0;
+
+    @include media-breakpoint-up(xl) {
+        float: left;
+        max-width: 55%;
+    }
+}
+
+.share {
+    .position-sticky {
+        display: inline-block;
+        top: 2rem;
+    }
+
+    h6,
+    a {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+    }
+
+    a {
+        @include link-tealish;
+    }
+}
+
+.read-more {
+    @include link-underline;
+    @include link-tealish;
+
+    font-size: $font-size-lg;
+}
+
+.nav-links {
+    text-align: center;
+
+    .nav-previous,
+    .nav-next {
+        display: inline-block;
+        margin: 0 $grid-gutter-width / 2;
+    }
+
+    a {
+        @extend .btn;
+        @extend .btn-primary;
+    }
+}
