@@ -118,3 +118,32 @@ add_filter( 'gform_pre_render', function ( $form ) {
     }
     return $form;
 } );
+
+
+/**
+ * Gravity Forms make state, zip optional
+ */
+add_filter( 'gform_field_validation', function( $result, $value, $form, $field ) {
+    // Address field will pass $value as an array with each of the elements as an item within the array, the key is the field id
+    if ( ! $result['is_valid'] && $result['message'] == 'This field is required. Please enter a complete address.' ) {
+        // Address failed validation because of a required item not being filled out
+        // Do custom validation
+        $street  = rgar( $value, $field->id . '.1' );
+        $street2 = rgar( $value, $field->id . '.2' );
+        $city    = rgar( $value, $field->id . '.3' );
+        $state   = rgar( $value, $field->id . '.4' );
+        $zip     = rgar( $value, $field->id . '.5' );
+        $country = rgar( $value, $field->id . '.6' );
+
+        // Check to see if the values you care about are filled out
+        if ( empty( $street ) || empty( $city ) || empty( $country ) ) {
+            $result['is_valid'] = false;
+            $result['message']  = 'This field is required. Please enter at least a street, city and country.';
+        } else {
+            $result['is_valid'] = true;
+            $result['message']  = '';
+        }
+    }
+
+    return $result;
+}, 10, 4 );
