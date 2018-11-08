@@ -53,6 +53,10 @@ class App extends Controller
         return get_field( 'jcf_phone', 'options' );
     }
 
+    public function sitePhoneUrl() {
+        return 'tel:+1' . preg_replace( '/\D+/', '', get_field( 'jcf_phone', 'options' ) );
+    }
+
     public function siteSocial() {
         return get_field( 'jcf_social_networks', 'options' );
     }

@@ -65,7 +65,7 @@
 
                         <div class="sidebar__callout mt-5 d-none d-lg-block">
                             <div class="h4">Any Questions?</div>
-                            <div class="h3">Call {{ $site_phone }}</div>
+                            <div class="h3 fix-widow-skip">Call <a href="{{ $site_phone_url }}" class="link-white">{{ $site_phone }}</a></div>
                             <a href="{{ get_the_permalink( $site_contact_page ) }}" class="btn btn-primary" target="_blank">Or Email Us</a>
                         </div>
                     </div>

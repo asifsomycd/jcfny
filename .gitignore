@@ -23,5 +23,6 @@ vendor/*
 
 # Never keep
 iworx-backup
+debug.log
 .vscode
 .DS_Store

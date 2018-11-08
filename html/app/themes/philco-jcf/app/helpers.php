@@ -145,14 +145,14 @@ function display_sidebar()
 
 /**
  * Blog, are you there? It's me, blog.
- * 
+ *
  */
-function is_blog() 
+function is_blog()
 {
     global $post;
 
     $posttype = get_post_type( $post );
-    return ( 
+    return (
         (
             is_archive() || is_author() || is_category() || is_home() || is_single() || is_tag()
         ) && (
@@ -166,7 +166,7 @@ function is_blog()
  * Get related posts based on tags
  *
  */
-function related_posts() 
+function related_posts()
 {
     $tags = get_the_tags();
     $tags_ids = [];
@@ -178,11 +178,11 @@ function related_posts()
     }
 
     $related_posts = new \WP_Query( [
-        'posts_per_page'        => 2, 
-        'post_status'           => 'publish', 
-        'ignore_sticky_posts'   => 1, 
-        'tag__in'               => $tags_ids, 
-        'post__not_in'          => [ get_the_ID() ], 
+        'posts_per_page'        => 2,
+        'post_status'           => 'publish',
+        'ignore_sticky_posts'   => 1,
+        'tag__in'               => $tags_ids,
+        'post__not_in'          => [ get_the_ID() ],
         'post_type'             => 'post'
     ] );
 
@@ -200,38 +200,14 @@ function get_form( $form_id = false ) {
     }
 
     ob_start();
-    gravity_form( 
+    gravity_form(
         $form_id,
-        $display_title = false, 
+        $display_title = false,
         $display_description = false,
         $display_inactive = false,
         $field_values = null,
         $ajax = true,
-        $tabindex = 1 
+        $tabindex = 1
     );
     return ob_get_clean();
-}
-
-
-/**
- * Make last space in a sentence a non breaking space to prevent typographic widows.
- *
- * @param type $str
- * @return string
- */
-function widont( $str = '' ) {
-
-    // Strip spaces.
-    $str = trim( $str );
-
-    // Find the last space.
-    $space = strrpos( $str, ' ' );
-
-    // If there's a space then replace the last on with a non breaking space.
-    if ( false !== $space ) {
-        $str = substr( $str, 0, $space ) . '&nbsp;' . substr( $str, $space + 1 );
-    }
-
-    // Return the string.
-    return $str;
 }

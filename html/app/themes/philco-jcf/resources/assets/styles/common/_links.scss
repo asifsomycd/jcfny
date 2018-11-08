@@ -73,7 +73,8 @@
         color: $white;
 
         &:hover {
-            color: $tealish;
+            color: $white;
+            text-decoration: underline;
         }
     }
 
