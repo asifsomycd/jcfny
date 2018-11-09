@@ -13,7 +13,7 @@
                     <div class="related-post">
                         @include('partials/entry-meta')
                         <h3 class="related-post__title"><a href="{{ get_the_permalink() }}">{!! get_the_title() !!}</a></h3>
-                        <a href="{{ get_the_permalink() }}" class="read-more">Read more</a>
+                        <a href="{{ get_the_permalink() }}" class="more-link">Read more</a>
                     </div>
                 @endwhile
                 @php wp_reset_postdata() @endphp

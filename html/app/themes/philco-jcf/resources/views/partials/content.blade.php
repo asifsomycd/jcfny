@@ -8,6 +8,9 @@
 	</header>
 
 	<div class="entry-summary col-12 col-lg-6">
-		@php the_excerpt() @endphp
+		@php
+			$more_tag = strpos($post->post_content, '<!--more-->');
+			$more_tag ? the_content('Continued') : the_excerpt();
+		@endphp
 	</div>
 </article>

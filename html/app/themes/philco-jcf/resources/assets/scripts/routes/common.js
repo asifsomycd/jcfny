@@ -14,9 +14,9 @@ export default {
         // Add data-widow-skip to any heading to skip processing
 
             $( 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6' ).not( '.fix-widow-skip' ).each(
-                ( i, el ) => $( el ).text(
+                ( i, el ) => $( el ).html(
                     function() {
-                        return $( this ).text().replace( /\s([^\s<]+)\s*$/, '\u00A0$1' );
+                        return $( this ).html().replace( /\s([^\s<]+)\s*$/, '\u00A0$1' );
                     }
                 )
             );
