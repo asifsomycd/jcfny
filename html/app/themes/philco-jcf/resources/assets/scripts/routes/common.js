@@ -49,6 +49,7 @@ export default {
 		// JavaScript to be fired on all pages, after page specific JS is fired
 
         // Animation; elements with data-scroll
+        // Count up numbers if needed
 
             ScrollOut( {
                 onShown:    ( el ) => {
@@ -56,8 +57,25 @@ export default {
 
                     if ( $( el ).hasClass( 'count-up' ) ) {
                         let $countTarget = $( el ).find( '.count-up-target' );
-                        let countThis = new CountUp( $countTarget[0], 0, $countTarget.attr( 'data-end' ) );
-                        setTimeout( () => countThis.start(), 750 );
+                        let countEnd = $countTarget.attr( 'data-end' );
+                        let countDecimals = 0;
+
+                        if ( countEnd < 20 ) {
+                            countDecimals = 1;
+                            countEnd = countEnd - 0.1;
+                        }
+
+                        let countThis = new CountUp( $countTarget[0], 0, countEnd, countDecimals, 3 );
+
+                        setTimeout( () =>
+                            countThis.start( () => {
+                                if ( countDecimals > 0 ) {
+                                    $countTarget.text( countEnd + 0.1 );
+                                }
+
+                                $( el ).removeClass( 'count-up' );
+                            }
+                        ), 750 );
                     }
                 },
                 once:       true,
