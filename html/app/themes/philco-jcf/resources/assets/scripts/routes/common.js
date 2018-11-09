@@ -1,6 +1,7 @@
 import '../util/jquery.enllax';
 import 'imagesloaded';
 import ScrollOut from "scroll-out";
+import CountUp from "countup.js";
 import '../util/ios';
 import pushHistory from '../util/pushHistory';
 
@@ -50,7 +51,15 @@ export default {
         // Animation; elements with data-scroll
 
             ScrollOut( {
-                onShown:    ( el ) => $( el ).addClass( 'fadeInUp animated' ),
+                onShown:    ( el ) => {
+                    $( el ).addClass( 'fadeInUp animated' );
+
+                    if ( $( el ).hasClass( 'count-up' ) ) {
+                        let $countTarget = $( el ).find( '.count-up-target' );
+                        let countThis = new CountUp( $countTarget[0], 0, $countTarget.attr( 'data-end' ) );
+                        setTimeout( () => countThis.start(), 750 );
+                    }
+                },
                 once:       true,
                 threshold:  0.2,
             } );

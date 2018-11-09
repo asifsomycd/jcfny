@@ -77,7 +77,7 @@
         @if ( $fields['how_columns'] )
             <div class="home-block__how" data-enllax-ratio="0.1" data-enllax-background-align="right" data-scroll>
                 <div class="container text-center text-md-left">
-                    <h2>How It Works</h2>
+                    <h2>{{ $fields['how_title'] }}</h2>
                     <div class="row justify-content-center mt-4 mb-3">
                         @foreach ( $fields['how_columns'] as $column )
                             <div class="col-8 col-md-4 mb-4 mb-lg-0 pl-lg-4 pr-lg-4 text-center">
@@ -97,6 +97,36 @@
                         $fields['how_button'],
                         [ 'class' => 'btn btn-outline-light' ]
                     ) )
+                </div>
+            </div>
+        @endif
+
+        @if ( $fields['impact'] )
+            <div class="home-block__impact" data-scroll>
+                <div class="container text-center text-md-left">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <h2>{{ $fields['impact_title'] }}</h2>
+                            {!! $fields['impact_text'] !!}
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-4 mb-3">
+                        @foreach ( $fields['impact'] as $column )
+                            <div class="home-block__impact-column count-up col-8 col-md-4 mb-4 mb-lg-0 {{ !$loop->first ? 'pl-lg-5' : '' }} {{ !$loop->last ? 'pr-lg-5' : '' }} text-center text-md-left" data-scroll>
+                                <div class="home-block__impact-text">
+                                    {{ $column['pre'] }}<span class="count-up-target" data-end="{!! $column['count'] !!}">{!! $column['count'] !!}</span>{{ $column['post'] }}
+                                </div>
+                                <p>
+                                    <strong>{{ $column['description'] }}</strong>
+                                </p>
+                            </div>
+                        @endforeach
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4 pr-lg-5">
+                            @include('partials.acf-link', $fields['impact_button'])
+                        </div>
+                    </div>
                 </div>
             </div>
         @endif
@@ -139,21 +169,15 @@
                         </div>
 
                         <div class="col-12 col-lg-8">
-                            <div id="faqs" class="collapsible">
+                            <div id="faqs">
                                 @foreach ( $fields['faq_faqs'] as $faq )
                                     <div class="faq">
-                                        <div class="faq__question collapsible__trigger" id="faq-q-{{ $loop->iteration }}">
-                                            <a class="btn btn-link collapsed"
-                                                href="#faq-a-{{ $loop->iteration }}"
-                                                data-toggle="collapse"
-                                                data-target="#faq-a-{{ $loop->iteration }}"
-                                                aria-expanded="false"
-                                                aria-controls="faq-a-{{ $loop->iteration }}">
+                                        <div class="faq__question">
+                                            <a class="btn btn-link" href="{{ $faq['link'] }}">
                                                 <div class="row">
                                                     <div class="col-auto pr-0">
                                                         <div class="faq__indicator fa-fw">
-                                                            <div class="plus"><i class="fas fa-fw fa-sm fa-plus"></i></div>
-                                                            <div class="minus"><i class="fas fa-fw fa-sm fa-minus"></i></div>
+                                                            <i class="far fa-fw fa-sm fa-arrow-right"></i>
                                                         </div>
                                                     </div>
                                                     <div class="col pl-0">
@@ -161,15 +185,6 @@
                                                     </div>
                                                 </div>
                                             </a>
-                                        </div>
-
-                                        <div id="faq-a-{{ $loop->iteration }}"
-                                            class="collapse collapsible__target"
-                                            aria-labelledby="faq-q-{{ $loop->iteration }}"
-                                            data-parent="#faqs">
-                                            <div class="faq__answer lead">
-                                                {!! $faq['text'] !!}
-                                            </div>
                                         </div>
                                     </div>
                                 @endforeach
@@ -190,10 +205,10 @@
                         </div>
                         <div class="col-12">
                             @include('partials.acf-link', $fields['advisors_button'])
-                            <div class="d-sm-none"><br></div>
+                            <div class="d-lg-none"><br></div>
                             @include('partials.acf-link', array_merge(
                                 $fields['advisors_link'],
-                                [ 'class' => 'link-tealish link-underline ml-sm-5' ]
+                                [ 'class' => 'link-tealish link-underline ml-lg-5' ]
                             ) )
                         </div>
                     </div>

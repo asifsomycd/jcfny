@@ -103,6 +103,37 @@
         }
 
 
+    // FAQ
+
+        .home-block__impact {
+            @extend .home-block;
+
+            @include wrapper($seafoam-green, true);
+
+            .acf-link {
+                width: 100%;
+            }
+        }
+
+        .home-block__impact-column {
+            @include media-breakpoint-up(md) {
+                border-right: 1px solid $white;
+
+                &:last-of-type {
+                    border-right: none;
+                }
+            }
+        }
+
+        .home-block__impact-text {
+            @extend .h1;
+
+            @include media-breakpoint-down(md) {
+                font-size: $h2-font-size;
+            }
+        }
+
+
     // Quote
 
         .home-block__quote {
