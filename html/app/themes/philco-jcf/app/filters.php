@@ -147,3 +147,11 @@ add_filter( 'gform_field_validation', function( $result, $value, $form, $field )
 
     return $result;
 }, 10, 4 );
+
+
+/**
+ * Gravity Forms set tabindex
+ */
+add_filter( 'gform_tabindex', function( $tabindex, $form ) {
+    return $form['id'] * 1000;
+}, 10, 2 );
