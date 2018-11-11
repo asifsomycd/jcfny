@@ -75,7 +75,7 @@
                     <div class="form__sidebar form__sidebar--mobile col-12 d-lg-none text-center">
                         <div class="sidebar__callout">
                             <div class="h4">Any Questions?</div>
-                            <div class="h3">Call {{ $site_phone }}</div>
+                            <div class="h3">Call <a href="{{ $site_phone_url }}" class="link-white">{{ $site_phone }}</a></div>
                             <a href="{{ get_the_permalink( $site_contact_page ) }}" class="btn btn-primary" target="_blank">Or Email Us</a>
                         </div>
                     </div>

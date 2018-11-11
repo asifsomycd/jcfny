@@ -171,57 +171,15 @@
         }
 
         .faq__indicator {
-            display: inline-block;
-            margin-right: 0.5rem;
-            position: relative;
-            vertical-align: top;
-
-            .plus,
-            .minus {
-                position: absolute;
-                    top: 0;
-                    left: 0;
-            }
-
-            .plus {
-                opacity: 0;
-            }
-
-            .minus {
-                opacity: 1;
-            }
+            @extend .collapsible__indicator;
         }
 
         .faq__question {
-            border-top: 2px solid transparentize($white, 0.6);
-
-            .btn {
-                color: $white;
-                font-size: $font-size-xl;
-                font-weight: $font-weight-bold;
-                padding-left: 0;
-                padding-right: 0;
-                text-align: left;
-                white-space: normal;
-            }
-
-            .collapsed .faq__indicator {
-                .plus {
-                    opacity: 1;
-                }
-
-                .minus {
-                    opacity: 0;
-                }
-            }
+            @extend .collapsible__trigger;
         }
 
         .faq:first-of-type .faq__question {
             border-top: 0;
-        }
-
-        .faq__answer {
-            padding: 0 0.5rem;
         }
 
 
@@ -255,6 +213,12 @@
     .page-template-template-contact {
         .hfeed {
             padding-bottom: 0;
+        }
+
+        .main h1 {
+            @include media-breakpoint-down(lg) {
+                font-size: $h2-font-size;
+            }
         }
     }
 
@@ -322,6 +286,41 @@
         @include wrapper($white);
 
         background-image: url(../images/background-arrows-d.svg);
+    }
+
+    #mobile-contact {
+        .wrap {
+            padding: 1rem 0;
+        }
+
+        .collapsible__title {
+            font-size: $h3-font-size;
+            font-family: $font-family-display;
+            font-weight: $font-weight-bold;
+            line-height: 1.2;
+
+            span {
+                display: block;
+                font-size: $h4-font-size;
+            }
+        }
+    }
+
+    #mobile-contact-collapse {
+        .collapsible__trigger {
+            border-top: 2px solid transparentize($white, 0.6);
+        }
+
+        .collapsible__target {
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                display: none;
+            }
+        }
     }
 
 

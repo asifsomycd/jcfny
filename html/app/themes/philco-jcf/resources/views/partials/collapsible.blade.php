@@ -1,5 +1,8 @@
-{{-- Removed functionality from the front-page. Keeping it for potential future use --}}
-<div id="{{ $id ?? 'collapse-' . uniqid() }}" class="collapsible">
+@php
+    $id = $id ?? 'collapse-' . uniqid();
+@endphp
+
+<div id="{{ $id }}" class="collapsible">
     @foreach ( $collapsibles as $collapsible )
         <div class="collapsible">
             <div class="collapsible__trigger" id="collapsible-q-{{ $loop->iteration }}">
@@ -16,7 +19,7 @@
                                 <div class="minus"><i class="fas fa-fw fa-sm fa-minus"></i></div>
                             </div>
                         </div>
-                        <div class="col pl-0">
+                        <div class="collapsible__title col pl-0">
                             {!! $collapsible['title'] !!}
                         </div>
                     </div>
@@ -26,7 +29,7 @@
             <div id="collapsible-a-{{ $loop->iteration }}"
                 class="collapse collapsible__target lead"
                 aria-labelledby="collapsible-q-{{ $loop->iteration }}"
-                data-parent="#collapsibles">
+                {{ $parent ? 'data-parent=#' . $id : '' }}>
                 {!! $collapsible['text'] !!}
             </div>
         </div>

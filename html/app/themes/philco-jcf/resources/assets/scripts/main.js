@@ -10,6 +10,7 @@ import common from './routes/common';
 import home from './routes/home';
 import singlePost from './routes/singlePost';
 import templateApplicationForm from './routes/templateApplicationForm';
+import templateContact from './routes/templateContact';
 
 /** Populate Router instance with DOM routes */
 const routes = new Router({
@@ -17,6 +18,7 @@ const routes = new Router({
   home,
   singlePost,
   templateApplicationForm,
+  templateContact,
 });
 
 // Load Events

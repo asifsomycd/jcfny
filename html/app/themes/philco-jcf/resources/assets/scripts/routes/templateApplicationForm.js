@@ -47,11 +47,11 @@ const $appForm = $( '.application-form > .gform_wrapper' );
 
             // Mobile scroll to progress indicator
 
-                if ( window.innerWidth <= 768 ) {
+                if ( window.innerWidth <= window.jcf.breakpointMd ) {
 
                     setTimeout( () => {
                         let scrollOffset = $( '.progress__step--' + appStep ).offset();
-                        $( '.form__progress-bar' ).animate( { 
+                        $( '.form__progress-bar' ).animate( {
                             scrollLeft: scrollOffset.left,
                         }, 250 );
                     }, 1000);

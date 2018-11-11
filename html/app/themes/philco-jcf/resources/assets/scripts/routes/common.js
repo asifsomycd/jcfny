@@ -142,7 +142,7 @@ export default {
                     top: $( '.sticky-header' ).outerHeight() + 16,
                 } );
 
-                if ( window.innerWidth <= 1200 ) {
+                if ( window.innerWidth <= window.jcf.breakpointXl ) {
                     $( 'body' ).css( {
                         marginTop: $( '.sticky-header' ).height(),
                     } );
@@ -203,17 +203,21 @@ export default {
         // .collapsible pushState
 
             $( '.collapsible__trigger' ).on( 'click', function() {
-                let targetHash =    $( this ).find( '.btn' ).data( 'target' ),
-                    $trigger =      $( this ).find( '.btn' ),
-                    locationHref =  window.location.href;
+                let targetHash      = $( this ).find( '.btn' ).data( 'target' ),
+                    $trigger        = $( this ).find( '.btn' ),
+                    locationHref    = window.location.href;
 
                 if ( window.location.hash ) {
                     locationHref = locationHref.replace( window.location.hash, '' );
                 }
 
+                if ( typeof targetHash === 'undefined' ) {
+                    targetHash = '';
+                }
+
                 pushHistory(
                     locationHref + targetHash,
-                    $.trim( $trigger.text() ) + ' | ' + window.jcf.site_title,
+                    $.trim( $trigger.text() ) + ' | ' + window.jcf.siteTitle,
                     $trigger.attr( 'href' )
                 );
             } );
