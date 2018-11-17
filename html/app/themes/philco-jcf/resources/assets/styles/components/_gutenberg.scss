@@ -90,3 +90,12 @@
         @extend .col-md-6;
     }
 }
+
+.wp-block-column:not(:first-child),
+.wp-block-column:nth-child(2n) {
+    margin-left: 0 !important;
+}
+
+.wp-block-column:not(:last-child) {
+    margin-right: 0 !important;
+}
