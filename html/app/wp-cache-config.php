@@ -5,6 +5,7 @@ WP-Cache Config Sample File
 See wp-cache.php for author details.
 */
 
+$dismiss_htaccess_warning = 1;
 $wp_cache_home_path = '/wp/';
 $wp_cache_slash_check = 1;
 $cache_page_secret = 'd5d13dcbbe539194e6dc8681bfb6a2da';
@@ -95,8 +96,8 @@ $wp_cache_no_cache_for_get = 1;
 $cache_scheduled_time = "00:00";
 $wp_cache_preload_interval = 600;
 $cache_schedule_type = 'interval';
-$wp_cache_preload_posts = 0;
-$wp_cache_preload_on = 0;
+$wp_cache_preload_posts = 'all';
+$wp_cache_preload_on = 1;
 $wp_cache_preload_taxonomies = 0;
 $wp_cache_preload_email_me = 0;
 $wp_cache_preload_email_volume = 'none';
