@@ -83,7 +83,7 @@
                             <div class="col-8 col-md-4 mb-4 mb-lg-0 pl-lg-4 pr-lg-4 text-center">
                                 <div class="row">
                                     <div class="col-12 col-lg-4 mb-4">
-                                        <img src="{{ $column['image']['sizes']['col-4'] }}">
+                                        <img src="{{ $column['image']['sizes']['col-4'] }}" alt="How It Works">
                                     </div>
                                     <div class="col-12 col-lg-8 text-lg-left">
                                         {!! $column['text'] !!}
