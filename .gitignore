@@ -27,3 +27,4 @@ debug.log
 .vscode
 .DS_Store
 wp-cache-config.php
+advanced-cache.php
