@@ -8,6 +8,10 @@ html/app/uploads/*
 !html/app/uploads/.gitkeep
 html/app/db.php
 
+# WP Super Cache
+html/app/cache/*
+!html/app/cache/.gitkeep
+
 # WordPress
 html/wp
 html/.htaccess
@@ -23,9 +27,7 @@ vendor/*
 
 # Never keep
 iworx-backup
+html/app/wflogs/
 debug.log
 .vscode
 .DS_Store
-html/app/advanced-cache.php
-html/app/db.php
-html/app/wp-cache-config.php
