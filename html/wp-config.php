@@ -9,6 +9,6 @@ require_once dirname(__DIR__) . '/config/application.php';
 
 // WP Super Cache
 define('WPCACHEHOME', getenv('WPCACHEHOME')); //Added by WP-Cache Manager
-define('WP_CACHE', true); //Added by WP-Cache Manager
+define('WP_CACHE', filter_var(getenv('WP_CACHE'), FILTER_VALIDATE_BOOLEAN)); //Added by WP-Cache Manager
 
 require_once ABSPATH . 'wp-settings.php';
