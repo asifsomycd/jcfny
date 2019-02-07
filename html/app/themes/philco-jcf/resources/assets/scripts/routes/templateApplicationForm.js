@@ -124,7 +124,7 @@ export default {
                 if ( ! $parent.data( 'toggled' ) ) {
                     // Let's show it and set toggled to true
 
-                    $parent.find( 'input:first' ).prop( 'checked', true ).trigger( 'click' );
+                    $parent.find( 'input:first' ).prop( 'checked', true ).trigger( 'change' );
                     $parent.find( 'label:first' ).text( function() {
                         return $( this ).text().replace( 'Add another', 'Remove' );
                     } );
@@ -134,7 +134,7 @@ export default {
                 } else {
                     // Let's hide it and set toggled to false
 
-                    $parent.find( 'input:last' ).prop( 'checked', true ).trigger( 'click' );
+                    $parent.find( 'input:last' ).prop( 'checked', true ).trigger( 'change' );
                     $parent.find( 'label:first' ).text( function() {
                         return $( this ).text().replace( 'Remove', 'Add another' );
                     } );
