@@ -5,7 +5,7 @@
 				@if ( is_404() )
 					<h1 class="entry-title h2" data-scroll>{!! $error_title !!}</h1>
         @elseif ( is_search() )
-        <h1 class="entry-title h2" data-scroll>Search Results for "{{ get_search_query() }}"</h1>
+        <h1 class="entry-title h2 fix-widow-skip" data-scroll>Search Results for &ldquo;{{ get_search_query() }}&rdquo;</h1>
         <div class="entry-meta">
           @php global $wp_query @endphp
           {{ $wp_query->found_posts }} results found
