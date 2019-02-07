@@ -155,3 +155,11 @@ add_filter( 'gform_field_validation', function( $result, $value, $form, $field )
 add_filter( 'gform_tabindex', function( $tabindex, $form ) {
     return $form['id'] * 1000;
 }, 10, 2 );
+
+
+/**
+ * Search template
+ */
+add_filter( 'get_search_form', function () {
+    return \App\template( 'partials.search-form' );
+} );

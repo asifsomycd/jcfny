@@ -1,6 +1,6 @@
 <footer class="site-footer">
 	<div class="container">
-		<div class="row justify-content-between">
+    <div class="row justify-content-between">
 			<div class="col-12 col-lg-7 col-xl-6">
 
 				<div class="row">
@@ -10,7 +10,26 @@
 							@if ( has_nav_menu( 'footer_1_navigation' ) )
 								{!! wp_nav_menu( [ 'theme_location' => 'footer_1_navigation', 'menu_class' => 'nav' ] ) !!}
 							@endif
-						</nav>
+            </nav>
+
+            <div class="search-link">
+              <span class="link-tealish link-underline" role="button" data-toggle="modal" data-target=".search-modal">
+                Search <i class="fas fa-search"></i>
+              </span>
+
+              @section('modal-body')
+                {!! get_search_form() !!}
+              @overwrite
+
+              @section('modals')
+                @parent
+
+                @include('partials.modal', [
+                    'class' => 'search-modal',
+                    'type'  => 'search',
+                ] )
+              @endsection
+            </div>
 					</div>
 
 					<div class="col-6">
@@ -32,17 +51,18 @@
 					] )
 				</div>
 
-				<div class="social">
-					<small>
-						@if ( $site_social )
-							@foreach ( $site_social as $social )
-								<a href="{{ $social['url'] }}" title="{{ $social['network'] }}" target="_blank" rel="nofollow">
-									<i class="fab fa-{{ $social['icon'] }} fa-2x fa-fw"></i>
-								</a>
-							@endforeach
-						@endif
-					</small>
-				</div>
+        <div class="social">
+          <small>
+            @if ( $site_social )
+              @foreach ( $site_social as $social )
+                <a href="{{ $social['url'] }}" title="{{ $social['network'] }}" target="_blank" rel="nofollow">
+                  <i class="fab fa-{{ $social['icon'] }} fa-2x fa-fw"></i>
+                </a>
+              @endforeach
+            @endif
+          </small>
+        </div>
+
 			</div>
 		</div>
 		<div id="colophon">

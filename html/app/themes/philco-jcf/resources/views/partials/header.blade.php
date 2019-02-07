@@ -49,22 +49,21 @@
 @section('modal-body')
 	{!! wp_nav_menu( [
 		'theme_location' => 'primary_navigation',
-		'menu_class' 	=> 'nav-mobile__primary',
-		'container'		=> false,
+		'menu_class' 	  => 'nav-mobile__primary',
+		'container'		  => false,
 	] ) !!}
 	{!! wp_nav_menu( [
 		'theme_location' => 'top_navigation',
-		'menu_class' 	=> 'nav-mobile__top',
-		'container'		=> false,
+		'menu_class' 	  => 'nav-mobile__top',
+		'container'		  => false,
 	] ) !!}
 @overwrite
 
-
 @section('modals')
-    @parent
+  @parent
 
 	@include('partials.modal', [
-	    'class'     => 'nav-modal',
-	    'type'		=> 'mobile-nav',
+	    'class' => 'nav-modal',
+	    'type'  => 'mobile-nav',
 	] )
 @endsection
