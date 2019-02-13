@@ -11,25 +11,6 @@
 								{!! wp_nav_menu( [ 'theme_location' => 'footer_1_navigation', 'menu_class' => 'nav' ] ) !!}
 							@endif
             </nav>
-
-            <div class="search-link">
-              <span class="link-tealish link-underline" role="button" data-toggle="modal" data-target=".search-modal">
-                Search <i class="fas fa-search"></i>
-              </span>
-
-              @section('modal-body')
-                {!! get_search_form() !!}
-              @overwrite
-
-              @section('modals')
-                @parent
-
-                @include('partials.modal', [
-                    'class' => 'search-modal',
-                    'type'  => 'search',
-                ] )
-              @endsection
-            </div>
 					</div>
 
 					<div class="col-6">

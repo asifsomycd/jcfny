@@ -2,14 +2,23 @@
 
     .nav-top {
         .menu-item {
-            a {
+            a:not(.search-link-trigger) {
                 @include link-underline;
+            }
+
+            a:not(.selector-is-not-specific-enough),
+            .search-link-trigger {
                 @include link-tealish;
 
                 padding: 1.1rem 1.25rem;
             }
 
-            &:last-of-type {
+            .search-link-trigger {
+              position: relative;
+              top: 1.1rem;
+            }
+
+            &.tagged {
                 a {
                     background: $tealish;
                     border-radius: $dropdown-border-radius;
@@ -18,6 +27,7 @@
                     font-family: $font-family-display;
                     font-size: $font-size-md;
                     margin-left: 1.25rem;
+                    // margin-right: 1.25rem;
                     text-align: center;
 
                     &::after {
@@ -26,6 +36,7 @@
 
                     &:hover {
                         box-shadow: $box-shadow;
+                        color: $white;
                     }
                 }
             }

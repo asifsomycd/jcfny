@@ -43,9 +43,12 @@ export default {
 
     // Nav
 
-    $('.nav-top .menu-item a').last().on('click', function() {
-      $(this).width($(this).width()).html('<i class="far fa-fw fa-spinner-third fa-spin"></i> Loading');
-    });
+    $('.nav-top .menu-item:not(.search-link)').last()
+      .addClass('tagged')
+      .find('a')
+        .on('click', function() {
+          $(this).width($(this).width()).html('<i class="far fa-fw fa-spinner-third fa-spin"></i> Loading');
+        });
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
@@ -82,6 +85,11 @@ export default {
       once: true,
       threshold: 0.2,
     });
+
+
+    // Move search link into place
+
+      $('.site-header .search-link').appendTo('#menu-top-navigation').show();
 
 
     // Sticky header and footer
@@ -159,9 +167,10 @@ export default {
 
       // Find last menu item (contact us), make it a button and move to top
 
-      $('.nav-mobile__top .menu-item').last().find('a')
-        .addClass('btn btn-outline-light')
-        .insertBefore('.nav-modal .nav-mobile__top');
+      $('.nav-mobile__top .menu-item').not('.search-link').last()
+        .find('a')
+          .addClass('btn btn-outline-light')
+          .insertBefore('.nav-modal .nav-mobile__top');
 
       $('.nav-mobile__top .menu-item:empty').remove();
 

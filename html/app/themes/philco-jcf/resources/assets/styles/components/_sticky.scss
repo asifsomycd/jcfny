@@ -33,8 +33,12 @@
                     padding: 1.1rem px-to-rem(13px);
                 }
 
-                &:last-of-type a {
+                &.tagged {
+                  a {
+                    margin-left: px-to-rem(6px);
+                    margin-right: px-to-rem(6px);
                     padding-bottom: 0.75rem;
+                  }
                 }
             }
         }

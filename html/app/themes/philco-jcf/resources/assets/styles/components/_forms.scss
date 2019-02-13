@@ -10,7 +10,7 @@
 // Search form
 
     .search-link {
-      @extend .mt-md-4;
+      display: none;
 
       span {
         cursor: pointer;
@@ -33,10 +33,16 @@
 
       .search-submit {
         @extend .btn;
-        @extend .btn-outline-light;
+        @extend .btn-primary;
 
         display: block;
         margin-left: auto;
+      }
+    }
+
+    .modal {
+      .search-submit {
+        @extend .btn-outline-light;
       }
     }
 

@@ -11,7 +11,8 @@
 							'theme_location' => 'top_navigation',
 							'menu_class' 	=> 'nav'
 						] ) !!}
-					@endif
+          @endif
+          @include('partials.search-link-modal')
 				</nav>
 			</div>
 		</div>

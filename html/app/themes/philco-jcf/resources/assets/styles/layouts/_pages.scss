@@ -182,6 +182,13 @@
             border-top: 0;
         }
 
+        // IE11
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            .faq__question .col {
+                flex: 1 1 auto;
+            }
+        }
+
 
     // Advisors
 
