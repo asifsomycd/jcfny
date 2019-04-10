@@ -565,19 +565,20 @@
         },
         {
             "name": "oscarotero/env",
-            "version": "v1.1.0",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oscarotero/env.git",
-                "reference": "0f676e41d758fa984806c32e27f0cf7afa63d8db"
+                "reference": "4ab45ce5c1f2c62549208426bfa20a3d5fa008c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oscarotero/env/zipball/0f676e41d758fa984806c32e27f0cf7afa63d8db",
-                "reference": "0f676e41d758fa984806c32e27f0cf7afa63d8db",
+                "url": "https://api.github.com/repos/oscarotero/env/zipball/4ab45ce5c1f2c62549208426bfa20a3d5fa008c6",
+                "reference": "4ab45ce5c1f2c62549208426bfa20a3d5fa008c6",
                 "shasum": ""
             },
             "require": {
+                "ext-ctype": "*",
                 "php": ">=5.2"
             },
             "type": "library",
@@ -603,7 +604,7 @@
             "keywords": [
                 "env"
             ],
-            "time": "2017-07-17T20:41:59+00:00"
+            "time": "2019-04-03T18:28:43+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -1756,16 +1757,16 @@
         },
         {
             "name": "yoast/wordpress-seo",
-            "version": "10.1.1",
+            "version": "10.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Yoast-dist/wordpress-seo.git",
-                "reference": "dc2160daf728cc7372b0fcd5cf7ba381a10df4d4"
+                "reference": "369279f76c0fbd6080ee53411a5f0eef7d027925"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Yoast-dist/wordpress-seo/zipball/dc2160daf728cc7372b0fcd5cf7ba381a10df4d4",
-                "reference": "dc2160daf728cc7372b0fcd5cf7ba381a10df4d4",
+                "url": "https://api.github.com/repos/Yoast-dist/wordpress-seo/zipball/369279f76c0fbd6080ee53411a5f0eef7d027925",
+                "reference": "369279f76c0fbd6080ee53411a5f0eef7d027925",
                 "shasum": ""
             },
             "require": {
@@ -1817,7 +1818,7 @@
                 "seo",
                 "wordpress"
             ],
-            "time": "2019-04-02T12:23:19+00:00"
+            "time": "2019-04-04T15:27:20+00:00"
         }
     ],
     "packages-dev": [
@@ -1827,12 +1828,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "0698207bf8a9bed212fdde2d8c7cdc77085660c4"
+                "reference": "a0112223428a14391f094c5fa7301677d49bccf2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/0698207bf8a9bed212fdde2d8c7cdc77085660c4",
-                "reference": "0698207bf8a9bed212fdde2d8c7cdc77085660c4",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/a0112223428a14391f094c5fa7301677d49bccf2",
+                "reference": "a0112223428a14391f094c5fa7301677d49bccf2",
                 "shasum": ""
             },
             "conflict": {
@@ -1852,8 +1853,8 @@
                 "codeigniter/framework": "<=3.0.6",
                 "composer/composer": "<=1.0.0-alpha11",
                 "contao-components/mediaelement": ">=2.14.2,<2.21.1",
-                "contao/core": ">=2,<3.5.35",
-                "contao/core-bundle": ">=4,<4.4.18|>=4.5,<4.5.8",
+                "contao/core": ">=2,<3.5.39",
+                "contao/core-bundle": ">=4,<4.4.37|>=4.5,<4.7.3",
                 "contao/listing-bundle": ">=4,<4.4.8",
                 "contao/newsletter-bundle": ">=4,<4.1",
                 "david-garcia/phpwhois": "<=4.3.1",
@@ -1869,7 +1870,7 @@
                 "dompdf/dompdf": ">=0.6,<0.6.2",
                 "drupal/core": ">=7,<7.64|>=8,<8.5.13|>=8.6,<8.6.12",
                 "drupal/drupal": ">=7,<7.64|>=8,<8.5.13|>=8.6,<8.6.12",
-                "erusev/parsedown": "<1.7",
+                "erusev/parsedown": "<1.7.2",
                 "ezsystems/ezpublish-kernel": ">=5.3,<5.3.12.1|>=5.4,<5.4.13.1|>=6,<6.7.9.1|>=6.8,<6.13.5.1|>=7,<7.2.4.1|>=7.3,<7.3.2.1",
                 "ezsystems/ezpublish-legacy": ">=5.3,<5.3.12.6|>=5.4,<5.4.12.3|>=2011,<2017.12.4.3|>=2018.6,<2018.6.1.4|>=2018.9,<2018.9.1.3",
                 "ezsystems/repository-forms": ">=2.3,<2.3.2.1",
@@ -2024,7 +2025,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2019-03-28T22:30:08+00:00"
+            "time": "2019-04-09T13:39:27+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",

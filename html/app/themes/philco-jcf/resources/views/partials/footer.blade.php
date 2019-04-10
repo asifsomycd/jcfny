@@ -45,7 +45,12 @@
         </div>
 
 			</div>
-		</div>
+    </div>
+
+    <!--IXF: The following <div> block needs to be placed in the location where the link equity block will be displayed-->
+    <div class="be-ix-link-block"><!--Link Equity Target Div--></div>
+    <!--IXF: end-->
+
 		<div id="colophon">
 			&copy; {{ date( 'Y' ) }} {!! $site_name !!}
 			@if ( has_nav_menu( 'colophon_navigation' ) )
