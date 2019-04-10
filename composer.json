@@ -51,11 +51,11 @@
       "type": "package",
       "package": {
         "name": "gravityforms/gravityforms",
-        "version": "2.4.6.15",
+        "version": "2.4.8.3",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://s3.amazonaws.com/gravityforms/releases/gravityforms_2.4.6.15.zip?AWSAccessKeyId=AKIAJC3LQNDWHBOFBQIA&Expires=1553642465&Signature=X0ejz6FFjcihyfM1CmZdj%2BpOO3I%3D"
+          "url": "https://s3.amazonaws.com/gravityforms/releases/gravityforms_2.4.8.3.zip?AWSAccessKeyId=AKIAJC3LQNDWHBOFBQIA&Expires=1555023914&Signature=7J3vCapDSocjd3XFl9L0TaPOE14%3D"
         }
       }
     },
@@ -67,7 +67,7 @@
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://s3.amazonaws.com/gravityforms/addons/gutenberg/gravityformsgutenberg_1.0-rc-1.2.zip?AWSAccessKeyId=AKIAJC3LQNDWHBOFBQIA&Expires=1548044833&Signature=v4bHgPExP0rZWSUid%2BCLhltsctM%3D"
+          "url": "https://s3.amazonaws.com/gravityforms/addons/gutenberg/gravityformsgutenberg_1.0-rc-1.2.zip?AWSAccessKeyId=AKIAJC3LQNDWHBOFBQIA&Expires=1554951914&Signature=dRWGucypMJIRZGCqPyOr6Z1CTlw%3D"
         }
       }
     },
@@ -79,7 +79,7 @@
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://s3.amazonaws.com/gravityforms/addons/restapi/gravityformsrestapi_2.0-rc-1.zip?AWSAccessKeyId=AKIAJC3LQNDWHBOFBQIA&Expires=1548044833&Signature=aas2y4a%2Fo5R6HqenL6p3zCDht80%3D"
+          "url": "https://s3.amazonaws.com/gravityforms/addons/restapi/gravityformsrestapi_2.0-rc-1.zip?AWSAccessKeyId=AKIAJC3LQNDWHBOFBQIA&Expires=1554951914&Signature=hIdwJFapPoYo1zzXooNa3tRU9vg%3D"
         }
       }
     },
@@ -91,7 +91,7 @@
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://s3.amazonaws.com/gravityforms/addons/mailchimp/gravityformsmailchimp_4.6.zip?AWSAccessKeyId=AKIAJC3LQNDWHBOFBQIA&Expires=1553642467&Signature=3FzF16509kLatTdlz9UAsFBgQ6c%3D"
+          "url": "https://s3.amazonaws.com/gravityforms/addons/mailchimp/gravityformsmailchimp_4.6.zip?AWSAccessKeyId=AKIAJC3LQNDWHBOFBQIA&Expires=1555023915&Signature=pZRa0cbfdWv%2B%2FE%2FyS%2Fv6VkOHx6Y%3D"
         }
       }
     },
@@ -103,7 +103,7 @@
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://s3.amazonaws.com/gravityforms/addons/partialentries/gravityformspartialentries_1.3.zip?AWSAccessKeyId=AKIAJC3LQNDWHBOFBQIA&Expires=1548116834&Signature=AJqDhT4vQOLmYws%2FVu6k0%2Bzd2QU%3D"
+          "url": "https://s3.amazonaws.com/gravityforms/addons/partialentries/gravityformspartialentries_1.3.zip?AWSAccessKeyId=AKIAJC3LQNDWHBOFBQIA&Expires=1555023915&Signature=EFrWMvv2Q49Bqn8CId0Jc15SGH8%3D"
         }
       }
     },
@@ -153,7 +153,7 @@
     "roots/wp-password-bcrypt": "1.0.0",
     "roots/wp-config": "1.0.0",
     "advanced-custom-fields/advanced-custom-fields-pro": "5.7.13",
-    "gravityforms/gravityforms": "2.4.6.15",
+    "gravityforms/gravityforms": "2.4.8.3",
     "gravityforms/gravityformsrestapi": "2.*",
     "gravityforms/gravityformsgutenberg": "1.*",
     "gravityforms/gravityformspartialentries": "^1.3",

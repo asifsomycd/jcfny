@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e312fca334cdb9916b7c04e7739daa42",
+    "content-hash": "6ea3e6d603eca495996931db7e9c20f9",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -154,10 +154,10 @@
         },
         {
             "name": "gravityforms/gravityforms",
-            "version": "2.4.6.15",
+            "version": "2.4.8.3",
             "dist": {
                 "type": "zip",
-                "url": "https://s3.amazonaws.com/gravityforms/releases/gravityforms_2.4.6.15.zip?AWSAccessKeyId=AKIAJC3LQNDWHBOFBQIA&Expires=1553642465&Signature=X0ejz6FFjcihyfM1CmZdj%2BpOO3I%3D",
+                "url": "https://s3.amazonaws.com/gravityforms/releases/gravityforms_2.4.8.3.zip?AWSAccessKeyId=AKIAJC3LQNDWHBOFBQIA&Expires=1555023914&Signature=7J3vCapDSocjd3XFl9L0TaPOE14%3D",
                 "reference": null,
                 "shasum": null
             },
