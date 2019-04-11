@@ -5,5 +5,3 @@ if (file_exists('/home/jcfnyorg/jcfny.org/html/app/plugins/wordfence/waf/bootstr
         define("WFWAF_LOG_PATH", '/home/jcfnyorg/jcfny.org/html/app/wflogs/');
         include_once '/home/jcfnyorg/jcfny.org/html/app/plugins/wordfence/waf/bootstrap.php';
 }
-?>
-
