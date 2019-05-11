@@ -55,8 +55,10 @@
     margin-bottom: $paragraph-margin-bottom;
   }
 
-  .entry-title {
-    font-size: 2.75rem;
+  @include media-breakpoint-up(md) {
+    .entry-title {
+      font-size: 2.75rem;
+    }
   }
 }
 
