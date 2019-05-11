@@ -1,58 +1,55 @@
 // IE / Edge
 
-    .col {
-        flex-basis: 0%;
-    }
-
+.col {
+  flex-basis: 0%;
+}
 
 // Typography
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    .h1,
-    .h2,
-    .h3,
-    .h4,
-    .h5,
-    .h6 {
-        em {
-            font-family: $font-family-sans-serif;
-        }
-    }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  em {
+    font-family: $font-family-sans-serif;
+  }
+}
 
-    @include media-breakpoint-down(sm) {
-        h1,
-        .h1 {
-            font-size: $h2-font-size;
-        }
-    }
-
+@include media-breakpoint-down(sm) {
+  h1,
+  .h1 {
+    font-size: $h2-font-size;
+  }
+}
 
 // Transitions
 
-    .btn,
-    a {
-        transition: $transition-default;
-    }
-
+.btn,
+a {
+  transition: $transition-default;
+}
 
 // Imagery
 
-    figure,
-    img {
-        @extend .img-fluid;
-    }
+figure,
+img {
+  @extend .img-fluid;
+}
 
-    @mixin background-cover {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+@mixin background-cover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-    .background-cover {
-        @include background-cover;
-    }
+.background-cover {
+  @include background-cover;
+}

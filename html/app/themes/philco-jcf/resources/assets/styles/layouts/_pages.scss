@@ -2,598 +2,585 @@
 
 // Home
 
-    .home {
-        .hfeed {
-            padding-bottom: 0;
-        }
+.home {
+  .hfeed {
+    padding-bottom: 0;
+  }
 
-        .acf-link {
-            font-size: $font-size-md;
-        }
+  .acf-link {
+    font-size: $font-size-md;
+  }
 
-        @include media-breakpoint-down(md) {
-            .btn {
-                width: 100%;
-            }
-        }
+  @include media-breakpoint-down(md) {
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+// Blocks
+
+.home-block {
+  background-repeat: no-repeat;
+  background-position: right center;
+
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4,
+  h5,
+  .h5,
+  h6,
+  .h6 {
+    margin-bottom: 0.5rem;
+  }
+}
+
+// Headline
+
+.home-block__headline {
+  @extend .home-block;
+
+  @include wrapper($pale-gray);
+
+  background-image: url(../images/background-arrows-a.svg);
+  padding-bottom: $wrapper-spacing / 2;
+  padding-top: $wrapper-spacing / 2;
+
+  &_cta {
+    margin-bottom: $paragraph-margin-bottom;
+  }
+
+  .entry-title {
+    font-size: 2.75rem;
+  }
+}
+
+// Image
+
+.home-block__image {
+  @extend .home-block;
+
+  &_container {
+    @include media-breakpoint-up(lg) {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  &_block {
+    background-color: $cloudy-blue;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include media-breakpoint-down(md) {
+      padding-top: 56.25%;
     }
 
+    @media (min-width: 1600px) {
+      background-position: right center;
+      max-width: 50%;
+    }
+  }
+}
 
-    // Blocks
+// How It Works
 
-        .home-block {
-            background-repeat: no-repeat;
-            background-position: right center;
+.home-block__how {
+  @extend .home-block;
 
-            h1,
-            .h1,
-            h2,
-            .h2,
-            h3,
-            .h3,
-            h4,
-            .h4,
-            h5,
-            .h5,
-            h6,
-            .h6 {
-                margin-bottom: 0.5rem;
-            }
-        }
+  @include wrapper($blueberry, true);
 
+  background-image: url(../images/background-arrows-b.svg);
+}
 
-    // Headline
+// FAQ
 
-        .home-block__headline {
-            @extend .home-block;
+.home-block__impact {
+  @extend .home-block;
 
-            @include wrapper($pale-gray);
+  @include wrapper($seafoam-green, true);
 
-            background-image: url(../images/background-arrows-a.svg);
-            padding-bottom: $wrapper-spacing / 2;
-            padding-top: $wrapper-spacing / 2;
+  .acf-link {
+    width: 100%;
+  }
+}
 
-            &_cta {
-                margin-bottom: $paragraph-margin-bottom;
-            }
-        }
+.home-block__impact-column {
+  @include media-breakpoint-up(md) {
+    border-right: 1px solid $white;
 
+    &:last-of-type {
+      border-right: none;
+    }
+  }
+}
 
-    // Image
+.home-block__impact-text {
+  @extend .h1;
 
-        .home-block__image {
-            @extend .home-block;
+  @include media-breakpoint-down(md) {
+    font-size: $h2-font-size;
+  }
+}
 
-            &_container {
-                @include media-breakpoint-up(lg) {
-                    height: 100%;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                }
-            }
+// Quote
 
-            &_block {
-                background-color: $cloudy-blue;
-                background-position: center center;
-                background-repeat: no-repeat;
-                background-size: contain;
+.home-block__quote {
+  @extend .home-block;
 
-                @include media-breakpoint-down(md) {
-                    padding-top: 56.25%;
-                }
+  @include wrapper($pale-gray);
 
-                @media (min-width: 1600px) {
-                    background-position: right center;
-                    max-width: 50%;
-                }
-            }
-        }
+  background-image: url(../images/background-arrows-c.svg);
+  background-position: right top;
+}
 
+.home-block__quote-author {
+  color: $blueberry;
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  font-style: italic;
+}
 
-    // How It Works
+.home-block__quote-title {
+  color: $seafoam-green;
+  font-weight: $font-weight-bold;
+  font-style: italic;
+}
 
-        .home-block__how {
-            @extend .home-block;
+// FAQ
 
-            @include wrapper($blueberry, true);
+.home-block__faq {
+  @extend .home-block;
 
-            background-image: url(../images/background-arrows-b.svg);
-        }
+  @include wrapper($seafoam-green, true);
 
+  background-image: url(../images/background-arrows-e.svg);
+  background-position: left center;
+}
 
-    // FAQ
+.faq__indicator {
+  @extend .collapsible__indicator;
+}
 
-        .home-block__impact {
-            @extend .home-block;
+.faq__question {
+  @extend .collapsible__trigger;
+}
 
-            @include wrapper($seafoam-green, true);
+.faq:first-of-type .faq__question {
+  border-top: 0;
+}
 
-            .acf-link {
-                width: 100%;
-            }
-        }
+// IE11
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .faq__question .col {
+    flex: 1 1 auto;
+  }
+}
 
-        .home-block__impact-column {
-            @include media-breakpoint-up(md) {
-                border-right: 1px solid $white;
+// Advisors
 
-                &:last-of-type {
-                    border-right: none;
-                }
-            }
-        }
+.home-block__advisors {
+  @extend .home-block;
 
-        .home-block__impact-text {
-            @extend .h1;
+  @include wrapper($white);
 
-            @include media-breakpoint-down(md) {
-                font-size: $h2-font-size;
-            }
-        }
+  background-image: url(../images/background-arrows-d.svg);
+  position: relative;
+}
 
-
-    // Quote
-
-        .home-block__quote {
-            @extend .home-block;
-
-            @include wrapper($pale-gray);
-
-            background-image: url(../images/background-arrows-c.svg);
-            background-position: right top;
-        }
-
-        .home-block__quote-author {
-            color: $blueberry;
-            font-size: $font-size-xl;
-            font-weight: $font-weight-bold;
-            font-style: italic;
-        }
-
-        .home-block__quote-title {
-            color: $seafoam-green;
-            font-weight: $font-weight-bold;
-            font-style: italic;
-        }
-
-
-    // FAQ
-
-        .home-block__faq {
-            @extend .home-block;
-
-            @include wrapper($seafoam-green, true);
-
-            background-image: url(../images/background-arrows-e.svg);
-            background-position: left center;
-        }
-
-        .faq__indicator {
-            @extend .collapsible__indicator;
-        }
-
-        .faq__question {
-            @extend .collapsible__trigger;
-        }
-
-        .faq:first-of-type .faq__question {
-            border-top: 0;
-        }
-
-        // IE11
-        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-            .faq__question .col {
-                flex: 1 1 auto;
-            }
-        }
-
-
-    // Advisors
-
-        .home-block__advisors {
-            @extend .home-block;
-
-            @include wrapper($white);
-
-            background-image: url(../images/background-arrows-d.svg);
-            position: relative;
-        }
-
-        .parallax-badge {
-            background-image: url(../images/jcf-badge.svg);
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: px-to-rem(296px) auto;
-            opacity: 0.4;
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            width: 50%;
-        }
-
+.parallax-badge {
+  background-image: url(../images/jcf-badge.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: px-to-rem(296px) auto;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+}
 
 // Contact
 
-    .page-template-template-contact {
-        .hfeed {
-            padding-bottom: 0;
-        }
+.page-template-template-contact {
+  .hfeed {
+    padding-bottom: 0;
+  }
 
-        .main h1 {
-            @include media-breakpoint-down(lg) {
-                font-size: $h2-font-size;
-            }
-        }
+  .main h1 {
+    @include media-breakpoint-down(lg) {
+      font-size: $h2-font-size;
     }
+  }
+}
 
-    .contact-block__left-right {
-        background-color: $seafoam-green;
-        position: relative;
+.contact-block__left-right {
+  background-color: $seafoam-green;
+  position: relative;
 
-        .contact-block__left-background,
-        .contact-block__right-background {
-            background-repeat: no-repeat;
-            position: absolute;
-                top: 0;
-            height: 100%;
-            width: 50%;
+  .contact-block__left-background,
+  .contact-block__right-background {
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
 
-            @include media-breakpoint-down(md) {
-                height: 50%;
-                width: 100%;
-            }
-        }
-
-        .contact-block__left-background {
-            @include wrapper($seafoam-green);
-
-            background-image: url(../images/background-arrows-e.svg);
-            background-position: left center;
-            left: 0;
-
-            @include media-breakpoint-down(md) {
-                left: auto;
-            }
-        }
-
-        .contact-block__right-background {
-            @include wrapper($blueberry, true);
-
-            background-image: url(../images/background-arrows-b.svg);
-            background-position: right center;
-            right: 0;
-
-            @include media-breakpoint-down(md) {
-                right: auto;
-                top: 50%;
-            }
-        }
-
-        .contact-block__left,
-        .contact-block__right {
-            @extend .home-block;
-
-            @include wrapper(transparent, true);
-
-            padding-left: $grid-gutter-width / 2;
-            padding-right: $grid-gutter-width / 2;
-
-            // .ginput_container input {
-            //     background-color: transparentize($white, 0.5);
-            // }
-        }
+    @include media-breakpoint-down(md) {
+      height: 50%;
+      width: 100%;
     }
+  }
 
-    .contact-block__form {
-        @extend .home-block;
+  .contact-block__left-background {
+    @include wrapper($seafoam-green);
 
-        @include wrapper($white);
+    background-image: url(../images/background-arrows-e.svg);
+    background-position: left center;
+    left: 0;
 
-        background-image: url(../images/background-arrows-d.svg);
+    @include media-breakpoint-down(md) {
+      left: auto;
     }
+  }
 
-    #mobile-contact {
-        .wrap {
-            padding: 1rem 0;
-        }
+  .contact-block__right-background {
+    @include wrapper($blueberry, true);
 
-        .collapsible__title {
-            font-size: $h3-font-size;
-            font-family: $font-family-display;
-            font-weight: $font-weight-bold;
-            line-height: 1.2;
+    background-image: url(../images/background-arrows-b.svg);
+    background-position: right center;
+    right: 0;
 
-            span {
-                display: block;
-                font-size: $h4-font-size;
-            }
-        }
+    @include media-breakpoint-down(md) {
+      right: auto;
+      top: 50%;
     }
+  }
 
-    #mobile-contact-collapse {
-        .collapsible__trigger {
-            border-top: 2px solid transparentize($white, 0.6);
-        }
+  .contact-block__left,
+  .contact-block__right {
+    @extend .home-block;
 
-        .collapsible__target {
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6 {
-                display: none;
-            }
-        }
+    @include wrapper(transparent, true);
+
+    padding-left: $grid-gutter-width / 2;
+    padding-right: $grid-gutter-width / 2;
+
+    // .ginput_container input {
+    //     background-color: transparentize($white, 0.5);
+    // }
+  }
+}
+
+.contact-block__form {
+  @extend .home-block;
+
+  @include wrapper($white);
+
+  background-image: url(../images/background-arrows-d.svg);
+}
+
+#mobile-contact {
+  .wrap {
+    padding: 1rem 0;
+  }
+
+  .collapsible__title {
+    font-size: $h3-font-size;
+    font-family: $font-family-display;
+    font-weight: $font-weight-bold;
+    line-height: 1.2;
+
+    span {
+      display: block;
+      font-size: $h4-font-size;
     }
+  }
+}
 
+#mobile-contact-collapse {
+  .collapsible__trigger {
+    border-top: 2px solid transparentize($white, 0.6);
+  }
+
+  .collapsible__target {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      display: none;
+    }
+  }
+}
 
 // Application Form
 
-    .page-template-template-application-form {
+.page-template-template-application-form {
+  // Gravity Forms
 
-        // Gravity Forms
+  .gform_ajax_spinner {
+    display: none !important;
+  }
 
-            .gform_ajax_spinner {
-                display: none !important;
-            }
+  .gf_progressbar_wrapper {
+    display: none;
+  }
 
-            .gf_progressbar_wrapper {
-                display: none;
-            }
+  .gform_next_button {
+    min-width: 220px;
+  }
 
-            .gform_next_button {
-                min-width: 220px;
-            }
-
-            .gform_wrapper {
-                label {
-                    color: $blueberry;
-                    font-size: $font-size-md;
-                }
-            }
-
-            .gform_page_fields {
-                @extend .mb-5;
-            }
-
-            .ginput_container_radio,
-            .ginput_container_checkbox {
-                label {
-                    color: $body-color;
-                }
-            }
-
-
-        // Structure
-
-            .hfeed {
-                padding-bottom: 0;
-            }
-
-            .form__intro,
-            .app--step-0 .form__app,
-            .application-form {
-                display: none;
-            }
-
-            &.app--step-0 {
-                .form__intro {
-                    display: block;
-                }
-            }
-
-            &:not(.app--step-0) {
-                .nav-primary,
-                .sticky-header__nav-primary {
-                    display: none;
-                }
-            }
-
-
-        // Form Introduction (step 0)
-
-            .form__intro {
-                .form__intro__text ul {
-                    padding-left: 1.25rem;
-                }
-
-                .gform_wrapper label {
-                    color: $white;
-                    font-weight: $font-weight-normal;
-                }
-
-                .gform_page_fields {
-                    margin-bottom: 0 !important;
-                }
-
-                .gform_page_footer {
-                    text-align: right;
-                }
-
-                .gform_next_button {
-                    @extend .btn-outline-light;
-                }
-            }
-
-
-        // Form Application
-
-            .form__wrapper {
-                background: $gray-100;
-                position: relative;
-
-                &::before {
-                    background-color: $seafoam-green;
-                    content: '';
-                    height: 100%;
-                    position: absolute;
-                        top: 0;
-                        left: 0;
-                    width: 50%;
-                }
-
-                @include media-breakpoint-down(md) {
-                    & > .container {
-                        max-width: 100%;
-                    }
-
-                    &::before {
-                        display: none;
-                    }
-                }
-            }
-
-
-            // Progress bar
-
-                .form__progress-bar {
-                    line-height: 1;
-                    padding-bottom: $wrapper-spacing / 2;
-                    padding-top: $wrapper-spacing / 2;
-
-                    @include media-breakpoint-down(md) {
-                        overflow-x: auto;
-                        padding-top: $paragraph-margin-bottom;
-                        padding-bottom: $paragraph-margin-bottom;
-                        position: relative;
-
-                        & > .container {
-                            max-width: 100%;
-                        }
-                    }
-                }
-
-                .progress__step {
-                    color: $cloudy-blue;
-
-                    &:last-of-type {
-                        .progress__indicator::before {
-                            right: 0;
-                        }
-                    }
-
-                    &.is-active {
-                        color: $white;
-
-                        .progress__circle {
-                            background-color: $white;
-                            border-color: $cloudy-blue;
-                        }
-                    }
-
-                    @include media-breakpoint-down(sm) {
-                        font-size: $font-size-sm;
-                        padding-left: 8px;
-                        padding-right: 8px;
-                        white-space: no-wrap;
-                    }
-                }
-
-                .progress__indicator {
-                    margin-bottom: 0.5rem;
-                    position: relative;
-
-                    &::before {
-                        background-color: $dark-lavender;
-                        content: '';
-                        height: 3px;
-                        position: absolute;
-                            top: 44%;
-                            left: 0;
-                            right: -$grid-gutter-width;
-                        transform: translateY(-50%);
-                    }
-                }
-
-                .progress__circle {
-                    background-color: $blueberry;
-                    border: 3px solid $dark-lavender;
-                    border-radius: 50%;
-                    display: inline-block;
-                    height: 1.25rem;
-                    position: relative;
-                    width: 1.25rem;
-                    z-index: 1;
-                }
-
-
-            // Form Sidebar
-
-                .form__sidebar {
-                    @include wrapper($seafoam-green, true);
-
-                    font-size: $font-size-md;
-                    padding-left: $grid-gutter-width / 2;
-                    padding-right: $grid-gutter-width / 2;
-
-                    @include media-breakpoint-down(md) {
-                        padding-top: $paragraph-margin-bottom;
-                        padding-bottom: $paragraph-margin-bottom;
-                    }
-
-                    img {
-                        margin-bottom: $paragraph-margin-bottom;
-                    }
-
-                    .h4 {
-                        color: $blueberry !important;
-                        margin-bottom: 0.25rem;
-                    }
-
-                    .btn {
-                        min-width: 220px;
-                    }
-                }
-
-
-            // The main form area
-
-                .form__entree {
-                    @include wrapper($gray-100);
-
-                    padding-left: $grid-gutter-width / 2;
-                    padding-right: $grid-gutter-width / 2;
-
-                    @include media-breakpoint-down(md) {
-                        padding-top: $wrapper-spacing / 2;
-
-                        .gform_page_footer {
-                            display: flex;
-                            flex-wrap: wrap;
-
-                            .button {
-                                margin-bottom: 0.5rem;
-                            }
-
-                            .gform_next_button {
-                                order: -1;
-                                width: 100%;
-                            }
-                        }
-                    }
-                }
-
-                .add-another {
-                    color: $blueberry;
-                    font-weight: $font-weight-bold;
-
-                    .add-another__button,
-                    label {
-                        cursor: pointer;
-                    }
-
-                    .add-another__button {
-                        font-size: $font-size-md;
-                        margin-right: 0.25rem;
-                        vertical-align: middle;
-                    }
-
-                    .ginput_container {
-                        display: none;
-                    }
-                }
+  .gform_wrapper {
+    label {
+      color: $blueberry;
+      font-size: $font-size-md;
     }
+  }
+
+  .gform_page_fields {
+    @extend .mb-5;
+  }
+
+  .ginput_container_radio,
+  .ginput_container_checkbox {
+    label {
+      color: $body-color;
+    }
+  }
+
+  // Structure
+
+  .hfeed {
+    padding-bottom: 0;
+  }
+
+  .form__intro,
+  .app--step-0 .form__app,
+  .application-form {
+    display: none;
+  }
+
+  &.app--step-0 {
+    .form__intro {
+      display: block;
+    }
+  }
+
+  &:not(.app--step-0) {
+    .nav-primary,
+    .sticky-header__nav-primary {
+      display: none;
+    }
+  }
+
+  // Form Introduction (step 0)
+
+  .form__intro {
+    .form__intro__text ul {
+      padding-left: 1.25rem;
+    }
+
+    .gform_wrapper label {
+      color: $white;
+      font-weight: $font-weight-normal;
+    }
+
+    .gform_page_fields {
+      margin-bottom: 0 !important;
+    }
+
+    .gform_page_footer {
+      text-align: right;
+    }
+
+    .gform_next_button {
+      @extend .btn-outline-light;
+    }
+  }
+
+  // Form Application
+
+  .form__wrapper {
+    background: $gray-100;
+    position: relative;
+
+    &::before {
+      background-color: $seafoam-green;
+      content: "";
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+    }
+
+    @include media-breakpoint-down(md) {
+      & > .container {
+        max-width: 100%;
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  // Progress bar
+
+  .form__progress-bar {
+    line-height: 1;
+    padding-bottom: $wrapper-spacing / 2;
+    padding-top: $wrapper-spacing / 2;
+
+    @include media-breakpoint-down(md) {
+      overflow-x: auto;
+      padding-top: $paragraph-margin-bottom;
+      padding-bottom: $paragraph-margin-bottom;
+      position: relative;
+
+      & > .container {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .progress__step {
+    color: $cloudy-blue;
+
+    &:last-of-type {
+      .progress__indicator::before {
+        right: 0;
+      }
+    }
+
+    &.is-active {
+      color: $white;
+
+      .progress__circle {
+        background-color: $white;
+        border-color: $cloudy-blue;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-sm;
+      padding-left: 8px;
+      padding-right: 8px;
+      white-space: no-wrap;
+    }
+  }
+
+  .progress__indicator {
+    margin-bottom: 0.5rem;
+    position: relative;
+
+    &::before {
+      background-color: $dark-lavender;
+      content: "";
+      height: 3px;
+      position: absolute;
+      top: 44%;
+      left: 0;
+      right: -$grid-gutter-width;
+      transform: translateY(-50%);
+    }
+  }
+
+  .progress__circle {
+    background-color: $blueberry;
+    border: 3px solid $dark-lavender;
+    border-radius: 50%;
+    display: inline-block;
+    height: 1.25rem;
+    position: relative;
+    width: 1.25rem;
+    z-index: 1;
+  }
+
+  // Form Sidebar
+
+  .form__sidebar {
+    @include wrapper($seafoam-green, true);
+
+    font-size: $font-size-md;
+    padding-left: $grid-gutter-width / 2;
+    padding-right: $grid-gutter-width / 2;
+
+    @include media-breakpoint-down(md) {
+      padding-top: $paragraph-margin-bottom;
+      padding-bottom: $paragraph-margin-bottom;
+    }
+
+    img {
+      margin-bottom: $paragraph-margin-bottom;
+    }
+
+    .h4 {
+      color: $blueberry !important;
+      margin-bottom: 0.25rem;
+    }
+
+    .btn {
+      min-width: 220px;
+    }
+  }
+
+  // The main form area
+
+  .form__entree {
+    @include wrapper($gray-100);
+
+    padding-left: $grid-gutter-width / 2;
+    padding-right: $grid-gutter-width / 2;
+
+    @include media-breakpoint-down(md) {
+      padding-top: $wrapper-spacing / 2;
+
+      .gform_page_footer {
+        display: flex;
+        flex-wrap: wrap;
+
+        .button {
+          margin-bottom: 0.5rem;
+        }
+
+        .gform_next_button {
+          order: -1;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .add-another {
+    color: $blueberry;
+    font-weight: $font-weight-bold;
+
+    .add-another__button,
+    label {
+      cursor: pointer;
+    }
+
+    .add-another__button {
+      font-size: $font-size-md;
+      margin-right: 0.25rem;
+      vertical-align: middle;
+    }
+
+    .ginput_container {
+      display: none;
+    }
+  }
+}

@@ -11,6 +11,7 @@ html/app/db.php
 # WordPress
 html/wp
 html/.htaccess
+html/*/themes/twenty*
 
 # Plugins
 !html/app/plugins/brightedge-ixf-client
@@ -33,3 +34,5 @@ debug.log
 html/app/advanced-cache.php
 html/app/db.php
 html/app/wp-cache-config.php
+html/*/cache
+*.bak
