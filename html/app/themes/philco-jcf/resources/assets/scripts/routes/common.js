@@ -9,10 +9,11 @@ export default {
   init() {
     // JavaScript to be fired on all pages
 
-    // Attempt to automatically remove text widows from headings
-    // Replaces the last space in a heading with non-breaking space
-    // Add data-widow-skip to any heading to skip processing
-
+    /**
+     * Attempt to automatically remove text widows from headings
+     * Replaces the last space in a heading with non-breaking space
+     * Add 'data-widow-skip' to any heading to skip processing
+     */
     $('h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6')
       .not('.fix-widow-skip')
       .each((i, el) =>
@@ -23,8 +24,9 @@ export default {
         })
       );
 
-    // Enllax (parallax)
-
+    /**
+     * Enllax (parallax)
+     */
     $('.wrap').imagesLoaded(
       {
         background: true,
@@ -43,8 +45,11 @@ export default {
       }
     });
 
-    // Nav
+    /**
+     * Nav
+     */
 
+    // Turn last nav item into a tag
     $('.nav-top .menu-item:not(.search-link)')
       .last()
       .addClass('tagged')
@@ -58,9 +63,10 @@ export default {
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
 
-    // Animation; elements with data-scroll
-    // Count up numbers if needed
-
+    /**
+     * Animation; elements with data-scroll
+     * Count up numbers if needed
+     */
     ScrollOut({
       onShown: el => {
         $(el).addClass('fadeInUp animated');
@@ -94,16 +100,18 @@ export default {
       threshold: 0.2,
     });
 
-    // Move search link into place
-
+    /**
+     * Move search link into place
+     */
     $('.site-header .search-link')
       .appendTo('#menu-top-navigation')
       .show();
 
-    // Sticky header and footer
+    /**
+     * Sticky header and footer
+     */
 
     // Clone header
-
     $('.site-header .nav-top')
       .clone()
       .appendTo('.sticky-header__nav-top');
@@ -112,7 +120,6 @@ export default {
       .appendTo('.sticky-header__nav-primary');
 
     // Hide just off screen
-
     $('.sticky-header').css({
       top: -$('.sticky-header').outerHeight(),
     });
@@ -122,7 +129,6 @@ export default {
     });
 
     // Hide sticky-footer when footer comes into view
-
     ScrollOut({
       onHidden: () => {
         $('.sticky-footer').addClass('in');
@@ -134,7 +140,6 @@ export default {
     });
 
     // Show/hide sticky-header/footer when header leaves view
-
     ScrollOut({
       onHidden: () => {
         $('.sticky-header').addClass('in');
@@ -152,7 +157,6 @@ export default {
     });
 
     // Mobile header (fixed)
-
     $(window).on('window:resize', () => {
       $('.share .position-sticky').css({
         top: $('.sticky-header').outerHeight() + 16,
@@ -169,10 +173,11 @@ export default {
       }
     });
 
-    // Mobile nav
+    /**
+     * Mobile nav
+     */
 
     // Find last menu item (contact us), make it a button and move to top
-
     $('.nav-mobile__top .menu-item')
       .not('.search-link')
       .last()
@@ -183,11 +188,9 @@ export default {
     $('.nav-mobile__top .menu-item:empty').remove();
 
     // Add arrows to items with dropdowns
-
     $('.nav-mobile__primary .menu-item-has-children > a').append($('<div class="nav-arrow"><i class="fal fa-chevron-down"></i></div>'));
 
     // Show/hide submenus
-
     $('.nav-mobile__primary .menu-item-has-children > a').on('click', function(e) {
       e.preventDefault();
 
@@ -219,21 +222,20 @@ export default {
       }
     });
 
-    // Modal -- Video
+    /**
+     * Modal -- Video
+     */
 
-    $('.modal--iframe-video').on('show.bs.modal', function() {
-      // set the video to src
-      $('.modal--iframe-video iframe').attr('src', $('.modal--iframe-video iframe').data('src'));
-    });
+    // set the video to src
+    $('.modal--iframe-video').on('show.bs.modal', () => $('.modal--iframe-video iframe').attr('src', $('.modal--iframe-video iframe').data('src')));
 
-    $('.modal--iframe-video').on('hidden.bs.modal', function() {
-      // on closing the modal
-      // stop the video
-      $('.modal--iframe-video iframe').attr('src', null);
-    });
+    // on closing the modal
+    // stop the video
+    $('.modal--iframe-video').on('hidden.bs.modal', () => $('.modal--iframe-video iframe').attr('src', null));
 
-    // Modal -- Search
-
+    /**
+     * Modal -- Search
+     */
     $('.modal--search').on('show.bs.modal', function() {
       // Close all other modals
       $('.modal')
@@ -243,13 +245,12 @@ export default {
         });
     });
 
-    $('.modal--search').on('shown.bs.modal', function() {
-      // focus input
-      $('.modal--search .search-field').focus();
-    });
+    // focus input
+    $('.modal--search').on('shown.bs.modal', () => $('.modal--search .search-field').focus());
 
-    // .collapsible pushState
-
+    /**
+     * .collapsible pushState
+     */
     $('.collapsible__trigger').on('click', function() {
       let targetHash = $(this)
           .find('.btn')
@@ -269,13 +270,46 @@ export default {
     });
 
     // Expand .collapsible on page load
-
     let $collapsibleTrigger = $('.collapsible__trigger a[href="' + window.location.hash + '"]');
 
     if (window.location.hash && $collapsibleTrigger.length) {
       $collapsibleTrigger.trigger('click');
     }
 
+    /**
+     * Smooth scroll to anchors
+     * Fade out, scroll, fade in
+     */
+    $('main a[href^="#"]').on('click', function(e) {
+      e.preventDefault();
+
+      if ($(this).attr('href') === '#' || $(this).attr('href') === '#1') {
+        return true;
+      }
+
+      let $target = $('main').find($(this).attr('href'));
+
+      if ($target.length > 0) {
+        let targetScrollTo = $target.offset().top - 100;
+
+        $('main').fadeTo(400, 0.001, function() {
+          $('html, body').animate(
+            {
+              scrollTop: targetScrollTo,
+            },
+            1
+          );
+
+          $('main').fadeTo(400, 1);
+        });
+      } else {
+        return true;
+      }
+    });
+
+    /**
+     * Trigger scroll and resize events
+     */
     setTimeout(
       () =>
         $(window)
