@@ -57,7 +57,8 @@
 		'theme_location' => 'top_navigation',
 		'menu_class' 	  => 'nav-mobile__top',
 		'container'		  => false,
-	] ) !!}
+  ] ) !!}
+  @include('partials.search-link')
 @overwrite
 
 @section('modals')
