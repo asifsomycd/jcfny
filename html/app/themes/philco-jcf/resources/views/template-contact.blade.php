@@ -92,20 +92,20 @@
         </div>
 
         @include('partials.collapsible', [
-          'id'      => 'mobile-contact-collapse',
-          'parent'    => true,
-          'collapsibles'  => [
-            [
-              'title' => 'Schedule a Call',
-              'text'  => '<div id="mobile-form__schedule"></div>',
-            ],
+          'id' => 'mobile-contact-collapse',
+          'parent' => true,
+          'collapsibles' => [
+            // [
+            //   'title' => 'Schedule a Call',
+            //   'text' => '<div id="mobile-form__schedule"></div>',
+            // ],
             [
               'title' => 'Email Us',
-              'text'  => $form_text . '<div id="mobile-form__email"></div>',
+              'text' => $form_text . '<div id="mobile-form__email"></div>',
             ],
             [
               'title' => 'Request More Info',
-              'text'  => $left_text . '<div id="mobile-form__info"></div>',
+              'text' => $left_text . '<div id="mobile-form__info"></div>',
             ],
           ]
         ])
