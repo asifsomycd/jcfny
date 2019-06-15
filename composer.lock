@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d7b77ac5dad36ba0e691cad00b45ad0e",
+    "content-hash": "6b5a41b116c2ef12097331dc42108d67",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -23,10 +23,10 @@
         },
         {
             "name": "backupbuddy/backupbuddy",
-            "version": "8.3.11.0",
+            "version": "8.4.15.0",
             "dist": {
                 "type": "zip",
-                "url": "https://s3.amazonaws.com/wp-boilerplate/plugins/backupbuddy-8.3.11.0.zip",
+                "url": "https://s3.amazonaws.com/wp-boilerplate/plugins/backupbuddy-8.4.15.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1501,6 +1501,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/enable-media-replace/"
+        },
+        {
+            "name": "wpackagist-plugin/media-library-plus",
+            "version": "5.0.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/media-library-plus/",
+                "reference": "tags/5.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/media-library-plus.5.0.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/media-library-plus/"
         },
         {
             "name": "wpackagist-plugin/page-links-to",
