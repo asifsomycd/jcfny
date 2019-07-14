@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "77d829a564221e2a81b406f1a8a6973b",
+    "content-hash": "415f209538076e1d7eba0177a96de64f",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -23,10 +23,10 @@
         },
         {
             "name": "backupbuddy/backupbuddy",
-            "version": "8.4.15.0",
+            "version": "8.4.18.0",
             "dist": {
                 "type": "zip",
-                "url": "https://s3.amazonaws.com/wp-boilerplate/plugins/backupbuddy-8.4.15.0.zip",
+                "url": "https://s3.amazonaws.com/wp-boilerplate/plugins/backupbuddy-8.4.18.0.zip",
                 "reference": null,
                 "shasum": null
             },

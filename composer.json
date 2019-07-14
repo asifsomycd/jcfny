@@ -105,11 +105,11 @@
       "type": "package",
       "package": {
         "name": "backupbuddy/backupbuddy",
-        "version": "8.4.15.0",
+        "version": "8.4.18.0",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://s3.amazonaws.com/wp-boilerplate/plugins/backupbuddy-8.4.15.0.zip"
+          "url": "https://s3.amazonaws.com/wp-boilerplate/plugins/backupbuddy-8.4.18.0.zip"
         }
       }
     },
