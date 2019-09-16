@@ -4,14 +4,14 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c0f6ca17ceb35ca7d17bcf6b611851ec",
+    "content-hash": "cb2f8ec65cdbd76701d80664bc18a9be",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
-            "version": "5.8.3",
+            "version": "5.8.4",
             "dist": {
                 "type": "zip",
-                "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t=5.8.3",
+                "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t=5.8.4",
                 "reference": null,
                 "shasum": null
             },
@@ -211,10 +211,10 @@
         },
         {
             "name": "gravityforms/gravityforms",
-            "version": "2.4.11.4",
+            "version": "2.4.12.4",
             "dist": {
                 "type": "zip",
-                "url": "https://s3.amazonaws.com/wp-boilerplate/plugins/gravityforms_2.4.11.4.zip",
+                "url": "https://s3.amazonaws.com/wp-boilerplate/plugins/gravityforms_2.4.12.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1237,16 +1237,16 @@
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v3.4.30",
+            "version": "v3.4.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "ade939fe83d5ec5fcaa98628dc42d83232c8eb41"
+                "reference": "2709bc2978ceb90f5180181f777f8a09125f2d89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/ade939fe83d5ec5fcaa98628dc42d83232c8eb41",
-                "reference": "ade939fe83d5ec5fcaa98628dc42d83232c8eb41",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/2709bc2978ceb90f5180181f777f8a09125f2d89",
+                "reference": "2709bc2978ceb90f5180181f777f8a09125f2d89",
                 "shasum": ""
             },
             "require": {
@@ -1304,7 +1304,7 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2019-07-19T11:52:08+00:00"
+            "time": "2019-08-26T16:07:57+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -1366,16 +1366,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v3.4.0",
+            "version": "v3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "5084b23845c24dbff8ac6c204290c341e4776c92"
+                "reference": "1bdf24f065975594f6a117f0f1f6cabf1333b156"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/5084b23845c24dbff8ac6c204290c341e4776c92",
-                "reference": "5084b23845c24dbff8ac6c204290c341e4776c92",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/1bdf24f065975594f6a117f0f1f6cabf1333b156",
+                "reference": "1bdf24f065975594f6a117f0f1f6cabf1333b156",
                 "shasum": ""
             },
             "require": {
@@ -1384,12 +1384,12 @@
                 "symfony/polyfill-ctype": "^1.9"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5.0 || ^6.0"
+                "phpunit/phpunit": "^4.8.35 || ^5.0 || ^6.0 || ^7.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.4-dev"
+                    "dev-master": "3.6-dev"
                 }
             },
             "autoload": {
@@ -1403,9 +1403,14 @@
             ],
             "authors": [
                 {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com",
+                    "homepage": "https://gjcampbell.co.uk/"
+                },
+                {
                     "name": "Vance Lucas",
                     "email": "vance@vancelucas.com",
-                    "homepage": "http://www.vancelucas.com"
+                    "homepage": "https://vancelucas.com/"
                 }
             ],
             "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
@@ -1414,7 +1419,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2019-06-15T22:40:20+00:00"
+            "time": "2019-09-10T21:37:39+00:00"
         },
         {
             "name": "wp-sync-db/wp-sync-db",
@@ -1561,15 +1566,15 @@
         },
         {
             "name": "wpackagist-plugin/enable-media-replace",
-            "version": "3.3.5",
+            "version": "3.3.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/enable-media-replace/",
-                "reference": "tags/3.3.5"
+                "reference": "tags/3.3.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/enable-media-replace.3.3.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/enable-media-replace.3.3.6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1581,15 +1586,15 @@
         },
         {
             "name": "wpackagist-plugin/media-library-plus",
-            "version": "5.0.3",
+            "version": "5.0.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/media-library-plus/",
-                "reference": "tags/5.0.3"
+                "reference": "tags/5.0.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/media-library-plus.5.0.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/media-library-plus.5.0.7.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1621,15 +1626,15 @@
         },
         {
             "name": "wpackagist-plugin/quick-pagepost-redirect-plugin",
-            "version": "5.1.8",
+            "version": "5.1.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/quick-pagepost-redirect-plugin/",
-                "reference": "tags/5.1.8"
+                "reference": "tags/5.1.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/quick-pagepost-redirect-plugin.5.1.8.zip",
+                "url": "https://downloads.wordpress.org/plugin/quick-pagepost-redirect-plugin.5.1.9.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1681,15 +1686,15 @@
         },
         {
             "name": "wpackagist-plugin/wordfence",
-            "version": "7.3.6",
+            "version": "7.4.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordfence/",
-                "reference": "tags/7.3.6"
+                "reference": "tags/7.4.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordfence.7.3.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordfence.7.4.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1880,16 +1885,16 @@
         },
         {
             "name": "yoast/wordpress-seo",
-            "version": "11.8",
+            "version": "12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Yoast-dist/wordpress-seo.git",
-                "reference": "468c9a44227afe7591e05c13a5b045541ae8dff2"
+                "reference": "9a70228842e17d82b9d411e80bd3c56c0c0e523c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Yoast-dist/wordpress-seo/zipball/468c9a44227afe7591e05c13a5b045541ae8dff2",
-                "reference": "468c9a44227afe7591e05c13a5b045541ae8dff2",
+                "url": "https://api.github.com/repos/Yoast-dist/wordpress-seo/zipball/9a70228842e17d82b9d411e80bd3c56c0c0e523c",
+                "reference": "9a70228842e17d82b9d411e80bd3c56c0c0e523c",
                 "shasum": ""
             },
             "require": {
@@ -1943,7 +1948,7 @@
                 "seo",
                 "wordpress"
             ],
-            "time": "2019-08-06T06:44:03+00:00"
+            "time": "2019-09-03T07:54:14+00:00"
         }
     ],
     "packages-dev": [
