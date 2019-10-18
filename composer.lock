@@ -4,14 +4,14 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "383fb554a7b64c92f136ae361a9070f1",
+    "content-hash": "855606baaa7450940db1139e9639e666",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
-            "version": "5.8.4",
+            "version": "5.8.5",
             "dist": {
                 "type": "zip",
-                "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t=5.8.4",
+                "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t=5.8.5",
                 "reference": null,
                 "shasum": null
             },
@@ -23,10 +23,10 @@
         },
         {
             "name": "backupbuddy/backupbuddy",
-            "version": "8.4.18.0",
+            "version": "8.4.19.0",
             "dist": {
                 "type": "zip",
-                "url": "https://s3.amazonaws.com/wp-boilerplate/plugins/backupbuddy-8.4.18.0.zip",
+                "url": "https://s3.amazonaws.com/wp-boilerplate/plugins/backupbuddy-8.4.19.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -211,10 +211,10 @@
         },
         {
             "name": "gravityforms/gravityforms",
-            "version": "2.4.12.4",
+            "version": "2.4.14.6",
             "dist": {
                 "type": "zip",
-                "url": "https://s3.amazonaws.com/wp-boilerplate/plugins/gravityforms_2.4.12.4.zip",
+                "url": "https://wp-boilerplate.s3.amazonaws.com/plugins/gravityforms_2.4.14.6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -244,10 +244,10 @@
         },
         {
             "name": "gravityforms/gravityformspartialentries",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "dist": {
                 "type": "zip",
-                "url": "https://s3.amazonaws.com/wp-boilerplate/plugins/gravityformspartialentries_1.4.zip",
+                "url": "https://s3.amazonaws.com/wp-boilerplate/plugins/gravityformspartialentries_1.4.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -989,16 +989,16 @@
         },
         {
             "name": "roots/wordpress",
-            "version": "5.2.3",
+            "version": "5.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "5.2.3"
+                "reference": "5.2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.2.3",
-                "reference": "5.2.3",
+                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.2.4",
+                "reference": "5.2.4",
                 "shasum": null
             },
             "require": {
@@ -1023,7 +1023,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2019-09-04T22:41:56+00:00"
+            "time": "2019-10-14T20:28:22+00:00"
         },
         {
             "name": "roots/wordpress-core-installer",
@@ -1237,16 +1237,16 @@
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v3.4.31",
+            "version": "v3.4.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "2709bc2978ceb90f5180181f777f8a09125f2d89"
+                "reference": "9cf81798f857205c5bbb4c8c7895f838d40b0c4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/2709bc2978ceb90f5180181f777f8a09125f2d89",
-                "reference": "2709bc2978ceb90f5180181f777f8a09125f2d89",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/9cf81798f857205c5bbb4c8c7895f838d40b0c4b",
+                "reference": "9cf81798f857205c5bbb4c8c7895f838d40b0c4b",
                 "shasum": ""
             },
             "require": {
@@ -1304,7 +1304,7 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2019-08-26T16:07:57+00:00"
+            "time": "2019-09-27T15:47:48+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -1586,15 +1586,15 @@
         },
         {
             "name": "wpackagist-plugin/media-library-plus",
-            "version": "5.0.7",
+            "version": "5.0.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/media-library-plus/",
-                "reference": "tags/5.0.7"
+                "reference": "tags/5.0.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/media-library-plus.5.0.7.zip",
+                "url": "https://downloads.wordpress.org/plugin/media-library-plus.5.0.9.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1885,16 +1885,16 @@
         },
         {
             "name": "yoast/wordpress-seo",
-            "version": "12.0",
+            "version": "12.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Yoast-dist/wordpress-seo.git",
-                "reference": "9a70228842e17d82b9d411e80bd3c56c0c0e523c"
+                "reference": "d108a6608c741982a44ffc5cb0603363e6ff68ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Yoast-dist/wordpress-seo/zipball/9a70228842e17d82b9d411e80bd3c56c0c0e523c",
-                "reference": "9a70228842e17d82b9d411e80bd3c56c0c0e523c",
+                "url": "https://api.github.com/repos/Yoast-dist/wordpress-seo/zipball/d108a6608c741982a44ffc5cb0603363e6ff68ae",
+                "reference": "d108a6608c741982a44ffc5cb0603363e6ff68ae",
                 "shasum": ""
             },
             "require": {
@@ -1912,8 +1912,9 @@
                 "yoast/license-manager": "1.6.0"
             },
             "require-dev": {
+                "atanamo/php-codeshift": "^1.0",
                 "brain/monkey": "^2.2",
-                "humbug/php-scoper": "^0.6.0",
+                "humbug/php-scoper": "^0.12.0",
                 "phpcompatibility/phpcompatibility-wp": "^2.0.0",
                 "phpunit/phpunit": "^5.7",
                 "yoast/php-development-environment": "^1.0",
@@ -1948,7 +1949,7 @@
                 "seo",
                 "wordpress"
             ],
-            "time": "2019-09-03T07:54:14+00:00"
+            "time": "2019-10-15T09:07:50+00:00"
         }
     ],
     "packages-dev": [
@@ -1958,12 +1959,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "ea693fa060702164985511acc3ceb5389c9ac761"
+                "reference": "eb59d9f35a47f567ae15e7179d7c666489cd4b85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/ea693fa060702164985511acc3ceb5389c9ac761",
-                "reference": "ea693fa060702164985511acc3ceb5389c9ac761",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/eb59d9f35a47f567ae15e7179d7c666489cd4b85",
+                "reference": "eb59d9f35a47f567ae15e7179d7c666489cd4b85",
                 "shasum": ""
             },
             "conflict": {
@@ -1986,7 +1987,7 @@
                 "contao/core": ">=2,<3.5.39",
                 "contao/core-bundle": ">=4,<4.4.39|>=4.5,<4.7.5",
                 "contao/listing-bundle": ">=4,<4.4.8",
-                "contao/newsletter-bundle": ">=4,<4.1",
+                "datadog/dd-trace": ">=0.30,<0.30.2",
                 "david-garcia/phpwhois": "<=4.3.1",
                 "doctrine/annotations": ">=1,<1.2.7",
                 "doctrine/cache": ">=1,<1.3.2|>=1.4,<1.4.2",
@@ -2029,9 +2030,9 @@
                 "laravel/framework": ">=4,<4.0.99|>=4.1,<=4.1.31|>=4.2,<=4.2.22|>=5,<=5.0.35|>=5.1,<=5.1.46|>=5.2,<=5.2.45|>=5.3,<=5.3.31|>=5.4,<=5.4.36|>=5.5,<5.5.42|>=5.6,<5.6.30",
                 "laravel/socialite": ">=1,<1.0.99|>=2,<2.0.10",
                 "league/commonmark": "<0.18.3",
-                "magento/magento1ce": "<1.9.4.1",
-                "magento/magento1ee": ">=1.9,<1.14.4.1",
-                "magento/product-community-edition": ">=2,<2.2.8|>=2.3,<2.3.1",
+                "magento/magento1ce": "<1.9.4.3",
+                "magento/magento1ee": ">=1,<1.14.4.3",
+                "magento/product-community-edition": ">=2,<2.2.10|>=2.3,<2.3.3",
                 "monolog/monolog": ">=1.8,<1.12",
                 "namshi/jose": "<2.2",
                 "onelogin/php-saml": "<2.10.4",
@@ -2074,6 +2075,7 @@
                 "spoonity/tcpdf": "<6.2.22",
                 "squizlabs/php_codesniffer": ">=1,<2.8.1|>=3,<3.0.1",
                 "stormpath/sdk": ">=0,<9.9.99",
+                "studio-42/elfinder": "<2.1.48",
                 "swiftmailer/swiftmailer": ">=4,<5.4.5",
                 "sylius/admin-bundle": ">=1,<1.0.17|>=1.1,<1.1.9|>=1.2,<1.2.2",
                 "sylius/grid": ">=1,<1.1.19|>=1.2,<1.2.18|>=1.3,<1.3.13|>=1.4,<1.4.5|>=1.5,<1.5.1",
@@ -2160,25 +2162,25 @@
             "authors": [
                 {
                     "name": "Marco Pivetta",
-                    "role": "maintainer",
-                    "email": "ocramius@gmail.com"
+                    "email": "ocramius@gmail.com",
+                    "role": "maintainer"
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2019-07-18T15:17:58+00:00"
+            "time": "2019-10-09T14:04:58+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.4.2",
+            "version": "3.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "b8a7362af1cc1aadb5bd36c3defc4dda2cf5f0a8"
+                "reference": "82cd0f854ceca17731d6d019c7098e3755c45060"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/b8a7362af1cc1aadb5bd36c3defc4dda2cf5f0a8",
-                "reference": "b8a7362af1cc1aadb5bd36c3defc4dda2cf5f0a8",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/82cd0f854ceca17731d6d019c7098e3755c45060",
+                "reference": "82cd0f854ceca17731d6d019c7098e3755c45060",
                 "shasum": ""
             },
             "require": {
@@ -2216,7 +2218,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2019-04-10T23:49:02+00:00"
+            "time": "2019-10-16T21:14:26+00:00"
         }
     ],
     "aliases": [],

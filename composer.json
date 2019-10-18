@@ -41,7 +41,7 @@
       "type": "package",
       "package": {
         "name": "advanced-custom-fields/advanced-custom-fields-pro",
-        "version": "5.8.4",
+        "version": "5.8.5",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
@@ -57,11 +57,11 @@
       "type": "package",
       "package": {
         "name": "gravityforms/gravityforms",
-        "version": "2.4.12.4",
+        "version": "2.4.14.6",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://s3.amazonaws.com/wp-boilerplate/plugins/gravityforms_2.4.12.4.zip"
+          "url": "https://wp-boilerplate.s3.amazonaws.com/plugins/gravityforms_2.4.14.6.zip"
         }
       }
     },
@@ -93,11 +93,11 @@
       "type": "package",
       "package": {
         "name": "gravityforms/gravityformspartialentries",
-        "version": "1.4.0",
+        "version": "1.4.1",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://s3.amazonaws.com/wp-boilerplate/plugins/gravityformspartialentries_1.4.zip"
+          "url": "https://s3.amazonaws.com/wp-boilerplate/plugins/gravityformspartialentries_1.4.1.zip"
         }
       }
     },
@@ -105,11 +105,11 @@
       "type": "package",
       "package": {
         "name": "backupbuddy/backupbuddy",
-        "version": "8.4.18.0",
+        "version": "8.4.19.0",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://s3.amazonaws.com/wp-boilerplate/plugins/backupbuddy-8.4.18.0.zip"
+          "url": "https://s3.amazonaws.com/wp-boilerplate/plugins/backupbuddy-8.4.19.0.zip"
         }
       }
     },
@@ -144,11 +144,11 @@
     "composer/installers": "^1.4",
     "vlucas/phpdotenv": "^3.4.0",
     "oscarotero/env": "^1.2.0",
-    "roots/wordpress": "5.2.3",
+    "roots/wordpress": "5.2.4",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "advanced-custom-fields/advanced-custom-fields-pro": "^5.8",
-    "gravityforms/gravityforms": "2.4.12.4",
+    "gravityforms/gravityforms": "2.4.14.6",
     "gravityforms/gravityformsgutenberg": "1.*",
     "gravityforms/gravityformspartialentries": "^1.4",
     "gravityforms/gravityformsmailchimp": "^4.6.0",
