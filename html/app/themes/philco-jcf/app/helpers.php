@@ -138,7 +138,7 @@ function locate_template($templates)
 function display_sidebar()
 {
     static $display;
-    isset( $display ) || $display = apply_filters( 'sage/display_sidebar', false );
+    isset($display) || $display = apply_filters('sage/display_sidebar', false);
     return $display;
 }
 
@@ -151,7 +151,7 @@ function is_blog()
 {
     global $post;
 
-    $posttype = get_post_type( $post );
+    $posttype = get_post_type($post);
     return (
         (
             is_archive() || is_author() || is_category() || is_home() || is_single() || is_tag()
@@ -171,20 +171,20 @@ function related_posts()
     $tags = get_the_tags();
     $tags_ids = [];
 
-    if ( $tags ) {
-        foreach ( $tags as $tag ) {
+    if ($tags) {
+        foreach ($tags as $tag) {
             $tags_ids[] = $tag->term_id;
         }
     }
 
-    $related_posts = new \WP_Query( [
+    $related_posts = new \WP_Query([
         'posts_per_page'        => 2,
         'post_status'           => 'publish',
         'ignore_sticky_posts'   => 1,
         'tag__in'               => $tags_ids,
         'post__not_in'          => [ get_the_ID() ],
         'post_type'             => 'post'
-    ] );
+    ]);
 
     return $related_posts;
 }
@@ -194,8 +194,9 @@ function related_posts()
  * Get form and return it
  *
  */
-function get_form( $form_id = false ) {
-    if ( ! $form_id ) {
+function get_form($form_id = false)
+{
+    if (! $form_id) {
         return false;
     }
 
