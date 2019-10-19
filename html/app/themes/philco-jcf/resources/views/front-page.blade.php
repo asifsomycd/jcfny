@@ -20,27 +20,12 @@
                 @if ( $fields['headline_video']['video_id'] )
                   <div class="d-sm-none"><br></div>
 
-                  <a href="#1"
-                    class="acf-link link-tealish link-underline ml-sm-5"
-                    data-toggle="modal"
-                    data-target=".headline-modal">
-                    {!! $fields['headline_video']['text'] !!}
-                  </a>
-
-                  @section('modal-body')
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe data-src="https://www.youtube.com/embed/{{ $fields['headline_video']['video_id'] }}?rel=0&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                  @overwrite
-
-                  @section('modals')
-                    @parent
-
-                    @include('partials.modal', [
-                      'type'    => 'iframe-video',
-                      'class'  => 'headline-modal',
-                    ] )
-                  @endsection
+                  @include('partials.modal-video', [
+                    'button_classes' => 'acf-link link-tealish link-underline ml-sm-5',
+                    'button_text' => $fields['headline_video']['text'],
+                    'video_id' => $fields['headline_video']['video_id'],
+                    'modal_id' => 'video-headline-' . $fields['headline_video']['video_id'],
+                  ])
                 @endif
               </div>
             </div>
