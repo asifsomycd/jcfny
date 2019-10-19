@@ -10,12 +10,12 @@ use Roots\Sage\Template\BladeProvider;
 /**
  * Theme assets
  */
-add_action( 'init', function () {
+add_action('init', function () {
     wp_register_style('google-fonts', 'https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Poppins:700', false, null);
-} );
+});
 
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style( 'google-fonts' );
+    wp_enqueue_style('google-fonts');
     wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
 
     wp_register_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
@@ -24,7 +24,7 @@ add_action('wp_enqueue_scripts', function () {
         'breakpointMd'  => 768,
         'breakpointLg'  => 992,
         'breakpointXl'  => 1200,
-    ] );
+    ]);
     wp_enqueue_script('sage/main.js');
 
     if (is_single() && comments_open() && get_option('thread_comments')) {
@@ -36,34 +36,35 @@ add_action('wp_enqueue_scripts', function () {
 /**
  * Login assets
  */
-add_action( 'login_enqueue_scripts', function () {
-    wp_enqueue_style( 'google-fonts' );
-    wp_enqueue_style( 'sage/login.css', asset_path('styles/login.css'), false, null );
+add_action('login_enqueue_scripts', function () {
+    wp_enqueue_style('google-fonts');
+    wp_enqueue_style('sage/login.css', asset_path('styles/login.css'), false, null);
     wp_enqueue_script('sage/login.js', asset_path('scripts/login.js'), [], null, true);
-}, 100 );
+}, 100);
 
-add_filter( 'login_headerurl', function () {
+add_filter('login_headerurl', function () {
     return home_url();
-} );
+});
 
 
 /**
  * Gutenberg assets
  */
-add_action( 'enqueue_block_editor_assets', function () {
-    wp_enqueue_style( 'google-fonts' );
-    wp_enqueue_style( 'sage/gutenberg.css', asset_path( 'styles/gutenberg.css' ), false, null );
-} );
+add_action('enqueue_block_editor_assets', function () {
+    wp_enqueue_style('google-fonts');
+    wp_enqueue_style('sage/block-editor.css', asset_path('styles/block-editor.css'), false, null);
+});
 
 
 /**
  * Add support for custom color palettes in Gutenberg.
  */
-add_action( 'after_setup_theme', function() {
-    add_theme_support( 'disable-custom-colors' );
+add_action('after_setup_theme', function () {
+    add_theme_support('disable-custom-colors');
 
     add_theme_support(
-        'editor-color-palette', [
+        'editor-color-palette',
+        [
             [
                 'name'  => 'blueberry',
                 'slug'  => 'blueberry',
@@ -86,7 +87,7 @@ add_action( 'after_setup_theme', function() {
             ]
         ]
     );
-} );
+});
 
 
 /**
@@ -149,10 +150,9 @@ add_action('after_setup_theme', function () {
      * Image sizes
      *
      */
-    add_image_size( 'col-12', 1600, 0, false );
-    add_image_size( 'col-6', 800, 0, false );
-    add_image_size( 'col-4', 400, 0, false );
-
+    add_image_size('col-12', 1600, 0, false);
+    add_image_size('col-6', 800, 0, false);
+    add_image_size('col-4', 400, 0, false);
 }, 20);
 
 /**
@@ -217,16 +217,16 @@ add_action('after_setup_theme', function () {
 /**
  * Remove emoji script from head
  */
-add_action( 'init', function() {
-    remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
-    remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
-    remove_action( 'wp_print_styles', 'print_emoji_styles' );
-    remove_action( 'admin_print_styles', 'print_emoji_styles' );
-    remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
-    remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
-    remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
-    add_filter( 'wp_resource_hints', '\App\disable_emojis_remove_dns_prefetch', 10, 2 );
-} );
+add_action('init', function () {
+    remove_action('wp_head', 'print_emoji_detection_script', 7);
+    remove_action('admin_print_scripts', 'print_emoji_detection_script');
+    remove_action('wp_print_styles', 'print_emoji_styles');
+    remove_action('admin_print_styles', 'print_emoji_styles');
+    remove_filter('the_content_feed', 'wp_staticize_emoji');
+    remove_filter('comment_text_rss', 'wp_staticize_emoji');
+    remove_filter('wp_mail', 'wp_staticize_emoji_for_email');
+    add_filter('wp_resource_hints', '\App\disable_emojis_remove_dns_prefetch', 10, 2);
+});
 
 /**
  * Remove emoji CDN hostname from DNS prefetching hints.
@@ -235,13 +235,14 @@ add_action( 'init', function() {
  * @param string $relation_type The relation type the URLs are printed for.
  * @return array Difference betwen the two arrays.
  */
-function disable_emojis_remove_dns_prefetch( $urls, $relation_type ) {
-    if ( 'dns-prefetch' == $relation_type ) {
+function disable_emojis_remove_dns_prefetch($urls, $relation_type)
+{
+    if ('dns-prefetch' == $relation_type) {
         /** This filter is documented in wp-includes/formatting.php */
-        $emoji_svg_url = apply_filters( 'emoji_svg_url', 'https://s.w.org/images/core/emoji/11/svg/' );
+        $emoji_svg_url = apply_filters('emoji_svg_url', 'https://s.w.org/images/core/emoji/11/svg/');
 
-        $urls = array_diff( $urls, array( $emoji_svg_url ) );
+        $urls = array_diff($urls, array( $emoji_svg_url ));
     }
 
-   return $urls;
+    return $urls;
 }

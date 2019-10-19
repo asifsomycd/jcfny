@@ -27,11 +27,11 @@
   "images/jcf-badge-green.svg": "images/jcf-badge-green_d95a1336.svg",
   "images/jcf-badge.svg": "images/jcf-badge_31ec2818.svg",
   "images/jcf-horizontal.svg": "images/jcf-horizontal_9723af5b.svg",
-  "scripts/customizer.js": "scripts/customizer_ced5800d.js",
-  "styles/gutenberg.css": "styles/gutenberg_ced5800d.css",
-  "scripts/gutenberg.js": "scripts/gutenberg_ced5800d.js",
-  "styles/login.css": "styles/login_ced5800d.css",
-  "scripts/login.js": "scripts/login_ced5800d.js",
-  "styles/main.css": "styles/main_ced5800d.css",
-  "scripts/main.js": "scripts/main_ced5800d.js"
+  "styles/block-editor.css": "styles/block-editor_80f998e0.css",
+  "scripts/block-editor.js": "scripts/block-editor_80f998e0.js",
+  "scripts/customizer.js": "scripts/customizer_80f998e0.js",
+  "styles/login.css": "styles/login_80f998e0.css",
+  "scripts/login.js": "scripts/login_80f998e0.js",
+  "styles/main.css": "styles/main_80f998e0.css",
+  "scripts/main.js": "scripts/main_80f998e0.js"
 }
