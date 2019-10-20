@@ -63,7 +63,7 @@
     background-color: $cloudy-blue;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 
     @include media-breakpoint-down(md) {
       padding-top: 56.25%;
@@ -74,6 +74,11 @@
       max-width: 50%;
     }
   }
+}
+
+.layout-block__text-and-photo_text {
+  position: relative;
+  z-index: $zindex-dropdown;
 }
 
 .layout-block__text-and-photo_block {

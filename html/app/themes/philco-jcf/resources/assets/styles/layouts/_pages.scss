@@ -11,8 +11,8 @@
     font-size: $font-size-md;
   }
 
-  @include media-breakpoint-down(md) {
-    .btn {
+  .btn {
+    @include media-breakpoint-down(md) {
       width: 100%;
     }
   }
@@ -398,6 +398,12 @@
 .template-landing {
   .hfeed {
     padding-bottom: 0;
+  }
+
+  .btn {
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
   }
 
   .sticky-header__nav-top {
