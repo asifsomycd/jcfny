@@ -35,22 +35,3 @@
     </div>
   </div>
 </div>
-
-
-
-<div class="layout-block__text-and-photo" data-enllax-ratio="-0.1" data-enllax-background-align="right" data-scroll>
-  <div class="content container">
-    <div class="row justify-content-between">
-      <main class="main col-12">
-        <div class="entry-content lead row justify-content-between align-items-center">
-          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-          </div>
-
-          <div class="layout-block__text-and-photo_cta col-12 col-lg-4 text-center text-lg-left">
-
-          </div>
-        </div>
-      </main>
-    </div>
-  </div>
-</div>

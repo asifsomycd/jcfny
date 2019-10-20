@@ -1,4 +1,4 @@
-@switch($nav_type)
+@switch($footer_nav_type)
   @case('action-buttons')
     @include('partials.footer-action-buttons')
     @break

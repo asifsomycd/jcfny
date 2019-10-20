@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use Sober\Controller\Controller;
 
-class TemplateLanding extends Controller
+class TemplateGated extends Controller
 {
     use Partials\Content;
 
@@ -15,7 +15,7 @@ class TemplateLanding extends Controller
 
     public function footerNavType()
     {
-        return 'action-buttons';
+        return 'default';
     }
 
     public function showFooterForm()

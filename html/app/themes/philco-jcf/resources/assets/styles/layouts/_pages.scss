@@ -394,8 +394,9 @@
 }
 
 // Landing
-
-.template-landing {
+// Gated
+.template-landing,
+.template-gated {
   .hfeed {
     padding-bottom: 0;
   }
@@ -420,7 +421,9 @@
       }
     }
   }
+}
 
+.template-landing {
   .be-ix-link-block .be-related-link-container {
     flex-direction: column;
     margin-top: 0;

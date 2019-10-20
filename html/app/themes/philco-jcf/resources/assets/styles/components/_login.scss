@@ -1,28 +1,32 @@
-body.login {
-    background: $gray-100 url(../images/background-arrows-f.svg) right 100px no-repeat;
+body.login.wp-core-ui {
+  background: $gray-100 url(../images/background-arrows-f.svg) right 100px no-repeat;
 
-    h1 a {
-        transition: $transition-default;
-        background: url(../images/jcf-horizontal.svg) center no-repeat;
-        background-size: contain;
-        color: $primary;
-        font-size: $h1-font-size;
-        font-weight: $headings-font-weight;
-        height: 80px;
-        // text-indent: 0;
-        text-align: left;
-        width: auto;
+  h1 a {
+    transition: $transition-default;
+    background: url(../images/jcf-horizontal.svg) center no-repeat;
+    background-size: contain;
+    color: $primary;
+    font-size: $h1-font-size;
+    font-weight: $headings-font-weight;
+    height: 80px;
+    // text-indent: 0;
+    text-align: left;
+    width: auto;
 
-        &:hover {
-            opacity: 0.75;
-        }
+    &:hover {
+      opacity: 0.75;
     }
+  }
 
-    .button {
-        @extend .btn;
+  .button,
+  .button.button-large {
+    @extend .btn;
 
-        background: $blueberry;
-        box-shadow: none;
-        text-shadow: none;
-    }
+    background: $blueberry;
+    box-shadow: none;
+    color: $white;
+    height: auto;
+    padding: 0.25rem 0.75rem;
+    text-shadow: none;
+  }
 }

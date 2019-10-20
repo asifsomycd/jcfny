@@ -59,31 +59,13 @@
       </div>
     @endif
 
-    @if ( $fields['how_columns'] )
-      <div class="layout-block__how" data-enllax-ratio="0.1" data-enllax-background-align="right" data-scroll>
-        <div class="container text-center text-md-left">
-          <h2>{{ $fields['how_title'] }}</h2>
-          <div class="row justify-content-center mt-4 mb-3">
-            @foreach ( $fields['how_columns'] as $column )
-              <div class="col-8 col-md-4 mb-4 mb-lg-0 pl-lg-4 pr-lg-4 text-center">
-                <div class="row">
-                  <div class="col-12 col-lg-4 mb-4">
-                    <img src="{{ $column['image']['sizes']['col-4'] }}" alt="How It Works">
-                  </div>
-                  <div class="col-12 col-lg-8 text-lg-left">
-                    {!! $column['text'] !!}
-                  </div>
-                </div>
-              </div>
-            @endforeach
-          </div>
 
-          @include('partials.acf-link', array_merge(
-            $fields['how_button'],
-            [ 'class' => 'btn btn-outline-light' ]
-          ) )
-        </div>
-      </div>
+    @if($fields['how_columns'])
+      @include('partials.layout-columns-icons', [
+        'title' => $fields['how_title'],
+        'columns' => $fields['how_columns'],
+        'button' => $fields['how_button'],
+      ])
     @endif
 
     @if ( $fields['impact'] )
@@ -116,14 +98,14 @@
       </div>
     @endif
 
-    @if ($fields['quotes'])
+    @if($fields['quotes'])
       @include('partials.layout-quotes', [
         'interval' => $fields['quote_interval'],
         'quotes' => $fields['quotes'],
       ])
     @endif
 
-    @if ($fields['faq_faqs'])
+    @if($fields['faq_faqs'])
       @include('partials.layout-faqs', [
         'faqs' => $fields['faq_faqs'],
         'title' => 'Frequently Asked Questions',

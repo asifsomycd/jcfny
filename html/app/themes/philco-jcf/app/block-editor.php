@@ -12,6 +12,7 @@ function disable_editor($id = false, $post_type = false)
 
     $excluded_templates = [
         'views/template-landing.blade.php',
+        'views/template-gated.blade.php',
     ];
 
     $excluded_ids = [

@@ -14,6 +14,11 @@ class App extends Controller
         return 'default';
     }
 
+    public function footerNavType()
+    {
+        return 'default';
+    }
+
     public function pageForPosts()
     {
         return get_option('page_for_posts');

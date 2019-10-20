@@ -1,5 +1,5 @@
 {{--
-  Template Name: Landing Page
+  Template Name: Gated Content
 --}}
 
 @extends('layouts.app')
