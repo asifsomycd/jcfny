@@ -135,7 +135,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "layout": "row",
+                            "layout": "block",
                             "sub_fields": [
                                 {
                                     "key": "field_5dacc163d7afe",
@@ -210,7 +210,7 @@
                             "key": "field_5dab6e64240a5",
                             "label": "Title",
                             "name": "title",
-                            "type": "text",
+                            "type": "textarea",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -221,9 +221,9 @@
                             },
                             "default_value": "",
                             "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
+                            "maxlength": "",
+                            "rows": 3,
+                            "new_lines": ""
                         },
                         {
                             "key": "field_5dab6f83240a7",
@@ -258,7 +258,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "51",
+                                "width": "",
                                 "class": "",
                                 "id": ""
                             },
@@ -402,7 +402,7 @@
                                     "default_value": "",
                                     "placeholder": "",
                                     "maxlength": "",
-                                    "rows": 2,
+                                    "rows": 6,
                                     "new_lines": ""
                                 },
                                 {
@@ -421,7 +421,7 @@
                                     "default_value": "",
                                     "placeholder": "",
                                     "maxlength": "",
-                                    "rows": 4,
+                                    "rows": 6,
                                     "new_lines": ""
                                 },
                                 {
@@ -568,7 +568,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "50",
+                                "width": "",
                                 "class": "",
                                 "id": ""
                             },
@@ -603,23 +603,6 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_5dab77521daac",
-                            "label": "Form",
-                            "name": "form",
-                            "type": "forms",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "50",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "id",
-                            "allow_null": 0,
-                            "multiple": 0
-                        },
-                        {
                             "key": "field_5dacc0fb37d5b",
                             "label": "Image Overlap",
                             "name": "image_overlap",
@@ -637,6 +620,23 @@
                             "ui": 1,
                             "ui_on_text": "",
                             "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_5dab77521daac",
+                            "label": "Form",
+                            "name": "form",
+                            "type": "forms",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "allow_null": 0,
+                            "multiple": 0
                         }
                     ],
                     "min": "",
@@ -704,7 +704,7 @@
                                     "default_value": "",
                                     "placeholder": "",
                                     "maxlength": "",
-                                    "rows": 4,
+                                    "rows": "",
                                     "new_lines": "br"
                                 },
                                 {
@@ -730,7 +730,7 @@
                                     "key": "field_5dab788416c19",
                                     "label": "Title",
                                     "name": "title",
-                                    "type": "text",
+                                    "type": "textarea",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -741,9 +741,9 @@
                                     },
                                     "default_value": "",
                                     "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": ""
+                                    "maxlength": "",
+                                    "rows": 4,
+                                    "new_lines": "br"
                                 }
                             ]
                         }
@@ -869,5 +869,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Template: Landing, Gated (0)",
-    "modified": 1571607465
+    "modified": 1571611621
 }
