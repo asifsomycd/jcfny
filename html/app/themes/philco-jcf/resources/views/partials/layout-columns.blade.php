@@ -11,7 +11,7 @@
           <p class="text-blueberry lead"><strong>{!! $column['title'] !!}</strong></p>
           <p class="text-blueberry">{!! $column['text'] !!}</p>
           @if($column['link'])
-            @includeWhen('partials.link', array_merge(
+            @include('partials.link', array_merge(
               $column['link'],
               [
                 'class' => 'underline',
