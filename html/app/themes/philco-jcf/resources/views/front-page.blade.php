@@ -18,10 +18,10 @@
                 @include('partials.acf-link', $fields['headline_button'])
 
                 @if ( $fields['headline_video']['video_id'] )
-                  <div class="d-sm-none"><br></div>
+                  <div class="d-xl-none"><br></div>
 
                   @include('partials.modal-video', [
-                    'button_classes' => 'acf-link link-tealish link-underline ml-sm-5',
+                    'button_classes' => 'acf-link link-tealish link-underline ml-xl-5',
                     'button_text' => $fields['headline_video']['text'],
                     'video_id' => $fields['headline_video']['video_id'],
                     'modal_id' => 'video-headline-' . $fields['headline_video']['video_id'],

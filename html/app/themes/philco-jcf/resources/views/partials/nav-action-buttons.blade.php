@@ -33,7 +33,7 @@
 					<img class="d-xl-none" src="@asset('images/jcf-horizontal.svg')" alt="{{ get_bloginfo('name', 'display') }}">
 				</a>
 			</div>
-			<div class="sticky-header__nav-top col-3 col-xl-auto d-none d-xl-block ml-auto"></div>
+			<div class="sticky-header__nav-top col-3 col-xl-auto d-none d-md-flex ml-auto"></div>
 		</div>
 	</div>
 </header>
