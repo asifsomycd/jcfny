@@ -1,5 +1,6 @@
-<a href="{{ $url }}" 
-    target="{{ $target ?? '' }}"
-    class="acf-link {{ $class ?? 'btn btn-primary' }}">
-    {!! $title !!}
-</a>
+@include('partials.link', [
+  'url' => $url ?? '',
+  'target' => $target ?? '',
+  'class' => $class ?? 'btn btn-primary',
+  'title' => $title ?? '',
+])

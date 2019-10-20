@@ -30,11 +30,15 @@ h6,
   }
 }
 
-// Transitions
+// Links
 
 .btn,
 a {
   transition: $transition-default;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 // Imagery
@@ -52,4 +56,10 @@ img {
 
 .background-cover {
   @include background-cover;
+}
+
+// Colors
+
+.text-blueberry {
+  color: $blueberry;
 }

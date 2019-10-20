@@ -1,0 +1,5 @@
+<a href="{{ $url ?? '' }}"
+    target="{{ $target ?? '' }}"
+    class="{{ $class ?? '' }}">
+    {!! $title ?? '' !!}
+</a>

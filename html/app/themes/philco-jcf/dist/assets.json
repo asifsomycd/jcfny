@@ -27,11 +27,11 @@
   "images/jcf-badge-green.svg": "images/jcf-badge-green_d95a1336.svg",
   "images/jcf-badge.svg": "images/jcf-badge_31ec2818.svg",
   "images/jcf-horizontal.svg": "images/jcf-horizontal_9723af5b.svg",
-  "styles/block-editor.css": "styles/block-editor_80f998e0.css",
-  "scripts/block-editor.js": "scripts/block-editor_80f998e0.js",
-  "scripts/customizer.js": "scripts/customizer_80f998e0.js",
-  "styles/login.css": "styles/login_80f998e0.css",
-  "scripts/login.js": "scripts/login_80f998e0.js",
-  "styles/main.css": "styles/main_80f998e0.css",
-  "scripts/main.js": "scripts/main_80f998e0.js"
+  "styles/block-editor.css": "styles/block-editor_4f4d67a5.css",
+  "scripts/block-editor.js": "scripts/block-editor_4f4d67a5.js",
+  "scripts/customizer.js": "scripts/customizer_4f4d67a5.js",
+  "styles/login.css": "styles/login_4f4d67a5.css",
+  "scripts/login.js": "scripts/login_4f4d67a5.js",
+  "styles/main.css": "styles/main_4f4d67a5.css",
+  "scripts/main.js": "scripts/main_4f4d67a5.js"
 }

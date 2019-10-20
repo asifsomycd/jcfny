@@ -9,6 +9,11 @@ class App extends Controller
     use Partials\ActionForm;
     use Partials\Brightedge;
 
+    public function navType()
+    {
+        return 'default';
+    }
+
     public function pageForPosts()
     {
         return get_option('page_for_posts');

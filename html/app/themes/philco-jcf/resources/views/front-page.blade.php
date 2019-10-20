@@ -2,7 +2,7 @@
 
 @section('wrap-container')
   <div class="wrap" role="document">
-    <div class="home-block__headline" data-enllax-ratio="-0.1" data-enllax-background-align="right" data-scroll>
+    <div class="layout-block__headline" data-enllax-ratio="-0.1" data-enllax-background-align="right" data-scroll>
       <div class="content container">
         <div class="row justify-content-between">
           <main class="main col-12">
@@ -14,7 +14,7 @@
                 @endwhile
               </div>
 
-              <div class="home-block__headline_cta col-12 col-lg-4 text-center text-lg-left">
+              <div class="layout-block__headline_cta col-12 col-lg-4 text-center text-lg-left">
                 @include('partials.acf-link', $fields['headline_button'])
 
                 @if ( $fields['headline_video']['video_id'] )
@@ -35,11 +35,11 @@
     </div>
 
     @if ( $fields['image_text'] )
-      <div class="home-block__image position-relative" data-scroll>
-        <div class="home-block__image_container">
+      <div class="layout-block__image position-relative" data-scroll>
+        <div class="layout-block__image_container">
           <div class="container-fluid h-100">
             <div class="row h-100">
-              <div class="home-block__image_block col-12 col-lg-7 h-100" style="background-image: url({{ $fields['image']['sizes']['col-6'] }});"></div>
+              <div class="layout-block__image_block col-12 col-lg-7 h-100" style="background-image: url({{ $fields['image']['sizes']['col-6'] }});"></div>
             </div>
           </div>
         </div>
@@ -60,7 +60,7 @@
     @endif
 
     @if ( $fields['how_columns'] )
-      <div class="home-block__how" data-enllax-ratio="0.1" data-enllax-background-align="right" data-scroll>
+      <div class="layout-block__how" data-enllax-ratio="0.1" data-enllax-background-align="right" data-scroll>
         <div class="container text-center text-md-left">
           <h2>{{ $fields['how_title'] }}</h2>
           <div class="row justify-content-center mt-4 mb-3">
@@ -87,7 +87,7 @@
     @endif
 
     @if ( $fields['impact'] )
-      <div class="home-block__impact" data-scroll>
+      <div class="layout-block__impact" data-scroll>
         <div class="container text-center text-md-left">
           <div class="row">
             <div class="col-12 col-lg-6">
@@ -97,8 +97,8 @@
           </div>
           <div class="row justify-content-center mt-4 mb-3">
             @foreach ( $fields['impact'] as $column )
-              <div class="home-block__impact-column count-up col-8 col-md-4 mb-4 mb-lg-0 {{ !$loop->first ? 'pl-lg-5' : '' }} {{ !$loop->last ? 'pr-lg-5' : '' }} text-center text-md-left" data-scroll>
-                <div class="home-block__impact-text">
+              <div class="layout-block__impact-column count-up col-8 col-md-4 mb-4 mb-lg-0 {{ !$loop->first ? 'pl-lg-5' : '' }} {{ !$loop->last ? 'pr-lg-5' : '' }} text-center text-md-left" data-scroll>
+                <div class="layout-block__impact-text">
                   {{ $column['pre'] }}<span class="count-up-target" data-end="{!! $column['count'] !!}">{!! $column['count'] !!}</span>{{ $column['post'] }}
                 </div>
                 <p>
@@ -116,72 +116,22 @@
       </div>
     @endif
 
-    @if ( $fields['quotes'] )
-      <div class="home-block__quote" data-enllax-ratio="-0.2" data-enllax-background-align="right" data-scroll>
-        <div id="quote-carousel" class="carousel slide" data-ride="carousel" data-interval="{{ $fields['quote_interval'] * 1000 }}">
-          <div class="carousel-inner">
-            @foreach ( $fields['quotes'] as $quote )
-              <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
-
-                <div class="container">
-                  <div class="row">
-                    <div class="col-12 col-md-10 col-lg-7">
-                      <h2 class="mb-4">{!! $quote['quote'] !!}</h2>
-                      <div class="float-left home-block__quote-author">
-                        &ndash;
-                      </div>
-                      <div class="float-left ml-1">
-                        <div class="home-block__quote-author">{{ $quote['name'] }}</div>
-                        <div class="home-block__quote-title">{!! $quote['title'] !!}</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            @endforeach
-          </div>
-        </div>
-      </div>
+    @if ($fields['quotes'])
+      @include('partials.layout-quotes', [
+        'interval' => $fields['quote_interval'],
+        'quotes' => $fields['quotes'],
+      ])
     @endif
 
-    @if ( $fields['faq_faqs'] )
-      <div class="home-block__faq" data-enllax-ratio="-0.1" data-enllax-background-align="left" data-scroll>
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-lg-4">
-              <h2>Frequently Asked Questions</h2>
-            </div>
-
-            <div class="col-12 col-lg-8">
-              <div id="faqs">
-                @foreach ( $fields['faq_faqs'] as $faq )
-                  <div class="faq">
-                    <div class="faq__question">
-                      <a class="btn btn-link" href="{{ $faq['link'] }}">
-                        <div class="row">
-                          <div class="col-auto pr-0">
-                            <div class="faq__indicator fa-fw">
-                              <i class="far fa-fw fa-sm fa-arrow-right"></i>
-                            </div>
-                          </div>
-                          <div class="col pl-0">
-                            {!! $faq['title'] !!}
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                @endforeach
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    @if ($fields['faq_faqs'])
+      @include('partials.layout-faqs', [
+        'faqs' => $fields['faq_faqs'],
+        'title' => 'Frequently Asked Questions',
+      ])
     @endif
 
     @if ( $fields['advisors_text'] )
-      <div class="home-block__advisors" data-enllax-ratio="0.1" data-enllax-background-align="right" data-scroll>
+      <div class="layout-block__advisors" data-enllax-ratio="0.1" data-enllax-background-align="right" data-scroll>
         <div class="parallax-badge d-none d-md-block" data-enllax-ratio="-0.1"></div>
         <div class="container">
           <div class="row justify-content-between">

@@ -40,7 +40,8 @@
     "roots/sage-lib": "~9.0.4",
     "soberwp/controller": "~2.1.0",
     "mwdelaney/sage-bootstrap4-navwalker": "^1.2",
-    "mwdelaney/sage-acf-gutenberg-blocks": "dev-master"
+    "mwdelaney/sage-acf-gutenberg-blocks": "dev-master",
+    "roots/support": "dev-master"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.8.0",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "32a808916f631942f0bbb17ab20713e7",
+    "content-hash": "5914cdbe4413edd787fb6be524fac752",
     "packages": [
         {
             "name": "brain/hierarchy",
@@ -972,6 +972,46 @@
             "time": "2018-12-28T01:46:28+00:00"
         },
         {
+            "name": "roots/support",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/roots/support.git",
+                "reference": "0c5231dc194407e32bfee000d49a36775040289a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/roots/support/zipball/0c5231dc194407e32bfee000d49a36775040289a",
+                "reference": "0c5231dc194407e32bfee000d49a36775040289a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.2",
+                "squizlabs/php_codesniffer": "^3.3"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "QWp6t",
+                    "email": "hi@qwp6t.me"
+                }
+            ],
+            "homepage": "https://github.com/roots/support/",
+            "time": "2019-01-28T09:46:14+00:00"
+        },
+        {
             "name": "soberwp/controller",
             "version": "2.1.1",
             "source": {
@@ -1936,7 +1976,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "mwdelaney/sage-acf-gutenberg-blocks": 20
+        "mwdelaney/sage-acf-gutenberg-blocks": 20,
+        "roots/support": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
