@@ -15,7 +15,7 @@
 
 			</div>
 
-			<div class="col-12 col-lg-5 col-xl-auto mt-5 mt-lg-0">
+			<div class="col-12 col-lg-5 col-xl-6 mt-5 mt-lg-0">
 				<div class="footer-form d-none d-md-block">
 					@include('partials.action-form', [
 						'form_display' => 'inline',

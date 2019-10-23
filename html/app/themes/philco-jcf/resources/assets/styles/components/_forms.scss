@@ -127,6 +127,11 @@
 .action-form .gform_body {
   @extend .action-form__email;
 
+  &,
+  .sidebar & {
+    height: auto;
+  }
+
   .ginput_container_email input {
     @extend .form-control;
     @extend .h-100;
