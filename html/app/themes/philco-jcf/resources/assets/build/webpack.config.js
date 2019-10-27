@@ -11,12 +11,12 @@ const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const desire = require('./util/desire');
 const config = require('./config');
 
-const assetsFilenames = (config.enabled.cacheBusting) ? config.cacheBusting : '[name]';
+const assetsFilenames = config.enabled.cacheBusting ? config.cacheBusting : '[name]';
 
 let webpackConfig = {
   context: config.paths.assets,
   entry: config.entry,
-  devtool: (config.enabled.sourceMaps ? '#source-map' : undefined),
+  devtool: config.enabled.sourceMaps ? '#source-map' : undefined,
   output: {
     path: config.paths.dist,
     publicPath: config.publicPath,
@@ -53,10 +53,7 @@ let webpackConfig = {
       {
         test: /\.js$/,
         exclude: [/node_modules(?![/|\\](bootstrap|foundation-sites))/],
-        use: [
-          { loader: 'cache' },
-          { loader: 'buble', options: { objectAssign: 'Object.assign' } },
-        ],
+        use: [{ loader: 'cache' }, { loader: 'buble', options: { objectAssign: 'Object.assign' } }],
       },
       {
         test: /\.css$/,
@@ -67,7 +64,8 @@ let webpackConfig = {
             { loader: 'cache' },
             { loader: 'css', options: { sourceMap: config.enabled.sourceMaps } },
             {
-              loader: 'postcss', options: {
+              loader: 'postcss',
+              options: {
                 config: { path: __dirname, ctx: config },
                 sourceMap: config.enabled.sourceMaps,
               },
@@ -84,14 +82,16 @@ let webpackConfig = {
             { loader: 'cache' },
             { loader: 'css', options: { sourceMap: config.enabled.sourceMaps } },
             {
-              loader: 'postcss', options: {
+              loader: 'postcss',
+              options: {
                 config: { path: __dirname, ctx: config },
                 sourceMap: config.enabled.sourceMaps,
               },
             },
             { loader: 'resolve-url', options: { sourceMap: config.enabled.sourceMaps } },
             {
-              loader: 'sass', options: {
+              loader: 'sass',
+              options: {
                 sourceMap: config.enabled.sourceMaps,
                 sourceComments: true,
               },
@@ -121,10 +121,7 @@ let webpackConfig = {
     ],
   },
   resolve: {
-    modules: [
-      config.paths.assets,
-      'node_modules',
-    ],
+    modules: [config.paths.assets, 'node_modules'],
     enforceExtension: false,
   },
   resolveLoader: {
@@ -132,6 +129,8 @@ let webpackConfig = {
   },
   externals: {
     jquery: 'jQuery',
+    react: 'React',
+    'react-dom': 'ReactDOM',
   },
   plugins: [
     new CleanPlugin([config.paths.dist], {
@@ -151,7 +150,7 @@ let webpackConfig = {
     new ExtractTextPlugin({
       filename: `styles/${assetsFilenames}.css`,
       allChunks: true,
-      disable: (config.enabled.watcher),
+      disable: config.enabled.watcher,
     }),
     new webpack.ProvidePlugin({
       $: 'jquery',
@@ -183,11 +182,9 @@ let webpackConfig = {
     }),
     new FriendlyErrorsWebpackPlugin(),
   ],
-};
+}; /** Let's only load dependencies as needed */
 
-/* eslint-disable global-require */ /** Let's only load dependencies as needed */
-
-if (config.enabled.optimize) {
+/* eslint-disable global-require */ if (config.enabled.optimize) {
   webpackConfig = merge(webpackConfig, require('./webpack.config.optimize'));
 }
 

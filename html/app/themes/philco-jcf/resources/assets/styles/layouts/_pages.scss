@@ -433,3 +433,13 @@
     flex-basis: 0;
   }
 }
+
+.template-calculator {
+  .page-header {
+    margin-bottom: 0;
+
+    .offset-lg-1 {
+      margin-left: 0;
+    }
+  }
+}

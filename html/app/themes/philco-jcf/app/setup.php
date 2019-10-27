@@ -11,21 +11,31 @@ use Roots\Sage\Template\BladeProvider;
  * Theme assets
  */
 add_action('init', function () {
-    wp_register_style('google-fonts', 'https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Poppins:700', false, null);
+    wp_register_style('app/fonts', 'https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Poppins:700', false, null);
 });
 
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('google-fonts');
-    wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
+    wp_enqueue_style('app/fonts');
+    wp_enqueue_style('app/main.css', asset_path('styles/main.css'), false, null);
 
-    wp_register_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
-    wp_localize_script('sage/main.js', 'jcf', [
+    /**
+     * React
+     */
+    if (get_page_template_slug() === 'views/template-calculator.blade.php') {
+        wp_enqueue_script('wp-element');
+    }
+
+    /**
+     * App
+     */
+    wp_register_script('app/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
+    wp_localize_script('app/main.js', 'jcf', [
         'siteTitle'     => get_bloginfo('name'),
         'breakpointMd'  => 768,
         'breakpointLg'  => 992,
         'breakpointXl'  => 1200,
     ]);
-    wp_enqueue_script('sage/main.js');
+    wp_enqueue_script('app/main.js');
 
     if (is_single() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
@@ -37,9 +47,9 @@ add_action('wp_enqueue_scripts', function () {
  * Login assets
  */
 add_action('login_enqueue_scripts', function () {
-    wp_enqueue_style('google-fonts');
-    wp_enqueue_style('sage/login.css', asset_path('styles/login.css'), false, null);
-    wp_enqueue_script('sage/login.js', asset_path('scripts/login.js'), [], null, true);
+    wp_enqueue_style('app/fonts');
+    wp_enqueue_style('app/login.css', asset_path('styles/login.css'), false, null);
+    wp_enqueue_script('app/login.js', asset_path('scripts/login.js'), [], null, true);
 }, 100);
 
 add_filter('login_headerurl', function () {
@@ -51,8 +61,8 @@ add_filter('login_headerurl', function () {
  * Gutenberg assets
  */
 add_action('enqueue_block_editor_assets', function () {
-    wp_enqueue_style('google-fonts');
-    wp_enqueue_style('sage/block-editor.css', asset_path('styles/block-editor.css'), false, null);
+    wp_enqueue_style('app/fonts');
+    wp_enqueue_style('app/block-editor.css', asset_path('styles/block-editor.css'), false, null);
 });
 
 
