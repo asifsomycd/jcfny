@@ -92,6 +92,11 @@
 
 .layout-block__text-and-photo_block {
   background-color: $white;
+  background-size: contain;
+
+  @media (min-width: 1600px) {
+    background-position: left center;
+  }
 }
 
 // Action Form

@@ -21,9 +21,7 @@ add_action('wp_enqueue_scripts', function () {
     /**
      * React
      */
-    if (get_page_template_slug() === 'views/template-calculator.blade.php') {
-        wp_enqueue_script('wp-element');
-    }
+    wp_enqueue_script('wp-element');
 
     /**
      * App
