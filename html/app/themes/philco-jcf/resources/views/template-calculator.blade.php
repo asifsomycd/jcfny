@@ -31,7 +31,7 @@
 
   <div class="wrap container mt-5" role="document">
     <div class="content">
-      <div class="row justify-content-center">
+      <div class="row">
         <main class="main col-12 col-lg-10">
           @yield('content')
         </main>

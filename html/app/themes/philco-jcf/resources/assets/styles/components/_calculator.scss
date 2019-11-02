@@ -25,9 +25,9 @@
 }
 
 .calculator__image {
-  background-size: contain;
+  background-size: 200%;
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: left center;
 }
 
 .calculator__placeholder {
@@ -57,5 +57,13 @@
   @include media-breakpoint-up(md) {
     left: 0;
     right: 50%;
+  }
+}
+
+.calculator__chevron {
+  @include media-breakpoint-down(md) {
+    svg {
+      transform: rotate(90deg);
+    }
   }
 }

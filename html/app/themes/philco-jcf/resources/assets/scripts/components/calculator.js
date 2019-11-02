@@ -21,6 +21,8 @@ function Calculator() {
     display: false,
   });
 
+  const results = wp.element.createRef();
+
   /**
    * Calculate form on state change
    */
@@ -85,15 +87,32 @@ function Calculator() {
     });
   };
 
+  /**
+   * Scroll to results
+   */
+  const handleCalculateClick = event => {
+    event.preventDefault();
+    results.current.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  };
+
   return (
     <div className='calculator'>
       <div className='calculator__row-1'>
-        <div className='calculator__backfill calculator__backfill--left' />
-        <div className='calculator__backfill' />
+        <div className='calculator__backfill d-none d-md-block calculator__backfill--left' />
+        <div className='calculator__backfill d-none d-md-block'>
+          {calculatorParams && (
+            <div className='row h-100'>
+              <div className='calculator__image d-none d-lg-block col-5 ml-auto' style={{ backgroundImage: `url(${calculatorParams.image})` }} />
+            </div>
+          )}
+        </div>
         <div className='container'>
           <div className='row'>
-            <div className='col-12 col-md-6 pr-md-5'>
-              <div className='wrapper--blueberry'>
+            <div className='col-12 col-md-6 px-0 pr-md-5 pl-md-3 wrapper--blueberry'>
+              <div className='wrapper--blueberry px-3 px-md-0 py-0'>
                 <h2>{calculatorParams.title ? calculatorParams.title : 'Fee Calculator'}</h2>
                 <div className='form-group'>
                   <label htmlFor='balance'>
@@ -133,41 +152,40 @@ function Calculator() {
                     Yes
                   </label>
                 </div>
-                <div className='form-check'>
+                <div className='form-check mb-3'>
                   <input id='childrensFundN' type='radio' name='childrensFund' value='n' className='form-check-input' onChange={handleChildrensChange} />
                   <label htmlFor='childrensFundN' className='form-check-label'>
                     No
                   </label>
                 </div>
-                {/* <button type='submit' className='btn btn-outline-light'>
-              Calculate Fee
-            </button> */}
+                <button type='submit' className='btn btn-outline-light' onClick={handleCalculateClick} disabled={!formResults.display}>
+                  Calculate Fee
+                </button>
               </div>
             </div>
-            <div className='col-12 col-md-6'>
+            <div ref={results} className='calculator__results col-12 col-md-6'>
               <div className='row'>
-                <div className='wrapper--white col-7 pl-md-5'>
+                <div className='wrapper--white col-9 px-3 pl-md-5 pr-md-3'>
                   {formResults.display && (
                     <div>
                       <h3>Estimated Fees</h3>
                       <div className='text-blueberry lead'>
                         <span className='h1'>
-                          $<NumberDisplay value={formResults.feeMonth} digits={2} />
+                          <NumberDisplay value={formResults.feeMonth} digits={2} prepend='$' />
                         </span>
-                        <strong className='ml-2'>per month</strong>
+                        <strong className='ml-2 text-nowrap'>per month</strong>
                       </div>
                       <div className='text-blueberry lead'>
                         <strong>or</strong>
                         <span className='h2 ml-1'>
-                          $<NumberDisplay value={formResults.feeAnnual} />
+                          <NumberDisplay value={formResults.feeAnnual} prepend='$' />
                         </span>
-                        <strong className='ml-1'>per year</strong>
+                        <strong className='ml-1 text-nowrap'>per year</strong>
                       </div>
                     </div>
                   )}
                   {!formResults.display && <div className='calculator__placeholder h2'>{calculatorParams.text}</div>}
                 </div>
-                {calculatorParams.image && <div className='calculator__image col-5' style={{ backgroundImage: '`url(${calculatorParams.image})`' }}></div>}
               </div>
             </div>
           </div>
@@ -176,24 +194,50 @@ function Calculator() {
       <div className='calculator__row-2'>
         <SlideDown className={'my-dropdown-slidedown'}>
           {formResults.display ? (
-            <div>
-              <h2>{calculatorParams.results.title}</h2>
-              <h3>{calculatorParams.subtitle}</h3>
-              <div dangerouslySetInnerHTML={{ __html: calculatorParams.results.text }} />
-
-              <div className='row'>
-                <div className='col-12 col-md-12 pr-md-5'>
-                  <p>
-                    Returns $<NumberDisplay value={formResults.returnMonth} digits={2} /> per month / $<NumberDisplay value={formResults.returnAnnual} /> per
-                    year
-                  </p>
-                  <div dangerouslySetInnerHTML={{ __html: calculatorParams.results.returnsDisclaimer }} />
+            <div className='wrapper--pale-gray'>
+              <div className='container'>
+                <div className='row'>
+                  <div className='col-12 col-md-10'>
+                    <h2 className='mb-2'>{calculatorParams.results.title}</h2>
+                    <h4 className='mb-4'>{calculatorParams.results.subtitle}</h4>
+                    <div className='columns--2 mb-5' dangerouslySetInnerHTML={{ __html: calculatorParams.results.text }} />
+                  </div>
                 </div>
-                <div className='col-12 col-md-12 pl-md-5'>
-                  <p>
-                    Growth $<NumberDisplay value={formResults.growth} /> per year
-                  </p>
-                  <div dangerouslySetInnerHTML={{ __html: calculatorParams.results.growthDisclaimer }} />
+
+                <div className='row'>
+                  <div className='col-12 col-md-5 pr-md-5'>
+                    <h3 className='h2'>Estimated Investment Returns:</h3>
+                    <p className='text-blueberry h4'>
+                      <span className='text-tealish'>+</span>
+                      <span className='text-tealish h2 mr-1'>
+                        <NumberDisplay value={formResults.returnMonth} digits={2} prepend='$' />
+                      </span>
+                      per month
+                      <br />
+                      or <span className='text-tealish'>+</span>
+                      <span className='text-tealish h2 mr-1'>
+                        <NumberDisplay value={formResults.returnAnnual} prepend='$' />
+                      </span>
+                      per year
+                    </p>
+                    <div className='text-sm' dangerouslySetInnerHTML={{ __html: calculatorParams.results.returnsDisclaimer }} />
+                  </div>
+                  <div className='calculator__chevron col-12 col-md-1 pt-2 text-blueberry text-center mb-3'>
+                    <i className='far fa-chevron-right fa-2x'></i>
+                  </div>
+                  <div className='col-12 col-md-5 pl-md-5'>
+                    <h3 className='h2'>Net Growth of Your JCF Donor Advised Fund:</h3>
+                    <p className='text-blueberry h4'>
+                      <span className='text-tealish'>+</span>
+                      <span className='text-tealish h1 mr-1'>
+                        <NumberDisplay value={formResults.growth} prepend='$' />
+                      </span>
+                      <span className='text-tealish'>per year</span>
+                      <br />
+                      in net funds for giving
+                    </p>
+                    <div className='text-sm' dangerouslySetInnerHTML={{ __html: calculatorParams.results.growthDisclaimer }} />
+                  </div>
                 </div>
               </div>
             </div>

@@ -30,6 +30,10 @@ h6,
   }
 }
 
+.text-sm {
+  font-size: $font-size-sm;
+}
+
 // Links
 
 .btn,
@@ -62,4 +66,17 @@ img {
 
 .text-blueberry {
   color: $blueberry;
+}
+
+.text-tealish {
+  color: $tealish;
+}
+
+// Columns
+
+.columns--2 {
+  @include media-breakpoint-up(md) {
+    column-count: 2;
+    column-gap: $grid-gutter-width;
+  }
 }

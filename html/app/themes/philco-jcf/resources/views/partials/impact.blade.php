@@ -1,4 +1,4 @@
-@if(!isset($impact))
+@if(!is_array($impact))
   @php return; @endphp
 @endif
 
