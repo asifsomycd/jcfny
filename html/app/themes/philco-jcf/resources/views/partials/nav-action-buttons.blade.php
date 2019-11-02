@@ -29,13 +29,13 @@
 	</div>
 </header>
 
-<header class="sticky-header">
+<header class="sticky-header sticky-header--action-buttons">
 	<div class="container">
 		<div class="row align-items-center">
-			<div class="sticky-header__brand col col-md-6 col-xl-1 align-self-center">
+			<div class="sticky-header__brand col-6 col-md-6 align-self-center">
 				<a class="brand" href="{{ home_url('/') }}">
-					<img class="d-none d-xl-block" src="@asset('images/jcf-badge.svg')" alt="{{ get_bloginfo('name', 'display') }}">
-					<img class="d-xl-none" src="@asset('images/jcf-horizontal.svg')" alt="{{ get_bloginfo('name', 'display') }}">
+					{{-- <img class="d-none d-xl-block" src="@asset('images/jcf-badge.svg')" alt="{{ get_bloginfo('name', 'display') }}"> --}}
+					<img src="@asset('images/jcf-horizontal.svg')" alt="{{ get_bloginfo('name', 'display') }}">
 				</a>
 			</div>
 			<div class="sticky-header__nav-top col-auto d-flex ml-auto"></div>

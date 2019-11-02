@@ -8,7 +8,9 @@
     <div class="row">
       @foreach($columns as $column)
         <div class="col-12 col-md-4 mb-4 mb-lg-0">
-          <p class="text-blueberry lead"><strong>{!! $column['title'] !!}</strong></p>
+          @if($column['title'])
+            <p class="text-blueberry lead"><strong>{!! $column['title'] !!}</strong></p>
+          @endif
           <p class="text-blueberry">{!! $column['text'] !!}</p>
           @if($column['link'])
             @include('partials.link', array_merge(

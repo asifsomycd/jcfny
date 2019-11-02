@@ -2,121 +2,122 @@
 
 // Sticky header
 
-    .sticky-header {
-        background-color: $white;
-        box-shadow: $box-shadow-sm;
-        // opacity: 0;
-        padding-bottom: 0.25rem;
-        position: fixed;
-            top: -15%;
-            left: 0;
-            right: 0;
-        transition: $transition-default;
-        z-index: $zindex-fixed;
+.sticky-header {
+  background-color: $white;
+  box-shadow: $box-shadow-sm;
+  // opacity: 0;
+  padding-bottom: 0.25rem;
+  position: fixed;
+  top: -15%;
+  left: 0;
+  right: 0;
+  transition: $transition-default;
+  z-index: $zindex-fixed;
 
-        &.in{
-            opacity: 1;
-            top: 0 !important;
-        }
+  &.in {
+    opacity: 1;
+    top: 0 !important;
+  }
 
-        .brand {
-            margin: 0;
+  .brand {
+    margin: 0;
 
-            img {
-                max-height: 2rem;
-            }
-        }
-
-        .nav-top {
-            .menu-item {
-                a {
-                    padding: 1.1rem px-to-rem(13px);
-                }
-
-                &.tagged {
-                  a {
-                    margin-left: px-to-rem(6px);
-                    margin-right: px-to-rem(6px);
-                    padding-bottom: 0.75rem;
-                  }
-                }
-            }
-        }
-
-        .nav-primary {
-            .nav-link {
-                font-size: $font-size-md;
-                padding-left: 0.2rem;
-                padding-right: 0.2rem;
-            }
-        }
+    img {
+      max-height: 2rem;
     }
+  }
 
+  .nav-top {
+    .menu-item {
+      a {
+        padding: 1.1rem px-to-rem(13px);
+      }
+
+      &.tagged {
+        a {
+          margin-left: px-to-rem(6px);
+          margin-right: px-to-rem(6px);
+          padding-bottom: 0.75rem;
+        }
+      }
+    }
+  }
+
+  .nav-primary {
+    .nav-link {
+      font-size: $font-size-md;
+      padding-left: 0.2rem;
+      padding-right: 0.2rem;
+    }
+  }
+
+  &:not(.sticky-header--action-buttons) {
     .sticky-header__brand {
-        max-width: 4rem;
+      max-width: 4rem;
     }
+  }
+}
 
-    @include media-breakpoint-down(lg) {
-        .sticky-header {
-            opacity: 1;
-            top: 0 !important;
+@include media-breakpoint-down(lg) {
+  .sticky-header {
+    opacity: 1;
+    top: 0 !important;
 
-            .brand {
-                margin: 1rem 0;
+    .brand {
+      margin: 1rem 0;
 
-                img {
-                    max-height: px-to-rem(45px);
-                    // max-width: none;
-                }
-            }
-        }
-
-        .sticky-header__brand {
-            max-width: none;
-        }
-
-        .mobile-nav-bars {
-            @include link-inverse;
-
-            cursor: pointer;
-            transition: $transition-default;
-        }
+      img {
+        max-height: px-to-rem(45px);
+        // max-width: none;
+      }
     }
+  }
 
+  .sticky-header__brand {
+    max-width: none;
+  }
+
+  .mobile-nav-bars {
+    @include link-inverse;
+
+    cursor: pointer;
+    transition: $transition-default;
+  }
+}
 
 // Sticky footer
 
-    .sticky-footer {
-        background-color: $white;
-        box-shadow: 0 -0.125rem 0.25rem rgba(0, 0, 0, 0.07);
-        // opacity: 0;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        position: fixed;
-            bottom: -15%;
-            left: 0;
-            right: 0;
-        transition: $transition-default;
-        z-index: $zindex-fixed;
+.sticky-footer {
+  background-color: $white;
+  box-shadow: 0 -0.125rem 0.25rem rgba(0, 0, 0, 0.07);
+  // opacity: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: fixed;
+  bottom: -15%;
+  left: 0;
+  right: 0;
+  transition: $transition-default;
+  z-index: $zindex-fixed;
 
-        &.in{
-            bottom: 0 !important;
-            // position: fixed;
-            opacity: 1;
-        }
+  &.in {
+    bottom: 0 !important;
+    // position: fixed;
+    opacity: 1;
+  }
 
-        .form-control {
-            background-color: $pale-gray;
-        }
+  .form-control {
+    background-color: $pale-gray;
+  }
 
-        .action-form {
-            .lead {
-                margin-bottom: 0;
-            }
-
-            h3 {
-                line-height: px-to-rem(54px);
-                margin-bottom: 0;
-            }
-        }
+  .action-form {
+    .lead {
+      margin-bottom: 0;
     }
+
+    h3 {
+      line-height: px-to-rem(54px);
+      margin-bottom: 0;
+    }
+  }
+}
