@@ -7,11 +7,11 @@
             @include('partials.nav-footer-1')
 					</div>
 
-					<div class="col-6 col-lg-4">
+					{{-- <div class="col-6 col-lg-4">
             @include('partials.nav-footer-2')
-          </div>
+          </div> --}}
 
-          <div class="col-12 col-lg-4">
+          <div class="col-6 col-lg-4">
             @include('partials.brightedge')
           </div>
 				</div>
