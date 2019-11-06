@@ -19,9 +19,12 @@ function Calculator() {
     returnAnnual: 0,
     growth: 0,
     display: false,
+    disclaimer: false,
   });
 
   const results = wp.element.createRef();
+  const calculatorForm = wp.element.createRef();
+  const calculatorFormBackfill = wp.element.createRef();
 
   /**
    * Calculate form on state change
@@ -34,10 +37,21 @@ function Calculator() {
       returnAnnual: 0,
       growth: 0,
       display: false,
+      disclaimer: false,
     };
 
-    if (formValues.balance < 5000 && formValues.childrensFund) {
-      newFormResults.feeAnnual = 36;
+    if (formValues.balance < 5000) {
+      if (formValues.childrensFund) {
+        newFormResults.feeAnnual = 36;
+      } else {
+        newFormResults.disclaimer = (
+          <span>
+            JCF requires an initial contribution
+            <br />
+            of at least $5,000 to open a new fund.
+          </span>
+        );
+      }
     } else if (formValues.balance < 20000) {
       newFormResults.feeAnnual = 150;
     } else if (formValues.balance < 5000000) {
@@ -53,14 +67,31 @@ function Calculator() {
       newFormResults.feeAnnual = 132500 + feesAnnual;
     }
 
-    newFormResults.feeMonth = newFormResults.feeAnnual / 12;
-    newFormResults.returnAnnual = formValues.balance * calculatorParams.multiplier;
-    newFormResults.returnMonth = newFormResults.returnAnnual / 12;
-    newFormResults.growth = newFormResults.returnAnnual - newFormResults.feeAnnual;
-    newFormResults.display = newFormResults.growth > 0;
+    if (!newFormResults.disclaimer && formValues.balance) {
+      newFormResults.feeMonth = newFormResults.feeAnnual / 12;
+      newFormResults.returnAnnual = formValues.balance * calculatorParams.multiplier;
+      newFormResults.returnMonth = newFormResults.returnAnnual / 12;
+      newFormResults.growth = newFormResults.returnAnnual - newFormResults.feeAnnual;
+      newFormResults.display = true;
+    }
 
     setFormResults(newFormResults);
   }, [formValues]);
+
+  /**
+   * Adjust height of blueberry background behind the form
+   */
+  wp.element.useEffect(() => {
+    const handleResize = () => {
+      const newHeight = calculatorForm.current.clientHeight;
+      calculatorFormBackfill.current.setAttribute('style', `height: ${newHeight}px;`);
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Run it on first load too.
+
+    return () => window.removeEventListener('resize', handleResize);
+  });
 
   /**
    * Balance is updated
@@ -101,7 +132,7 @@ function Calculator() {
   return (
     <div className='calculator'>
       <div className='calculator__row-1'>
-        <div className='calculator__backfill d-none d-md-block calculator__backfill--left' />
+        <div ref={calculatorFormBackfill} className='calculator__backfill calculator__backfill--left' />
         <div className='calculator__backfill d-none d-md-block'>
           {calculatorParams && (
             <div className='row h-100'>
@@ -111,12 +142,12 @@ function Calculator() {
         </div>
         <div className='container'>
           <div className='row'>
-            <div className='col-12 col-md-6 px-0 pr-md-5 pl-md-3 wrapper--blueberry'>
+            <div ref={calculatorForm} className='calculator__form col-12 col-md-6 px-0 pr-md-5 pl-md-3 wrapper--blueberry'>
               <div className='wrapper--blueberry px-3 px-md-0 py-0'>
                 <h2>{calculatorParams.title ? calculatorParams.title : 'Fee Calculator'}</h2>
                 <div className='form-group'>
                   <label htmlFor='balance'>
-                    <strong>Anticipated total balance for your fund:</strong>
+                    <strong>Anticipated Fund Balance:</strong>
                   </label>
                   <div className='input-group money'>
                     <div className='input-group-prepend'>
@@ -134,6 +165,7 @@ function Calculator() {
                       onAccept={handleBalanceChange}
                     />
                   </div>
+                  {formResults.disclaimer && <small className='form-text text-white'>{formResults.disclaimer}</small>}
                 </div>
                 <div className='form-group'>
                   <strong>Is it a Children&apos;s Giving Fund or a Bar/Bat Mitzvah Fund?</strong>
@@ -193,7 +225,7 @@ function Calculator() {
       </div>
       <div className='calculator__row-2'>
         <SlideDown className={'my-dropdown-slidedown'}>
-          {formResults.display ? (
+          {formResults.display && formResults.growth > 0 ? (
             <div className='wrapper--pale-gray'>
               <div className='container'>
                 <div className='row'>

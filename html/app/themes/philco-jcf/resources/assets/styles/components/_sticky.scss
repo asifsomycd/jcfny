@@ -17,6 +17,14 @@
   &.in {
     opacity: 1;
     top: 0 !important;
+
+    @include media-breakpoint-up(xl) {
+      &:not(.sticky-header--action-buttons) {
+        .sticky-header__brand {
+          max-width: 4rem;
+        }
+      }
+    }
   }
 
   .brand {
@@ -48,12 +56,6 @@
       font-size: $font-size-md;
       padding-left: 0.2rem;
       padding-right: 0.2rem;
-    }
-  }
-
-  &:not(.sticky-header--action-buttons) {
-    .sticky-header__brand {
-      max-width: 4rem;
     }
   }
 }
