@@ -9,7 +9,7 @@ import NumberDisplay from './numberDisplay';
 function Calculator() {
   const [formValues, setFormValues] = wp.element.useState({
     balance: 0,
-    childrensFund: true,
+    childrensFund: false,
   });
 
   const [formResults, setFormResults] = wp.element.useState({
@@ -40,7 +40,9 @@ function Calculator() {
       disclaimer: false,
     };
 
-    if (formValues.balance < 5000) {
+    if (formValues.balance < 1) {
+      // Don't do anything
+    } else if (formValues.balance < 5000) {
       if (formValues.childrensFund) {
         newFormResults.feeAnnual = 36;
       } else {
@@ -167,29 +169,32 @@ function Calculator() {
                   </div>
                   {formResults.disclaimer && <small className='form-text text-white'>{formResults.disclaimer}</small>}
                 </div>
-                <div className='form-group'>
-                  <strong>Is it a Children&apos;s Giving Fund or a Bar/Bat Mitzvah Fund?</strong>
-                </div>
-                <div className='form-check'>
-                  <input
-                    id='childrensFundY'
-                    type='radio'
-                    name='childrensFund'
-                    value='y'
-                    defaultChecked
-                    className='form-check-input'
-                    onChange={handleChildrensChange}
-                  />
-                  <label htmlFor='childrensFundY' className='form-check-label'>
-                    Yes
-                  </label>
-                </div>
-                <div className='form-check mb-3'>
-                  <input id='childrensFundN' type='radio' name='childrensFund' value='n' className='form-check-input' onChange={handleChildrensChange} />
-                  <label htmlFor='childrensFundN' className='form-check-label'>
-                    No
-                  </label>
-                </div>
+                {calculatorParams.showChildrensFund && (
+                  <div>
+                    <div className='form-group'>
+                      <strong>Is it a Children&apos;s Giving Fund or a Bar/Bat Mitzvah Fund?</strong>
+                    </div>
+                    <div className='form-check'>
+                      <input
+                        id='childrensFundY'
+                        type='radio'
+                        name='childrensFund'
+                        value='y'
+                        className='form-check-input'
+                        onChange={handleChildrensChange}
+                      />
+                      <label htmlFor='childrensFundY' className='form-check-label'>
+                        Yes
+                      </label>
+                    </div>
+                    <div className='form-check mb-3'>
+                      <input id='childrensFundN' type='radio' name='childrensFund' value='n' className='form-check-input' defaultChecked onChange={handleChildrensChange} />
+                      <label htmlFor='childrensFundN' className='form-check-label'>
+                        No
+                      </label>
+                    </div>
+                  </div>
+                )}
                 <button type='submit' className='btn btn-outline-light' onClick={handleCalculateClick} disabled={!formResults.display}>
                   Calculate Fee
                 </button>

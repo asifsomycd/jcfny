@@ -18,6 +18,7 @@ class TemplateCalculator extends Controller
 
         return json_encode([
             'multiplier' => $multiplier,
+            'showChildrensFund' => get_field('calc_childrens_fund'),
             'title' => get_field('calc_title'),
             'text' => get_field('calc_text'),
             'image' => $image ? $image['sizes']['col-4'] : false,

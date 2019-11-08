@@ -27,7 +27,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "51",
                 "class": "",
                 "id": ""
             },
@@ -36,25 +36,6 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
-        },
-        {
-            "key": "field_5db5a6bcfe15e",
-            "label": "Placeholder Text",
-            "name": "calc_text",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": 4,
-            "new_lines": "br"
         },
         {
             "key": "field_5db5a62b88ba1",
@@ -76,6 +57,44 @@
             "min": "",
             "max": "",
             "step": ".0001"
+        },
+        {
+            "key": "field_5dc4b72f0dfda",
+            "label": "Enable Children's Fund calculations?",
+            "name": "calc_childrens_fund",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5db5a6bcfe15e",
+            "label": "Placeholder Text",
+            "name": "calc_text",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": "br"
         },
         {
             "key": "field_5db5a6eafe15f",
@@ -382,5 +401,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Template: Calculator (0)",
-    "modified": 1572216304
+    "modified": 1573173239
 }
