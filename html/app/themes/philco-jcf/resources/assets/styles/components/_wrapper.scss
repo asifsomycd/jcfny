@@ -1,49 +1,49 @@
 $wrapper-spacing: 4rem;
 
-@mixin wrapper( $color, $inverse: false ) {
-    background-color: $color;
-    padding: $wrapper-spacing 0;
+@mixin wrapper($color, $inverse: false) {
+  background-color: $color;
+  padding: $wrapper-spacing 0;
 
-    @if $inverse == true {
-        &,
-        h1,
-        .h1,
-        h2,
-        .h2,
-        h3,
-        .h3,
-        h4,
-        .h4,
-        h5,
-        .h5,
-        h6,
-        .h6,
-        p {
-            color: $white;
-        }
+  @if $inverse == true {
+    &,
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4,
+    h5,
+    .h5,
+    h6,
+    .h6,
+    p {
+      color: $white;
     }
+  }
 }
 
 .wrapper--gray-100 {
-   @include wrapper($gray-100);
+  @include wrapper($gray-100);
 }
 
 .wrapper--blueberry {
-   @include wrapper($blueberry, true);
+  @include wrapper($blueberry, true);
 
-   .btn:not(.btn-link) {
-        @extend .btn-outline-light;
-    }
+  .btn:not(.btn-link) {
+    @extend .btn-outline-light;
+  }
 }
 
 .wrapper--pale-gray {
-   @include wrapper($pale-gray);
+  @include wrapper($pale-gray);
 }
 
 .wrapper--tealis {
-	@include wrapper($tealish, true);
+  @include wrapper($tealish, true);
 }
 
 .wrapper--white {
-   @include wrapper($white);
+  @include wrapper($white);
 }

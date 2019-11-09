@@ -1,0 +1,249 @@
+/**
+ * Layout Blocks
+ */
+.layout-block {
+  background-repeat: no-repeat;
+  background-position: right center;
+
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4,
+  h5,
+  .h5,
+  h6,
+  .h6 {
+    margin-bottom: 0.5rem;
+  }
+}
+
+// Headline
+// Title and Text
+.layout-block__headline,
+.layout-block__title-and-text {
+  @extend .layout-block;
+
+  @include wrapper($pale-gray);
+
+  padding-bottom: $wrapper-spacing / 2;
+  padding-top: $wrapper-spacing / 2;
+
+  &:not(.without-arrows) {
+    background-image: url(../images/background-arrows-a.svg);
+  }
+
+  &_cta {
+    margin-bottom: $paragraph-margin-bottom;
+  }
+
+  @include media-breakpoint-up(md) {
+    .entry-title {
+      font-size: 2.75rem;
+    }
+  }
+
+  strong {
+    color: $blueberry;
+  }
+}
+
+// Text and Photo
+// Image
+.layout-block__text-and-photo,
+.layout-block__image {
+  @extend .layout-block;
+
+  &_container {
+    @include media-breakpoint-up(lg) {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+
+  &_block {
+    background-color: $cloudy-blue;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include media-breakpoint-down(md) {
+      padding-top: 56.25%;
+    }
+
+    @media (min-width: 1600px) {
+      background-position: right center;
+      max-width: 50%;
+    }
+  }
+}
+
+.layout-block__text-and-photo_text {
+  position: relative;
+  z-index: $zindex-dropdown;
+}
+
+.layout-block__text-and-photo_block {
+  background-color: $white;
+  background-size: contain;
+
+  @media (min-width: 1600px) {
+    background-position: left center;
+  }
+}
+
+// Action Form
+.layout-block__action-form {
+  @extend .layout-block;
+
+  @include wrapper($blueberry, true);
+
+  padding-top: $wrapper-spacing / 2;
+  padding-bottom: $wrapper-spacing / 2;
+
+  .gform_wrapper .button {
+    @extend .btn-outline-light;
+  }
+}
+
+.layout-block__action-form__image {
+  &.with-overlap {
+    margin-top: -3.5rem;
+    transform: rotate(5deg);
+  }
+}
+
+// Columns with Icons
+.layout-block__columns-icons {
+  @extend .layout-block;
+
+  @include wrapper($blueberry, true);
+
+  background-image: url(../images/background-arrows-b.svg);
+}
+
+// Columns
+.layout-block__columns {
+  @extend .layout-block;
+
+  @include wrapper($white);
+
+  background-image: url(../images/background-arrows-b.svg);
+}
+
+// Impact
+.layout-block__impact {
+  @extend .layout-block;
+
+  @include wrapper($seafoam-green, true);
+
+  .acf-link {
+    width: 100%;
+  }
+}
+
+.layout-block__impact-column {
+  @include media-breakpoint-up(md) {
+    border-right: 1px solid $white;
+
+    &:last-of-type {
+      border-right: none;
+    }
+  }
+}
+
+.layout-block__impact-text {
+  @extend .h1;
+
+  @include media-breakpoint-down(md) {
+    font-size: $h2-font-size;
+  }
+}
+
+// Quote
+.layout-block__quote {
+  @extend .layout-block;
+
+  @include wrapper($pale-gray);
+
+  background-image: url(../images/background-arrows-c.svg);
+  background-position: right top;
+
+  h2 {
+    @include media-breakpoint-down(md) {
+      font-size: $h4-font-size;
+    }
+  }
+}
+
+.layout-block__quote-author {
+  color: $blueberry;
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  font-style: italic;
+}
+
+.layout-block__quote-title {
+  color: $seafoam-green;
+  font-weight: $font-weight-bold;
+  font-style: italic;
+}
+
+// FAQ
+.layout-block__faq {
+  @extend .layout-block;
+
+  @include wrapper($seafoam-green, true);
+
+  background-image: url(../images/background-arrows-e.svg);
+  background-position: left center;
+}
+
+.faq__indicator {
+  @extend .collapsible__indicator;
+}
+
+.faq__question {
+  @extend .collapsible__trigger;
+}
+
+.faq:first-of-type .faq__question {
+  border-top: 0;
+}
+
+// IE11
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .faq__question .col {
+    flex: 1 1 auto;
+  }
+}
+
+// Advisors
+.layout-block__advisors {
+  @extend .layout-block;
+
+  @include wrapper($white);
+
+  background-image: url(../images/background-arrows-d.svg);
+  position: relative;
+}
+
+.parallax-badge {
+  background-image: url(../images/jcf-badge.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: px-to-rem(296px) auto;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+}

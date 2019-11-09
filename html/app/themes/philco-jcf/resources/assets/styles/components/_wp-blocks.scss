@@ -1,0 +1,152 @@
+/**
+ * Gutenberg block classes
+ */
+
+.main {
+  a:not(.btn):not(.acf-link):not(.wp-block-button__link) {
+    @include link-tealish;
+
+    font-style: italic;
+    font-weight: $font-weight-bold;
+    text-decoration: underline;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    a {
+      color: $headings-color !important;
+      font-style: normal !important;
+      text-decoration: none;
+
+      &:hover {
+        color: $tealish !important;
+      }
+    }
+  }
+}
+
+.wp-block-button {
+  .wp-block-button__link {
+    @extend .btn;
+
+    &:not(.has-background),
+    &.has-blueberry-background-color {
+      @extend .btn-primary;
+    }
+
+    &.has-seafoam-green-background-color,
+    &.has-tealish-background-color {
+      @extend .btn-tealish;
+    }
+
+    &.has-black-background-color {
+      @extend .btn-dark;
+    }
+
+    &.has-white-background-color {
+      @extend .btn-light;
+    }
+
+    &.has-blueberry-color {
+      color: $blueberry !important;
+    }
+
+    &.has-seafoam-green-color {
+      color: $tealish !important;
+    }
+
+    &.has-black-color {
+      color: $greyish-brown !important;
+    }
+
+    &.has-white-color {
+      color: $white !important;
+    }
+  }
+
+  &.is-style-outline {
+    .wp-block-button__link {
+      &:not(.has-background),
+      &.has-blueberry-background-color {
+        border-color: $blueberry !important;
+        color: $blueberry;
+      }
+
+      &.has-seafoam-green-background-color,
+      &.has-tealish-background-color {
+        border-color: $tealish !important;
+        color: $tealish;
+      }
+
+      &.has-black-background-color {
+        border-color: $greyish-brown !important;
+        color: $greyish-brown;
+      }
+
+      &.has-white-background-color {
+        border-color: $white !important;
+        color: $white;
+      }
+
+      &.has-background {
+        background-color: transparent !important;
+
+        &:hover {
+          background-color: $dark-lavender !important;
+          color: $white !important;
+        }
+      }
+    }
+  }
+
+  &.is-style-squared {
+    .wp-block-button__link {
+      border-radius: 0.25rem;
+    }
+  }
+}
+
+.wp-block-pullquote {
+  @include media-breakpoint-up(lg) {
+    float: left;
+    margin-left: -20.83333%;
+    margin-right: 2rem;
+    width: 50%;
+  }
+
+  clear: both;
+  margin-top: $paragraph-margin-bottom;
+  margin-bottom: $paragraph-margin-bottom;
+  padding: 0;
+  text-align: left;
+
+  blockquote {
+    margin: 0;
+  }
+
+  p {
+    @extend .h3 !optional;
+
+    margin-bottom: 0;
+  }
+
+  cite {
+    color: $headings-color;
+    font-weight: $font-weight-bold;
+  }
+}
+
+.wp-block-quote {
+  clear: both;
+  font-style: italic;
+  border-left: 3px solid $tealish;
+  padding: 0 2rem 0 1rem;
+
+  p {
+    margin-bottom: 0;
+  }
+}

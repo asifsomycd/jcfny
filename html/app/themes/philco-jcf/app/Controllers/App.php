@@ -6,42 +6,42 @@ use Sober\Controller\Controller;
 
 class App extends Controller
 {
-    public function pageForPosts() {
-        return get_option( 'page_for_posts' );
+    use Partials\ActionForm;
+    use Partials\Brightedge;
+
+    public function navType()
+    {
+        return 'default';
     }
 
-    public function pageScripts() {
-        return get_field( 'jcf_page_scripts' );
+    public function footerNavType()
+    {
+        return 'default';
     }
 
-    public function showSidebar() {
-        // Sidebar: is_null() for pages that haven't been saved since this ACF was added
-        return is_null( get_field( 'jcf_sidebar' ) ) || get_field( 'jcf_sidebar' );
+    public function pageForPosts()
+    {
+        return get_option('page_for_posts');
     }
 
-    public function showFooterForm() {
-        // Footer form: is_null() for pages that haven't been saved since this ACF was added
-        return is_null( get_field( 'jcf_footer_form' ) ) || get_field( 'jcf_footer_form' );
+    public function pageScripts()
+    {
+        return get_field('jcf_page_scripts');
     }
 
-    public function siteActionFormText() {
-        return get_field( 'jcf_action_form_text', 'options' );
+    public function siteContactPage()
+    {
+        return get_field('jcf_contact_page', 'options');
     }
 
-    public function siteActionForm() {
-        return \App\get_form( get_field( 'jcf_action_form', 'options' ) );
+    public function siteFooterScripts()
+    {
+        return get_field('jcf_footer_scripts', 'options');
     }
 
-    public function siteContactPage() {
-        return get_field( 'jcf_contact_page', 'options' );
-    }
-
-    public function siteFooterScripts() {
-        return get_field( 'jcf_footer_scripts', 'options' );
-    }
-
-    public function siteHeaderScripts() {
-        return get_field( 'jcf_header_scripts', 'options' );
+    public function siteHeaderScripts()
+    {
+        return get_field('jcf_header_scripts', 'options');
     }
 
     public function siteName()
@@ -49,19 +49,23 @@ class App extends Controller
         return get_bloginfo('name');
     }
 
-    public function sitePhone() {
-        return get_field( 'jcf_phone', 'options' );
+    public function sitePhone()
+    {
+        return get_field('jcf_phone', 'options');
     }
 
-    public function sitePhoneUrl() {
-        return 'tel:+1' . preg_replace( '/\D+/', '', get_field( 'jcf_phone', 'options' ) );
+    public function sitePhoneUrl()
+    {
+        return 'tel:+1' . preg_replace('/\D+/', '', get_field('jcf_phone', 'options'));
     }
 
-    public function siteSocial() {
-        return get_field( 'jcf_social_networks', 'options' );
+    public function siteSocial()
+    {
+        return get_field('jcf_social_networks', 'options');
     }
 
-    public static function title() {
+    public static function title()
+    {
         if (is_home()) {
             if ($home = get_option('page_for_posts', true)) {
                 return get_the_title($home);
@@ -78,27 +82,5 @@ class App extends Controller
             return __('Not Found', 'sage');
         }
         return get_the_title();
-    }
-
-    public function brightedgeHead() {
-        global $be_ixf;
-
-        if (class_exists('BrightEdge\BEIXFClient')) {
-            // IXF: place getHeadOpen just inside of the HTML head, used for to append SEO-related header elements.
-            return $be_ixf->getHeadOpen();
-        }
-
-        return '';
-    }
-
-    public function brightedgeBody() {
-        global $be_ixf;
-
-        if (class_exists('BrightEdge\BEIXFClient')) {
-            // IXF: place getBodyOpen and close just inside of the HTML body, used for to append SEO-related body elements.
-            return $be_ixf->getBodyOpen() . $be_ixf->close();
-        }
-
-        return '';
     }
 }

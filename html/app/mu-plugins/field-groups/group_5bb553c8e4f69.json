@@ -41,30 +41,68 @@
             "ui_off_text": ""
         },
         {
-            "key": "field_5bba3107f378a",
-            "label": "Page-specific scripts",
-            "name": "jcf_page_scripts",
-            "type": "repeater",
+            "key": "field_5daa400fffed5",
+            "label": "Override site-wide action form?",
+            "name": "jcf_form_override",
+            "type": "true_false",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5bb553cd587ff",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5bc91b5f6f745",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
-            "collapsed": "field_5bba311bf378b",
-            "min": 0,
-            "max": 0,
-            "layout": "table",
-            "button_label": "",
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5daa3ec719b84",
+            "label": "Action Form Text",
+            "name": "jcf_action_form_text",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5daa400fffed5",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
             "sub_fields": [
                 {
-                    "key": "field_5bba311bf378b",
-                    "label": "Title",
-                    "name": "title",
+                    "key": "field_5daa3ee519b85",
+                    "label": "Line 1",
+                    "name": "line_1",
                     "type": "text",
-                    "instructions": "Internal reference only.",
+                    "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -79,10 +117,10 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_5bba3133f378c",
-                    "label": "Script",
-                    "name": "script",
-                    "type": "textarea",
+                    "key": "field_5daa3eed19b86",
+                    "label": "Line 2",
+                    "name": "line_2",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -93,11 +131,36 @@
                     },
                     "default_value": "",
                     "placeholder": "",
-                    "maxlength": "",
-                    "rows": 4,
-                    "new_lines": ""
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 }
             ]
+        },
+        {
+            "key": "field_5daa3ef719b87",
+            "label": "Action Form",
+            "name": "jcf_action_form",
+            "type": "forms",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5daa400fffed5",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "allow_null": 1,
+            "multiple": 0
         }
     ],
     "location": [
@@ -116,13 +179,13 @@
             }
         ]
     ],
-    "menu_order": 5,
-    "position": "acf_after_title",
+    "menu_order": 15,
+    "position": "normal",
     "style": "default",
     "label_placement": "left",
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": 1,
-    "description": "Post Type: Post, Page",
-    "modified": 1539906503
+    "description": "Post Type: Post, Page (15)",
+    "modified": 1571527361
 }

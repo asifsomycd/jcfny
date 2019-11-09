@@ -1,25 +1,47 @@
 .btn-outline-light {
-    border-color: $tealish;
+  border-color: $tealish;
 
-    &:hover {
-        border-color: $tealish;
-        background-color: $tealish;
-        color: $white;
-    }
+  &:hover {
+    border-color: $tealish;
+    background-color: $tealish;
+    color: $white;
+  }
 }
 
 .btn-primary {
-    &:hover {
-        background-color: $dark-lavender;
-        border-color: $blueberry;
-    }
+  &:hover {
+    background-color: $dark-lavender;
+    border-color: $blueberry;
+  }
 }
 
 .btn-tealish {
-    background-color: $tealish;
+  background-color: $tealish;
+  color: $white;
 
-    &:hover {
-        background-color: $dark-lavender;
-        border-color: $tealish;
-    }
+  &:hover {
+    background-color: $dark-lavender;
+    border-color: $tealish;
+    color: $white;
+  }
+}
+
+.btn-dark {
+  background-color: $greyish-brown;
+
+  &:hover {
+    background-color: $dark-lavender;
+    border-color: $greyish-brown;
+    color: $white;
+  }
+}
+
+.btn-light {
+  background-color: $white;
+
+  &:hover {
+    background-color: $dark-lavender;
+    border-color: $white;
+    color: $white;
+  }
 }

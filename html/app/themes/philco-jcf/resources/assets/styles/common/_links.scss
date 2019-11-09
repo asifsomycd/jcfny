@@ -1,83 +1,83 @@
 // Links
 
-    @mixin link-underline {
-        display: inline-block;
-        font-weight: $font-weight-bold;
-        position: relative;
+@mixin link-underline {
+  display: inline-block;
+  font-weight: $font-weight-bold;
+  position: relative;
 
-        &::after {
-            background-color: $link-color;
-            border-radius: 500px;
-            content: '';
-            display: block;
-            height: 3px;
-            margin-top: 3px;
-            transition: $transition-default;
-            width: 100%;
-        }
+  &::after {
+    background-color: $link-color;
+    border-radius: 500px;
+    content: '';
+    display: block;
+    height: 3px;
+    margin-top: 3px;
+    transition: $transition-default;
+    width: 100%;
+  }
 
-        &:hover::after {
-            background-color: $link-hover-color;
-        }
+  &:hover::after {
+    background-color: $link-hover-color;
+  }
+}
+
+.link-underline {
+  @include link-underline;
+}
+
+@mixin link-body-color {
+  color: $body-color;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+.link-body-color {
+  @include link-body-color;
+}
+
+@mixin link-inverse {
+  color: $link-hover-color;
+
+  &:hover {
+    color: $link-color;
+  }
+}
+
+.link-inverse {
+  @include link-inverse;
+}
+
+@mixin link-tealish {
+  color: $tealish;
+
+  &::after {
+    background-color: $tealish;
+  }
+
+  &:hover {
+    color: $link-hover-color;
+
+    &::after {
+      background-color: $link-hover-color;
     }
+  }
+}
 
-    .link-underline {
-        @include link-underline;
-    }
+.link-tealish {
+  @include link-tealish;
+}
 
-    @mixin link-body-color {
-        color: $body-color;
+@mixin link-white {
+  color: $white;
 
-        &:hover {
-            color: $link-hover-color;
-        }
-    }
+  &:hover {
+    color: $white;
+    text-decoration: underline;
+  }
+}
 
-    .link-body-color {
-        @include link-body-color;
-    }
-
-    @mixin link-inverse {
-        color: $link-hover-color;
-
-        &:hover {
-            color: $link-color;
-        }
-    }
-
-    .link-inverse {
-        @include link-inverse;
-    }
-
-    @mixin link-tealish {
-        color: $tealish;
-
-        &::after {
-            background-color: $tealish;
-        }
-
-        &:hover {
-            color: $link-hover-color;
-
-            &::after {
-                background-color: $link-hover-color;
-            }
-        }
-    }
-
-    .link-tealish {
-        @include link-tealish;
-    }
-
-    @mixin link-white {
-        color: $white;
-
-        &:hover {
-            color: $white;
-            text-decoration: underline;
-        }
-    }
-
-    .link-white {
-        @include link-white;
-    }
+.link-white {
+  @include link-white;
+}

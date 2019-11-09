@@ -19,13 +19,13 @@
 @endsection
 
 @section('wrap-container')
-    <div class="wrap container" role="document">
-        <div class="content">
-            <div class="row justify-content-center">
-                <main class="main col-12 col-lg-10">
-                    @yield('content')
-                </main>
-            </div>
-        </div>
+  <div class="wrap container" role="document">
+    <div class="content">
+      <div class="row justify-content-center">
+        <main class="main col-12 col-lg-10">
+          @yield('content')
+        </main>
+      </div>
     </div>
+  </div>
 @endsection

@@ -1,0 +1,70 @@
+@import '~react-slidedown/lib/slidedown.css';
+
+.calculator {
+  .h1 {
+    font-size: 42px;
+  }
+
+  .input-group.money {
+    @include media-breakpoint-up(lg) {
+      max-width: 50%;
+    }
+
+    .input-group-text {
+      background: $white;
+      border-right: 0;
+      color: $blueberry;
+      font-weight: $font-weight-bold;
+    }
+
+    .form-control {
+      border-left: 0;
+      font-weight: $font-weight-bold;
+    }
+  }
+}
+
+.calculator__image {
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.calculator__placeholder {
+  font-family: $font-family-sans-serif;
+}
+
+.calculator__row-1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.calculator__backfill {
+  background-color: $white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  @include media-breakpoint-up(md) {
+    left: 50%;
+  }
+}
+
+.calculator__backfill--left {
+  background-color: $blueberry;
+
+  @include media-breakpoint-up(md) {
+    left: 0;
+    right: 50%;
+  }
+}
+
+.calculator__chevron {
+  @include media-breakpoint-down(sm) {
+    svg {
+      transform: rotate(90deg);
+    }
+  }
+}
