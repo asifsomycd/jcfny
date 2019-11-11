@@ -41,7 +41,7 @@
       "type": "package",
       "package": {
         "name": "advanced-custom-fields/advanced-custom-fields-pro",
-        "version": "5.8.5",
+        "version": "5.8.6",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
@@ -57,11 +57,11 @@
       "type": "package",
       "package": {
         "name": "gravityforms/gravityforms",
-        "version": "2.4.14.6",
+        "version": "2.4.15.4",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://wp-boilerplate.s3.amazonaws.com/plugins/gravityforms_2.4.14.6.zip"
+          "url": "https://wp-boilerplate.s3.amazonaws.com/plugins/gravityforms_2.4.15.4.zip"
         }
       }
     },
@@ -148,7 +148,7 @@
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "advanced-custom-fields/advanced-custom-fields-pro": "^5.8",
-    "gravityforms/gravityforms": "2.4.14.6",
+    "gravityforms/gravityforms": "2.4.15.4",
     "gravityforms/gravityformsgutenberg": "1.*",
     "gravityforms/gravityformspartialentries": "^1.4",
     "gravityforms/gravityformsmailchimp": "^4.6.0",
