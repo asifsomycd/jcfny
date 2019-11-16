@@ -64,6 +64,11 @@ class App extends Controller
         return get_field('jcf_social_networks', 'options');
     }
 
+    public function privacyBadge()
+    {
+        return get_field('jcf_privacy_badge', 'options');
+    }
+
     public static function title()
     {
         if (is_home()) {

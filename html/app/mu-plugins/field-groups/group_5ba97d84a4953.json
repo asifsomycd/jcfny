@@ -301,6 +301,25 @@
             "endpoint": 0
         },
         {
+            "key": "field_5dd07bfe52673",
+            "label": "Privacy Badge",
+            "name": "jcf_privacy_badge",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
             "key": "field_5bde15541d350",
             "label": "Scripts and marketing tags",
             "name": "",
@@ -453,5 +472,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Options: Site Settings",
-    "modified": 1541281195
+    "modified": 1573944380
 }
