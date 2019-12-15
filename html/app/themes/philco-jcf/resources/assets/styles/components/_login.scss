@@ -1,5 +1,6 @@
 body.login.wp-core-ui {
-  background: $gray-100 url(../images/background-arrows-f.svg) right 100px no-repeat;
+  background: $gray-100 url(../images/background-arrows-f.svg) right 100px
+    no-repeat;
 
   h1 a {
     transition: $transition-default;
@@ -18,8 +19,7 @@ body.login.wp-core-ui {
     }
   }
 
-  .button,
-  .button.button-large {
+  .button-primary {
     @extend .btn;
 
     background: $blueberry;
