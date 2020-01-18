@@ -4,7 +4,7 @@
       <div class="col-12 col-lg-5 font-size-md pt-lg-5 pb-5">
         <div class="wrapper">
           <div class="bg-white mt-n5 mt-lg-0 px-4 px-lg-0 pt-4 pt-lg-0">
-            <h2>{!! $title !!}</h2>
+            <{{ $h1 ? 'h1' : 'h2' }}>{!! $title !!}</{{ $h1 ? 'h1' : 'h2' }}>
             {!! $text !!}
           </div>
 

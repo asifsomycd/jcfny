@@ -108,6 +108,25 @@
                             "delay": 0
                         },
                         {
+                            "key": "field_5e238a482f4c6",
+                            "label": "Make this title an <code>h1<\/code> tag?",
+                            "name": "h1",
+                            "type": "true_false",
+                            "instructions": "<strong>There should be only one of these per page.<\/strong>",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "51",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
                             "key": "field_5dacc163d7afc",
                             "label": "Button",
                             "name": "button",
@@ -250,6 +269,25 @@
                             "mime_types": ""
                         },
                         {
+                            "key": "field_5e238a922f4c8",
+                            "label": "Make this title an <code>h1<\/code> tag?",
+                            "name": "h1",
+                            "type": "true_false",
+                            "instructions": "<strong>There should be only one of these per page.<\/strong>",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "51",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
                             "key": "field_5dab6f17240a6",
                             "label": "Text",
                             "name": "text",
@@ -366,6 +404,25 @@
                             "prepend": "",
                             "append": "",
                             "maxlength": ""
+                        },
+                        {
+                            "key": "field_5e238a7f2f4c7",
+                            "label": "Make this title an <code>h1<\/code> tag?",
+                            "name": "h1",
+                            "type": "true_false",
+                            "instructions": "<strong>There should be only one of these per page.<\/strong>",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "51",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
                         },
                         {
                             "key": "field_5dab731e89b7d",
@@ -533,6 +590,25 @@
                                     "mime_types": ""
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_5e238917d88ae",
+                            "label": "Make this title an <code>h1<\/code> tag?",
+                            "name": "h1",
+                            "type": "true_false",
+                            "instructions": "<strong>There should be only one of these per page.<\/strong>",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "51",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
                         },
                         {
                             "key": "field_5dacc35ff9acb",
@@ -869,5 +945,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Template: Landing, Gated (0)",
-    "modified": 1571611621
+    "modified": 1579387686
 }

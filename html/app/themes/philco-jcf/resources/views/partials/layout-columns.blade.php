@@ -4,7 +4,7 @@
 
 <div class="layout-block__columns" data-enllax-ratio="0.1" data-enllax-background-align="right" data-scroll>
   <div class="container">
-    <h2>{!! $title !!}</h2>
+    <{{ $h1 ? 'h1' : 'h2' }}>{!! $title !!}</{{ $h1 ? 'h1' : 'h2' }}>
     <div class="row">
       @foreach($columns as $column)
         <div class="col-12 col-md-4 mb-4 mb-lg-0">

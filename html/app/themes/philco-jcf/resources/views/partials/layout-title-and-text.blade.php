@@ -2,7 +2,7 @@
   <div class="container py-3">
     <div class="row">
       <div class="col-12 col-lg-4">
-        <h2 class="fix-widow-skip">{!! $title !!}</h2>
+        <{{ $h1 ? 'h1' : 'h2' }}>{!! $title !!}</{{ $h1 ? 'h1' : 'h2' }}>
       </div>
 
       <div class="col-12 col-lg-5 offset-lg-2 font-size-md">
