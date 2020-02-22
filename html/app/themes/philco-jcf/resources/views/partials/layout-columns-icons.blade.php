@@ -4,7 +4,7 @@
 
 <div class="layout-block__columns-icons" data-enllax-ratio="0.1" data-enllax-background-align="right" data-scroll>
   <div class="container text-center text-md-left">
-    <{{ $h1 ? 'h1' : 'h2' }}>{!! $title !!}</{{ $h1 ? 'h1' : 'h2' }}>
+    <{{ !empty($h1) ? 'h1' : 'h2' }}>{!! $title !!}</{{ !empty($h1) ? 'h1' : 'h2' }}>
     <div class="row justify-content-center mt-4 mb-3">
       @foreach($columns as $column)
         <div class="col-8 col-md-4 mb-4 mb-lg-0 pl-lg-4 pr-lg-4 text-center">

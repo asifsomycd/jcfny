@@ -57,11 +57,11 @@
       "type": "package",
       "package": {
         "name": "gravityforms/gravityforms",
-        "version": "2.4.16.9",
+        "version": "2.4.17.6",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://wp-boilerplate.s3.amazonaws.com/plugins/gravityforms_2.4.16.9.zip"
+          "url": "https://wp-boilerplate.s3.amazonaws.com/plugins/gravityforms_2.4.17.6.zip"
         }
       }
     },
@@ -105,11 +105,11 @@
       "type": "package",
       "package": {
         "name": "backupbuddy/backupbuddy",
-        "version": "8.5.2.1",
+        "version": "8.5.3.2",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://s3.amazonaws.com/wp-boilerplate/plugins/backupbuddy-8.5.2.1.zip"
+          "url": "https://s3.amazonaws.com/wp-boilerplate/plugins/backupbuddy-8.5.3.2.zip"
         }
       }
     },
@@ -148,7 +148,7 @@
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "advanced-custom-fields/advanced-custom-fields-pro": "^5.8",
-    "gravityforms/gravityforms": "2.4.16.9",
+    "gravityforms/gravityforms": "2.4.17.6",
     "gravityforms/gravityformsgutenberg": "1.*",
     "gravityforms/gravityformspartialentries": "^1.4",
     "gravityforms/gravityformsmailchimp": "^4.6.0",
@@ -166,10 +166,10 @@
     "wp-sync-db/wp-sync-db-media-files": "dev-master",
     "wp-sync-db/wp-sync-db": "dev-master",
     "wp-sync-db/wp-sync-db-cli": "dev-master",
-    "yoast/wordpress-seo": "12.*",
     "backupbuddy/backupbuddy": "^8.4",
     "wpackagist-plugin/media-library-plus": "^5.0",
-    "wpackagist-plugin/redirection": "^4.4"
+    "wpackagist-plugin/redirection": "^4.4",
+    "wpackagist-plugin/wordpress-seo": "^13.1"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.4.2",
