@@ -41,7 +41,7 @@
       "type": "package",
       "package": {
         "name": "advanced-custom-fields/advanced-custom-fields-pro",
-        "version": "5.8.7",
+        "version": "5.8.9",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
@@ -57,11 +57,11 @@
       "type": "package",
       "package": {
         "name": "gravityforms/gravityforms",
-        "version": "2.4.17.6",
+        "version": "2.4.17.17",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://wp-boilerplate.s3.amazonaws.com/plugins/gravityforms_2.4.17.6.zip"
+          "url": "https://wp-boilerplate.s3.amazonaws.com/plugins/gravityforms_2.4.17.17.zip"
         }
       }
     },
@@ -81,11 +81,11 @@
       "type": "package",
       "package": {
         "name": "gravityforms/gravityformsmailchimp",
-        "version": "4.6.3",
+        "version": "4.7",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://s3.amazonaws.com/wp-boilerplate/plugins/gravityformsmailchimp_4.6.3.zip"
+          "url": "https://s3.amazonaws.com/wp-boilerplate/plugins/gravityformsmailchimp_4.7.zip"
         }
       }
     },
@@ -105,11 +105,11 @@
       "type": "package",
       "package": {
         "name": "backupbuddy/backupbuddy",
-        "version": "8.5.3.2",
+        "version": "8.5.5.0",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://s3.amazonaws.com/wp-boilerplate/plugins/backupbuddy-8.5.3.2.zip"
+          "url": "https://s3.amazonaws.com/wp-boilerplate/plugins/backupbuddy-8.5.5.0.zip"
         }
       }
     },
@@ -125,18 +125,6 @@
           "reference": "master"
         }
       }
-    },
-    {
-      "url": "https://github.com/joshuafredrickson/wp-sync-db.git",
-      "type": "git"
-    },
-    {
-      "url": "https://github.com/joshuafredrickson/wp-sync-db-media-files.git",
-      "type": "git"
-    },
-    {
-      "url": "https://github.com/joshuafredrickson/wp-sync-db-cli.git",
-      "type": "git"
     }
   ],
   "require": {
@@ -148,7 +136,7 @@
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "advanced-custom-fields/advanced-custom-fields-pro": "^5.8",
-    "gravityforms/gravityforms": "2.4.17.6",
+    "gravityforms/gravityforms": "2.4.17.17",
     "gravityforms/gravityformsgutenberg": "1.*",
     "gravityforms/gravityformspartialentries": "^1.4",
     "gravityforms/gravityformsmailchimp": "^4.6.0",
@@ -163,9 +151,6 @@
     "wpackagist-plugin/wp-super-cache": "1.*",
     "wpackagist-plugin/enable-media-replace": "^3.2",
     "mdsimpson/contact-form-7-to-database-extension": "2.*",
-    "wp-sync-db/wp-sync-db-media-files": "dev-master",
-    "wp-sync-db/wp-sync-db": "dev-master",
-    "wp-sync-db/wp-sync-db-cli": "dev-master",
     "backupbuddy/backupbuddy": "^8.4",
     "wpackagist-plugin/media-library-plus": "^5.0",
     "wpackagist-plugin/redirection": "^4.4",
