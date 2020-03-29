@@ -36,3 +36,4 @@ html/app/db.php
 html/app/wp-cache-config.php
 html/*/cache
 *.bak
+*.sql

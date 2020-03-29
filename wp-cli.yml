@@ -1,1 +1,10 @@
 path: html/wp
+server:
+  docroot: web
+
+@development:
+  path: html/wp
+@staging:
+  ssh: jcfny:/home/jcfnyorg/jcfny.org/html/wp
+@production:
+  ssh: jcfny:/home/jcfnyorg/jcfny.org/html/wp
