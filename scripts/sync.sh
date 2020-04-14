@@ -105,9 +105,9 @@ if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
     [[ $TODIR =~ ^(.*): ]] && TOHOST=${BASH_REMATCH[1]}
     [[ $TODIR =~ ^(.*):(.*)$ ]] && TODIR=${BASH_REMATCH[2]}
 
-    ssh -o ForwardAgent=yes $FROMHOST "rsync -aze 'ssh -o StrictHostKeyChecking=no' --progress $FROMDIR $TOHOST:$TODIR"
+    ssh -o ForwardAgent=yes $FROMHOST "rsync -aze 'ssh -o StrictHostKeyChecking=no' --progress $FROMDIR $TOHOST:$TODIR --exclude 'backupbuddy_backups'"
   else
-    rsync -az --progress "$FROMDIR" "$TODIR"
+    rsync -az --progress --exclude 'backupbuddy_backups' "$FROMDIR" "$TODIR"
   fi
 
   # Slack notification when sync direction is up or horizontal
