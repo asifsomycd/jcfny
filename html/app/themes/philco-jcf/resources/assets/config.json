@@ -6,8 +6,8 @@
     "block-editor": ["./styles/block-editor.scss"]
   },
   "publicPath": "/app/themes/philco-jcf",
-  "devUrl": "https://jcf.test",
-  "proxyUrl": "https://jcf.test:3000",
+  "devUrl": "https://jcfny.test",
+  "proxyUrl": "https://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": ["app/**/*.php", "config/**/*.php", "resources/views/**/*.php"]
 }

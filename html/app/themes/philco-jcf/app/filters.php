@@ -89,54 +89,54 @@ add_filter('comments_template', function ($comments_template) {
 /**
  * Display sidebar?
  */
-add_filter( 'sage/display_sidebar', function ( $display ) {
+add_filter('sage/display_sidebar', function ($display) {
     static $display;
 
-    isset( $display ) || $display = in_array( true, [
+    isset($display) || $display = in_array(true, [
       // The sidebar will be displayed if any of the following return true
       is_single(),
-      'page.blade.php' == basename( get_page_template() ) && ! is_404(),
-    ] );
+      'page.blade.php' == basename(get_page_template()) && ! is_404(),
+    ]);
 
     return $display;
-} );
+});
 
 
 /**
  * Gravity Forms label visibility options
  */
-add_filter( 'gform_enable_field_label_visibility_settings', '__return_true' );
+add_filter('gform_enable_field_label_visibility_settings', '__return_true');
 
 
 /**
  * Gravity Forms skip pages on multi-page form
  * For development use
  */
-add_filter( 'gform_pre_render', function ( $form ) {
-    if ( ! rgpost( 'is_submit_' . $form['id'] ) && rgget( 'dev_form_page' ) ) {
-        \GFFormDisplay::$submission[ $form['id'] ][ 'page_number' ] = rgget( 'dev_form_page' );
+add_filter('gform_pre_render', function ($form) {
+    if (! rgpost('is_submit_' . $form['id']) && rgget('dev_form_page')) {
+        \GFFormDisplay::$submission[ $form['id'] ][ 'page_number' ] = rgget('dev_form_page');
     }
     return $form;
-} );
+});
 
 
 /**
  * Gravity Forms make state, zip optional
  */
-add_filter( 'gform_field_validation', function( $result, $value, $form, $field ) {
+add_filter('gform_field_validation', function ($result, $value, $form, $field) {
     // Address field will pass $value as an array with each of the elements as an item within the array, the key is the field id
-    if ( ! $result['is_valid'] && $result['message'] == 'This field is required. Please enter a complete address.' ) {
+    if (! $result['is_valid'] && $result['message'] == 'This field is required. Please enter a complete address.') {
         // Address failed validation because of a required item not being filled out
         // Do custom validation
-        $street  = rgar( $value, $field->id . '.1' );
-        $street2 = rgar( $value, $field->id . '.2' );
-        $city    = rgar( $value, $field->id . '.3' );
-        $state   = rgar( $value, $field->id . '.4' );
-        $zip     = rgar( $value, $field->id . '.5' );
-        $country = rgar( $value, $field->id . '.6' );
+        $street  = rgar($value, $field->id . '.1');
+        $street2 = rgar($value, $field->id . '.2');
+        $city    = rgar($value, $field->id . '.3');
+        $state   = rgar($value, $field->id . '.4');
+        $zip     = rgar($value, $field->id . '.5');
+        $country = rgar($value, $field->id . '.6');
 
         // Check to see if the values you care about are filled out
-        if ( empty( $street ) || empty( $city ) || empty( $country ) ) {
+        if (empty($street) || empty($city) || empty($country)) {
             $result['is_valid'] = false;
             $result['message']  = 'This field is required. Please enter at least a street, city and country.';
         } else {
@@ -146,20 +146,20 @@ add_filter( 'gform_field_validation', function( $result, $value, $form, $field )
     }
 
     return $result;
-}, 10, 4 );
+}, 10, 4);
 
 
 /**
  * Gravity Forms set tabindex
  */
-add_filter( 'gform_tabindex', function( $tabindex, $form ) {
+add_filter('gform_tabindex', function ($tabindex, $form) {
     return $form['id'] * 1000;
-}, 10, 2 );
+}, 10, 2);
 
 
 /**
  * Search template
  */
-add_filter( 'get_search_form', function () {
-    return \App\template( 'partials.search-form' );
-} );
+add_filter('get_search_form', function () {
+    return \App\template('partials.search-form');
+});

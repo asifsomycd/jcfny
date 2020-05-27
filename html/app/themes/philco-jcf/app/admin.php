@@ -16,7 +16,7 @@ add_action('customize_register', function (\WP_Customize_Manager $wp_customize) 
     ]);
 
     // Disable custom CSS
-    $wp_customize->remove_control( 'custom_css' );
+    $wp_customize->remove_control('custom_css');
 });
 
 
