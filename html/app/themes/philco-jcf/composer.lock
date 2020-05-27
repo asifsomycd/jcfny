@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5914cdbe4413edd787fb6be524fac752",
+    "content-hash": "2e16ffad7683fab3326836756e63619f",
     "packages": [
         {
             "name": "brain/hierarchy",
@@ -633,16 +633,16 @@
         },
         {
             "name": "mwdelaney/sage-acf-gutenberg-blocks",
-            "version": "dev-master",
+            "version": "0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MWDelaney/sage-acf-wp-blocks.git",
-                "reference": "7d62720a8484835e2a5a35ac3f2ebd8152691a25"
+                "reference": "cb481330cfa3f34b730fa46d618a77996a00dad4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MWDelaney/sage-acf-wp-blocks/zipball/7d62720a8484835e2a5a35ac3f2ebd8152691a25",
-                "reference": "7d62720a8484835e2a5a35ac3f2ebd8152691a25",
+                "url": "https://api.github.com/repos/MWDelaney/sage-acf-wp-blocks/zipball/cb481330cfa3f34b730fa46d618a77996a00dad4",
+                "reference": "cb481330cfa3f34b730fa46d618a77996a00dad4",
                 "shasum": ""
             },
             "require": {
@@ -674,7 +674,7 @@
                 "gutenberg",
                 "wordpress"
             ],
-            "time": "2019-08-18T14:33:39+00:00"
+            "time": "2020-03-05T14:38:41+00:00"
         },
         {
             "name": "mwdelaney/sage-bootstrap4-navwalker",
@@ -1976,7 +1976,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "mwdelaney/sage-acf-gutenberg-blocks": 20,
         "roots/support": 20
     },
     "prefer-stable": false,
@@ -1984,5 +1983,6 @@
     "platform": {
         "php": ">=7.1"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }

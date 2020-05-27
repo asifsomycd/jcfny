@@ -1,54 +1,74 @@
+.collapsible-wrap {
+  @extend .wrapper--blueberry;
+
+  border-radius: $btn-border-radius;
+  margin-bottom: $paragraph-margin-bottom;
+  padding: 0 0.5rem !important;
+
+  .collapsible:last-of-type {
+    .collapsible__target {
+      padding-bottom: 1px;
+    }
+  }
+}
+
 .collapsible__indicator {
-    display: inline-block;
-    margin-right: 0.5rem;
-    position: relative;
-    vertical-align: top;
+  display: inline-block;
+  margin-right: 0.5rem;
+  position: relative;
+  vertical-align: top;
 
-    .plus,
-    .minus {
-        position: absolute;
-            top: 0;
-            left: 0;
-    }
+  .plus,
+  .minus {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
-    .plus {
-        opacity: 0;
-    }
+  .plus {
+    opacity: 0;
+  }
 
-    .minus {
-        opacity: 1;
-    }
+  .minus {
+    opacity: 1;
+  }
 }
 
 .collapsible__trigger {
-    border-top: 2px solid transparentize($white, 0.6);
+  border-top: 2px solid transparentize($white, 0.6);
 
-    .btn {
-        color: $white;
-        font-size: $font-size-xl;
-        font-weight: $font-weight-bold;
-        padding-left: 0;
-        padding-right: 0;
-        text-align: left;
-        white-space: normal;
+  .btn {
+    border-radius: 0;
+    color: $white;
+    display: block;
+    font-size: $font-size-base;
+    font-weight: $font-weight-bold;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+    white-space: normal;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .collapsed .collapsible__indicator {
+    .plus {
+      opacity: 1;
     }
 
-    .collapsed .collapsible__indicator {
-        .plus {
-            opacity: 1;
-        }
-
-        .minus {
-            opacity: 0;
-        }
+    .minus {
+      opacity: 0;
     }
+  }
 }
 
 .collapsible:first-of-type .collapsible__trigger {
-    border-top: 0;
+  border-top: 0;
 }
 
 .collapsible__target {
-    margin-bottom: 1rem;
-    padding: 0 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0 0.5rem;
 }

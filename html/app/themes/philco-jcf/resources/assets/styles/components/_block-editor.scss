@@ -3,11 +3,13 @@
  * Mostly overrides of the front styles
  */
 
-.editor-post-title__block .editor-post-title__input {
-  font-family: $font-family-display;
-}
+.editor-styles-wrapper > * {
+  font-family: $font-family-sans-serif;
 
-.editor-block-list__layout {
+  .editor-post-title__block .editor-post-title__input {
+    font-family: $font-family-display;
+  }
+
   h1,
   h2,
   h3,
@@ -101,29 +103,29 @@
       font-weight: $font-weight-bold;
       text-transform: none;
     }
-  }
 
-  .wp-block-quote {
-    &,
-    &:not(.is-large),
-    &:not(.is-style-large) {
-      clear: both;
-      font-style: italic;
-      border-left: 3px solid $tealish;
-      padding: 0 2rem 0 1rem;
+    .wp-block-quote {
+      &,
+      &:not(.is-large),
+      &:not(.is-style-large) {
+        clear: both;
+        font-style: italic;
+        border-left: 3px solid $tealish;
+        padding: 0 2rem 0 1rem;
 
-      p {
-        margin-bottom: 0;
+        p {
+          margin-bottom: 0;
+        }
       }
     }
-  }
 
-  .wp-block-quote__citation,
-  .wp-block-quote cite,
-  .wp-block-quote footer {
-    color: $body-color;
-    font-size: $font-size-base;
-    font-style: italic;
-    margin-top: 0;
+    .wp-block-quote__citation,
+    .wp-block-quote cite,
+    .wp-block-quote footer {
+      color: $body-color;
+      font-size: $font-size-base;
+      font-style: italic;
+      margin-top: 0;
+    }
   }
 }

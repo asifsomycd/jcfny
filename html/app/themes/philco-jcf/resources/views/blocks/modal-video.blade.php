@@ -10,6 +10,9 @@
   SupportsAlign: false
   SupportsMode: true
   SupportsMultiple: true
+  EnqueueStyle:
+  EnqueueScript:
+  EnqueueAssets:
 --}}
 
 @switch(get_field('style'))

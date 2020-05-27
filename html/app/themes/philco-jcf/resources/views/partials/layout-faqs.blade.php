@@ -1,4 +1,4 @@
-@if(!$faqs)
+@if (! $faqs)
   @php return; @endphp
 @endif
 
@@ -11,7 +11,7 @@
 
       <div class="col-12 col-lg-8">
         <div id="faqs">
-          @foreach ( $faqs as $faq )
+          @foreach ($faqs as $faq)
             <div class="faq">
               <div class="faq__question">
                 <a class="btn btn-link" href="{{ $faq['link'] }}">

@@ -1,15 +1,16 @@
 /**
  * Backend Block Editor styles
  */
-@import 'mixins/convert-units';
-@import 'common/variables';
+@import "mixins/convert-units";
+@import "common/variables";
 
 /** Import everything from autoload */
 // @import "./autoload/**/*";
-@import '~bootstrap/scss/functions';
-@import '~bootstrap/scss/variables';
-@import '~bootstrap/scss/mixins';
-@import '~bootstrap/scss/buttons';
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/buttons";
 
 /**
  * Import npm dependencies
@@ -21,18 +22,19 @@
 
 /** Import theme styles */
 // @import "common/global";
-@import 'common/links';
+@import "common/links";
 // @import "common/animation";
-@import 'components/buttons';
+@import "components/buttons";
+@import "components/collapsible";
 // @import "components/comments";
 // @import "components/forms";
 // @import "components/gutenberg";
-@import 'components/wp-blocks';
-@import 'components/block-editor';
+@import "components/wp-blocks";
+@import "components/wrapper";
+@import "components/block-editor";
 // @import "components/modals";
 // @import "components/nav";
 // @import "components/widgets";
-// @import "components/wrapper";
 // @import "components/wp-classes";
 // @import "layouts/header";
 // @import "layouts/sidebar";
