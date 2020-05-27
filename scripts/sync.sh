@@ -115,5 +115,11 @@ if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
   #   USER="$(git config user.name)"
   #   curl -X POST -H "Content-type: application/json" --data "{\"attachments\":[{\"fallback\": \"\",\"color\":\"#36a64f\",\"text\":\"🔄 Sync from ${FROMSITE} to ${TOSITE} by ${USER} complete \"}],\"channel\":\"#site\"}" https://hooks.slack.com/services/xx/xx/xx
   # fi
+
+  # Deactivate production plugins
+  wp @development plugin deactivate autoptimize backupbuddy sucuri-scanner wp-super-cache
+  git checkout html/app/advanced-cache.php
+  git checkout html/app/wp-cache-config.php
+
   echo -e "\n\n🔄  Sync from $FROM to $TO complete.\n\n    ${bold}$TOSITE${normal}\n"
 fi
