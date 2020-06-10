@@ -1,6 +1,7 @@
 .collapsible-wrap {
-  @extend .wrapper--blueberry;
+  @include wrapper($pale-gray);
 
+  border: 2px solid $dark-lavender;
   border-radius: $btn-border-radius;
   margin-bottom: $paragraph-margin-bottom;
   padding: 0 0.5rem !important;
@@ -35,18 +36,25 @@
 }
 
 .collapsible__trigger {
-  border-top: 2px solid transparentize($white, 0.6);
+  border-top: 2px solid $dark-lavender;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
 
   .btn {
     border-radius: 0;
-    color: $white;
+    color: $blueberry;
     display: block;
     font-size: $font-size-base;
     font-weight: $font-weight-bold;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     text-align: left;
     white-space: normal;
+
+    &:hover,
+    &:active {
+      color: $dark-lavender;
+    }
 
     &:focus {
       box-shadow: none;

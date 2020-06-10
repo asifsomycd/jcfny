@@ -1,8 +1,8 @@
-@import 'mixins/convert-units';
-@import 'common/variables';
+@import "mixins/convert-units";
+@import "common/variables";
 
 /** Import everything from autoload */
-@import './autoload/**/*';
+@import "./autoload/**/*";
 
 /**
  * Import npm dependencies
@@ -13,25 +13,25 @@
 // @import "~some-node-module";
 
 /** Import theme styles */
-@import 'common/global';
-@import 'common/animation';
-@import 'common/links';
-@import 'components/buttons';
-@import 'components/calculator';
-@import 'components/collapsible';
-@import 'components/comments';
-@import 'components/forms';
-@import 'components/wp-blocks';
-@import 'components/modals';
-@import 'components/nav';
-@import 'components/sticky';
-@import 'components/widgets';
-@import 'components/wrapper';
-@import 'components/wp-classes';
-@import 'components/layout-blocks';
-@import 'layouts/header';
-@import 'layouts/sidebar';
-@import 'layouts/footer';
-@import 'layouts/pages';
-@import 'layouts/posts';
-@import 'layouts/tinymce';
+@import "common/global";
+@import "common/animation";
+@import "common/links";
+@import "components/buttons";
+@import "components/calculator";
+@import "components/comments";
+@import "components/forms";
+@import "components/wp-blocks";
+@import "components/modals";
+@import "components/nav";
+@import "components/sticky";
+@import "components/widgets";
+@import "components/wrapper";
+@import "components/collapsible";
+@import "components/wp-classes";
+@import "components/layout-blocks";
+@import "layouts/header";
+@import "layouts/sidebar";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/posts";
+@import "layouts/tinymce";

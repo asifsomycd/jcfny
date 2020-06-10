@@ -217,6 +217,21 @@
 
 .faq__question {
   @extend .collapsible__trigger;
+
+  border-top: 2px solid transparentize($white, 0.6);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+
+  .btn {
+    color: $white;
+    padding-left: 0;
+    padding-right: 0;
+
+    &:hover,
+    &:active {
+      color: transparentize($white, 0.4);
+    }
+  }
 }
 
 .faq:first-of-type .faq__question {
