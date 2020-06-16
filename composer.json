@@ -69,7 +69,7 @@
     "satispress/gravityforms": "2.4.18.6",
     "satispress/gravityformsmailchimp": "^4.7",
     "satispress/gravityformspartialentries": "^1.5",
-    "vlucas/phpdotenv": "^3.4.0",
+    "vlucas/phpdotenv": "^4.1.7",
     "wpackagist-plugin/acf-gravityforms-add-on": "1.*",
     "wpackagist-plugin/akismet": "4.*",
     "wpackagist-plugin/autoptimize": "2.*",
