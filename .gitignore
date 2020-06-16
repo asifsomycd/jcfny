@@ -23,6 +23,7 @@ html/app/wflogs/
 !.env.example
 
 # Composer
+auth.json
 vendor/*
 !vendor/.gitkeep
 
