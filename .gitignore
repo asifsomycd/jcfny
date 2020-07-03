@@ -27,6 +27,9 @@ auth.json
 vendor/*
 !vendor/.gitkeep
 
+# WP-CLI
+wp-cli.local.yml
+
 # Never keep
 iworx-backup
 debug.log
