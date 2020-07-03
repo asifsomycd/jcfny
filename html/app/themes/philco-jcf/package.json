@@ -117,7 +117,7 @@
     "webpack-dev-middleware": "~2.0.4",
     "webpack-hot-middleware": "~2.22.3",
     "webpack-merge": "~4.2.2",
-    "yargs": "~11.0.0"
+    "yargs": "~15.4.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.4",
