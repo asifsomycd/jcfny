@@ -99,7 +99,7 @@
     "import-glob": "~1.5",
     "node-sass": "~4.14.1",
     "postcss-loader": "~2.1.0",
-    "postcss-safe-parser": "~3.0",
+    "postcss-safe-parser": "~4.0",
     "purgecss-webpack-plugin": "^2.3.0",
     "purgecss-whitelister": "^2.4.0",
     "purgecss-with-wordpress": "^1.1.0",
