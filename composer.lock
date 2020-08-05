@@ -923,15 +923,15 @@
         },
         {
             "name": "wpackagist-plugin/quick-pagepost-redirect-plugin",
-            "version": "5.1.9",
+            "version": "5.2.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/quick-pagepost-redirect-plugin/",
-                "reference": "tags/5.1.9"
+                "reference": "tags/5.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/quick-pagepost-redirect-plugin.5.1.9.zip"
+                "url": "https://downloads.wordpress.org/plugin/quick-pagepost-redirect-plugin.5.2.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
