@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e25fc1c02c4152b26a3f5d11c5a0a614",
+    "content-hash": "a3d2262c3d1340fd65ad9c3b6021f72a",
     "packages": [
         {
             "name": "composer/installers",
@@ -377,7 +377,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.4.2"
+                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.4.2",
+                "reference": "5.4.2"
             },
             "require": {
                 "php": ">=5.3.2",
@@ -920,24 +921,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/page-links-to/"
-        },
-        {
-            "name": "wpackagist-plugin/quick-pagepost-redirect-plugin",
-            "version": "5.2.0",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/quick-pagepost-redirect-plugin/",
-                "reference": "tags/5.2.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/quick-pagepost-redirect-plugin.5.2.0.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/quick-pagepost-redirect-plugin/"
         },
         {
             "name": "wpackagist-plugin/redirection",

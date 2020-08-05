@@ -73,7 +73,6 @@
     "wpackagist-plugin/enable-media-replace": "^3.2",
     "wpackagist-plugin/media-library-plus": "^6.0",
     "wpackagist-plugin/page-links-to": "^3",
-    "wpackagist-plugin/quick-pagepost-redirect-plugin": "5.*",
     "wpackagist-plugin/redirection": "^4.4",
     "wpackagist-plugin/safe-svg": "1.9.*",
     "wpackagist-plugin/sucuri-scanner": "1.*",
