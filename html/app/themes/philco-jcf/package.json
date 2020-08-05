@@ -77,7 +77,7 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome-pro": "^5.3.1",
-    "autoprefixer": "~8.2.0",
+    "autoprefixer": "~9.8.6",
     "browser-sync": "~2.26.12",
     "browsersync-webpack-plugin": "^0.6.0",
     "bs-html-injector": "~3.0",
