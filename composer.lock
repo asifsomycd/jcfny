@@ -377,7 +377,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.5.1"
+                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.5.1",
+                "reference": "5.5.1"
             },
             "require": {
                 "php": ">=5.3.2",
@@ -977,15 +978,15 @@
         },
         {
             "name": "wpackagist-plugin/wordfence",
-            "version": "7.4.10",
+            "version": "7.4.11",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordfence/",
-                "reference": "tags/7.4.10"
+                "reference": "tags/7.4.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordfence.7.4.10.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordfence.7.4.11.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
