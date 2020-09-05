@@ -122,7 +122,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
-    "@fortawesome/pro-light-svg-icons": "^5.3.1",
+    "@fortawesome/pro-light-svg-icons": "^5.14.0",
     "@fortawesome/pro-regular-svg-icons": "^5.3.1",
     "@fortawesome/pro-solid-svg-icons": "^5.3.1",
     "bootstrap": "^4.5.0",
