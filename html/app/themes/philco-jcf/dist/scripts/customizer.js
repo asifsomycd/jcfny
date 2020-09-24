@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{2:function(n,o,t){n.exports=t("LnCJ")},LnCJ:function(n,o,t){"use strict";t.r(o);var e=t("xeH2"),i=t.n(e);wp.customize("blogname",(function(n){n.bind((function(n){return i()(".brand").text(n)}))}))},xeH2:function(n,o){n.exports=jQuery}},[[2,0]]]);

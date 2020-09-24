@@ -2,15 +2,15 @@
  * Fee Calculator
  */
 /* global calculatorParams */
-import { IMaskInput } from "react-imask";
-import { SlideDown } from "react-slidedown";
-import NumberDisplay from "./numberDisplay";
+import { IMaskInput } from 'react-imask'
+import { SlideDown } from 'react-slidedown'
+import NumberDisplay from './numberDisplay'
 
 function Calculator() {
   const [formValues, setFormValues] = wp.element.useState({
     balance: 0,
     childrensFund: false,
-  });
+  })
 
   const [formResults, setFormResults] = wp.element.useState({
     feeMonth: 0,
@@ -20,11 +20,11 @@ function Calculator() {
     growth: 0,
     display: false,
     disclaimer: false,
-  });
+  })
 
-  const results = wp.element.createRef();
-  const calculatorForm = wp.element.createRef();
-  const calculatorFormBackfill = wp.element.createRef();
+  const results = wp.element.createRef()
+  const calculatorForm = wp.element.createRef()
+  const calculatorFormBackfill = wp.element.createRef()
 
   /**
    * Calculate form on state change
@@ -38,13 +38,13 @@ function Calculator() {
       growth: 0,
       display: false,
       disclaimer: false,
-    };
+    }
 
     if (formValues.balance < 1) {
       // Don't do anything
     } else if (formValues.balance < 5000) {
       if (formValues.childrensFund) {
-        newFormResults.feeAnnual = 36;
+        newFormResults.feeAnnual = 36
       } else {
         newFormResults.disclaimer = (
           <span>
@@ -52,89 +52,89 @@ function Calculator() {
             <br />
             of at least $5,000 to open a new fund.
           </span>
-        );
+        )
       }
     } else if (formValues.balance < 20000) {
-      newFormResults.feeAnnual = 150;
+      newFormResults.feeAnnual = 150
     } else if (formValues.balance < 5000000) {
-      newFormResults.feeAnnual = formValues.balance * 0.0075;
+      newFormResults.feeAnnual = formValues.balance * 0.0075
     } else if (formValues.balance < 20000000) {
-      let feesAnnual = (formValues.balance - 5000000) * 0.005;
-      newFormResults.feeAnnual = 37500 + feesAnnual;
+      let feesAnnual = (formValues.balance - 5000000) * 0.005
+      newFormResults.feeAnnual = 37500 + feesAnnual
     } else if (formValues.balance < 40000000) {
-      let feesAnnual = (formValues.balance - 20000000) * 0.001;
-      newFormResults.feeAnnual = 112500 + feesAnnual;
+      let feesAnnual = (formValues.balance - 20000000) * 0.001
+      newFormResults.feeAnnual = 112500 + feesAnnual
     } else {
-      let feesAnnual = (formValues.balance - 40000000) * 0.0005;
-      newFormResults.feeAnnual = 132500 + feesAnnual;
+      let feesAnnual = (formValues.balance - 40000000) * 0.0005
+      newFormResults.feeAnnual = 132500 + feesAnnual
     }
 
     if (!newFormResults.disclaimer && formValues.balance) {
-      newFormResults.feeMonth = newFormResults.feeAnnual / 12;
+      newFormResults.feeMonth = newFormResults.feeAnnual / 12
       newFormResults.returnAnnual =
-        formValues.balance * calculatorParams.multiplier;
-      newFormResults.returnMonth = newFormResults.returnAnnual / 12;
+        formValues.balance * calculatorParams.multiplier
+      newFormResults.returnMonth = newFormResults.returnAnnual / 12
       newFormResults.growth =
-        newFormResults.returnAnnual - newFormResults.feeAnnual;
-      newFormResults.display = true;
+        newFormResults.returnAnnual - newFormResults.feeAnnual
+      newFormResults.display = true
     }
 
-    setFormResults(newFormResults);
-  }, [formValues]);
+    setFormResults(newFormResults)
+  }, [formValues])
 
   /**
    * Adjust height of blueberry background behind the form
    */
   wp.element.useEffect(() => {
     const handleResize = () => {
-      const newHeight = calculatorForm.current.clientHeight;
+      const newHeight = calculatorForm.current.clientHeight
       calculatorFormBackfill.current.setAttribute(
-        "style",
+        'style',
         `height: ${newHeight}px;`
-      );
-    };
+      )
+    }
 
-    window.addEventListener("resize", handleResize);
-    handleResize(); // Run it on first load too.
+    window.addEventListener('resize', handleResize)
+    handleResize() // Run it on first load too.
 
-    return () => window.removeEventListener("resize", handleResize);
-  });
+    return () => window.removeEventListener('resize', handleResize)
+  })
 
   /**
    * Balance is updated
    * Trigger state change
    */
-  const handleBalanceChange = (unmaskedValue) => {
+  const handleBalanceChange = unmaskedValue => {
     setFormValues({
       ...formValues,
-      ["balance"]: unmaskedValue,
-    });
-  };
+      ['balance']: unmaskedValue,
+    })
+  }
 
   /**
    * Form values are updated
    * Trigger state change
    */
-  const handleChildrensChange = (event) => {
-    const name = event.target.name;
-    let value = event.target.value;
+  const handleChildrensChange = event => {
+    const name = event.target.name
+    let value = event.target.value
 
     setFormValues({
       ...formValues,
-      [name]: value === "y" ? true : false,
-    });
-  };
+      [name]: value === 'y' ? true : false,
+    })
+  }
 
   /**
    * Scroll to results
    */
-  const handleCalculateClick = (event) => {
-    event.preventDefault();
+  const handleCalculateClick = event => {
+    event.preventDefault()
     results.current.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  };
+      behavior: 'smooth',
+      block: 'start',
+    })
+  }
 
   return (
     <div className="calculator">
@@ -163,7 +163,7 @@ function Calculator() {
                 <h2>
                   {calculatorParams.title
                     ? calculatorParams.title
-                    : "Fee Calculator"}
+                    : 'Fee Calculator'}
                 </h2>
                 <div className="form-group">
                   <label htmlFor="balance">
@@ -284,7 +284,7 @@ function Calculator() {
         </div>
       </div>
       <div className="calculator__row-2">
-        <SlideDown className={"my-dropdown-slidedown"}>
+        <SlideDown className={'my-dropdown-slidedown'}>
           {formResults.display && formResults.growth > 0 ? (
             <div className="wrapper--pale-gray">
               <div className="container">
@@ -363,15 +363,12 @@ function Calculator() {
         </SlideDown>
       </div>
     </div>
-  );
+  )
 }
 
 /**
  * Only if the calculator variable is set (json object from template)
  */
-if (typeof calculatorParams !== "undefined") {
-  wp.element.render(
-    <Calculator />,
-    document.querySelector("#react-calculator")
-  );
+if (typeof calculatorParams !== 'undefined') {
+  wp.element.render(<Calculator />, document.querySelector('#react-calculator'))
 }

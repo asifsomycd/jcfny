@@ -1,22 +1,22 @@
 .close {
-    opacity: 1;
-    transition: $transition-default;
+  opacity: 1;
+  transition: $transition-default;
 
-    &:hover,
-    &:focus {
-        color: $tealish;
-        opacity: 1;
-    }
+  &:hover,
+  &:focus {
+    color: $tealish;
+    opacity: 1;
+  }
 }
 
 .modal--iframe {
-    .modal-header {
-        padding-right: 0;
-    }
+  .modal-header {
+    padding-right: 0;
+  }
 
-    .modal-body {
-        background: $black;
-        box-shadow: $box-shadow-lg;
-        padding: 0;
-    }
+  .modal-body {
+    background: $black;
+    box-shadow: $box-shadow-lg;
+    padding: 0;
+  }
 }

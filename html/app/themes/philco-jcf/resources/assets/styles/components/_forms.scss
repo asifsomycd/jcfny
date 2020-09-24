@@ -217,11 +217,11 @@
       max-width: 95%;
     }
 
-    input:not([type='text']) {
+    input:not([type="text"]) {
       @extend .form-check-input;
     }
 
-    input[type='text'] {
+    input[type="text"] {
       width: auto;
     }
   }
@@ -304,19 +304,19 @@
     color: $danger;
   }
 
-  input[type='email'],
-  input[type='date'],
-  input[type='datetime'],
-  input[type='datetime-local'],
-  input[type='month'],
-  input[type='number'],
-  input[type='password'],
-  input[type='search'],
-  input[type='tel'],
-  input[type='text'],
-  input[type='time'],
-  input[type='week'],
-  input[type='url'],
+  input[type="email"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="month"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="time"],
+  input[type="week"],
+  input[type="url"],
   select,
   textarea {
     @extend .form-control;
@@ -343,11 +343,11 @@
   &.gform_validation_error {
     .gfield_error .ginput_container_date select,
     .gfield_error .ginput_container_address input,
-    [aria-invalid='true'] {
+    [aria-invalid="true"] {
       @extend .is-invalid;
     }
 
-    [aria-invalid='false'] {
+    [aria-invalid="false"] {
       @extend .is-valid;
     }
 

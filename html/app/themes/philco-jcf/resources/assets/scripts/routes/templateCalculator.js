@@ -1,6 +1,6 @@
-import '../components/calculator';
+import '../components/calculator'
 
 export default {
   init() {},
   finalize() {},
-};
+}

@@ -1,9 +1,8 @@
-
 @import "mixins/convert-units";
 @import "common/variables";
 
 /** Import everything from autoload */
-@import "./autoload/**/*";
+@import "./autoload/bootstrap";
 
 /**
  * Import npm dependencies

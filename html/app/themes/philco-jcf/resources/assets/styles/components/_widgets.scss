@@ -1,17 +1,17 @@
 .widget {
-    @extend .mb-5;
+  @extend .mb-5;
 }
 
 // Related posts
 
-    .related-post {
-        margin-bottom: 2rem;
-    }
+.related-post {
+  margin-bottom: 2rem;
+}
 
-    .related-post__title {
-        margin-bottom: 0.25rem;
+.related-post__title {
+  margin-bottom: 0.25rem;
 
-        a {
-            @include link-inverse;
-        }
-    }
+  a {
+    @include link-inverse;
+  }
+}

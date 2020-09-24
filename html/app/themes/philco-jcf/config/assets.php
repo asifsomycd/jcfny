@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'manifest' => get_theme_file_path().'/dist/assets.json',
+    'manifest' => get_theme_file_path().'/dist/scripts/manifest.js',
 
     /*
     |--------------------------------------------------------------------------
