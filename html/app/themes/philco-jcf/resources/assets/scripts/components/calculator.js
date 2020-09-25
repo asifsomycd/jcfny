@@ -285,7 +285,7 @@ function Calculator() {
       </div>
       <div className="calculator__row-2">
         <SlideDown className={'my-dropdown-slidedown'}>
-          {formResults.display && formResults.growth > 0 ? (
+          {formResults.display && formResults.growth >= 1 ? (
             <div className="wrapper--pale-gray">
               <div className="container">
                 <div className="row">
