@@ -925,10 +925,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@fortawesome/fontawesome-common-types@^0.2.28", "@fortawesome/fontawesome-common-types@^0.2.30":
-  version "0.2.30"
-  resolved "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.30/fontawesome-common-types-0.2.30.tgz#2f1cc5b46bd76723be41d0013a8450c9ba92b777"
-  integrity sha512-TsRwpTuKwFNiPhk1UfKgw7zNPeV5RhNp2Uw3pws+9gDAkPGKrtjR1y2lI3SYn7+YzyfuNknflpBA1LRKjt7hMg==
+"@fortawesome/fontawesome-common-types@^0.2.28", "@fortawesome/fontawesome-common-types@^0.2.30", "@fortawesome/fontawesome-common-types@^0.2.31":
+  version "0.2.31"
+  resolved "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.31/fontawesome-common-types-0.2.31.tgz#f15a39e5ab4e5dfda0717733bcacb9580e666ad9"
+  integrity sha512-xfnPyH6NN5r/h1/qDYoGB0BlHSID902UkQzxR8QsoKDh55KAPr8ruAoie12WQEEQT8lRE2wtV7LoUllJ1HqCag==
 
 "@fortawesome/fontawesome-pro@^5.14.0":
   version "5.14.0"
@@ -963,12 +963,12 @@
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.28"
 
-"@fortawesome/pro-solid-svg-icons@^5.3.1":
-  version "5.13.0"
-  resolved "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.13.0/pro-solid-svg-icons-5.13.0.tgz#8708f27cdbf906f0799e0f0d41a8b4556fafe798"
-  integrity sha512-MK3ycWLTTDw2xdY5BOQU3KYcGFk07Lj1Ub+EAlEAs9WcSgw7meEO3acPBpgNXUPB11gsI/4o9h+UxzJM1u+L8g==
+"@fortawesome/pro-solid-svg-icons@^5.15.0":
+  version "5.15.0"
+  resolved "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.15.0/pro-solid-svg-icons-5.15.0.tgz#8c35ce77f75f3f0b49f34b8e574f5d377da832b3"
+  integrity sha512-GZbUZzp4D/rgoKXAdtKyuy26MsD3Vz4AIc2r4dNHOgsUNYntlFygxzlsp1PcN3eyjyg/eqs3+0DsqIzSoahc8g==
   dependencies:
-    "@fortawesome/fontawesome-common-types" "^0.2.28"
+    "@fortawesome/fontawesome-common-types" "^0.2.31"
 
 "@fullhuman/postcss-purgecss@^2.1.2":
   version "2.3.0"
