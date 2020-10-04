@@ -77,7 +77,7 @@
     "wpackagist-plugin/safe-svg": "1.9.*",
     "wpackagist-plugin/sucuri-scanner": "1.*",
     "wpackagist-plugin/wordfence": "7.*",
-    "wpackagist-plugin/wordpress-seo": "^14.0.4",
+    "wpackagist-plugin/wordpress-seo": "^15.0",
     "wpackagist-plugin/wp-super-cache": "1.*"
   },
   "require-dev": {
