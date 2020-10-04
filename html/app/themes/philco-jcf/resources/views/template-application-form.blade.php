@@ -58,7 +58,9 @@
                             <div class="sidebar__step--{{ $loop->iteration }}">
                                 <div class="h4">Step {{ $loop->iteration }}:</div>
                                 <div class="h3">{{ $step['title'] }}</div>
-                                <img src="{{ $step['image']['sizes']['col-4'] }}" class="d-none d-lg-block">
+                                @if ($step['image'])
+                                  <img src="{{ $step['image']['sizes']['col-4'] }}" class="d-none d-lg-block">
+                                @endif
                                 {!! $step['text'] !!}
                             </div>
                         @endforeach
