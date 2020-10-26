@@ -7,6 +7,12 @@
     @include('partials.footer-default')
 @endswitch
 
+{{--
+  Client wishes to remove the sticky footer form globally.
+  Removed the option from ACF and leaving this code here should
+  they want to reinstate it in the future.
+--}}
+{{--
 @if ( $show_footer_form )
 	<div class="sticky-footer__wrap d-none d-lg-block">
 		<footer class="sticky-footer">
@@ -19,6 +25,7 @@
 		</footer>
 	</div>
 @endif
+--}}
 
 @if ( $page_scripts )
 	@foreach ( $page_scripts as $script )
