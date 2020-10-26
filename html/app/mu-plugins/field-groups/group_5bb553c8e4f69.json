@@ -22,25 +22,6 @@
             "ui_off_text": ""
         },
         {
-            "key": "field_5bb553cd587ff",
-            "label": "Show footer form?",
-            "name": "jcf_footer_form",
-            "type": "true_false",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "default_value": 1,
-            "ui": 1,
-            "ui_on_text": "",
-            "ui_off_text": ""
-        },
-        {
             "key": "field_5daa400fffed5",
             "label": "Override site-wide action form?",
             "name": "jcf_form_override",
@@ -179,13 +160,13 @@
             }
         ]
     ],
-    "menu_order": 15,
+    "menu_order": 1,
     "position": "normal",
     "style": "default",
     "label_placement": "left",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+    "active": true,
     "description": "Post Type: Post, Page (15)",
-    "modified": 1571527361
+    "modified": 1603729429
 }
