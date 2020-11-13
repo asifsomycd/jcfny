@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c1db08728f40ed8b4d3c5291edc9ed78",
+    "content-hash": "eae1e05a533cd29510d362ce61ec79b3",
     "packages": [
         {
             "name": "composer/installers",
@@ -369,15 +369,15 @@
         },
         {
             "name": "roots/wordpress",
-            "version": "5.5.1",
+            "version": "5.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "5.5.1"
+                "reference": "5.5.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.5.1"
+                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.5.3"
             },
             "require": {
                 "php": ">=5.3.2",
@@ -401,6 +401,15 @@
                 "cms",
                 "wordpress"
             ],
+            "support": {
+                "docs": "https://developer.wordpress.org/",
+                "forum": "https://wordpress.org/support/",
+                "irc": "irc://irc.freenode.net/wordpress",
+                "issues": "https://core.trac.wordpress.org/",
+                "rss": "https://wordpress.org/news/feed/",
+                "source": "https://core.trac.wordpress.org/browser",
+                "wiki": "https://codex.wordpress.org/"
+            },
             "funding": [
                 {
                     "url": "https://github.com/roots",
@@ -411,7 +420,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2020-09-01T18:56:09+00:00"
+            "time": "2020-10-30T20:40:02+00:00"
         },
         {
             "name": "roots/wordpress-core-installer",
@@ -1435,5 +1444,5 @@
         "php": ">=7.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }

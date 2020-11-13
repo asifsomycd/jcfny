@@ -32,7 +32,10 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org",
-      "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
+      "only": [
+        "wpackagist-plugin/*",
+        "wpackagist-theme/*"
+      ]
     },
     {
       "type": "composer",
@@ -58,7 +61,7 @@
     "mdsimpson/contact-form-7-to-database-extension": "2.*",
     "oscarotero/env": "^2.1",
     "roots/bedrock-autoloader": "^1.0",
-    "roots/wordpress": "5.5.1",
+    "roots/wordpress": "5.5.3",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "^1.0.0",
     "satispress/advanced-custom-fields-pro": "^5.8",
