@@ -1006,15 +1006,15 @@
         },
         {
             "name": "wpackagist-plugin/wordfence",
-            "version": "7.4.12",
+            "version": "7.4.14",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordfence/",
-                "reference": "tags/7.4.12"
+                "reference": "tags/7.4.14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordfence.7.4.12.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordfence.7.4.14.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
