@@ -866,15 +866,15 @@
         },
         {
             "name": "wpackagist-plugin/autoptimize",
-            "version": "2.7.8",
+            "version": "2.8.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/autoptimize/",
-                "reference": "tags/2.7.8"
+                "reference": "tags/2.8.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/autoptimize.2.7.8.zip"
+                "url": "https://downloads.wordpress.org/plugin/autoptimize.2.8.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
