@@ -5806,10 +5806,10 @@ laravel-mix-copy-watched@^2.2.4:
     fs-extra "^7.0.1"
     globby "^8.0.1"
 
-laravel-mix-merge-manifest@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/laravel-mix-merge-manifest/-/laravel-mix-merge-manifest-0.1.2.tgz#4bce28e64eee9c27bf9e7fd2b27fa8731b0bba0b"
-  integrity sha512-U6FnfIkxMiOA/49JXSxv8OoW5SjHFTVkJCDq66gL0qt639nwy5aJBsttCyhuAa64xgd3oswGM5o3gpgBF00isQ==
+laravel-mix-merge-manifest@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/laravel-mix-merge-manifest/-/laravel-mix-merge-manifest-1.0.1.tgz#84c633f8aebc6f0b3023089e6794da003dff7a6e"
+  integrity sha512-hK2sX+uqmWD/f5IhN+2cbwLLTrVVIR82dPuPp/y9IcFEJgyoFAHyn7SrkVIJy26XmFKQeE/cpJXDVPKyd5jKug==
   dependencies:
     lodash "^4.17.4"
 
