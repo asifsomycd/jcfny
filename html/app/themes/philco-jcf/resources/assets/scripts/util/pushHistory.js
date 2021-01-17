@@ -1,7 +1,6 @@
 let doPopState = true
 
 window.addEventListener('popstate', function(event) {
-  console.log(event.state)
   if (event.state) {
     if (event.state.trigger) {
       doPopState = false

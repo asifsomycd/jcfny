@@ -346,11 +346,11 @@ export default {
     setTimeout(
       () =>
         $(window)
-          .scroll()
+          .trigger('scroll')
           .trigger('window:resize'),
       250
     )
 
-    $(window).resize(() => $(window).trigger('window:resize'))
+    $(window).on('resize', () => $(window).trigger('window:resize'))
   },
 }
