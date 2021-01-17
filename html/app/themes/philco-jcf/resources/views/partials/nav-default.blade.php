@@ -21,8 +21,9 @@
 			@if ( has_nav_menu( 'primary_navigation' ) )
 				{!! wp_nav_menu( [
 					'theme_location' => 'primary_navigation',
-					'menu_class' 	=> 'nav',
-					'walker'		=> new App\wp_bootstrap4_navwalker()
+					'menu_class' => 'nav',
+          'walker' => new App\wp_bootstrap4_navwalker(),
+          'depth' => 2,
 				] ) !!}
 			@endif
 		</nav>
