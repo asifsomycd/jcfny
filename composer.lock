@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "826ae7b3a7afe85bb45132cd5530be9b",
+    "content-hash": "2e5b1ac921c288d35355304bac951292",
     "packages": [
         {
             "name": "composer/installers",
@@ -192,6 +192,10 @@
                 "plugin",
                 "wordpress"
             ],
+            "support": {
+                "issues": "https://github.com/mdsimpson/contact-form-7-to-database-extension/issues",
+                "source": "https://github.com/mdsimpson/contact-form-7-to-database-extension/tree/2.10.36"
+            },
             "time": "2018-04-18T01:48:25+00:00"
         },
         {
@@ -1451,5 +1455,5 @@
         "php": ">=7.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }
