@@ -134,6 +134,10 @@
                 "zend",
                 "zikula"
             ],
+            "support": {
+                "issues": "https://github.com/composer/installers/issues",
+                "source": "https://github.com/composer/installers/tree/v1.10.0"
+            },
             "funding": [
                 {
                     "url": "https://packagist.com",
@@ -596,11 +600,11 @@
         },
         {
             "name": "satispress/advanced-custom-fields-pro",
-            "version": "5.9.4",
+            "version": "5.9.5",
             "dist": {
                 "type": "zip",
-                "url": "https://satispress.orangepineapple.com/satispress/advanced-custom-fields-pro/5.9.4",
-                "shasum": "a841ed7e31e45f94e5d734b0d5c8cd4b9bd6072b"
+                "url": "https://satispress.orangepineapple.com/satispress/advanced-custom-fields-pro/5.9.5",
+                "shasum": "89fe97cf6e087a3eef5485db6e83a83f63e5edbf"
             },
             "require": {
                 "composer/installers": "^1.0"
