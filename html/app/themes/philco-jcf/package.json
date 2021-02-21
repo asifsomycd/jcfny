@@ -30,7 +30,7 @@
     "@fortawesome/pro-regular-svg-icons": "^5.15.2",
     "@fortawesome/pro-solid-svg-icons": "^5.15.2",
     "@tinypixelco/laravel-mix-wp-blocks": "^1.0.0",
-    "@wordpress/babel-preset-default": "^4.20.0",
+    "@wordpress/babel-preset-default": "^5.0.1",
     "@wordpress/browserslist-config": "^3.0.1",
     "@wordpress/dependency-extraction-webpack-plugin": "^2.5.0",
     "babel-eslint": "^10.1.0",
