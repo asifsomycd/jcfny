@@ -13,6 +13,9 @@ html/wp
 html/.htaccess
 html/*/themes/twenty*
 
+# Logs
+*.log
+
 # Plugins
 !html/app/plugins/brightedge-ixf-client
 html/app/wflogs/
@@ -24,7 +27,7 @@ html/app/wflogs/
 
 # Composer
 auth.json
-vendor/*
+/vendor
 !vendor/.gitkeep
 
 # WP-CLI
