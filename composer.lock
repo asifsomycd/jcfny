@@ -1209,15 +1209,15 @@
         },
         {
             "name": "wpackagist-plugin/media-library-plus",
-            "version": "6.1.1",
+            "version": "6.1.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/media-library-plus/",
-                "reference": "tags/6.1.1"
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/media-library-plus.6.1.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/media-library-plus.zip?timestamp=1614783537"
             },
             "require": {
                 "composer/installers": "~1.0"
