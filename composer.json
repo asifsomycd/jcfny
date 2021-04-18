@@ -48,7 +48,7 @@
     "mdsimpson/contact-form-7-to-database-extension": "^2.10",
     "oscarotero/env": "^2.1",
     "roots/bedrock-autoloader": "^1.0",
-    "roots/wordpress": "5.7",
+    "roots/wordpress": "5.7.1",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "satispress/advanced-custom-fields-pro": "^5.8",
