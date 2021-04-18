@@ -1115,10 +1115,10 @@
   resolved "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.34/fontawesome-common-types-0.2.34.tgz#0a8c348bb23b7b760030f5b1d912e582be4ec915"
   integrity sha512-XcIn3iYbTEzGIxD0/dY5+4f019jIcEIWBiHc3KrmK/ROahwxmZ/s+tdj97p/5K0klz4zZUiMfUlYP0ajhSJjmA==
 
-"@fortawesome/fontawesome-pro@^5.15.2":
-  version "5.15.2"
-  resolved "https://npm.fontawesome.com/@fortawesome/fontawesome-pro/-/5.15.2/fontawesome-pro-5.15.2.tgz#188d7d199f381c9fcf7b2fc0fd7d9e148e80b27a"
-  integrity sha512-Eohj5nc09eqyAtPXDrnlxiLNLr9L9vo2bUiHJ4uSc/qzt5yfoW3XQt+l2PeevX7dn3gtqNkQA8Et1MhymlsKsA==
+"@fortawesome/fontawesome-pro@^5.15.3":
+  version "5.15.3"
+  resolved "https://npm.fontawesome.com/@fortawesome/fontawesome-pro/-/5.15.3/fontawesome-pro-5.15.3.tgz#6d039e215b88da6c2a17475810804348993bf3d0"
+  integrity sha512-JAf7zDYGVtcJIqnWAzZ8KRqSHQ2+KnJi4K916Zxti4ONfaVw87jaUoxtfxtNsc3kgTmCmbwgPsi2nOA/1fEnzQ==
 
 "@fortawesome/fontawesome-svg-core@^1.2.34":
   version "1.2.34"
