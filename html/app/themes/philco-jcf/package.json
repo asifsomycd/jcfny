@@ -46,7 +46,7 @@
     "laravel-mix-merge-manifest": "^2.0.0",
     "laravel-mix-purgecss": "^5.0.0-rc.1",
     "npm-run-all": "^4.1",
-    "palette-webpack-plugin": "^1.0.0",
+    "palette-webpack-plugin": "^1.0.3",
     "purgecss-whitelister": "^2.4.0",
     "purgecss-with-wordpress": "^2.1.0",
     "rimraf": "^3.0.2",

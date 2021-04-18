@@ -7162,10 +7162,10 @@ pako@~1.0.5:
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
   integrity sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==
 
-palette-webpack-plugin@^1.0.0:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/palette-webpack-plugin/-/palette-webpack-plugin-1.0.2.tgz#cf1169e388e2911e668701d61f4ecc0d11872a80"
-  integrity sha512-orK58CoiMg8GD/EWGfZpQaE2fA/9q2smIf6JYx2Eh71h3wg15cqahqSwBwKUf/I3x5VyaZdLXY2Vv+GdhpFHHw==
+palette-webpack-plugin@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/palette-webpack-plugin/-/palette-webpack-plugin-1.0.3.tgz#e9864034da458451aa725665b0be4933e984c909"
+  integrity sha512-MeNwayumLmMEYzLL/ilef68ZreAynEL99Ws8ivp7kYfybqAdxabGlWDiNMzblGWuBBr29/vt5bluPpWtyvTwug==
   dependencies:
     d3-color "^2.0.0"
     d3-hsv "^0.1.0"
