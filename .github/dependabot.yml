@@ -1,0 +1,29 @@
+version: 2
+registries:
+  composer-repository-satispress-orangepineapple-com:
+    type: composer-repository
+    url: https://satispress.orangepineapple.com
+    username: "${{secrets.SATISPRESS_PASSWORD}}"
+    password: "${{secrets.SATISPRESS}}"
+
+updates:
+  - package-ecosystem: composer
+    directory: "/"
+    schedule:
+      interval: daily
+      time: "23:00"
+    open-pull-requests-limit: 99
+    ignore:
+      - dependency-name: wpackagist-plugin/disable-comments
+        versions:
+          - "> 1.11.0"
+    registries:
+      - composer-repository-satispress-orangepineapple-com
+  - package-ecosystem: composer
+    directory: "/html/app/themes/philco-jcf"
+    schedule:
+      interval: daily
+      time: "23:00"
+    open-pull-requests-limit: 99
+    registries:
+      - composer-repository-satispress-orangepineapple-com
