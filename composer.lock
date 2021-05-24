@@ -1121,15 +1121,15 @@
         },
         {
             "name": "wpackagist-plugin/acf-gravityforms-add-on",
-            "version": "1.2.7",
+            "version": "1.2.8",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/acf-gravityforms-add-on/",
-                "reference": "tags/1.2.7"
+                "reference": "tags/1.2.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/acf-gravityforms-add-on.1.2.7.zip"
+                "url": "https://downloads.wordpress.org/plugin/acf-gravityforms-add-on.1.2.8.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
