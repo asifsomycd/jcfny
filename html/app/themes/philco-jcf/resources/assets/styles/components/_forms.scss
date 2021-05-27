@@ -223,6 +223,8 @@
 
     input:not([type="text"]) {
       @extend .form-check-input;
+
+      margin-top: 0.45rem;
     }
 
     input[type="text"] {
