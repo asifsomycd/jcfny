@@ -1301,15 +1301,15 @@
         },
         {
             "name": "wpackagist-plugin/wordfence",
-            "version": "7.5.3",
+            "version": "7.5.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordfence/",
-                "reference": "tags/7.5.3"
+                "reference": "tags/7.5.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordfence.7.5.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordfence.7.5.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1750,5 +1750,5 @@
         "php": ">=7.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
