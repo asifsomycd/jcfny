@@ -723,11 +723,11 @@
         },
         {
             "name": "satispress/backupbuddy",
-            "version": "8.7.2.0",
+            "version": "8.7.3.0",
             "dist": {
                 "type": "zip",
-                "url": "https://satispress.orangepineapple.com/satispress/backupbuddy/8.7.2.0",
-                "shasum": "de6d68ddb2eba77c33604ce6009679392d6ba240"
+                "url": "https://satispress.orangepineapple.com/satispress/backupbuddy/8.7.3.0",
+                "shasum": "2e3714a22cd520458e2d651933f3c84b2bc8efb7"
             },
             "require": {
                 "composer/installers": "^1.0"
