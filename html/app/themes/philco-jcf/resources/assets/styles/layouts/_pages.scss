@@ -114,11 +114,22 @@
       font-size: $h4-font-size;
     }
   }
+
+  .collapsible__title,
+  .collapsible__trigger,
+  .collapsible__indicator {
+    color: $white;
+  }
 }
 
 #mobile-contact-collapse {
-  .collapsible__trigger {
+  .collapsible__trigger:not(:first-of-type) {
     border-top: 2px solid transparentize($white, 0.6);
+  }
+
+  .collapsible__title,
+  .collapsible__indicator {
+    color: $blueberry;
   }
 
   .collapsible__target {
