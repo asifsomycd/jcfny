@@ -704,18 +704,18 @@
         },
         {
             "name": "satispress/advanced-custom-fields-pro",
-            "version": "5.9.7",
+            "version": "5.9.9",
             "dist": {
                 "type": "zip",
-                "url": "https://satispress.orangepineapple.com/satispress/advanced-custom-fields-pro/5.9.7",
-                "shasum": "9897bf3af6b6faab4a690a30593e9f444c764d7e"
+                "url": "https://satispress.orangepineapple.com/satispress/advanced-custom-fields-pro/5.9.9",
+                "shasum": "f5bc0365fdb18cdc270be6762c6e621b7fe2f34f"
             },
             "require": {
                 "composer/installers": "^1.0"
             },
             "type": "wordpress-plugin",
             "authors": {
-                "name": "Elliot Condon",
+                "name": "Delicious Brains",
                 "homepage": "https://www.advancedcustomfields.com"
             },
             "description": "Customize WordPress with powerful, professional and intuitive fields.",
