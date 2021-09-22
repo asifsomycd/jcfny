@@ -6,8 +6,8 @@
     {!! $brightedge_body !!}
 
 		<!-- Google Tag Manager (noscript) -->
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHL4ND5"
-		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TX8XFBZ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- End Google Tag Manager (noscript) -->
 		@php do_action('get_header') @endphp
 		@include('partials.header')
