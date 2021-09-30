@@ -54,7 +54,7 @@
     "satispress/advanced-custom-fields-pro": "^5.8",
     "satispress/backupbuddy": "^8.5",
     "satispress/gravityforms": "2.5.10",
-    "satispress/gravityformsmailchimp": "^4.7",
+    "satispress/gravityformsmailchimp": "^5.0",
     "satispress/gravityformspartialentries": "^1.5",
     "vlucas/phpdotenv": "^5.3",
     "wpackagist-plugin/acf-gravityforms-add-on": "1.*",
