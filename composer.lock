@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a8feb4bd64b11387f67213bcbd7fe8dc",
+    "content-hash": "27fd7e52a4cad81503ab8aaf636138b3",
     "packages": [
         {
             "name": "composer/installers",
@@ -762,11 +762,11 @@
         },
         {
             "name": "satispress/gravityformsmailchimp",
-            "version": "4.9",
+            "version": "5.0",
             "dist": {
                 "type": "zip",
-                "url": "https://satispress.orangepineapple.com/satispress/gravityformsmailchimp/4.9",
-                "shasum": "260dd3c39be75b2c1a848fb1054281bf73c73da3"
+                "url": "https://satispress.orangepineapple.com/satispress/gravityformsmailchimp/5.0",
+                "shasum": "64659626a735bc1d549e3414b7cd0232b12b88a1"
             },
             "require": {
                 "composer/installers": "^1.0"
