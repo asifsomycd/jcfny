@@ -1205,18 +1205,18 @@
         },
         {
             "name": "wpackagist-plugin/media-library-plus",
-            "version": "7.0.3",
+            "version": "7.0.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/media-library-plus/",
-                "reference": "tags/7.0.3"
+                "reference": "tags/7.0.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/media-library-plus.7.0.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/media-library-plus.7.0.7.zip"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "~1.0 || ~2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/media-library-plus/"
