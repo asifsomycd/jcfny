@@ -3,7 +3,6 @@
 
   .social {
     @extend .text-lg-right;
-    @extend .mt-md-5;
 
     a {
       @include link-inverse;
