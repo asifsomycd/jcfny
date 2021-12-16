@@ -1,0 +1,16 @@
+.announcement-bar {
+  display: none; // Home page only for now
+
+  p {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: white;
+    text-decoration: underline;
+
+    &:hover {
+      color: $cloudy-blue;
+    }
+  }
+}

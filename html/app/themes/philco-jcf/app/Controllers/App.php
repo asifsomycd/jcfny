@@ -69,6 +69,22 @@ class App extends Controller
         return get_field('jcf_privacy_badge', 'options');
     }
 
+    /**
+     * Get the site-wide announcement bar
+     *
+     * @return string
+     */
+    public function announcementBar()
+    {
+        $showBar = get_field('jcf_show_announcement_bar', 'options') ?: false;
+
+        if (! $showBar) {
+            return '';
+        }
+
+        return get_field('jcf_announcement_bar', 'options') ?: '';
+    }
+
     public static function title()
     {
         if (is_home()) {

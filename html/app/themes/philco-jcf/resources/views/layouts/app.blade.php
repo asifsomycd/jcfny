@@ -9,9 +9,13 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TX8XFBZ"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- End Google Tag Manager (noscript) -->
+
 		@php do_action('get_header') @endphp
+
+    @include('partials.announcement-bar')
 		@include('partials.header')
-		<div class="hfeed">
+
+    <div class="hfeed">
 			@yield('background-arrows')
 			@yield('post-header')
 			@section('wrap-container')
