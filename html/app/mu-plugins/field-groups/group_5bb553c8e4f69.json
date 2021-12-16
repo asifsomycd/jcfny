@@ -180,12 +180,13 @@
         ]
     ],
     "menu_order": 1,
-    "position": "normal",
+    "position": "acf_after_title",
     "style": "default",
     "label_placement": "left",
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": true,
     "description": "Post Type: Post, Page (15)",
-    "modified": 1639689824
+    "show_in_rest": 0,
+    "modified": 1639690352
 }
