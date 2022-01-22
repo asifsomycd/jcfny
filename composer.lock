@@ -1248,18 +1248,18 @@
         },
         {
             "name": "wpackagist-plugin/page-links-to",
-            "version": "3.3.5",
+            "version": "3.3.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/page-links-to/",
-                "reference": "tags/3.3.5"
+                "reference": "tags/3.3.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/page-links-to.3.3.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/page-links-to.3.3.6.zip"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/page-links-to/"
