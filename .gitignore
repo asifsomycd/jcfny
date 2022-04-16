@@ -39,6 +39,7 @@ iworx-backup
 debug.log
 .vscode
 .DS_Store
+html/.well-known
 html/app/advanced-cache.php
 html/app/db.php
 html/app/wp-cache-config.php
