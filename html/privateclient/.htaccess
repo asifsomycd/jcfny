@@ -1,8 +1,0 @@
-# Site migration redirects 11/2018
-# redirect rules for privateclient.jcfny.org
-<IfModule mod_rewrite.c>
-Redirect 301 /index.html https://jcfny.org/for-advisors/
-Redirect 301 /individuals.html https://jcfny.org/private-client-group/
-Redirect 301 /advisors.html https://jcfny.org/for-advisors/
-</IfModule>
-
