@@ -799,14 +799,14 @@
         },
         {
             "name": "satispress/gravityformspartialentries",
-            "version": "1.6",
+            "version": "1.7",
             "dist": {
                 "type": "zip",
-                "url": "https://satispress.orangepineapple.com/satispress/gravityformspartialentries/1.6",
-                "shasum": "09bacd7f07ebf0685c273ad7388920127b6aaaee"
+                "url": "https://satispress.orangepineapple.com/satispress/gravityformspartialentries/1.7",
+                "shasum": "d5cb028fe9cb1bef62d5ffb86749d07b777e514d"
             },
             "require": {
-                "composer/installers": "^1.0"
+                "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
             "authors": {
@@ -1769,5 +1769,5 @@
         "php": ">=7.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
