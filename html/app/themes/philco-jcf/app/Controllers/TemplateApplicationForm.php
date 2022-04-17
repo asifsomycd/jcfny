@@ -16,7 +16,7 @@ class TemplateApplicationForm extends Controller
         return get_field('jcf_form_steps');
     }
 
-    public function ApplicationForm()
+    public function applicationForm()
     {
         return \App\get_form(get_field('jcf_form_id'));
     }
