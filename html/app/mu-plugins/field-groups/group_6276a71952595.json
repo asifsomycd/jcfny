@@ -774,29 +774,10 @@
                             "button_label": "",
                             "sub_fields": [
                                 {
-                                    "key": "field_5dab78dd86564",
-                                    "label": "Question",
-                                    "name": "title",
-                                    "type": "text",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": ""
-                                },
-                                {
                                     "key": "field_5dab78fb86565",
                                     "label": "Link",
                                     "name": "link",
-                                    "type": "page_link",
+                                    "type": "link",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -805,11 +786,7 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "post_type": "",
-                                    "taxonomy": "",
-                                    "allow_null": 0,
-                                    "allow_archives": 1,
-                                    "multiple": 0
+                                    "return_format": "array"
                                 }
                             ]
                         }
@@ -1328,5 +1305,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1651956101
+    "modified": 1651958136
 }

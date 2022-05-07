@@ -14,7 +14,7 @@
           @foreach ($faqs as $faq)
             <div class="faq">
               <div class="faq__question">
-                <a class="btn btn-link" href="{{ $faq['link'] }}">
+                <a class="btn btn-link" href="{{ $faq['link']['url'] }}" target="{{ $faq['link']['target'] }}">
                   <div class="row">
                     <div class="col-auto pr-0">
                       <div class="faq__indicator fa-fw">
@@ -22,7 +22,7 @@
                       </div>
                     </div>
                     <div class="col pl-0">
-                      {!! $faq['title'] !!}
+                      {!! $faq['link']['title'] !!}
                     </div>
                   </div>
                 </a>
