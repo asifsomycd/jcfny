@@ -1029,6 +1029,28 @@
                                     "default_value": "contain",
                                     "layout": "horizontal",
                                     "return_format": "value"
+                                },
+                                {
+                                    "key": "field_6276ece831ba9",
+                                    "label": "Width",
+                                    "name": "width",
+                                    "type": "button_group",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "6": "50%",
+                                        "7": "58%"
+                                    },
+                                    "allow_null": 0,
+                                    "default_value": 6,
+                                    "layout": "horizontal",
+                                    "return_format": "value"
                                 }
                             ]
                         },
@@ -1305,5 +1327,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1651958136
+    "modified": 1651961140
 }
