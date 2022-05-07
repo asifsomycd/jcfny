@@ -21,7 +21,7 @@
   @endif
 
   @if($impact)
-    @include('partials.impact', [
+    @include('acf-layouts.impact', [
       'title' => $impact->title,
       'text' => $impact->text,
       'impact' => $impact->impact,

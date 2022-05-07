@@ -61,7 +61,7 @@
 
 
     @if($fields['how_columns'])
-      @include('partials.layout-columns-icons', [
+      @include('acf-layouts.columns-icons', [
         'title' => $fields['how_title'],
         'columns' => $fields['how_columns'],
         'button' => $fields['how_button'],
@@ -69,7 +69,7 @@
     @endif
 
     @if ( $fields['impact'] )
-      @include('partials.impact', [
+      @include('acf-layouts.impact', [
         'title' => $fields['impact_title'],
         'text' => $fields['impact_text'],
         'impact' => $fields['impact'],
@@ -78,14 +78,14 @@
     @endif
 
     @if($fields['quotes'])
-      @include('partials.layout-quotes', [
+      @include('acf-layouts.quotes', [
         'interval' => $fields['quote_interval'],
         'quotes' => $fields['quotes'],
       ])
     @endif
 
     @if($fields['faq_faqs'])
-      @include('partials.layout-faqs', [
+      @include('acf-layouts.faqs', [
         'faqs' => $fields['faq_faqs'],
         'title' => 'Frequently Asked Questions',
       ])
