@@ -47,6 +47,7 @@ if (file_exists($root_dir . '/.env')) {
  * Default: production
  */
 define('WP_ENV', env('WP_ENV') ?: 'production');
+define('WP_ENVIRONMENT_TYPE', WP_ENV);
 
 /**
  * URLs
