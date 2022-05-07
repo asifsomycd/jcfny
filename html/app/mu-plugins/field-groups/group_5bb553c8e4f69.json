@@ -169,6 +169,21 @@
                 "param": "post_type",
                 "operator": "==",
                 "value": "page"
+            },
+            {
+                "param": "page_template",
+                "operator": "!=",
+                "value": "views\/template-gated.blade.php"
+            },
+            {
+                "param": "page_template",
+                "operator": "!=",
+                "value": "views\/template-home.blade.php"
+            },
+            {
+                "param": "page_template",
+                "operator": "!=",
+                "value": "views\/template-landing.blade.php"
             }
         ],
         [
@@ -188,5 +203,5 @@
     "active": true,
     "description": "Post Type: Post, Page (15)",
     "show_in_rest": 0,
-    "modified": 1639690352
+    "modified": 1651943725
 }
