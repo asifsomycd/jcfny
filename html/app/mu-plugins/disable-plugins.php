@@ -34,7 +34,6 @@ add_action('admin_init', function () {
 
 function disable_plugins(array $plugins = [], array $environments = [])
 {
-    var_dump(wp_get_environment_type());
     if (in_array(wp_get_environment_type(), $environments)) {
         deactivate_plugins($plugins);
 
