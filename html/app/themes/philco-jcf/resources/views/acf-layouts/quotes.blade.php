@@ -1,11 +1,11 @@
-@if(!$quotes)
+@if(! $quotes)
   @php return; @endphp
 @endif
 
 <div class="layout-block__quote" data-enllax-ratio="-0.2" data-enllax-background-align="right" data-scroll>
   <div id="quote-carousel" class="carousel slide" data-ride="carousel" data-interval="{{ $interval * 1000 }}">
     <div class="carousel-inner">
-      @foreach($quotes as $quote)
+      @foreach ($quotes as $quote)
         <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
 
           <div class="container">

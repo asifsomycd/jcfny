@@ -61,7 +61,7 @@
 
 
     @if($fields['how_columns'])
-      @include('acf-layouts.columns-icons', [
+      @include('acf-layouts.columns_icons', [
         'title' => $fields['how_title'],
         'columns' => $fields['how_columns'],
         'button' => $fields['how_button'],

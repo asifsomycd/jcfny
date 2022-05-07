@@ -1,4 +1,4 @@
-<div class="layout-block__title-and-text {{ !$arrows ? 'without-arrows' : '' }}" {!! $arrows ? 'data-enllax-ratio="-0.1" data-enllax-background-align="right"' : '' !!} data-scroll>
+<div class="layout-block__title-and-text {{ ! $arrows ? 'without-arrows' : '' }}" {!! $arrows ? 'data-enllax-ratio="-0.1" data-enllax-background-align="right"' : '' !!} data-scroll>
   <div class="container py-3">
     <div class="row">
       <div class="col-12 col-lg-4">
@@ -9,11 +9,11 @@
         {!! $text !!}
 
         <div class="text-center text-xl-left">
-          @if($button)
+          @if ($button)
             @include('partials.acf-link', $button)
           @endif
 
-          @if($video_modal['video_id'])
+          @if ($video_modal['video_id'])
             <div class="d-xl-none"><br></div>
 
             @include('partials.modal-video', [
