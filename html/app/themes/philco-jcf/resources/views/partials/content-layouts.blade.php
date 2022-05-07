@@ -11,6 +11,10 @@
         ])
         @break
 
+      @case ('layout_columns')
+        @include('acf-layouts.columns', $area)
+        @break
+
       @case ('layout_columns_icons')
         @include('acf-layouts.columns_icons', $area)
         @break
