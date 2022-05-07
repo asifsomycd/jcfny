@@ -155,7 +155,7 @@ if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
   then
   echo "Syncing assets..."
     # Sync uploads directory
-    chmod -R 755 web/app/uploads/ &&
+    chmod -R 755 html/app/uploads/ &&
     if [[ $DIR == "horizontally"* ]]; then
       [[ $FROMDIR =~ ^(.*): ]] && FROMHOST=${BASH_REMATCH[1]}
       [[ $FROMDIR =~ ^(.*):(.*)$ ]] && FROMDIR=${BASH_REMATCH[2]}
