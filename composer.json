@@ -60,7 +60,7 @@
     "vlucas/phpdotenv": "^5.4",
     "wpackagist-plugin/acf-gravityforms-add-on": "1.*",
     "wpackagist-plugin/akismet": "4.*",
-    "wpackagist-plugin/autoptimize": "2.*",
+    "wpackagist-plugin/autoptimize": "3.*",
     "wpackagist-plugin/enable-media-replace": "^3.2",
     "wpackagist-plugin/gravity-forms-email-blacklist": "^2.4",
     "wpackagist-plugin/media-library-plus": "^7.0",
