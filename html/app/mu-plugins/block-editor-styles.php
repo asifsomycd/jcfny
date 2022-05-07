@@ -4,8 +4,8 @@
  * Plugin URI:  https://github.com/WordPress/gutenberg/issues/38299#issuecomment-1025520487
  * Version:     1.0.0
  * Description: Remove WP 5.9 default block editor styles
- * Author:      Kinetic
- * Author URI:  https://kinetic.com
+ * Author:      Reciprocal NYC
+ * Author URI:  https://reciprocal.nyc
  * License:     GNU General Public License v2
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  */

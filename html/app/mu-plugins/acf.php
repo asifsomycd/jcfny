@@ -1,11 +1,11 @@
 <?php
 /**
- * Author URI:  https://philandcompany.com
- * Author:      Phil & Company
+ * Author:      Reciprocal NYC
+ * Author URI:  https://reciprocal.nyc
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * License:     GNU General Public License v2
  * Plugin Name: ACF Configuration
- * Plugin URI:  https://philandcompany.com
+ * Plugin URI:  https://reciprocal.nyc
  * Version:     1.0.0
  * Description: Set up ACF defaults; move field groups to JSON.
  */
@@ -13,17 +13,17 @@
 /**
  * ACF Options Page
  */
-add_action( 'init', function() {
-    if ( function_exists( 'acf_add_options_page' ) ) {
-        acf_add_options_page( [
+add_action('init', function () {
+    if (function_exists('acf_add_options_page')) {
+        acf_add_options_page([
             'page_title'    => 'Site Settings',
             'menu_title'    => 'Site Settings',
             'menu_slug'     => 'philco-site-settings',
             'capability'    => 'edit_posts',
             'redirect'      => false,
-        ] );
+        ]);
     }
-} );
+});
 
 
 /**
@@ -44,7 +44,7 @@ add_filter('acf/settings/load_json', function ($paths) {
 /**
  * Hide menu items from the admin menu
  */
-add_action('admin_menu', function() {
+add_action('admin_menu', function () {
     // List of users that don't have pages removed
     $admins = [
         'PhilCo',
