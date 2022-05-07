@@ -14,18 +14,18 @@ STAGDIR="jcfny-staging:/chroot/home/ad466004/staging.jcfny.org/html/app/uploads/
 STAGSITE="https://staging.jcfny.org"
 
 LOCAL=false
-NO_DB=false
-NO_ASSETS=false
+SKIP_DB=false
+SKIP_ASSETS=false
 POSITIONAL_ARGS=()
 
 while [[ $# -gt 0 ]]; do
   case $1 in
-    --no-db)
-      NO_DB=true
+    --skip-db)
+      SKIP_DB=true
       shift
       ;;
-    --no-assets)
-      NO_ASSETS=true
+    --skip-assets)
+      SKIP_ASSETS=true
       shift
       ;;
     --local)
@@ -47,7 +47,7 @@ set -- "${POSITIONAL_ARGS[@]}"
 
 if [ $# != 2 ]
 then
-  echo "Usage: $0 [[--no-db] [--no-assets] [--local]] [ENV_FROM] [ENV_TO]"
+  echo "Usage: $0 [[--skip-db] [--skip-assets] [--local]] [ENV_FROM] [ENV_TO]"
 exit;
 fi
 
@@ -64,20 +64,20 @@ case "$1-$2" in
   development-staging)    DIR="up ⬆️ "            FROMSITE=$DEVSITE;  FROMDIR=$DEVDIR;  TOSITE=$STAGSITE; TODIR=$STAGDIR; ;;
   production-staging)     DIR="horizontally ↔️ ";  FROMSITE=$PRODSITE; FROMDIR=$PRODDIR; TOSITE=$STAGSITE; TODIR=$STAGDIR; ;;
   staging-production)     DIR="horizontally ↔️ ";  FROMSITE=$STAGSITE; FROMDIR=$STAGDIR; TOSITE=$PRODSITE; TODIR=$PRODDIR; ;;
-  *) echo "usage: $0 [[--no-db] [--no-assets] [--local]] production development | staging development | development staging | development production | staging production | production staging" && exit 1 ;;
+  *) echo "usage: $0 [[--skip-db] [--skip-assets] [--local]] production development | staging development | development staging | development production | staging production | production staging" && exit 1 ;;
 esac
 
-if [ "$NO_DB" = false ]
+if [ "$SKIP_DB" = false ]
 then
   DB_MESSAGE=" - ${bold}reset the $TO database${normal} ($TOSITE)"
 fi
 
-if [ "$NO_ASSETS" = false ]
+if [ "$SKIP_ASSETS" = false ]
 then
   ASSETS_MESSAGE=" - sync ${bold}$DIR${normal} from $FROM ($FROMSITE)?"
 fi
 
-if [ "$NO_DB" = true ] && [ "$NO_ASSETS" = true ]
+if [ "$SKIP_DB" = true ] && [ "$SKIP_ASSETS" = true ]
 then
   echo "Nothing to synchronize."
   exit;
@@ -129,7 +129,7 @@ if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
   };
   availto
 
-  if [ "$NO_DB" = false ]
+  if [ "$SKIP_DB" = false ]
   then
   echo "Syncing database..."
     # Export/import database, run search & replace
@@ -151,11 +151,11 @@ if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
     fi
   fi
 
-  if [ "$NO_ASSETS" = false ]
+  if [ "$SKIP_ASSETS" = false ]
   then
   echo "Syncing assets..."
     # Sync uploads directory
-    chmod -R 755 html/app/uploads/ &&
+    chmod -R 755 web/app/uploads/ &&
     if [[ $DIR == "horizontally"* ]]; then
       [[ $FROMDIR =~ ^(.*): ]] && FROMHOST=${BASH_REMATCH[1]}
       [[ $FROMDIR =~ ^(.*):(.*)$ ]] && FROMDIR=${BASH_REMATCH[2]}
