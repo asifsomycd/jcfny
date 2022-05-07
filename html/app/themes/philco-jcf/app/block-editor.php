@@ -13,10 +13,11 @@ function disable_editor($id = false, $post_type = false)
     $excluded_templates = [
         'views/template-landing.blade.php',
         'views/template-gated.blade.php',
+        'views/template-home.blade.php',
     ];
 
     $excluded_ids = [
-        // get_option( 'page_on_front' )
+        get_option('page_on_front'),
     ];
 
     // Disable CPT first

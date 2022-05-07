@@ -11,6 +11,10 @@
         ])
         @break
 
+      @case ('layout_columns_icons')
+        @include('acf-layouts.columns_icons', $area)
+        @break
+
       {{-- If the view filename matches the layout name  --}}
       @default
         @include('acf-layouts.' . $area['acf_fc_layout'], $area)

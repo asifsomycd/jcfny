@@ -18,8 +18,13 @@ $wrapper-spacing: 4rem;
     .h5,
     h6,
     .h6,
-    p {
+    p,
+    a {
       color: $white;
+    }
+
+    a:not(.btn):hover {
+      color: $tealish;
     }
   }
 }

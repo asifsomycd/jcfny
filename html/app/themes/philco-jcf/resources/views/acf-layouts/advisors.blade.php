@@ -3,15 +3,15 @@
   <div class="container">
     <div class="row justify-content-between">
       <div class="col-12 col-md-8 col-lg-6 col-xl-5 font-size-md">
-        {!! $fields['advisors_text'] !!}
+        {!! $text !!}
       </div>
       <div class="col-12 text-center text-lg-left">
-        @include('partials.acf-link', $fields['advisors_button'])
+        @include('partials.acf-link', $button)
         <div class="d-lg-none"><br></div>
         @include('partials.acf-link', array_merge(
-          $fields['advisors_link'],
-          [ 'class' => 'link-tealish link-underline ml-lg-5' ]
-        ) )
+          $link,
+          ['class' => 'link-tealish link-underline ml-lg-5']
+        ))
       </div>
     </div>
   </div>

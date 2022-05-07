@@ -718,7 +718,8 @@
     "label_placement": "left",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+    "active": true,
     "description": "Page Type: Front Page",
-    "modified": 1572186087
+    "show_in_rest": 0,
+    "modified": 1651954916
 }

@@ -3,6 +3,22 @@
     "title": "Page Layout",
     "fields": [
         {
+            "key": "field_6276b0711d831",
+            "label": "Action Buttons",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
             "key": "field_5dab766d67856",
             "label": "Action Buttons",
             "name": "action_buttons",
@@ -50,6 +66,22 @@
             ]
         },
         {
+            "key": "field_6276b0811d832",
+            "label": "Content Area",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
             "key": "field_6276a74c4be0f",
             "label": "Content Area",
             "name": "content",
@@ -90,11 +122,11 @@
     "menu_order": 0,
     "position": "normal",
     "style": "default",
-    "label_placement": "left",
+    "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": true,
     "description": "Template: Landing, Gated (0)",
     "show_in_rest": 0,
-    "modified": 1651944319
+    "modified": 1651945623
 }
