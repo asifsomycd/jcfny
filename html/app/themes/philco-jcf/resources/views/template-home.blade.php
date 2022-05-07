@@ -1,5 +1,5 @@
 {{--
-  Template Name: Landing Page
+  Template Name: Home Page
 --}}
 
 @extends('layouts.acf-flexible-content')
