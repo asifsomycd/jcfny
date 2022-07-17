@@ -1,6 +1,7 @@
 import '../util/jquery.enllax'
 import imagesLoaded from 'imagesloaded'
 import ScrollOut from 'scroll-out'
+import Cookies from 'js-cookie'
 import { CountUp } from 'countup.js'
 import '../util/ios'
 import pushHistory from '../util/pushHistory'
@@ -270,8 +271,93 @@ export default {
 
     // focus input
     $('.modal--search').on('shown.bs.modal', () =>
-      $('.modal--search .search-field').focus()
+      $('.modal--search .search-field').trigger('focuse')
     )
+
+    /**
+     * Modal -- Popups
+     */
+    let howManyModals = 1
+
+    $('.modal--popup').each(function() {
+      const options = $(this).data('options')
+      const cookieKey = `popup-${options.modal_key}`
+      const popupCookie = Cookies.get(cookieKey)
+      let popupData = {
+        pagesViewed: 0,
+        dismissed: false,
+      }
+      const expiration = parseInt(options.modal_timeframe)
+
+      if (popupCookie) {
+        popupData = JSON.parse(popupCookie)
+      }
+
+      // Set new pagesViewed count
+      ++popupData.pagesViewed
+
+      // Reset page views and "dismissed" if at the interval
+      if (popupData.pagesViewed > options.modal_interval) {
+        popupData.pagesViewed = 1
+        popupData.dismissed = false
+      }
+
+      // Set new cookie data
+      Cookies.set(
+        cookieKey,
+        JSON.stringify({
+          pagesViewed: popupData.pagesViewed,
+          dismissed: popupData.dismissed,
+        }),
+        { expires: expiration }
+      )
+
+      // Has this modal been dismissed?
+      if (popupData.dismissed) {
+        return
+      }
+
+      // Set "show" options
+      $(this).on('show.bs.modal', function() {
+        $('body').addClass('modal--backdrop-shaded')
+
+        // Close all other modals
+        $('.modal')
+          .not($(this))
+          .each(function() {
+            $(this).modal('hide')
+          })
+      })
+
+      // Set "hidden" options
+      $(this).on('hidden.bs.modal', function() {
+        $('body').removeClass('modal--backdrop-shaded')
+
+        // Set new cookie data
+        Cookies.set(
+          cookieKey,
+          JSON.stringify({
+            pagesViewed: popupData.pagesViewed,
+            dismissed: true,
+          }),
+          { expires: expiration }
+        )
+      })
+
+      // Show modal if total pageviews greater than interval option, but only ONE
+      if (
+        popupData.pagesViewed == options.modal_interval &&
+        howManyModals === 1 &&
+        !popupData.dismissed
+      ) {
+        // Open after the delay
+        setTimeout(() => {
+          $(this).modal('show')
+        }, options.modal_delay * 1000)
+
+        ++howManyModals
+      }
+    })
 
     /**
      * .collapsible pushState

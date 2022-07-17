@@ -14,7 +14,11 @@ require('laravel-mix-copy-watched')
  |
  */
 
-mix.setPublicPath('./dist').browserSync('https://jcfny.test')
+mix.setPublicPath('./dist').browserSync({
+  proxy: 'https://jcfny.test',
+  open: false,
+  reloadOnRestart: true,
+})
 
 mix
   .sass('resources/assets/styles/main.scss', 'styles')

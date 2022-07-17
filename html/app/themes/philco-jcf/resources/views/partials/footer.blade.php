@@ -40,3 +40,25 @@
 		{!! $script['script'] !!}
 	@endforeach
 @endif
+
+{{-- Pop-Up modals --}}
+@if (! $popups)
+  @php return; @endphp
+@endif
+
+@foreach ($popups as $popup)
+  @section('modal-body')
+    {!! apply_filters('the_content', $popup->post_content) !!}
+  @overwrite
+
+  @section('modals')
+    @parent
+
+    @include('partials.modal', [
+      'type' => 'popup',
+      'class' => 'popup-' . $popup->key,
+      'title' => $popup->post_title,
+      'options' => $popup->options,
+    ])
+  @endsection
+@endforeach

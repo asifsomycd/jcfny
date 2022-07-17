@@ -8,6 +8,7 @@ class App extends Controller
 {
     use Partials\ActionForm;
     use Partials\Brightedge;
+    use Partials\Popups;
 
     public function navType()
     {

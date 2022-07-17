@@ -36,7 +36,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": 1,
+            "default_value": 10,
             "placeholder": "",
             "prepend": "",
             "append": "pages",
@@ -78,7 +78,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Cfe06tEb",
             "placeholder": "",
             "prepend": "",
             "append": "",
@@ -126,5 +126,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1658073684
+    "modified": 1658099707
 }
