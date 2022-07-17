@@ -25,7 +25,6 @@ add_action('init', function () {
     }
 });
 
-
 /**
  * Place ACF JSON in content directory
  */
@@ -39,7 +38,6 @@ add_filter('acf/settings/load_json', function ($paths) {
     $paths[] = dirname(__FILE__) . '/field-groups';
     return $paths;
 });
-
 
 /**
  * Hide menu items from the admin menu
@@ -55,3 +53,14 @@ add_action('admin_menu', function () {
         remove_menu_page('edit.php?post_type=acf-field-group');
     }
 }, PHP_INT_MAX);
+
+/**
+ * Set default value for modal CPT options
+ *
+ * @return array
+ */
+add_filter('acf/load_field/name=modal_key', function (array $field) {
+    // Quasi-unique
+    $field['default_value'] = substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 8);
+    return $field;
+});

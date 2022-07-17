@@ -45,6 +45,7 @@
   "require": {
     "php": ">=7.4",
     "composer/installers": "^2.1",
+    "jjgrainger/posttypes": "^2.2",
     "mdsimpson/contact-form-7-to-database-extension": "^2.10",
     "oscarotero/env": "^2.1",
     "roots/bedrock-autoloader": "^1.0",

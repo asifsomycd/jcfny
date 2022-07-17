@@ -1,0 +1,130 @@
+{
+    "key": "group_62d42bf282a13",
+    "title": "Pop-Up Options",
+    "fields": [
+        {
+            "key": "field_62d42bfeb216a",
+            "label": "Delay",
+            "name": "modal_delay",
+            "type": "number",
+            "instructions": "How long after page load before it pops up on the page?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 3,
+            "placeholder": "",
+            "prepend": "",
+            "append": "seconds",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_62d42c73b216b",
+            "label": "Page Interval",
+            "name": "modal_interval",
+            "type": "number",
+            "instructions": "How many pages should the user visit before it pops up?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": "pages",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_62d42ca9b216c",
+            "label": "Reset Timeframe",
+            "name": "modal_timeframe",
+            "type": "number",
+            "instructions": "How long before we display this pop-up to the same user again?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 90,
+            "placeholder": "",
+            "prepend": "",
+            "append": "days",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_62d42d497cc36",
+            "label": "Unique Key",
+            "name": "modal_key",
+            "type": "text",
+            "instructions": "Changing this key will reset all visitor cookies and display this pop-up as if it were new to all visitors. It should be unique and different from all other pop-ups.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62d430117f6cb",
+            "label": "Disable on pages",
+            "name": "modal_disable",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page",
+                "post"
+            ],
+            "taxonomy": "",
+            "allow_null": 1,
+            "multiple": 1,
+            "return_format": "id",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "popup"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1658073684
+}
