@@ -15,7 +15,7 @@
     {{ isset($type) && $type === 'iframe-video' ? 'modal-lg' : '' }}
     {{ isset($type) && $type === 'popup' ? 'modal-dialog-centered' : '' }}
   ">
-    <div class="modal-content">
+    <div class="modal-content" style="background-color: {{ isset($background) ? $background : '' }};">
       <div class="modal-header" id="modal--{{ $type ?? 'default' }}">
         @if (isset($title))
           <h5 class="modal-title">{{ $title }}</h5>

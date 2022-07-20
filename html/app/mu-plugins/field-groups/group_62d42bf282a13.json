@@ -3,6 +3,23 @@
     "title": "Pop-Up Options",
     "fields": [
         {
+            "key": "field_62d5effb2cbd8",
+            "label": "Background Color",
+            "name": "modal_bg",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#ffffff",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
             "key": "field_62d42bfeb216a",
             "label": "Delay",
             "name": "modal_delay",
@@ -19,7 +36,7 @@
             "placeholder": "",
             "prepend": "",
             "append": "seconds",
-            "min": "",
+            "min": 0,
             "max": "",
             "step": ""
         },
@@ -28,7 +45,7 @@
             "label": "Page Interval",
             "name": "modal_interval",
             "type": "number",
-            "instructions": "How many pages should the user visit before it pops up?",
+            "instructions": "How many pages should the user visit before it pops up? This interval repeats until the user takes an action (e.g., clicking on a link).",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -40,7 +57,7 @@
             "placeholder": "",
             "prepend": "",
             "append": "pages",
-            "min": "",
+            "min": 1,
             "max": "",
             "step": ""
         },
@@ -61,7 +78,7 @@
             "placeholder": "",
             "prepend": "",
             "append": "days",
-            "min": "",
+            "min": 1,
             "max": "",
             "step": ""
         },
@@ -78,7 +95,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Cfe06tEb",
+            "default_value": "ERkBUDQh",
             "placeholder": "",
             "prepend": "",
             "append": "",
@@ -126,5 +143,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1658099707
+    "modified": 1658275636
 }

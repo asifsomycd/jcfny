@@ -280,12 +280,14 @@ export default {
     let howManyModals = 1
 
     $('.modal--popup').each(function() {
-      const options = $(this).data('options')
+      const popup = $(this)
+      const options = popup.data('options')
       const cookieKey = `popup-${options.modal_key}`
       const popupCookie = Cookies.get(cookieKey)
       let popupData = {
         pagesViewed: 0,
         dismissed: false,
+        actioned: false,
       }
       const expiration = parseInt(options.modal_timeframe)
 
@@ -306,38 +308,45 @@ export default {
       Cookies.set(
         cookieKey,
         JSON.stringify({
-          pagesViewed: popupData.pagesViewed,
-          dismissed: popupData.dismissed,
+          ...popupData,
         }),
         { expires: expiration }
       )
 
-      // Has this modal been dismissed?
-      if (popupData.dismissed) {
+      // Has this modal been dismissed or actioned?
+      if (popupData.dismissed || popupData.actioned) {
         return
       }
 
       // Set "show" options
-      $(this).on('show.bs.modal', function() {
+      popup.on('show.bs.modal', function() {
         $('body').addClass('modal--backdrop-shaded')
 
         // Close all other modals
         $('.modal')
-          .not($(this))
+          .not(popup)
           .each(function() {
             $(this).modal('hide')
           })
+
+        // Add "actioned" listener
+        popup.find('a').on('click', function() {
+          popupData.actioned = true
+
+          // Hide modal
+          popup.modal('hide')
+        })
       })
 
       // Set "hidden" options
-      $(this).on('hidden.bs.modal', function() {
+      popup.on('hidden.bs.modal', function() {
         $('body').removeClass('modal--backdrop-shaded')
 
         // Set new cookie data
         Cookies.set(
           cookieKey,
           JSON.stringify({
-            pagesViewed: popupData.pagesViewed,
+            ...popupData,
             dismissed: true,
           }),
           { expires: expiration }
@@ -352,7 +361,7 @@ export default {
       ) {
         // Open after the delay
         setTimeout(() => {
-          $(this).modal('show')
+          popup.modal('show')
         }, options.modal_delay * 1000)
 
         ++howManyModals

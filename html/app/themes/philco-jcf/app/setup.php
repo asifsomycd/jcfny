@@ -38,7 +38,6 @@ add_action('wp_enqueue_scripts', function () {
     }
 }, 100);
 
-
 /**
  * Login assets
  */
@@ -52,7 +51,6 @@ add_filter('login_headerurl', function () {
     return home_url();
 });
 
-
 /**
  * Gutenberg assets
  */
@@ -60,7 +58,6 @@ add_action('enqueue_block_editor_assets', function () {
     wp_enqueue_style('app/fonts');
     wp_enqueue_style('app/block-editor.css', asset_path('styles/block-editor.css'), false, null);
 });
-
 
 /**
  * Add support for custom color palettes in Gutenberg.
@@ -94,7 +91,6 @@ add_action('after_setup_theme', function () {
         ]
     );
 });
-
 
 /**
  * Theme setup
@@ -160,26 +156,6 @@ add_action('after_setup_theme', function () {
     add_image_size('col-6', 800, 0, false);
     add_image_size('col-4', 400, 0, false);
 }, 20);
-
-/**
- * Register sidebars
- */
-// add_action('widgets_init', function () {
-//     $config = [
-//         'before_widget' => '<section class="widget %1$s %2$s">',
-//         'after_widget'  => '</section>',
-//         'before_title'  => '<h3>',
-//         'after_title'   => '</h3>'
-//     ];
-//     register_sidebar([
-//         'name'          => __('Primary', 'sage'),
-//         'id'            => 'sidebar-primary'
-//     ] + $config);
-//     register_sidebar([
-//         'name'          => __('Footer', 'sage'),
-//         'id'            => 'sidebar-footer'
-//     ] + $config);
-// });
 
 /**
  * Updates the `$post` variable on each iteration of the loop.
@@ -252,3 +228,34 @@ function disable_emojis_remove_dns_prefetch($urls, $relation_type)
 
     return $urls;
 }
+
+/**
+ * Add color palette into Iris (ACF)
+ *
+ * @return void
+ */
+add_action('acf/input/admin_footer', function () {
+    $palette = "
+        '#29b5bd',
+        '#5fbdbe',
+        '#5a3f98',
+        '#815c9e',
+        '#715aa7',
+        '#d9cee1',
+        '#f4f2f5',
+        '#fff',
+        '#262626',
+    ";
+
+    echo sprintf(
+        '<script type="text/javascript">
+            (function($) {
+                acf.add_filter(\'color_picker_args\', function(args, field) {
+                    args.palettes = [%s];
+                    return args;
+                });
+            })(jQuery);
+        </script>',
+        $palette
+    );
+});

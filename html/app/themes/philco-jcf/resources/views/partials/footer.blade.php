@@ -57,7 +57,8 @@
     @include('partials.modal', [
       'type' => 'popup',
       'class' => 'popup-' . $popup->key,
-      'title' => $popup->post_title,
+      'background' => $popup->modal_bg ?: '#fff',
+      'title' => '', // $popup->post_title,
       'options' => $popup->options,
     ])
   @endsection
