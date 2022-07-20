@@ -24,7 +24,35 @@
           </div>
         @endif
 
-        @include('partials.social')
+        <div class="row flex-lg-wrap flex-xl-nowrap mb-3">
+          @if ($footer_action_buttons && ! isset($application_form))
+            <div class="col-12 col-sm-6 col-lg-12 col-xl-6 mb-4 nav-footer">
+              <div class="pr-md-5">
+                <p class="text-tealish mb-3">
+                  <strong>{!! $footer_action_buttons['heading'] !!}</strong>
+                </p>
+
+                @foreach ($footer_action_buttons['buttons'] as $item)
+                  <p>
+                    @include('partials.link', array_merge(
+                      [
+                        'class' => 'btn ' . ($loop->first ? 'btn-primary' : 'btn-tealish'),
+                      ],
+                      $item['link']
+                    ))
+                  </p>
+                @endforeach
+              </div>
+            </div>
+          @endif
+
+          <div class="col-12 col-sm-6 col-lg-12 col-xl-6  nav-footer">
+            <p class="mb-3">
+              <strong>Follow Us</strong>
+            </p>
+            @include('partials.social')
+          </div>
+        </div>
 			</div>
     </div>
 

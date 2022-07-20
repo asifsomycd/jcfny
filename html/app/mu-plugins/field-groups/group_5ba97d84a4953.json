@@ -194,8 +194,8 @@
             "ui": 1
         },
         {
-            "key": "field_5bb65ce88a4da",
-            "label": "Social Media",
+            "key": "field_62d882b770ba9",
+            "label": "Footer",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -208,6 +208,78 @@
             },
             "placement": "top",
             "endpoint": 0
+        },
+        {
+            "key": "field_62d882d570baa",
+            "label": "Action Buttons",
+            "name": "footer_action_buttons",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_62d882ec70bab",
+                    "label": "Heading",
+                    "name": "heading",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "51",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_62d882fd70bac",
+                    "label": "Buttons",
+                    "name": "buttons",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "51",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "table",
+                    "button_label": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_62d8830e70bad",
+                            "label": "Button",
+                            "name": "link",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "key": "field_5ba97dc5c8ed7",
@@ -266,7 +338,7 @@
                         "twitter": "Twitter",
                         "youtube": "YouTube"
                     },
-                    "default_value": [],
+                    "default_value": false,
                     "allow_null": 0,
                     "multiple": 0,
                     "ui": 1,
@@ -535,5 +607,5 @@
     "active": true,
     "description": "Options: Site Settings",
     "show_in_rest": 0,
-    "modified": 1639687381
+    "modified": 1658356522
 }

@@ -20,6 +20,11 @@ class App extends Controller
         return 'default';
     }
 
+    public function footerActionButtons()
+    {
+        return get_field('footer_action_buttons', 'options');
+    }
+
     public function pageForPosts()
     {
         return get_option('page_for_posts');

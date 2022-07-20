@@ -2,8 +2,6 @@
   @include wrapper($pale-gray);
 
   .social {
-    @extend .text-lg-right;
-
     a {
       @include link-inverse;
 
