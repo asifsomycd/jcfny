@@ -62,6 +62,27 @@
             "step": ""
         },
         {
+            "key": "field_62d87f4aca702",
+            "label": "Total Display Count",
+            "name": "modal_total_count",
+            "type": "number",
+            "instructions": "The maximum number of times the user will see this pop-up within the Reset Timeframe.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 3,
+            "placeholder": "",
+            "prepend": "",
+            "append": "times",
+            "min": 1,
+            "max": "",
+            "step": ""
+        },
+        {
             "key": "field_62d42ca9b216c",
             "label": "Reset Timeframe",
             "name": "modal_timeframe",
@@ -95,7 +116,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "ERkBUDQh",
+            "default_value": "dAYfvjmp",
             "placeholder": "",
             "prepend": "",
             "append": "",
@@ -143,5 +164,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1658276654
+    "modified": 1658355596
 }

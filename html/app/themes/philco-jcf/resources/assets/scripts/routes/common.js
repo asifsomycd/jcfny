@@ -286,6 +286,7 @@ export default {
       const popupCookie = Cookies.get(cookieKey)
       let popupData = {
         pagesViewed: 0,
+        totalCount: 0,
         dismissed: false,
         actioned: false,
       }
@@ -295,7 +296,12 @@ export default {
         popupData = JSON.parse(popupCookie)
       }
 
-      // Set new pagesViewed count
+      // Exit this whole thing if they've reached the total count
+      if (popupData.totalCount >= options.modal_total_count) {
+        return
+      }
+
+      // Set new count
       ++popupData.pagesViewed
 
       // Reset page views and "dismissed" if at the interval
@@ -304,7 +310,7 @@ export default {
         popupData.dismissed = false
       }
 
-      // Set new cookie data
+      // Set new cookie data, which bumps out the expiration
       Cookies.set(
         cookieKey,
         JSON.stringify({
@@ -341,6 +347,9 @@ export default {
       // Set "hidden" options
       popup.on('hidden.bs.modal', function() {
         $('body').removeClass('modal--backdrop-shaded')
+
+        // Add to the totalCount
+        ++popupData.totalCount
 
         // Set new cookie data
         Cookies.set(
