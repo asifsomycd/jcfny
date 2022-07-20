@@ -42,7 +42,7 @@
 @endif
 
 {{-- Pop-Up modals --}}
-@if (! $popups)
+@if (! $popups || isset($application_form))
   @php return; @endphp
 @endif
 
