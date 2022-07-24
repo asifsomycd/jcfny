@@ -874,11 +874,11 @@
         },
         {
             "name": "satispress/advanced-custom-fields-pro",
-            "version": "5.12.2",
+            "version": "5.12.3",
             "dist": {
                 "type": "zip",
-                "url": "https://satispress.orangepineapple.com/satispress/advanced-custom-fields-pro/5.12.2",
-                "shasum": "2423247d5748f6aa9abed8bb0e36217b23ea0e3a"
+                "url": "https://satispress.orangepineapple.com/satispress/advanced-custom-fields-pro/5.12.3",
+                "shasum": "c863e1fa1655e051e03d164f9e5db6e7dd7829ce"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
