@@ -1333,15 +1333,15 @@
         },
         {
             "name": "wpackagist-plugin/autoptimize",
-            "version": "3.0.4",
+            "version": "3.1.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/autoptimize/",
-                "reference": "tags/3.0.4"
+                "reference": "tags/3.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/autoptimize.3.0.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/autoptimize.3.1.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
