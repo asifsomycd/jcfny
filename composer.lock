@@ -1459,15 +1459,15 @@
         },
         {
             "name": "wpackagist-plugin/sucuri-scanner",
-            "version": "1.8.31",
+            "version": "1.8.32",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/sucuri-scanner/",
-                "reference": "tags/1.8.31"
+                "reference": "tags/1.8.32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/sucuri-scanner.1.8.31.zip"
+                "url": "https://downloads.wordpress.org/plugin/sucuri-scanner.1.8.32.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
