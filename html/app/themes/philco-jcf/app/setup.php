@@ -15,15 +15,13 @@ add_action('init', function () {
 });
 
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('app/main.css', asset_path('styles/main.css'), ['app/fonts'], null);
+    $version = filemtime(get_stylesheet_directory() . '/../dist/mix-manifest.json');
 
-    /**
-     * App
-     */
-    wp_enqueue_script('app/vendor.js', asset_path('scripts/vendor.js'), ['jquery', 'wp-element'], null, true);
+    wp_enqueue_style('app/main.css', asset_path('styles/main.css'), ['app/fonts'], $version);
+    wp_enqueue_script('app/vendor.js', asset_path('scripts/vendor.js'), ['jquery', 'wp-element'], $version, true);
     wp_add_inline_script('app/vendor.js', file_get_contents(config('assets.manifest')), 'before');
 
-    wp_register_script('app/main.js', asset_path('scripts/main.js'), ['app/vendor.js'], null, true);
+    wp_register_script('app/main.js', asset_path('scripts/main.js'), ['app/vendor.js'], $version, true);
     wp_localize_script('app/main.js', 'jcf', [
         'siteTitle' => get_bloginfo('name'),
         'breakpointMd' => 768,
