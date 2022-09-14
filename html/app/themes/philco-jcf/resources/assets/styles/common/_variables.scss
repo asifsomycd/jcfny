@@ -3,29 +3,36 @@ $ignore-warning: true;
 
 @import "~bootstrap/scss/functions";
 
-// Breakpoints
+// New branding 2022
 
-// $breakpoint-xxs:			364px;
-
-// Colors
-
-$blueberry: #5a3f98;
-$pale-gray: #f4f2f5;
-$pale-gray-alpha: transparentize(rgb(236, 229, 240), 0.7);
-$greyish-brown: #262626;
-$dark-lavender: #815c9e;
-$tealish: #29b5bd;
-$seafoam-green: #5fbdbe;
-$cloudy-blue: #d9cee1;
-$yet-another-shade: #715aa7;
+$dark-blue: #230761;
+$light-gray: #e8effa;
+$dark-purple: #5200a1;
+$dark-turquoise: #0092b7;
+$dark-gray: #656263;
+$dark-purple-tint: transparentize($dark-purple, 0.6);
+$dark-turquoise-tint: transparentize($dark-turquoise, 0.6);
 $white: #fff;
-
 $transparent: rgba(0, 0, 0, 0.001); // Safari sucks
 
-$primary: $blueberry;
+// Previous Colors -- Keep for compatibility until all color names are replaced
+
+$blueberry: $dark-blue; // #5a3f98;
+$pale-gray: $light-gray; // #f4f2f5;
+$pale-gray-alpha: transparentize($light-gray, 0.7);
+$greyish-brown: $dark-blue; // #262626;
+$dark-lavender: $dark-purple; // #815c9e;
+$tealish: $dark-turquoise; // #29b5bd;
+$seafoam-green: $dark-turquoise; // #5fbdbe;
+$cloudy-blue: $light-gray; // #d9cee1;
+$yet-another-shade: $dark-purple; // #715aa7;
+
+// Defaults
+
+$primary: $dark-blue;
 $secondary: $dark-lavender;
-$body-color: $greyish-brown;
-$headings-color: $blueberry;
+$body-color: $dark-blue;
+$headings-color: $body-color;
 
 $link-color: $dark-lavender;
 $link-hover-color: $blueberry;
@@ -58,7 +65,6 @@ $lead-font-weight: $font-weight-normal;
 $paragraph-margin-bottom: px-to-rem(23px);
 
 $headings-font-family: $font-family-display;
-
 $headings-margin-bottom: $paragraph-margin-bottom;
 $headings-font-weight: $font-weight-bold;
 $headings-line-height: 1.33;
@@ -116,7 +122,7 @@ $enable-caret: false;
 
 // Modal
 
-$modal-backdrop-bg: $blueberry;
+$modal-backdrop-bg: $dark-blue;
 $modal-backdrop-opacity: 1;
 $modal-header-border-width: 0;
 $modal-content-border-width: 0;
