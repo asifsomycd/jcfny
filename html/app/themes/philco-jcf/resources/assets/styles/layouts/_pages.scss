@@ -82,8 +82,7 @@
 
   .contact-block__left,
   .contact-block__right {
-    @extend .layout-block;
-
+    @include layout-block;
     @include wrapper(transparent, true);
 
     padding-left: $grid-gutter-width / 2;
@@ -96,8 +95,7 @@
 }
 
 .contact-block__form {
-  @extend .layout-block;
-
+  @include layout-block;
   @include wrapper($white);
 
   background-image: url(../images/background-arrows-d.svg);

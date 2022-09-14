@@ -30,12 +30,12 @@ $yet-another-shade: $dark-purple; // #715aa7;
 // Defaults
 
 $primary: $dark-blue;
-$secondary: $dark-lavender;
-$body-color: $dark-blue;
+$secondary: $dark-purple;
+$body-color: $primary;
 $headings-color: $body-color;
 
-$link-color: $dark-lavender;
-$link-hover-color: $blueberry;
+$link-color: $secondary;
+$link-hover-color: $primary;
 $link-hover-decoration: none;
 
 // Typography
@@ -67,7 +67,7 @@ $paragraph-margin-bottom: px-to-rem(23px);
 $headings-font-family: $font-family-display;
 $headings-margin-bottom: $paragraph-margin-bottom;
 $headings-font-weight: $font-weight-bold;
-$headings-line-height: 1.33;
+$headings-line-height: 1.1;
 
 $h1-font-size: px-to-rem(60px);
 $h2-font-size: px-to-rem(30px);

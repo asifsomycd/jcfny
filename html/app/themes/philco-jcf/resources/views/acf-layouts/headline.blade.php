@@ -2,9 +2,16 @@
   <div class="content container">
     <div class="row justify-content-between">
       <main class="main col-12">
-        <h1 class="entry-title">{!! $title !!}</h1>
+        <h1 class="entry-title">
+          {!! $title !!}
+        </h1>
+        @if ($subtitle)
+          <span class="h1 entry-subtitle mb-4 d-block">
+            {!! $subtitle !!}
+          </span>
+        @endif
         <div class="entry-content lead row justify-content-between align-items-center">
-          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5 entry-content__text">
             {!! $text !!}
           </div>
 
