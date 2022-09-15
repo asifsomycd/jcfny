@@ -243,13 +243,12 @@
 }
 
 .parallax-badge {
-  background-image: url(../images/jcf-badge.svg);
+  background-image: url(../images/jcf-badge-50.svg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: px-to-rem(296px) auto;
-  opacity: 0.4;
+  background-size: 16rem auto;
   position: absolute;
-  top: 0;
+  top: 2rem;
   right: 0;
   bottom: 0;
   width: 50%;
