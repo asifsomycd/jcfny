@@ -1,4 +1,9 @@
 .btn {
+  background-image: linear-gradient(
+    90deg,
+    var(--btn-bg-from, transparent) 0%,
+    var(--btn-bg-to, transparent) 95%
+  );
   background-size: 100%;
   background-position: right;
   padding-top: calc(#{$btn-padding-y} + 3px); // to make up for lack of border
@@ -10,27 +15,46 @@
 }
 
 .btn-outline-light {
-  border-color: $tealish;
+  border-width: 3px;
+  border-color: $dark-turquoise;
 
   &:hover {
-    border-color: $tealish;
-    background-color: $tealish;
+    --btn-bg-from: rgba(0, 242, 255, 1);
+    --btn-bg-to: #{$dark-turquoise};
+
+    border-color: $dark-turquoise;
+    color: $white;
+  }
+}
+
+.btn-outline-tealish {
+  border-width: 3px;
+  border-color: $dark-turquoise;
+  color: $dark-turquoise;
+
+  &:hover {
+    --btn-bg-from: rgba(0, 242, 255, 1);
+    --btn-bg-to: #{$dark-turquoise};
+
     color: $white;
   }
 }
 
 .btn-dark,
 .btn-primary {
-  background-image: linear-gradient(90deg, #b890ff 0%, $dark-lavender 100%);
+  --btn-bg-from: #b890ff;
+  --btn-bg-to: #{$dark-lavender};
 }
 
 .btn-tealish {
-  background-image: linear-gradient(
-    90deg,
-    rgba(0, 242, 255, 1) 0%,
-    $dark-turquoise 95%
-  );
+  --btn-bg-from: rgba(0, 242, 255, 1);
+  --btn-bg-to: #{$dark-turquoise};
+
   color: $white;
+
+  &:hover {
+    color: $white;
+  }
 }
 
 .btn-light {

@@ -24,7 +24,7 @@
 
   @case('button-link')
     @php
-      $classes = 'acf-link link-tealish link-underline';
+      $classes = 'acf-link link-dark-turquoise link-underline';
     @endphp
     @break;
 

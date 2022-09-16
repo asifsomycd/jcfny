@@ -16,13 +16,15 @@
           </div>
 
           <div class="layout-block__headline_cta col-12 col-lg-4 text-center text-lg-left">
-            @include('partials.acf-link', $button)
+            @include('partials.acf-link', array_merge([
+              'class' => 'btn btn-tealish',
+            ], $button))
 
             @if ($video_modal['video_id'])
               <div class="d-xl-none"><br></div>
 
               @include('partials.modal-video', [
-                'button_classes' => 'acf-link link-tealish link-underline ml-xl-5',
+                'button_classes' => 'acf-link btn btn-outline-tealish ml-xl-5',
                 'button_text' => $video_modal['text'],
                 'video_id' => $video_modal['video_id'],
                 'modal_id' => 'video-headline-' . $video_modal['video_id'],

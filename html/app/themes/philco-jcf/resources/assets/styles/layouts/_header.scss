@@ -1,6 +1,7 @@
 // Site Header
 
 .site-header {
+  padding-top: 0.5rem;
   border-bottom: 2px solid $pale-gray;
   position: relative;
   z-index: 2; // Addresses odd z-index dropdown bug when page is left open for a time

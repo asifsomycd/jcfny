@@ -10,7 +10,7 @@
         <div class="d-lg-none"><br></div>
         @include('partials.acf-link', array_merge(
           $link,
-          ['class' => 'link-tealish link-underline ml-lg-5']
+          ['class' => 'link-dark-turquoise link-underline ml-lg-5']
         ))
       </div>
     </div>

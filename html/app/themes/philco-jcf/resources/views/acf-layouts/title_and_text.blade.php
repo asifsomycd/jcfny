@@ -17,7 +17,7 @@
             <div class="d-xl-none"><br></div>
 
             @include('partials.modal-video', [
-              'button_classes' => 'acf-link link-tealish link-underline ml-xl-5',
+              'button_classes' => 'acf-link link-dark-turquoise link-underline ml-xl-5',
               'button_text' => $video_modal['text'],
               'video_id' => $video_modal['video_id'],
               'modal_id' => 'video-headline-' . $video_modal['video_id'],

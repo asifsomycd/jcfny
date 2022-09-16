@@ -4,7 +4,7 @@
 
 .main {
   a:not(.btn):not(.acf-link):not(.wp-block-button__link) {
-    @include link-tealish;
+    @include link-dark-turquoise;
 
     font-style: italic;
     font-weight: $font-weight-bold;

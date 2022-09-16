@@ -49,11 +49,11 @@
   @include link-inverse;
 }
 
-@mixin link-tealish {
-  color: $tealish;
+@mixin link-dark-turquoise {
+  color: $primary;
 
   &::after {
-    background-color: $tealish;
+    background-color: $dark-turquoise;
   }
 
   &:hover {
@@ -65,8 +65,8 @@
   }
 }
 
-.link-tealish {
-  @include link-tealish;
+.link-dark-turquoise {
+  @include link-dark-turquoise;
 }
 
 @mixin link-white {

@@ -34,13 +34,13 @@
   }
 
   a {
-    @include link-tealish;
+    @include link-dark-turquoise;
   }
 }
 
 .more-link {
   @include link-underline;
-  @include link-tealish;
+  @include link-dark-turquoise;
 
   font-size: $font-size-lg;
 }
