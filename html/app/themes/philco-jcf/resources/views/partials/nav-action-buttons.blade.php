@@ -3,7 +3,7 @@
 		<div class="row justify-content-between">
 			<div class="col-8 col-sm-6 col-md-5">
 				<a class="brand" href="{{ home_url('/') }}">
-          <img src="@asset('images/jcf-horizontal.svg')" alt="{{ get_bloginfo('name', 'display') }}">
+          <img src="@asset('images/jcf-logo.svg')" alt="{{ get_bloginfo('name', 'display') }}">
         </a>
 			</div>
 			<div class="col-auto d-flex">
