@@ -62,7 +62,7 @@
     "wpackagist-plugin/acf-gravityforms-add-on": "1.*",
     "wpackagist-plugin/akismet": "5.*",
     "wpackagist-plugin/autoptimize": "3.*",
-    "wpackagist-plugin/enable-media-replace": "^3.2",
+    "wpackagist-plugin/enable-media-replace": "^4.0",
     "wpackagist-plugin/gravity-forms-email-blacklist": "^2.4",
     "wpackagist-plugin/media-library-plus": "^7.0",
     "wpackagist-plugin/page-links-to": "^3",
