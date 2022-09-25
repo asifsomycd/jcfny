@@ -904,11 +904,11 @@
         },
         {
             "name": "satispress/backupbuddy",
-            "version": "8.7.4.0",
+            "version": "8.7.5",
             "dist": {
                 "type": "zip",
-                "url": "https://satispress.orangepineapple.com/satispress/backupbuddy/8.7.4.0",
-                "shasum": "692d8c19a43adb6ce7053a5fd980e752d2989a80"
+                "url": "https://satispress.orangepineapple.com/satispress/backupbuddy/8.7.5",
+                "shasum": "1491023a6bc6434c9c2fcc6c23ac9c974c2b5a80"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
