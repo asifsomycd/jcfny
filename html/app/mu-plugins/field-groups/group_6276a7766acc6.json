@@ -3,6 +3,25 @@
     "title": "Page Layout",
     "fields": [
         {
+            "key": "field_6334d760bd358",
+            "label": "Disable Parallax Backgrounds",
+            "name": "disable_parallax_backgrounds",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "51",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_6276a77671211",
             "label": "Content Area",
             "name": "content",
@@ -42,5 +61,5 @@
     "active": true,
     "description": "Template: Home (0)",
     "show_in_rest": 0,
-    "modified": 1651945542
+    "modified": 1664407423
 }

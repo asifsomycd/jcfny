@@ -34,9 +34,9 @@
   @include layout-block;
   @include wrapper($pale-gray);
 
-  // &:not(.without-arrows) {
-  //   background-image: url(../images/background-arrows-a.svg);
-  // }
+  &:not(.skip-parallax) {
+    background-image: url(../images/background-arrows-a.svg);
+  }
 
   &_cta {
     margin-bottom: $paragraph-margin-bottom;
@@ -123,7 +123,9 @@
   @include layout-block;
   @include wrapper($blueberry, true);
 
-  // background-image: url(../images/background-arrows-b.svg);
+  &:not(.skip-parallax) {
+    background-image: url(../images/background-arrows-b.svg);
+  }
 }
 
 // Columns
@@ -131,7 +133,9 @@
   @include layout-block;
   @include wrapper($white);
 
-  // background-image: url(../images/background-arrows-b.svg);
+  &:not(.skip-parallax) {
+    background-image: url(../images/background-arrows-b.svg);
+  }
 }
 
 // Impact
@@ -167,8 +171,10 @@
   @include layout-block;
   @include wrapper($pale-gray);
 
-  // background-image: url(../images/background-arrows-c.svg);
-  // background-position: right top;
+  &:not(.skip-parallax) {
+    background-image: url(../images/background-arrows-c.svg);
+    background-position: right top;
+  }
 
   h2 {
     @include media-breakpoint-down(md) {
@@ -195,8 +201,10 @@
   @include layout-block;
   @include wrapper($seafoam-green, true);
 
-  // background-image: url(../images/background-arrows-e.svg);
-  // background-position: left center;
+  &:not(.skip-parallax) {
+    background-image: url(../images/background-arrows-e.svg);
+    background-position: left center;
+  }
 }
 
 .faq__indicator {
@@ -238,8 +246,9 @@
   @include layout-block;
   @include wrapper($white);
 
-  // background-image: url(../images/background-arrows-d.svg);
-  // position: relative;
+  &:not(.skip-parallax) {
+    background-image: url(../images/background-arrows-d.svg);
+  }
 }
 
 .parallax-badge {

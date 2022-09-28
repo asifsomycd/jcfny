@@ -2,7 +2,12 @@
   @php return; @endphp
 @endif
 
-<div class="layout-block__columns" data-enllax-ratio="0.1" data-enllax-background-align="right" data-scroll>
+<div class="layout-block__columns
+    {{ $disable_parallax_backgrounds ? 'skip-parallax' : '' }}
+  "
+  data-enllax-ratio="0.1" data-enllax-background-align="right"
+  data-scroll
+>
   <div class="container">
     <{{ $h1 ? 'h1' : 'h2' }}>{!! $title !!}</{{ $h1 ? 'h1' : 'h2' }}>
     <div class="row">

@@ -1,4 +1,9 @@
-<div class="layout-block__title-and-text {{ ! $arrows ? 'without-arrows' : '' }}" {!! $arrows ? 'data-enllax-ratio="-0.1" data-enllax-background-align="right"' : '' !!} data-scroll>
+<div class="layout-block__title-and-text
+    {{ ! $arrows || $disable_parallax_backgrounds ? 'skip-parallax' : '' }}
+  "
+  data-enllax-ratio="-0.1" data-enllax-background-align="right"
+  data-scroll
+>
   <div class="container py-3">
     <div class="row">
       <div class="col-12 col-lg-4">

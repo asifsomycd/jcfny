@@ -2,7 +2,12 @@
   @php return; @endphp
 @endif
 
-<div class="layout-block__columns-icons" data-enllax-ratio="0.1" data-enllax-background-align="right" data-scroll>
+<div class="layout-block__columns-icons
+    {{ $disable_parallax_backgrounds ? 'skip-parallax' : '' }}
+  "
+  data-enllax-ratio="0.1" data-enllax-background-align="right"
+  data-scroll
+>
   <div class="container text-center text-md-left">
     <{{ ! empty($h1) ? 'h1' : 'h2' }}>{!! $title !!}</{{ ! empty($h1) ? 'h1' : 'h2' }}>
     <div class="row justify-content-center mt-4 mb-3">

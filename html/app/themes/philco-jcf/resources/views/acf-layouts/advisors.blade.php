@@ -1,4 +1,9 @@
-<div class="layout-block__advisors" data-enllax-ratio="0.1" data-enllax-background-align="right" data-scroll>
+<div class="layout-block__advisors position-relative
+    {{ $disable_parallax_backgrounds ? 'skip-parallax' : '' }}
+  "
+  data-enllax-ratio="0.1" data-enllax-background-align="right"
+  data-scroll
+>
   <div class="parallax-badge d-none d-md-block" data-enllax-ratio="-0.1"></div>
   <div class="container">
     <div class="row justify-content-between">

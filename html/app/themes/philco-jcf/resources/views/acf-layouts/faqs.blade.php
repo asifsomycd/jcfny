@@ -2,7 +2,12 @@
   @php return; @endphp
 @endif
 
-<div class="layout-block__faq" data-enllax-ratio="-0.1" data-enllax-background-align="left" data-scroll>
+<div class="layout-block__faq
+    {{ $disable_parallax_backgrounds ? 'skip-parallax' : '' }}
+  "
+  data-enllax-ratio="-0.1" data-enllax-background-align="left"
+  data-scroll
+>
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-4">

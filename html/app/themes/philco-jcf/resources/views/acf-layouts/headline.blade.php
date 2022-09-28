@@ -1,4 +1,9 @@
-<div class="layout-block__headline" data-enllax-ratio="-0.1" data-enllax-background-align="right" data-scroll>
+<div class="layout-block__headline
+    {{ $disable_parallax_backgrounds ? 'skip-parallax' : '' }}
+  "
+  data-enllax-ratio="-0.1" data-enllax-background-align="right"
+  data-scroll
+>
   <div class="content container">
     <div class="row justify-content-between">
       <main class="main col-12">
