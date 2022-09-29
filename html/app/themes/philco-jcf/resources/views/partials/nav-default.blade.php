@@ -36,7 +36,7 @@
 			<div class="sticky-header__brand col-9 col-xl-1 align-self-center">
 				<a class="brand" href="{{ home_url('/') }}">
 					<img class="d-none d-xl-block" src="@asset('images/jcf-badge.svg')" alt="{{ get_bloginfo('name', 'display') }}">
-					<img class="d-xl-none" src="@asset('images/jcf-horizontal.svg')" alt="{{ get_bloginfo('name', 'display') }}">
+					<img class="d-xl-none" src="@asset('images/jcf-horizontal-50.svg')" alt="{{ get_bloginfo('name', 'display') }}">
 				</a>
 			</div>
 			<div class="sticky-header__nav-primary col-6 d-none d-xl-block align-self-center"></div>
