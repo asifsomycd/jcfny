@@ -6,8 +6,7 @@
   a:not(.btn):not(.acf-link):not(.wp-block-button__link) {
     @include link-dark-turquoise;
 
-    font-style: italic;
-    font-weight: $font-weight-bold;
+    font-weight: 500;
     text-decoration: underline;
   }
 

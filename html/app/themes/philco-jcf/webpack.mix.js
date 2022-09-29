@@ -96,5 +96,5 @@ mix
     jquery: ['$', 'window.jQuery'],
   })
   .options({ processCssUrls: false })
-  .sourceMaps(false, 'source-map')
+  // .sourceMaps(false, 'source-map')
   .version()

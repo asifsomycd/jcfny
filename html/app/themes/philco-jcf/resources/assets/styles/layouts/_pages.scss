@@ -228,7 +228,12 @@
     }
 
     .gform_next_button {
-      @extend .btn-outline-light;
+      @extend .btn-primary;
+    }
+
+    .invalid-feedback,
+    .gform_wrapper.gform_validation_error .validation_message {
+      color: $light-gray;
     }
   }
 
@@ -292,7 +297,7 @@
 
       .progress__circle {
         background-color: $white;
-        border-color: $cloudy-blue;
+        border-color: $dark-turquoise;
       }
     }
 
@@ -309,7 +314,7 @@
     position: relative;
 
     &::before {
-      background-color: $dark-lavender;
+      background-color: $dark-turquoise;
       content: "";
       height: 3px;
       position: absolute;
@@ -322,7 +327,7 @@
 
   .progress__circle {
     background-color: $blueberry;
-    border: 3px solid $dark-lavender;
+    border: 3px solid $dark-turquoise;
     border-radius: 50%;
     display: inline-block;
     height: 1.25rem;

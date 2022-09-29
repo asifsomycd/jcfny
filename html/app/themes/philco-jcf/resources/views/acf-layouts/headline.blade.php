@@ -16,7 +16,7 @@
           </span>
         @endif
         <div class="entry-content lead row justify-content-between align-items-center">
-          <div class="col-12 col-md-8 col-lg-6 col-xl-5 entry-content__text">
+          <div class="col-12 col-md-8 col-lg-6 entry-content__text">
             {!! $text !!}
           </div>
 

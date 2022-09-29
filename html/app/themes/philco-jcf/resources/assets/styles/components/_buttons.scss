@@ -18,6 +18,9 @@
   border-width: 3px;
   border-color: $dark-turquoise;
 
+  --btn-bg-from: transparent;
+  --btn-bg-to: transparent;
+
   &:hover {
     --btn-bg-from: rgba(0, 242, 255, 1);
     --btn-bg-to: #{$dark-turquoise};
@@ -31,6 +34,9 @@
   border-width: 3px;
   border-color: $dark-turquoise;
   color: $dark-turquoise;
+
+  --btn-bg-from: transparent;
+  --btn-bg-to: transparent;
 
   &:hover {
     --btn-bg-from: rgba(0, 242, 255, 1);
