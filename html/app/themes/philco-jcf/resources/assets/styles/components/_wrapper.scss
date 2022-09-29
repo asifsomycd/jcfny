@@ -35,17 +35,13 @@ $wrapper-spacing: 4rem;
 
 .wrapper--blueberry {
   @include wrapper($blueberry, true);
-
-  .btn:not(.btn-link) {
-    @extend .btn-outline-light;
-  }
 }
 
 .wrapper--pale-gray {
   @include wrapper($pale-gray);
 }
 
-.wrapper--tealis {
+.wrapper--tealish {
   @include wrapper($tealish, true);
 }
 

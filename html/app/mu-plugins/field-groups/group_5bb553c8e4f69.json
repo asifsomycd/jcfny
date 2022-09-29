@@ -161,6 +161,25 @@
             "return_format": "id",
             "allow_null": 1,
             "multiple": 0
+        },
+        {
+            "key": "field_6334d400719b4",
+            "label": "Disable parallax backgrounds?",
+            "name": "disable_parallax_backgrounds",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
         }
     ],
     "location": [
@@ -203,5 +222,5 @@
     "active": true,
     "description": "Post Type: Post, Page (15)",
     "show_in_rest": 0,
-    "modified": 1651943725
+    "modified": 1664406557
 }

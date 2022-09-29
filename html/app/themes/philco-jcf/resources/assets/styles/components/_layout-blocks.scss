@@ -1,7 +1,7 @@
 /**
  * Layout Blocks
  */
-.layout-block {
+@mixin layout-block {
   background-repeat: no-repeat;
   background-position: right center;
 
@@ -21,7 +21,8 @@
   }
 
   h1,
-  .h1 {
+  .h1,
+  .entry-subtitle {
     font-size: $h2-font-size;
   }
 }
@@ -30,14 +31,10 @@
 // Title and Text
 .layout-block__headline,
 .layout-block__title-and-text {
-  @extend .layout-block;
-
+  @include layout-block;
   @include wrapper($pale-gray);
 
-  padding-bottom: $wrapper-spacing / 2;
-  padding-top: $wrapper-spacing / 2;
-
-  &:not(.without-arrows) {
+  &:not(.skip-parallax) {
     background-image: url(../images/background-arrows-a.svg);
   }
 
@@ -45,20 +42,29 @@
     margin-bottom: $paragraph-margin-bottom;
   }
 
-  @include media-breakpoint-up(md) {
-    .entry-title {
+  .entry-title,
+  .entry-subtitle {
+    font-weight: $font-weight-bold;
+    margin-bottom: 0;
+    line-height: 1.1;
+
+    @include media-breakpoint-up(md) {
       font-size: 2.75rem;
     }
   }
 
-  strong {
-    color: $blueberry;
+  .entry-title {
+    color: $secondary;
+  }
+
+  .entry-content__text > *:last-child {
+    margin-bottom: 0;
   }
 }
 
 // Text and Photo
 .layout-block__text-and-photo {
-  @extend .layout-block;
+  @include layout-block;
 
   &_container {
     @include media-breakpoint-up(lg) {
@@ -94,8 +100,7 @@
 
 // Action Form
 .layout-block__action-form {
-  @extend .layout-block;
-
+  @include layout-block;
   @include wrapper($blueberry, true);
 
   padding-top: $wrapper-spacing / 2;
@@ -115,26 +120,27 @@
 
 // Columns with Icons
 .layout-block__columns-icons {
-  @extend .layout-block;
-
+  @include layout-block;
   @include wrapper($blueberry, true);
 
-  background-image: url(../images/background-arrows-b.svg);
+  &:not(.skip-parallax) {
+    background-image: url(../images/background-arrows-b.svg);
+  }
 }
 
 // Columns
 .layout-block__columns {
-  @extend .layout-block;
-
+  @include layout-block;
   @include wrapper($white);
 
-  background-image: url(../images/background-arrows-b.svg);
+  &:not(.skip-parallax) {
+    background-image: url(../images/background-arrows-b.svg);
+  }
 }
 
 // Impact
 .layout-block__impact {
-  @extend .layout-block;
-
+  @include layout-block;
   @include wrapper($seafoam-green, true);
 
   .acf-link {
@@ -162,12 +168,13 @@
 
 // Quote
 .layout-block__quote {
-  @extend .layout-block;
-
+  @include layout-block;
   @include wrapper($pale-gray);
 
-  background-image: url(../images/background-arrows-c.svg);
-  background-position: right top;
+  &:not(.skip-parallax) {
+    background-image: url(../images/background-arrows-c.svg);
+    background-position: right top;
+  }
 
   h2 {
     @include media-breakpoint-down(md) {
@@ -191,12 +198,13 @@
 
 // FAQ
 .layout-block__faq {
-  @extend .layout-block;
-
+  @include layout-block;
   @include wrapper($seafoam-green, true);
 
-  background-image: url(../images/background-arrows-e.svg);
-  background-position: left center;
+  &:not(.skip-parallax) {
+    background-image: url(../images/background-arrows-e.svg);
+    background-position: left center;
+  }
 }
 
 .faq__indicator {
@@ -235,22 +243,21 @@
 
 // Advisors
 .layout-block__advisors {
-  @extend .layout-block;
-
+  @include layout-block;
   @include wrapper($white);
 
-  background-image: url(../images/background-arrows-d.svg);
-  position: relative;
+  &:not(.skip-parallax) {
+    background-image: url(../images/background-arrows-d.svg);
+  }
 }
 
 .parallax-badge {
-  background-image: url(../images/jcf-badge.svg);
+  background-image: url(../images/jcf-badge-50.svg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: px-to-rem(296px) auto;
-  opacity: 0.4;
+  background-size: 16rem auto;
   position: absolute;
-  top: 0;
+  top: 2rem;
   right: 0;
   bottom: 0;
   width: 50%;

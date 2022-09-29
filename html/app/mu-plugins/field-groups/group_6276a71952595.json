@@ -59,6 +59,25 @@
                             "new_lines": "br"
                         },
                         {
+                            "key": "field_632262c439199",
+                            "label": "Subtitle",
+                            "name": "subtitle",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "70",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 2,
+                            "new_lines": "br"
+                        },
+                        {
                             "key": "field_6276aee3c8409",
                             "label": "Text",
                             "name": "text",
@@ -1327,5 +1346,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1651961140
+    "modified": 1663197906
 }

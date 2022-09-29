@@ -11,20 +11,17 @@ use Roots\Sage\Template\BladeProvider;
  * Theme assets
  */
 add_action('init', function () {
-    wp_register_style('app/fonts', 'https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Poppins:700', false, null);
+    wp_register_style('app/fonts', 'https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400;1,500&display=swap', false, null);
 });
 
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('app/fonts');
-    wp_enqueue_style('app/main.css', asset_path('styles/main.css'), false, null);
+    $version = filemtime(get_stylesheet_directory() . '/../dist/mix-manifest.json');
 
-    /**
-     * App
-     */
-    wp_enqueue_script('app/vendor.js', asset_path('scripts/vendor.js'), ['jquery', 'wp-element'], null, true);
+    wp_enqueue_style('app/main.css', asset_path('styles/main.css'), ['app/fonts'], $version);
+    wp_enqueue_script('app/vendor.js', asset_path('scripts/vendor.js'), ['jquery', 'wp-element'], $version, true);
     wp_add_inline_script('app/vendor.js', file_get_contents(config('assets.manifest')), 'before');
 
-    wp_register_script('app/main.js', asset_path('scripts/main.js'), ['app/vendor.js'], null, true);
+    wp_register_script('app/main.js', asset_path('scripts/main.js'), ['app/vendor.js'], $version, true);
     wp_localize_script('app/main.js', 'jcf', [
         'siteTitle' => get_bloginfo('name'),
         'breakpointMd' => 768,
@@ -42,9 +39,8 @@ add_action('wp_enqueue_scripts', function () {
  * Login assets
  */
 add_action('login_enqueue_scripts', function () {
-    wp_enqueue_style('app/fonts');
-    wp_enqueue_style('app/login.css', asset_path('styles/login.css'), false, null);
-    wp_enqueue_script('app/login.js', asset_path('scripts/login.js'), [], null, true);
+    wp_enqueue_style('app/login.css', asset_path('styles/login.css'), ['app/fonts'], null);
+    wp_enqueue_script('app/login.js', asset_path('scripts/login.js'), ['app/fonts'], null, true);
 }, 100);
 
 add_filter('login_headerurl', function () {
@@ -55,8 +51,7 @@ add_filter('login_headerurl', function () {
  * Gutenberg assets
  */
 add_action('enqueue_block_editor_assets', function () {
-    wp_enqueue_style('app/fonts');
-    wp_enqueue_style('app/block-editor.css', asset_path('styles/block-editor.css'), false, null);
+    wp_enqueue_style('app/block-editor.css', asset_path('styles/block-editor.css'), ['app/fonts'], null);
 });
 
 /**

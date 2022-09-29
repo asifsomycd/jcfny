@@ -6,10 +6,17 @@
   z-index: 2; // Addresses odd z-index dropdown bug when page is left open for a time
 }
 
+.header__top-row {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .brand {
   display: block;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+
+  img {
+    max-height: 3.125rem;
+  }
 }
 
 // Page Header

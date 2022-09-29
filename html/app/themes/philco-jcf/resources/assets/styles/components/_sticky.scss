@@ -36,16 +36,24 @@
   }
 
   .nav-top {
+    padding-top: 0.5rem;
+
     .menu-item {
       a {
-        padding: 1.1rem px-to-rem(13px);
+        font-size: 0.8em;
+      }
+
+      &:not(.tagged) {
+        a {
+          padding: 0.75rem 0.8125rem;
+        }
       }
 
       &.tagged {
         a {
           margin-left: px-to-rem(6px);
           margin-right: px-to-rem(6px);
-          padding-bottom: 0.75rem;
+          padding: 0.75rem 0.8125rem;
         }
       }
     }
@@ -69,8 +77,7 @@
       margin: 1rem 0;
 
       img {
-        max-height: px-to-rem(45px);
-        // max-width: none;
+        max-height: 1.4rem;
       }
     }
   }

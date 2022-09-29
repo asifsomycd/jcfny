@@ -1,4 +1,9 @@
-<div class="layout-block__title-and-text {{ ! $arrows ? 'without-arrows' : '' }}" {!! $arrows ? 'data-enllax-ratio="-0.1" data-enllax-background-align="right"' : '' !!} data-scroll>
+<div class="layout-block__title-and-text
+    {{ ! $arrows || $disable_parallax_backgrounds ? 'skip-parallax' : '' }}
+  "
+  data-enllax-ratio="-0.1" data-enllax-background-align="right"
+  data-scroll
+>
   <div class="container py-3">
     <div class="row">
       <div class="col-12 col-lg-4">
@@ -17,7 +22,7 @@
             <div class="d-xl-none"><br></div>
 
             @include('partials.modal-video', [
-              'button_classes' => 'acf-link link-tealish link-underline ml-xl-5',
+              'button_classes' => 'acf-link link-dark-turquoise link-underline ml-xl-5',
               'button_text' => $video_modal['text'],
               'video_id' => $video_modal['video_id'],
               'modal_id' => 'video-headline-' . $video_modal['video_id'],

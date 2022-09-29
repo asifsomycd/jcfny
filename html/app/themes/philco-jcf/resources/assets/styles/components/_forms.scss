@@ -333,16 +333,18 @@
   //     height: auto;
   // }
 
-  .button {
+  .button:not(.gform_previous_button) {
     @extend .btn;
     @extend .btn-primary;
   }
 
   .gform_previous_button {
-    @extend .btn-outline-light;
+    @extend .btn;
+    @extend .btn-outline-tealish;
 
-    color: $tealish;
-    margin-right: 1rem;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-right: 2rem;
   }
 
   &.gform_validation_error {

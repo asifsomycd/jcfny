@@ -1,8 +1,8 @@
 <header class="site-header d-none d-xl-block">
 	<div class="container">
-		<div class="row justify-content-between">
+		<div class="row justify-content-between align-items-center header__top-row">
 			<div class="col-8 col-sm-6 col-md-5">
-				<a class="brand" href="{{ home_url('/') }}"><img src="@asset('images/jcf-horizontal.svg')" alt="{{ get_bloginfo('name', 'display') }}"></a>
+				<a class="brand" href="{{ home_url('/') }}"><img src="@asset('images/jcf-logo-50.svg')" alt="{{ get_bloginfo('name', 'display') }}"></a>
 			</div>
 			<div class="col-auto">
 				<nav class="nav-top">
@@ -36,7 +36,7 @@
 			<div class="sticky-header__brand col-9 col-xl-1 align-self-center">
 				<a class="brand" href="{{ home_url('/') }}">
 					<img class="d-none d-xl-block" src="@asset('images/jcf-badge.svg')" alt="{{ get_bloginfo('name', 'display') }}">
-					<img class="d-xl-none" src="@asset('images/jcf-horizontal.svg')" alt="{{ get_bloginfo('name', 'display') }}">
+					<img class="d-xl-none" src="@asset('images/jcf-horizontal-50.svg')" alt="{{ get_bloginfo('name', 'display') }}">
 				</a>
 			</div>
 			<div class="sticky-header__nav-primary col-6 d-none d-xl-block align-self-center"></div>
