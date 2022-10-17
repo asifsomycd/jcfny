@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "76f8cf10de87460074baff493df2b5f1",
+    "content-hash": "081a885d4621ca98ff24f943cd383e77",
     "packages": [
         {
             "name": "composer/installers",
@@ -1398,15 +1398,15 @@
         },
         {
             "name": "wpackagist-plugin/media-library-plus",
-            "version": "7.1.1",
+            "version": "8.0.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/media-library-plus/",
-                "reference": "tags/7.1.1"
+                "reference": "tags/8.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/media-library-plus.7.1.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/media-library-plus.8.0.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
