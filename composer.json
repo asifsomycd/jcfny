@@ -64,7 +64,7 @@
     "wpackagist-plugin/autoptimize": "3.*",
     "wpackagist-plugin/enable-media-replace": "^4.0",
     "wpackagist-plugin/gravity-forms-email-blacklist": "^2.4",
-    "wpackagist-plugin/media-library-plus": "^7.0",
+    "wpackagist-plugin/media-library-plus": "^8.0",
     "wpackagist-plugin/page-links-to": "^3",
     "wpackagist-plugin/redirection": "^5.0",
     "wpackagist-plugin/safe-svg": "2.0.*",
