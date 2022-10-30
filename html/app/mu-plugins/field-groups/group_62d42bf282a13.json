@@ -6,6 +6,7 @@
             "key": "field_62d5effb2cbd8",
             "label": "Background Color",
             "name": "modal_bg",
+            "aria-label": "",
             "type": "color_picker",
             "instructions": "",
             "required": 0,
@@ -23,6 +24,7 @@
             "key": "field_62d42bfeb216a",
             "label": "Delay",
             "name": "modal_delay",
+            "aria-label": "",
             "type": "number",
             "instructions": "How long after page load before it pops up on the page?",
             "required": 0,
@@ -44,6 +46,7 @@
             "key": "field_62d42c73b216b",
             "label": "Page Interval",
             "name": "modal_interval",
+            "aria-label": "",
             "type": "number",
             "instructions": "How many pages should the user visit before it pops up? This interval repeats until the user takes an action (e.g., clicking on a link).",
             "required": 0,
@@ -65,6 +68,7 @@
             "key": "field_62d87f4aca702",
             "label": "Total Display Count",
             "name": "modal_total_count",
+            "aria-label": "",
             "type": "number",
             "instructions": "The maximum number of times the user will see this pop-up within the Reset Timeframe.",
             "required": 0,
@@ -86,6 +90,7 @@
             "key": "field_62d42ca9b216c",
             "label": "Reset Timeframe",
             "name": "modal_timeframe",
+            "aria-label": "",
             "type": "number",
             "instructions": "How long before we display this pop-up to everyone again?",
             "required": 0,
@@ -107,6 +112,7 @@
             "key": "field_62d42d497cc36",
             "label": "Unique Key",
             "name": "modal_key",
+            "aria-label": "",
             "type": "text",
             "instructions": "Changing this key will reset all visitor cookies and display this pop-up as if it were new to all visitors. It should be unique and different from all other pop-ups.",
             "required": 1,
@@ -116,7 +122,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "dAYfvjmp",
+            "default_value": "t2ZNXTao",
             "placeholder": "",
             "prepend": "",
             "append": "",
@@ -124,8 +130,9 @@
         },
         {
             "key": "field_62d430117f6cb",
-            "label": "Disable on pages",
-            "name": "modal_disable",
+            "label": "Enable on pages",
+            "name": "modal_enable",
+            "aria-label": "",
             "type": "post_object",
             "instructions": "",
             "required": 0,
@@ -140,9 +147,9 @@
                 "post"
             ],
             "taxonomy": "",
-            "allow_null": 1,
-            "multiple": 1,
             "return_format": "id",
+            "multiple": 1,
+            "allow_null": 1,
             "ui": 1
         }
     ],
@@ -164,5 +171,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1658355596
+    "modified": 1667144882
 }
