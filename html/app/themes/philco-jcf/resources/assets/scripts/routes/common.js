@@ -397,7 +397,7 @@ export default {
 
       pushHistory(
         locationHref + targetHash,
-        $.trim($trigger.text()) + ' | ' + window.jcf.siteTitle,
+        $trigger.text().trim() + ' | ' + window.jcf.siteTitle,
         $trigger.attr('href')
       )
     })
