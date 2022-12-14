@@ -1542,15 +1542,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-super-cache",
-            "version": "1.9.1",
+            "version": "1.9.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-super-cache/",
-                "reference": "tags/1.9.1"
+                "reference": "tags/1.9.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-super-cache.1.9.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-super-cache.1.9.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
