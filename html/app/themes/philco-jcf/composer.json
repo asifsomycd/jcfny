@@ -52,7 +52,7 @@
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.5.8",
     "filp/whoops": "^2.12",
-    "symfony/var-dumper": "^5.4"
+    "symfony/var-dumper": "^6.0"
   },
   "scripts": {
     "test": [
