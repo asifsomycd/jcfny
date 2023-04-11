@@ -1,9 +1,10 @@
 // Font Awesome
 import { library, dom } from '@fortawesome/fontawesome-svg-core'
 
-// import the Facebook and Twitter icons
+// Import the icons
 import {
   faFacebook,
+  faInstagram,
   faTwitter,
   faLinkedin,
   faYoutube,
@@ -22,9 +23,10 @@ import {
 } from '@fortawesome/pro-regular-svg-icons'
 import { faTimes, faChevronDown } from '@fortawesome/pro-light-svg-icons'
 
-// add the imported icons to the library
+// Add the imported icons to the library
 library.add(
   faFacebook,
+  faInstagram,
   faTwitter,
   faLinkedin,
   faYoutube,

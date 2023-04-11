@@ -6,6 +6,7 @@
             "key": "field_61bba4674542e",
             "label": "Announcement Bar",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -22,6 +23,7 @@
             "key": "field_61bba4a045430",
             "label": "Show announcement bar?",
             "name": "jcf_show_announcement_bar",
+            "aria-label": "",
             "type": "true_false",
             "instructions": "",
             "required": 0,
@@ -41,6 +43,7 @@
             "key": "field_61bba47a4542f",
             "label": "Text",
             "name": "jcf_announcement_bar",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -68,6 +71,7 @@
             "key": "field_5ba97da5c8ed5",
             "label": "Contact Details",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -84,6 +88,7 @@
             "key": "field_5bce633be96a7",
             "label": "Info Kit Form Text",
             "name": "jcf_action_form_text",
+            "aria-label": "",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -99,6 +104,7 @@
                     "key": "field_5bce6361e96a8",
                     "label": "Line 1",
                     "name": "line_1",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -118,6 +124,7 @@
                     "key": "field_5bce636be96a9",
                     "label": "Line 2",
                     "name": "line_2",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -139,6 +146,7 @@
             "key": "field_5bb68389e304e",
             "label": "Info Kit Form",
             "name": "jcf_action_form",
+            "aria-label": "",
             "type": "forms",
             "instructions": "",
             "required": 0,
@@ -156,6 +164,7 @@
             "key": "field_5bb65d0147011",
             "label": "Phone",
             "name": "jcf_phone",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -175,6 +184,7 @@
             "key": "field_5bba120350ea9",
             "label": "Contact Page",
             "name": "jcf_contact_page",
+            "aria-label": "",
             "type": "post_object",
             "instructions": "",
             "required": 0,
@@ -197,6 +207,7 @@
             "key": "field_62d882b770ba9",
             "label": "Footer",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -213,6 +224,7 @@
             "key": "field_62d882d570baa",
             "label": "Action Buttons",
             "name": "footer_action_buttons",
+            "aria-label": "",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -228,6 +240,7 @@
                     "key": "field_62d882ec70bab",
                     "label": "Heading",
                     "name": "heading",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -247,6 +260,7 @@
                     "key": "field_62d882fd70bac",
                     "label": "Buttons",
                     "name": "buttons",
+                    "aria-label": "",
                     "type": "repeater",
                     "instructions": "",
                     "required": 0,
@@ -260,12 +274,13 @@
                     "min": 0,
                     "max": 0,
                     "layout": "table",
-                    "button_label": "",
+                    "button_label": "Add Row",
                     "sub_fields": [
                         {
                             "key": "field_62d8830e70bad",
                             "label": "Button",
                             "name": "link",
+                            "aria-label": "",
                             "type": "link",
                             "instructions": "",
                             "required": 0,
@@ -275,9 +290,11 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "array"
+                            "return_format": "array",
+                            "parent_repeater": "field_62d882fd70bac"
                         }
-                    ]
+                    ],
+                    "rows_per_page": 20
                 }
             ]
         },
@@ -285,6 +302,7 @@
             "key": "field_5ba97dc5c8ed7",
             "label": "Social Networks",
             "name": "jcf_social_networks",
+            "aria-label": "",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -298,12 +316,13 @@
             "min": 0,
             "max": 0,
             "layout": "table",
-            "button_label": "",
+            "button_label": "Add Row",
             "sub_fields": [
                 {
                     "key": "field_5ba97de9c8ed8",
                     "label": "Network",
                     "name": "network",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -317,12 +336,14 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": ""
+                    "maxlength": "",
+                    "parent_repeater": "field_5ba97dc5c8ed7"
                 },
                 {
                     "key": "field_5ba97dfac8ed9",
                     "label": "Icon",
                     "name": "icon",
+                    "aria-label": "",
                     "type": "select",
                     "instructions": "",
                     "required": 0,
@@ -334,22 +355,25 @@
                     },
                     "choices": {
                         "facebook": "Facebook",
+                        "instagram": "Instagram",
                         "linkedin": "LinkedIn",
                         "twitter": "Twitter",
                         "youtube": "YouTube"
                     },
                     "default_value": false,
-                    "allow_null": 0,
+                    "return_format": "value",
                     "multiple": 0,
+                    "allow_null": 0,
                     "ui": 1,
                     "ajax": 0,
-                    "return_format": "value",
-                    "placeholder": ""
+                    "placeholder": "",
+                    "parent_repeater": "field_5ba97dc5c8ed7"
                 },
                 {
                     "key": "field_5ba97e4fc8eda",
                     "label": "URL",
                     "name": "url",
+                    "aria-label": "",
                     "type": "url",
                     "instructions": "",
                     "required": 0,
@@ -360,14 +384,17 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "placeholder": ""
+                    "placeholder": "",
+                    "parent_repeater": "field_5ba97dc5c8ed7"
                 }
-            ]
+            ],
+            "rows_per_page": 20
         },
         {
             "key": "field_5bce67091318a",
             "label": "404",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -384,6 +411,7 @@
             "key": "field_5bce671a1318b",
             "label": "Title",
             "name": "jcf_404_title",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -403,6 +431,7 @@
             "key": "field_5bce67581318c",
             "label": "Text",
             "name": "jcf_404_text",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -422,6 +451,7 @@
             "key": "field_5ba97dbac8ed6",
             "label": "Integrations",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -438,6 +468,7 @@
             "key": "field_5dd07bfe52673",
             "label": "Privacy Badge",
             "name": "jcf_privacy_badge",
+            "aria-label": "",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -457,6 +488,7 @@
             "key": "field_5bde15541d350",
             "label": "Scripts and marketing tags",
             "name": "",
+            "aria-label": "",
             "type": "message",
             "instructions": "",
             "required": 0,
@@ -474,6 +506,7 @@
             "key": "field_5ba97e66c8edb",
             "label": "&lt;\/head&gt; Scripts",
             "name": "jcf_header_scripts",
+            "aria-label": "",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -487,12 +520,13 @@
             "min": 0,
             "max": 0,
             "layout": "table",
-            "button_label": "",
+            "button_label": "Add Row",
             "sub_fields": [
                 {
                     "key": "field_5ba97e865dab6",
                     "label": "Title",
                     "name": "title",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "For internal reference only.",
                     "required": 0,
@@ -506,12 +540,14 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": ""
+                    "maxlength": "",
+                    "parent_repeater": "field_5ba97e66c8edb"
                 },
                 {
                     "key": "field_5ba97e9c5dab7",
                     "label": "Script",
                     "name": "script",
+                    "aria-label": "",
                     "type": "textarea",
                     "instructions": "",
                     "required": 0,
@@ -525,14 +561,17 @@
                     "placeholder": "",
                     "maxlength": "",
                     "rows": 4,
-                    "new_lines": ""
+                    "new_lines": "",
+                    "parent_repeater": "field_5ba97e66c8edb"
                 }
-            ]
+            ],
+            "rows_per_page": 20
         },
         {
             "key": "field_5ba97ed2fdb06",
             "label": "&lt;\/body&gt; Scripts",
             "name": "jcf_footer_scripts",
+            "aria-label": "",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -546,12 +585,13 @@
             "min": 0,
             "max": 0,
             "layout": "table",
-            "button_label": "",
+            "button_label": "Add Row",
             "sub_fields": [
                 {
                     "key": "field_5ba97ed2fdb07",
                     "label": "Title",
                     "name": "title",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "For internal reference only.",
                     "required": 0,
@@ -565,12 +605,14 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": ""
+                    "maxlength": "",
+                    "parent_repeater": "field_5ba97ed2fdb06"
                 },
                 {
                     "key": "field_5ba97ed2fdb08",
                     "label": "Script",
                     "name": "script",
+                    "aria-label": "",
                     "type": "textarea",
                     "instructions": "",
                     "required": 0,
@@ -584,9 +626,11 @@
                     "placeholder": "",
                     "maxlength": "",
                     "rows": 4,
-                    "new_lines": ""
+                    "new_lines": "",
+                    "parent_repeater": "field_5ba97ed2fdb06"
                 }
-            ]
+            ],
+            "rows_per_page": 20
         }
     ],
     "location": [
@@ -607,5 +651,5 @@
     "active": true,
     "description": "Options: Site Settings",
     "show_in_rest": 0,
-    "modified": 1658356522
+    "modified": 1681253667
 }
