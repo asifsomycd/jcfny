@@ -51,7 +51,7 @@
           >
           <img
             class="d-xl-none"
-            src="@asset('images/jcf-horizontal-50.svg')"
+            src="@asset('images/jcf-horizontal.svg')"
             alt="{{ get_bloginfo('name', 'display') }}"
           >
         </a>
