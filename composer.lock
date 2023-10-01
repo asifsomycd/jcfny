@@ -1384,15 +1384,15 @@
         },
         {
             "name": "wpackagist-plugin/gravity-forms-email-blacklist",
-            "version": "2.5.3",
+            "version": "2.5.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gravity-forms-email-blacklist/",
-                "reference": "tags/2.5.3"
+                "reference": "tags/2.5.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gravity-forms-email-blacklist.2.5.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/gravity-forms-email-blacklist.2.5.6.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
