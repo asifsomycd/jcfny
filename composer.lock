@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bb6dbf15cff2fccf702e04fb4d088edb",
+    "content-hash": "d1982a5e80b65a138c27ff93abe02048",
     "packages": [
         {
             "name": "composer/installers",
@@ -923,11 +923,11 @@
         },
         {
             "name": "satispress/gravityforms",
-            "version": "2.8.0",
+            "version": "2.8.7",
             "dist": {
                 "type": "zip",
-                "url": "https://satispress.orangepineapple.com/satispress/gravityforms/2.8.0",
-                "shasum": "570791f0e306b6b352672b69016499d06c882716"
+                "url": "https://satispress.orangepineapple.com/satispress/gravityforms/2.8.7",
+                "shasum": "7647a66f3bce10cc26f637f3d14dc1394021adf3"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
