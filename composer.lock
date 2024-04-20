@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2431084c2becc5f64919a452eb270aab",
+    "content-hash": "ddd969a09a7d7cab52abbfc3f3476497",
     "packages": [
         {
             "name": "composer/installers",
@@ -1336,24 +1336,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/akismet/"
-        },
-        {
-            "name": "wpackagist-plugin/autoptimize",
-            "version": "3.1.11",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/autoptimize/",
-                "reference": "tags/3.1.11"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/autoptimize.3.1.11.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/autoptimize/"
         },
         {
             "name": "wpackagist-plugin/enable-media-replace",
