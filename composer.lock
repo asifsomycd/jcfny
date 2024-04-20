@@ -942,11 +942,11 @@
         },
         {
             "name": "satispress/gravityformsmailchimp",
-            "version": "5.3.0",
+            "version": "5.4.0",
             "dist": {
                 "type": "zip",
-                "url": "https://satispress.orangepineapple.com/satispress/gravityformsmailchimp/5.3.0",
-                "shasum": "85b2ca50e98c692890df87e3350e0494b9a490da"
+                "url": "https://satispress.orangepineapple.com/satispress/gravityformsmailchimp/5.4.0",
+                "shasum": "a0fb05f45bf82798eb1b39ae8147a3efc63d549d"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
