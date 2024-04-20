@@ -1,1 +1,1571 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{"/vhV":function(e,t,a){"use strict";(function(e){var n=a("yN3z"),r=0,o=e(".application-form > .gform_wrapper");function i(t){e("body").removeClass((function(e,t){return(t.match(/(^|\s)app--step-\S+/g)||[]).join(" ")})).addClass("app--step-"+t),0===(r=t)?(o.appendTo(e(".form__step-0")),e(".form__step-0 .gform_next_button").val("Start Application"),e(".form__app").slideUp()):(o.appendTo(e(".form__entree")),e(".progress__step--"+r).addClass("is-active"),e('[class^="sidebar__step--"]').slideUp(),e(".sidebar__step--"+r).slideDown(),window.innerWidth<=window.jcf.breakpointMd&&setTimeout((function(){var t=e(".progress__step--"+r).offset();e(".form__progress-bar").animate({scrollLeft:t.left},250)}),1e3),e(".add-another").each((function(t,a){e(a).hasClass("initiated")||(e(a).prepend('<span class="add-another__button fa-stack">\n                          <i class="fas fa-circle fa-stack-2x"></i>\n                          <i class="fas fa-plus fa-stack-1x fa-inverse"></i>\n                          <i class="fas fa-minus fa-stack-1x fa-inverse d-none"></i>\n                      </span>'),e(a).addClass("initiated").data("toggled",!1))})),e(".form__app").slideDown()),e("html, body").animate({scrollTop:0})}t.a={init:function(){},finalize:function(){i(void 0!==n.a.dev_form_page?n.a.dev_form_page-1:0),e(".remember-name .name_first input").on("change",(function(){e(".remembered-name .name_first input").val(e(this).val())})),e(".remember-name .name_last input").on("change",(function(){e(".remembered-name .name_last input").val(e(this).val())})),e(".remember-email input").on("change",(function(){e(".remembered-email input").val(e(this).val())})),e(document).on("gform_page_loaded",(function(e,t,a){i(a-1)})),e(".form__app").on("click",".add-another__button, .add-another label",(function(){var t=e(this).parent();t.data("toggled")?(t.find("input:last").prop("checked",!0).trigger("change"),t.find("label:first").text((function(){return e(this).text().replace("Remove","Add another")})),t.find(".fa-plus").removeClass("d-none"),t.find(".fa-minus").addClass("d-none"),t.data("toggled",!1)):(t.find("input:first").prop("checked",!0).trigger("change"),t.find("label:first").text((function(){return e(this).text().replace("Add another","Remove")})),t.find(".fa-plus").addClass("d-none"),t.find(".fa-minus").removeClass("d-none"),t.data("toggled",!0))}))}}}).call(this,a("xeH2"))},0:function(e,t,a){a("Vcix"),a("ku0t"),a("cX9m"),e.exports=a("gxDF")},"4/Ga":function(e,t,a){"use strict";(function(e){a("BVwZ");var n=a("vX6Q"),r=a.n(n),o=a("J4F/"),i=a.n(o),c=a("hS4W"),l=a.n(c),s=a("GiOn"),d=(a("lGc7"),a("krAz"));function u(e,t){var a=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);t&&(n=n.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),a.push.apply(a,n)}return a}function m(e){for(var t=1;t<arguments.length;t++){var a=null!=arguments[t]?arguments[t]:{};t%2?u(Object(a),!0).forEach((function(t){f(e,t,a[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(a)):u(Object(a)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(a,t))}))}return e}function f(e,t,a){return t in e?Object.defineProperty(e,t,{value:a,enumerable:!0,configurable:!0,writable:!0}):e[t]=a,e}r.a.makeJQueryPlugin(e),t.a={init:function(){e("h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6").not(".fix-widow-skip").each((function(t,a){return e(a).html((function(){return e(this).html().replace(/\s([^\s<]+)\s*$/," $1")}))})),e(".wrap").imagesLoaded({background:!0},(function(){e(window).enllax()}));var t=document.querySelector(".wrap .content");e(window).on("window:resize",(function(){e(".background-arrows").length&&e(".background-arrows").css({right:(window.innerWidth-t.clientWidth)/2,opacity:1})})),e(".nav-top .menu-item:not(.search-link)").last().addClass("tagged").find("a").on("click",(function(){e(this).width(e(this).width()).html('<i class="far fa-fw fa-spinner-third fa-spin"></i> Loading')}))},finalize:function(){i()({onShown:function(t){if(e(t).addClass("fadeInUp animated"),e(t).hasClass("count-up")){var a=t.querySelector(".count-up-target"),n=a.dataset.end,r=0;n<20&&(r=1,n-=.1);var o=new s.a(a,n,{startVal:0,decimalPlaces:r,duration:3});setTimeout((function(){return o.start((function(){r>0&&(a.innerText=n+.1),e(t).removeClass("count-up")}))}),750)}},once:!0,threshold:.2}),e(".site-header .search-link").appendTo("#menu-top-navigation").show(),e(".site-header .nav-top").clone().appendTo(".sticky-header__nav-top"),e(".site-header .nav-primary").clone().appendTo(".sticky-header__nav-primary"),e(".sticky-header").css({top:-e(".sticky-header").outerHeight()}),e(".sticky-footer").css({bottom:-e(".sticky-footer").outerHeight()}),i()({onHidden:function(){e(".sticky-footer").addClass("in")},onShown:function(){e(".sticky-footer").removeClass("in")},targets:".site-footer"}),i()({onHidden:function(){e(".sticky-header").addClass("in"),"out"===e(".site-footer").attr("data-scroll")&&e(".sticky-footer").addClass("in")},onShown:function(){e(".sticky-header").removeClass("in"),e(".sticky-footer").removeClass("in")},targets:".site-header",threshold:.1}),e(window).on("window:resize",(function(){e(".share .position-sticky").css({top:e(".sticky-header").outerHeight()+16}),window.innerWidth<=window.jcf.breakpointXl?e("body").css({marginTop:e(".sticky-header").height()}):e("body").css({marginTop:0})})),e(".nav-mobile__top .menu-item").not(".search-link").last().find("a").addClass("btn btn-outline-light").insertBefore(".nav-modal .nav-mobile__top"),e(".nav-mobile__top .menu-item:empty").remove(),e(".nav-mobile__primary .menu-item-has-children > a").append(e('<div class="nav-arrow"><i class="fal fa-chevron-down"></i></div>')),e(".nav-mobile__primary .menu-item-has-children > a").on("click",(function(t){t.preventDefault(),e(this).parent().hasClass("active")?(e(this).next(".sub-menu").stop().slideUp(),e(this).parent().removeClass("active")):(e(".nav-mobile__primary .menu-item-has-children.active").removeClass("active").find(".sub-menu").stop().slideUp(),e(this).parent().addClass("active"),e(this).next(".sub-menu").stop().slideDown())})),e(".modal--iframe-video").on("show.bs.modal",(function(){return e(".modal--iframe-video iframe").attr("src",e(".modal--iframe-video iframe").data("src"))})),e(".modal--iframe-video").on("hidden.bs.modal",(function(){return e(".modal--iframe-video iframe").attr("src",null)})),e(".modal--search").on("show.bs.modal",(function(){e(".modal").not(e(this)).each((function(){e(this).modal("hide")}))})),e(".modal--search").on("shown.bs.modal",(function(){return e(".modal--search .search-field").trigger("focuse")}));var t=1;e(".modal--popup").each((function(){var a=e(this),n=a.data("options"),r="popup-".concat(n.modal_key),o=l.a.get(r),i={pagesViewed:0,totalCount:0,dismissed:!1,actioned:!1},c=parseInt(n.modal_timeframe);o&&(i=JSON.parse(o)),i.totalCount>=n.modal_total_count||(++i.pagesViewed,i.pagesViewed>n.modal_interval&&(i.pagesViewed=1,i.dismissed=!1),l.a.set(r,JSON.stringify(m({},i)),{expires:c}),i.dismissed||i.actioned||(a.on("show.bs.modal",(function(){e("body").addClass("modal--backdrop-shaded"),e(".modal").not(a).each((function(){e(this).modal("hide")})),a.find("a").on("click",(function(){i.actioned=!0,a.modal("hide")}))})),a.on("hidden.bs.modal",(function(){e("body").removeClass("modal--backdrop-shaded"),++i.totalCount,l.a.set(r,JSON.stringify(m(m({},i),{},{dismissed:!0})),{expires:c})})),i.pagesViewed!=n.modal_interval||1!==t||i.dismissed||(setTimeout((function(){a.modal("show")}),1e3*n.modal_delay),++t)))})),e(".collapsible__trigger").on("click",(function(){var t=e(this).find(".btn").data("target"),a=e(this).find(".btn"),n=window.location.href;window.location.hash&&(n=n.replace(window.location.hash,"")),void 0===t&&(t=""),Object(d.a)(n+t,a.text().trim()+" | "+window.jcf.siteTitle,a.attr("href"))}));var a=e('.collapsible__trigger a[href="'+window.location.hash+'"]');window.location.hash&&a.length&&a.trigger("click"),e('main a[href^="#"]').not('[data-toggle="collapse"]').on("click",(function(t){if(t.preventDefault(),"#"===e(this).attr("href")||"#1"===e(this).attr("href"))return!0;var a=e("main").find(e(this).attr("href"));if(!(a.length>0))return!0;var n=a.offset().top-100;e("main").fadeTo(400,.001,(function(){e("html, body").animate({scrollTop:n},1),e("main").fadeTo(400,1)}))})),setTimeout((function(){return e(window).trigger("scroll").trigger("window:resize")}),250),e(window).on("resize",(function(){return e(window).trigger("window:resize")}))}}}).call(this,a("xeH2"))},BVwZ:function(e,t,a){(function(e,t){!function(a){"use strict";(a=a||e)&&((t=a).fn.enllax=function(e){var a=t("[data-enllax-ratio]");a.each((function(){t(this).css({})}));var n=t(window).height(),r=t.extend({ratio:0,type:"background",direction:"vertical",offset:0,align:"center"},e);a.each((function(){var e,a,o,i,c,l=t(this),s=(t(document).height(),l.offset().top),d=(l.outerHeight(),l.data("enllax-ratio")),u=l.data("enllax-type"),m=l.data("enllax-direction"),f=l.data("enllax-offset"),p=l.data("enllax-background-align");c=p||r.align,e=d||r.ratio,a=u||r.type,o=m||r.direction,i=f||r.offset;var h=Math.round(s*e),g=Math.round((s-n/2)*e-i);"background"==a?"vertical"==o?l.css({"background-position":"".concat(c," ").concat(-h,"px")}):"horizontal"==o&&l.css({"background-position":"".concat(-h,"px ").concat(c)}):"foreground"==a&&("vertical"==o?l.css({"-webkit-transform":"translateY("+g+"px)","-moz-transform":"translateY("+g+"px)",transform:"translateY("+g+"px)",position:"absolute",left:"0",right:"0"}):"horizontal"==o&&l.css({"-webkit-transform":"translateX("+g+"px)","-moz-transform":"translateX("+g+"px)",transform:"translateX("+g+"px)"})),t(window).on("scroll",(function(){var r=t(document).height(),s=l.offset().top,d=(l.outerHeight(),t(this).scrollTop());h=Math.round((s-d)*e),g=Math.round((s-n/2-d)*e-i),"background"==a?"vertical"==o?l.css({"background-position":"".concat(c," ").concat(-h,"px")}):"horizontal"==o&&l.css({"background-position":"".concat(-h,"px ").concat(c)}):"foreground"==a&&d<r&&("vertical"==o?l.css({"-webkit-transform":"translateY("+g+"px)","-moz-transform":"translateY("+g+"px)",transform:"translateY("+g+"px)",position:"absolute",left:"0",right:"0"}):"horizontal"==o&&l.css({"-webkit-transform":"translateX("+g+"px)","-moz-transform":"translateX("+g+"px)",transform:"translateX("+g+"px)"}))}))}))})}()}).call(this,a("xeH2"),a("xeH2"))},CswI:function(e,t,a){"use strict";(function(e){t.a={init:function(){},finalize:function(){var t,a,n;e(window).on("window:resize",(a=e("#quote-carousel .carousel-item"),n=[],void(a.length&&(a.each((function(){e(this).css("min-height","0"),n.push(e(this).height())})),t=Math.max.apply(null,n),a.each((function(){e(this).css("min-height",t+"px")}))))))}}}).call(this,a("xeH2"))},Vcix:function(e,t,a){"use strict";a.r(t);a("SYky");var n=a("7O5W"),r=a("8tEE"),o=a("4Bjl"),i=a("uB96"),c=a("WE53");n.b.add(r.a,r.b,r.d,r.c,r.e,o.c,o.b,o.a,o.d,i.b,i.d,i.a,i.c,c.b,c.a),n.a.watch();var l=function(e){return"".concat(e.charAt(0).toLowerCase()).concat(e.replace(/[\W_]/g,"|").split("|").map((function(e){return"".concat(e.charAt(0).toUpperCase()).concat(e.slice(1))})).join("").slice(1))};function s(e,t){for(var a=0;a<t.length;a++){var n=t[a];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}var d=function(){function e(t){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),this.routes=t}var t,a,n;return t=e,(a=[{key:"fire",value:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"init",a=arguments.length>2?arguments[2]:void 0,n=""!==e&&this.routes[e]&&"function"==typeof this.routes[e][t];n&&this.routes[e][t](a)}},{key:"loadEvents",value:function(){var e=this;this.fire("common"),document.body.className.toLowerCase().replace(/-/g,"_").split(/\s+/).map(l).forEach((function(t){e.fire(t),e.fire(t,"finalize")})),this.fire("common","finalize")}}])&&s(t.prototype,a),n&&s(t,n),e}(),u=a("4/Ga"),m=a("CswI"),f=a("ywgl"),p=a("/vhV"),h=a("FHWm"),g=a("sPwW"),v=a("17x9"),b=a.n(v);function w(e){var t=e.value,a=e.prepend||"",n=e.digits;return n||(n=0),a+t.toLocaleString(navigator.language,{minimumFractionDigits:n,maximumFractionDigits:n})}function y(e,t){var a=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);t&&(n=n.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),a.push.apply(a,n)}return a}function _(e){for(var t=1;t<arguments.length;t++){var a=null!=arguments[t]?arguments[t]:{};t%2?y(Object(a),!0).forEach((function(t){E(e,t,a[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(a)):y(Object(a)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(a,t))}))}return e}function E(e,t,a){return t in e?Object.defineProperty(e,t,{value:a,enumerable:!0,configurable:!0,writable:!0}):e[t]=a,e}function k(e,t){return function(e){if(Array.isArray(e))return e}(e)||function(e,t){if("undefined"==typeof Symbol||!(Symbol.iterator in Object(e)))return;var a=[],n=!0,r=!1,o=void 0;try{for(var i,c=e[Symbol.iterator]();!(n=(i=c.next()).done)&&(a.push(i.value),!t||a.length!==t);n=!0);}catch(e){r=!0,o=e}finally{try{n||null==c.return||c.return()}finally{if(r)throw o}}return a}(e,t)||function(e,t){if(!e)return;if("string"==typeof e)return x(e,t);var a=Object.prototype.toString.call(e).slice(8,-1);"Object"===a&&e.constructor&&(a=e.constructor.name);if("Map"===a||"Set"===a)return Array.from(e);if("Arguments"===a||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(a))return x(e,t)}(e,t)||function(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}function x(e,t){(null==t||t>e.length)&&(t=e.length);for(var a=0,n=new Array(t);a<t;a++)n[a]=e[a];return n}function R(){var e=k(wp.element.useState({balance:0,childrensFund:!1}),2),t=e[0],a=e[1],n=k(wp.element.useState({feeMonth:0,feeAnnual:0,returnMonth:0,returnAnnual:0,growth:0,display:!1,disclaimer:!1}),2),r=n[0],o=n[1],i=wp.element.createRef(),c=wp.element.createRef(),l=wp.element.createRef();wp.element.useEffect((function(){var e={feeMonth:0,feeAnnual:0,returnMonth:0,returnAnnual:0,growth:0,display:!1,disclaimer:!1};if(t.balance<1);else if(t.balance<5e3)t.childrensFund?e.feeAnnual=36:e.disclaimer=React.createElement("span",null,"JCF requires an initial contribution",React.createElement("br",null),"of at least $5,000 to open a new fund.");else if(t.balance<2e4)e.feeAnnual=150;else if(t.balance<5e6)e.feeAnnual=.0075*t.balance;else if(t.balance<2e7){var a=.005*(t.balance-5e6);e.feeAnnual=37500+a}else if(t.balance<4e7){var n=.001*(t.balance-2e7);e.feeAnnual=112500+n}else{var r=5e-4*(t.balance-4e7);e.feeAnnual=132500+r}!e.disclaimer&&t.balance&&(e.feeMonth=e.feeAnnual/12,e.returnAnnual=t.balance*calculatorParams.multiplier,e.returnMonth=e.returnAnnual/12,e.growth=e.returnAnnual-e.feeAnnual,e.display=!0),o(e)}),[t]),wp.element.useEffect((function(){var e=function(){var e=c.current.clientHeight;l.current.setAttribute("style","height: ".concat(e,"px;"))};return window.addEventListener("resize",e),e(),function(){return window.removeEventListener("resize",e)}}));var s=function(e){var n=e.target.name,r=e.target.value;a(_(_({},t),{},E({},n,"y"===r)))};return React.createElement("div",{className:"calculator"},React.createElement("div",{className:"calculator__row-1"},React.createElement("div",{ref:l,className:"calculator__backfill calculator__backfill--left"}),React.createElement("div",{className:"calculator__backfill d-none d-md-block"},calculatorParams&&React.createElement("div",{className:"row h-100"},React.createElement("div",{className:"calculator__image d-none d-lg-block col-5 ml-auto",style:{backgroundImage:"url(".concat(calculatorParams.image,")")}}))),React.createElement("div",{className:"container"},React.createElement("div",{className:"row"},React.createElement("div",{ref:c,className:"calculator__form col-12 col-md-6 px-0 pr-md-5 pl-md-3 wrapper--blueberry"},React.createElement("div",{className:"wrapper--blueberry px-3 px-md-0 py-0"},React.createElement("h2",null,calculatorParams.title?calculatorParams.title:"Fee Calculator"),React.createElement("div",{className:"form-group"},React.createElement("label",{htmlFor:"balance"},React.createElement("strong",null,"Anticipated Fund Balance:")),React.createElement("div",{className:"input-group money"},React.createElement("div",{className:"input-group-prepend"},React.createElement("div",{className:"input-group-text"},"$")),React.createElement(h.IMaskInput,{id:"balance",name:"balance",className:"form-control",mask:Number,radix:".",unmask:!0,max:1e9,thousandsSeparator:",",onAccept:function(e){a(_(_({},t),{},E({},"balance",e)))}})),r.disclaimer&&React.createElement("small",{className:"form-text text-white"},r.disclaimer)),calculatorParams.showChildrensFund&&React.createElement("div",null,React.createElement("div",{className:"form-group"},React.createElement("strong",null,"Is it a Children's Giving Fund or a Bar/Bat Mitzvah Fund?")),React.createElement("div",{className:"form-check"},React.createElement("input",{id:"childrensFundY",type:"radio",name:"childrensFund",value:"y",className:"form-check-input",onChange:s}),React.createElement("label",{htmlFor:"childrensFundY",className:"form-check-label"},"Yes")),React.createElement("div",{className:"form-check mb-3"},React.createElement("input",{id:"childrensFundN",type:"radio",name:"childrensFund",value:"n",className:"form-check-input",defaultChecked:!0,onChange:s}),React.createElement("label",{htmlFor:"childrensFundN",className:"form-check-label"},"No"))),React.createElement("button",{type:"submit",className:"btn btn-outline-light",onClick:function(e){e.preventDefault(),i.current.scrollIntoView({behavior:"smooth",block:"start"})},disabled:!r.display},"Calculate Fee"))),React.createElement("div",{ref:i,className:"calculator__results col-12 col-md-6"},React.createElement("div",{className:"row"},React.createElement("div",{className:"wrapper--white col-9 px-3 pl-md-5 pr-md-3"},r.display&&React.createElement("div",null,React.createElement("h3",null,"Estimated Fees"),React.createElement("div",{className:"text-blueberry lead"},React.createElement("span",{className:"h1"},React.createElement(w,{value:r.feeMonth,digits:2,prepend:"$"})),React.createElement("strong",{className:"ml-2 text-nowrap"},"per month")),React.createElement("div",{className:"text-blueberry lead"},React.createElement("strong",null,"or"),React.createElement("span",{className:"h2 ml-1"},React.createElement(w,{value:r.feeAnnual,prepend:"$"})),React.createElement("strong",{className:"ml-1 text-nowrap"},"per year"))),!r.display&&React.createElement("div",{className:"calculator__placeholder h2"},calculatorParams.text))))))),React.createElement("div",{className:"calculator__row-2"},React.createElement(g.SlideDown,{className:"my-dropdown-slidedown"},r.display&&r.growth>=1?React.createElement("div",{className:"wrapper--pale-gray"},React.createElement("div",{className:"container"},React.createElement("div",{className:"row"},React.createElement("div",{className:"col-12 col-md-10"},React.createElement("h2",{className:"mb-2"},calculatorParams.results.title),React.createElement("h4",{className:"mb-4"},calculatorParams.results.subtitle),React.createElement("div",{className:"columns--2 mb-5",dangerouslySetInnerHTML:{__html:calculatorParams.results.text}}))),React.createElement("div",{className:"row"},React.createElement("div",{className:"col-12 col-md-5 pr-md-5"},React.createElement("h3",{className:"h2"},"Estimated Investment Returns:"),React.createElement("p",{className:"text-blueberry h4"},React.createElement("span",{className:"text-tealish"},"+"),React.createElement("span",{className:"text-tealish h2 mr-1"},React.createElement(w,{value:r.returnMonth,digits:2,prepend:"$"})),"per month",React.createElement("br",null),"or ",React.createElement("span",{className:"text-tealish"},"+"),React.createElement("span",{className:"text-tealish h2 mr-1"},React.createElement(w,{value:r.returnAnnual,prepend:"$"})),"per year"),React.createElement("div",{className:"text-sm",dangerouslySetInnerHTML:{__html:calculatorParams.results.returnsDisclaimer}})),React.createElement("div",{className:"calculator__chevron col-12 col-md-1 pt-2 text-blueberry text-center mb-3"},React.createElement("i",{className:"far fa-chevron-right fa-2x"})),React.createElement("div",{className:"col-12 col-md-5 pl-md-5"},React.createElement("h3",{className:"h2"},"Net Growth of Your JCF Donor Advised Fund:"),React.createElement("p",{className:"text-blueberry h4"},React.createElement("span",{className:"text-tealish"},"+"),React.createElement("span",{className:"text-tealish h1 mr-1"},React.createElement(w,{value:r.growth,prepend:"$"})),React.createElement("span",{className:"text-tealish"},"per year"),React.createElement("br",null),"in net funds for giving"),React.createElement("div",{className:"text-sm",dangerouslySetInnerHTML:{__html:calculatorParams.results.growthDisclaimer}}))))):null)))}w.propTypes={value:b.a.number.isRequired,prepend:b.a.string,digits:b.a.number},"undefined"!=typeof calculatorParams&&wp.element.render(React.createElement(R,null),document.querySelector("#react-calculator"));var N=a("dwka"),C=new d({common:u.a,home:m.a,singlePost:f.a,templateApplicationForm:p.a,templateCalculator:{init:function(){},finalize:function(){}},templateContact:N.a});jQuery(document).ready((function(){return C.loadEvents()}))},cDcd:function(e,t){e.exports=React},cX9m:function(e,t){},dwka:function(e,t,a){"use strict";(function(e){function a(t,a){window.innerWidth<=window.jcf.breakpointMd?(t.appendTo("#mobile-form__"+a).show(),e("#desktop-form__"+a+" .gform_wrapper").detach()):(t.appendTo("#desktop-form__"+a).show(),e("#mobile-form__"+a+" .gform_wrapper").detach())}t.a={init:function(){},finalize:function(){e(".main .gform_wrapper").first().wrap('<div id="desktop-form__schedule"></div>');var t=e("#desktop-form__email .gform_wrapper"),n=e("#desktop-form__info .gform_wrapper");e(window).on("window:resize",(function(){a(t,"email"),a(n,"info")}))}}}).call(this,a("xeH2"))},gxDF:function(e,t){},krAz:function(e,t,a){"use strict";(function(e){var a=!0;window.addEventListener("popstate",(function(t){if(t.state&&t.state.trigger)return a=!1,e('.collapsible__trigger a[href="'+t.state.trigger+'"]').trigger("click"),a=!0,!1})),t.a=function(e,t,n){t=t||!1,n=n||!1,(e=e||!1)&&t&&a&&(history.pushState({targetHref:e,trigger:n},t,e),"undefined"!=typeof dataLayer&&window.dataLayer.push({event:"PushPageview",pushPageURL:window.location.href.replace(window.location.origin,""),pushPageTitle:t}),document.title=t)}}).call(this,a("xeH2"))},ku0t:function(e,t){},lGc7:function(e,t){if(navigator.userAgent.match(/(iPad|iPhone|iPod touch);/i))for(var a=document.querySelectorAll("select"),n=0;n<a.length;n++)a[n].appendChild(document.createElement("optgroup"))},xeH2:function(e,t){e.exports=jQuery},yN3z:function(e,t,a){"use strict";var n;(window.onpopstate=function(){var e,t=/\+/g,a=/([^&=]+)=?([^&]*)/g,r=function(e){return decodeURIComponent(e.replace(t," "))},o=window.location.search.substring(1);for(n={};0==!(e=a.exec(o));)n[r(e[1])]=r(e[2])})(),t.a=n},ywgl:function(e,t,a){"use strict";(function(e){t.a={init:function(){},finalize:function(){e(".share__handlers a").on("click",(function(t){t.preventDefault();var a=screen.width?(screen.width-600)/2:0,n=screen.height?(screen.height-400)/2:0;window.open(e(this).attr("href"),"share","height=400,width=600,left="+a+",top="+n+",resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no,status=no")}))}}}).call(this,a("xeH2"))}},[[0,0,4]]]);
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["/scripts/main"],{
+
+/***/ "./resources/assets/scripts/autoload/_bootstrap.js":
+/*!*********************************************************!*\
+  !*** ./resources/assets/scripts/autoload/_bootstrap.js ***!
+  \*********************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
+/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_0__);
+// `sage preset` installed this file automatically.
+// Running `sage preset` again could result in automatic deletion of this file.
+// Because of this, we do not recommend editing this file.
+
+
+/***/ }),
+
+/***/ "./resources/assets/scripts/autoload/_font-awesome.js":
+/*!************************************************************!*\
+  !*** ./resources/assets/scripts/autoload/_font-awesome.js ***!
+  \************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @fortawesome/fontawesome-svg-core */ "./node_modules/@fortawesome/fontawesome-svg-core/index.es.js");
+/* harmony import */ var _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fortawesome/free-brands-svg-icons */ "./node_modules/@fortawesome/free-brands-svg-icons/index.es.js");
+/* harmony import */ var _fortawesome_pro_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fortawesome/pro-solid-svg-icons */ "./node_modules/@fortawesome/pro-solid-svg-icons/index.es.js");
+/* harmony import */ var _fortawesome_pro_regular_svg_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fortawesome/pro-regular-svg-icons */ "./node_modules/@fortawesome/pro-regular-svg-icons/index.es.js");
+/* harmony import */ var _fortawesome_pro_light_svg_icons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fortawesome/pro-light-svg-icons */ "./node_modules/@fortawesome/pro-light-svg-icons/index.es.js");
+// Font Awesome
+ // Import the icons
+
+
+
+
+ // Add the imported icons to the library
+
+_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__["library"].add(_fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_1__["faFacebook"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_1__["faInstagram"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_1__["faTwitter"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_1__["faLinkedin"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_1__["faYoutube"], _fortawesome_pro_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faPlus"], _fortawesome_pro_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faMinus"], _fortawesome_pro_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faCircle"], _fortawesome_pro_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faSearch"], _fortawesome_pro_regular_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faBars"], _fortawesome_pro_regular_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faSpinnerThird"], _fortawesome_pro_regular_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faArrowRight"], _fortawesome_pro_regular_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faChevronRight"], _fortawesome_pro_light_svg_icons__WEBPACK_IMPORTED_MODULE_4__["faTimes"], _fortawesome_pro_light_svg_icons__WEBPACK_IMPORTED_MODULE_4__["faChevronDown"]); // tell FontAwesome to watch the DOM and add the SVGs when it detects icon markup
+
+_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__["dom"].watch();
+
+/***/ }),
+
+/***/ "./resources/assets/scripts/components/calculator.js":
+/*!***********************************************************!*\
+  !*** ./resources/assets/scripts/components/calculator.js ***!
+  \***********************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_imask__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-imask */ "./node_modules/react-imask/dist/react-imask.js");
+/* harmony import */ var react_imask__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_imask__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_slidedown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-slidedown */ "./node_modules/react-slidedown/lib/slidedown.js");
+/* harmony import */ var react_slidedown__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_slidedown__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _numberDisplay__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./numberDisplay */ "./resources/assets/scripts/components/numberDisplay.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+/**
+ * Fee Calculator
+ */
+
+/* global calculatorParams */
+
+
+
+
+function Calculator() {
+  var _wp$element$useState = wp.element.useState({
+    balance: 0,
+    childrensFund: false
+  }),
+      _wp$element$useState2 = _slicedToArray(_wp$element$useState, 2),
+      formValues = _wp$element$useState2[0],
+      setFormValues = _wp$element$useState2[1];
+
+  var _wp$element$useState3 = wp.element.useState({
+    feeMonth: 0,
+    feeAnnual: 0,
+    returnMonth: 0,
+    returnAnnual: 0,
+    growth: 0,
+    display: false,
+    disclaimer: false
+  }),
+      _wp$element$useState4 = _slicedToArray(_wp$element$useState3, 2),
+      formResults = _wp$element$useState4[0],
+      setFormResults = _wp$element$useState4[1];
+
+  var results = wp.element.createRef();
+  var calculatorForm = wp.element.createRef();
+  var calculatorFormBackfill = wp.element.createRef();
+  /**
+   * Calculate form on state change
+   */
+
+  wp.element.useEffect(function () {
+    var newFormResults = {
+      feeMonth: 0,
+      feeAnnual: 0,
+      returnMonth: 0,
+      returnAnnual: 0,
+      growth: 0,
+      display: false,
+      disclaimer: false
+    };
+
+    if (formValues.balance < 1) {// Don't do anything
+    } else if (formValues.balance < 5000) {
+      if (formValues.childrensFund) {
+        newFormResults.feeAnnual = 36;
+      } else {
+        newFormResults.disclaimer = /*#__PURE__*/React.createElement("span", null, "JCF requires an initial contribution", /*#__PURE__*/React.createElement("br", null), "of at least $5,000 to open a new fund.");
+      }
+    } else if (formValues.balance < 20000) {
+      newFormResults.feeAnnual = 150;
+    } else if (formValues.balance < 5000000) {
+      newFormResults.feeAnnual = formValues.balance * 0.0075;
+    } else if (formValues.balance < 20000000) {
+      var feesAnnual = (formValues.balance - 5000000) * 0.005;
+      newFormResults.feeAnnual = 37500 + feesAnnual;
+    } else if (formValues.balance < 40000000) {
+      var _feesAnnual = (formValues.balance - 20000000) * 0.001;
+
+      newFormResults.feeAnnual = 112500 + _feesAnnual;
+    } else {
+      var _feesAnnual2 = (formValues.balance - 40000000) * 0.0005;
+
+      newFormResults.feeAnnual = 132500 + _feesAnnual2;
+    }
+
+    if (!newFormResults.disclaimer && formValues.balance) {
+      newFormResults.feeMonth = newFormResults.feeAnnual / 12;
+      newFormResults.returnAnnual = formValues.balance * calculatorParams.multiplier;
+      newFormResults.returnMonth = newFormResults.returnAnnual / 12;
+      newFormResults.growth = newFormResults.returnAnnual - newFormResults.feeAnnual;
+      newFormResults.display = true;
+    }
+
+    setFormResults(newFormResults);
+  }, [formValues]);
+  /**
+   * Adjust height of blueberry background behind the form
+   */
+
+  wp.element.useEffect(function () {
+    var handleResize = function handleResize() {
+      var newHeight = calculatorForm.current.clientHeight;
+      calculatorFormBackfill.current.setAttribute('style', "height: ".concat(newHeight, "px;"));
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Run it on first load too.
+
+    return function () {
+      return window.removeEventListener('resize', handleResize);
+    };
+  });
+  /**
+   * Balance is updated
+   * Trigger state change
+   */
+
+  var handleBalanceChange = function handleBalanceChange(unmaskedValue) {
+    setFormValues(_objectSpread(_objectSpread({}, formValues), {}, _defineProperty({}, 'balance', unmaskedValue)));
+  };
+  /**
+   * Form values are updated
+   * Trigger state change
+   */
+
+
+  var handleChildrensChange = function handleChildrensChange(event) {
+    var name = event.target.name;
+    var value = event.target.value;
+    setFormValues(_objectSpread(_objectSpread({}, formValues), {}, _defineProperty({}, name, value === 'y' ? true : false)));
+  };
+  /**
+   * Scroll to results
+   */
+
+
+  var handleCalculateClick = function handleCalculateClick(event) {
+    event.preventDefault();
+    results.current.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  };
+
+  return /*#__PURE__*/React.createElement("div", {
+    className: "calculator"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "calculator__row-1"
+  }, /*#__PURE__*/React.createElement("div", {
+    ref: calculatorFormBackfill,
+    className: "calculator__backfill calculator__backfill--left"
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "calculator__backfill d-none d-md-block"
+  }, calculatorParams && /*#__PURE__*/React.createElement("div", {
+    className: "row h-100"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "calculator__image d-none d-lg-block col-5 ml-auto",
+    style: {
+      backgroundImage: "url(".concat(calculatorParams.image, ")")
+    }
+  }))), /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/React.createElement("div", {
+    ref: calculatorForm,
+    className: "calculator__form col-12 col-md-6 px-0 pr-md-5 pl-md-3 wrapper--blueberry"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "wrapper--blueberry px-3 px-md-0 py-0"
+  }, /*#__PURE__*/React.createElement("h2", null, calculatorParams.title ? calculatorParams.title : 'Fee Calculator'), /*#__PURE__*/React.createElement("div", {
+    className: "form-group"
+  }, /*#__PURE__*/React.createElement("label", {
+    htmlFor: "balance"
+  }, /*#__PURE__*/React.createElement("strong", null, "Anticipated Fund Balance:")), /*#__PURE__*/React.createElement("div", {
+    className: "input-group money"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "input-group-prepend"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "input-group-text"
+  }, "$")), /*#__PURE__*/React.createElement(react_imask__WEBPACK_IMPORTED_MODULE_0__["IMaskInput"], {
+    id: "balance",
+    name: "balance",
+    className: "form-control",
+    mask: Number,
+    radix: ".",
+    unmask: true,
+    max: 1000000000,
+    thousandsSeparator: ",",
+    onAccept: handleBalanceChange
+  })), formResults.disclaimer && /*#__PURE__*/React.createElement("small", {
+    className: "form-text text-white"
+  }, formResults.disclaimer)), calculatorParams.showChildrensFund && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    className: "form-group"
+  }, /*#__PURE__*/React.createElement("strong", null, "Is it a Children's Giving Fund or a Bar/Bat Mitzvah Fund?")), /*#__PURE__*/React.createElement("div", {
+    className: "form-check"
+  }, /*#__PURE__*/React.createElement("input", {
+    id: "childrensFundY",
+    type: "radio",
+    name: "childrensFund",
+    value: "y",
+    className: "form-check-input",
+    onChange: handleChildrensChange
+  }), /*#__PURE__*/React.createElement("label", {
+    htmlFor: "childrensFundY",
+    className: "form-check-label"
+  }, "Yes")), /*#__PURE__*/React.createElement("div", {
+    className: "form-check mb-3"
+  }, /*#__PURE__*/React.createElement("input", {
+    id: "childrensFundN",
+    type: "radio",
+    name: "childrensFund",
+    value: "n",
+    className: "form-check-input",
+    defaultChecked: true,
+    onChange: handleChildrensChange
+  }), /*#__PURE__*/React.createElement("label", {
+    htmlFor: "childrensFundN",
+    className: "form-check-label"
+  }, "No"))), /*#__PURE__*/React.createElement("button", {
+    type: "submit",
+    className: "btn btn-outline-light",
+    onClick: handleCalculateClick,
+    disabled: !formResults.display
+  }, "Calculate Fee"))), /*#__PURE__*/React.createElement("div", {
+    ref: results,
+    className: "calculator__results col-12 col-md-6"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "wrapper--white col-9 px-3 pl-md-5 pr-md-3"
+  }, formResults.display && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h3", null, "Estimated Fees"), /*#__PURE__*/React.createElement("div", {
+    className: "text-blueberry lead"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "h1"
+  }, /*#__PURE__*/React.createElement(_numberDisplay__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    value: formResults.feeMonth,
+    digits: 2,
+    prepend: "$"
+  })), /*#__PURE__*/React.createElement("strong", {
+    className: "ml-2 text-nowrap"
+  }, "per month")), /*#__PURE__*/React.createElement("div", {
+    className: "text-blueberry lead"
+  }, /*#__PURE__*/React.createElement("strong", null, "or"), /*#__PURE__*/React.createElement("span", {
+    className: "h2 ml-1"
+  }, /*#__PURE__*/React.createElement(_numberDisplay__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    value: formResults.feeAnnual,
+    prepend: "$"
+  })), /*#__PURE__*/React.createElement("strong", {
+    className: "ml-1 text-nowrap"
+  }, "per year"))), !formResults.display && /*#__PURE__*/React.createElement("div", {
+    className: "calculator__placeholder h2"
+  }, calculatorParams.text))))))), /*#__PURE__*/React.createElement("div", {
+    className: "calculator__row-2"
+  }, /*#__PURE__*/React.createElement(react_slidedown__WEBPACK_IMPORTED_MODULE_1__["SlideDown"], {
+    className: 'my-dropdown-slidedown'
+  }, formResults.display && formResults.growth >= 1 ? /*#__PURE__*/React.createElement("div", {
+    className: "wrapper--pale-gray"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "col-12 col-md-10"
+  }, /*#__PURE__*/React.createElement("h2", {
+    className: "mb-2"
+  }, calculatorParams.results.title), /*#__PURE__*/React.createElement("h4", {
+    className: "mb-4"
+  }, calculatorParams.results.subtitle), /*#__PURE__*/React.createElement("div", {
+    className: "columns--2 mb-5",
+    dangerouslySetInnerHTML: {
+      __html: calculatorParams.results.text
+    }
+  }))), /*#__PURE__*/React.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "col-12 col-md-5 pr-md-5"
+  }, /*#__PURE__*/React.createElement("h3", {
+    className: "h2"
+  }, "Estimated Investment Returns:"), /*#__PURE__*/React.createElement("p", {
+    className: "text-blueberry h4"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "text-tealish"
+  }, "+"), /*#__PURE__*/React.createElement("span", {
+    className: "text-tealish h2 mr-1"
+  }, /*#__PURE__*/React.createElement(_numberDisplay__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    value: formResults.returnMonth,
+    digits: 2,
+    prepend: "$"
+  })), "per month", /*#__PURE__*/React.createElement("br", null), "or ", /*#__PURE__*/React.createElement("span", {
+    className: "text-tealish"
+  }, "+"), /*#__PURE__*/React.createElement("span", {
+    className: "text-tealish h2 mr-1"
+  }, /*#__PURE__*/React.createElement(_numberDisplay__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    value: formResults.returnAnnual,
+    prepend: "$"
+  })), "per year"), /*#__PURE__*/React.createElement("div", {
+    className: "text-sm",
+    dangerouslySetInnerHTML: {
+      __html: calculatorParams.results.returnsDisclaimer
+    }
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "calculator__chevron col-12 col-md-1 pt-2 text-blueberry text-center mb-3"
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "far fa-chevron-right fa-2x"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "col-12 col-md-5 pl-md-5"
+  }, /*#__PURE__*/React.createElement("h3", {
+    className: "h2"
+  }, "Net Growth of Your JCF Donor Advised Fund:"), /*#__PURE__*/React.createElement("p", {
+    className: "text-blueberry h4"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "text-tealish"
+  }, "+"), /*#__PURE__*/React.createElement("span", {
+    className: "text-tealish h1 mr-1"
+  }, /*#__PURE__*/React.createElement(_numberDisplay__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    value: formResults.growth,
+    prepend: "$"
+  })), /*#__PURE__*/React.createElement("span", {
+    className: "text-tealish"
+  }, "per year"), /*#__PURE__*/React.createElement("br", null), "in net funds for giving"), /*#__PURE__*/React.createElement("div", {
+    className: "text-sm",
+    dangerouslySetInnerHTML: {
+      __html: calculatorParams.results.growthDisclaimer
+    }
+  }))))) : null)));
+}
+/**
+ * Only if the calculator variable is set (json object from template)
+ */
+
+
+if (typeof calculatorParams !== 'undefined') {
+  wp.element.render( /*#__PURE__*/React.createElement(Calculator, null), document.querySelector('#react-calculator'));
+}
+
+/***/ }),
+
+/***/ "./resources/assets/scripts/components/numberDisplay.js":
+/*!**************************************************************!*\
+  !*** ./resources/assets/scripts/components/numberDisplay.js ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return NumberDisplay; });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_0__);
+
+function NumberDisplay(props) {
+  var value = props.value;
+  var prepend = props.prepend || '';
+  var digits = props.digits;
+
+  if (!digits) {
+    digits = 0;
+  }
+
+  return prepend + value.toLocaleString(navigator.language, {
+    minimumFractionDigits: digits,
+    maximumFractionDigits: digits
+  });
+}
+NumberDisplay.propTypes = {
+  value: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.number.isRequired,
+  prepend: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.string,
+  digits: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.number
+};
+
+/***/ }),
+
+/***/ "./resources/assets/scripts/main.js":
+/*!******************************************!*\
+  !*** ./resources/assets/scripts/main.js ***!
+  \******************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _autoload_bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./autoload/_bootstrap */ "./resources/assets/scripts/autoload/_bootstrap.js");
+/* harmony import */ var _autoload_font_awesome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./autoload/_font-awesome */ "./resources/assets/scripts/autoload/_font-awesome.js");
+/* harmony import */ var _util_Router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./util/Router */ "./resources/assets/scripts/util/Router.js");
+/* harmony import */ var _routes_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./routes/common */ "./resources/assets/scripts/routes/common.js");
+/* harmony import */ var _routes_home__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./routes/home */ "./resources/assets/scripts/routes/home.js");
+/* harmony import */ var _routes_singlePost__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./routes/singlePost */ "./resources/assets/scripts/routes/singlePost.js");
+/* harmony import */ var _routes_templateApplicationForm__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./routes/templateApplicationForm */ "./resources/assets/scripts/routes/templateApplicationForm.js");
+/* harmony import */ var _routes_templateCalculator__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./routes/templateCalculator */ "./resources/assets/scripts/routes/templateCalculator.js");
+/* harmony import */ var _routes_templateContact__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./routes/templateContact */ "./resources/assets/scripts/routes/templateContact.js");
+// import external dependencies
+// import 'jquery'
+// Import everything from autoload
+
+ // import local dependencies
+
+
+
+
+
+
+
+
+/** Populate Router instance with DOM routes */
+
+var routes = new _util_Router__WEBPACK_IMPORTED_MODULE_2__["default"]({
+  common: _routes_common__WEBPACK_IMPORTED_MODULE_3__["default"],
+  home: _routes_home__WEBPACK_IMPORTED_MODULE_4__["default"],
+  singlePost: _routes_singlePost__WEBPACK_IMPORTED_MODULE_5__["default"],
+  templateApplicationForm: _routes_templateApplicationForm__WEBPACK_IMPORTED_MODULE_6__["default"],
+  templateCalculator: _routes_templateCalculator__WEBPACK_IMPORTED_MODULE_7__["default"],
+  templateContact: _routes_templateContact__WEBPACK_IMPORTED_MODULE_8__["default"]
+}); // Load Events
+
+jQuery(document).ready(function () {
+  return routes.loadEvents();
+});
+
+/***/ }),
+
+/***/ "./resources/assets/scripts/routes/common.js":
+/*!***************************************************!*\
+  !*** ./resources/assets/scripts/routes/common.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _util_jquery_enllax__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../util/jquery.enllax */ "./resources/assets/scripts/util/jquery.enllax.js");
+/* harmony import */ var _util_jquery_enllax__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_util_jquery_enllax__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var imagesloaded__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! imagesloaded */ "./node_modules/imagesloaded/imagesloaded.js");
+/* harmony import */ var imagesloaded__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(imagesloaded__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var scroll_out__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! scroll-out */ "./node_modules/scroll-out/lib/index.js");
+/* harmony import */ var scroll_out__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(scroll_out__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/dist/js.cookie.js");
+/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(js_cookie__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var countup_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! countup.js */ "./node_modules/countup.js/dist/countUp.min.js");
+/* harmony import */ var _util_ios__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../util/ios */ "./resources/assets/scripts/util/ios.js");
+/* harmony import */ var _util_ios__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_util_ios__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _util_pushHistory__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../util/pushHistory */ "./resources/assets/scripts/util/pushHistory.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+
+
+imagesloaded__WEBPACK_IMPORTED_MODULE_1___default.a.makeJQueryPlugin($);
+/* harmony default export */ __webpack_exports__["default"] = ({
+  init: function init() {
+    // JavaScript to be fired on all pages
+
+    /**
+     * Attempt to automatically remove text widows from headings
+     * Replaces the last space in a heading with non-breaking space
+     * Add 'data-widow-skip' to any heading to skip processing
+     */
+    $('h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6').not('.fix-widow-skip').each(function (i, el) {
+      return $(el).html(function () {
+        return $(this).html().replace(/\s([^\s<]+)\s*$/, "\xA0$1");
+      });
+    });
+    /**
+     * Enllax (parallax)
+     */
+
+    $('.wrap').imagesLoaded({
+      background: true
+    }, function () {
+      $(window).enllax();
+    });
+    var wrapContentEl = document.querySelector('.wrap .content');
+    $(window).on('window:resize', function () {
+      if ($('.background-arrows').length) {
+        $('.background-arrows').css({
+          /* stylelint-disable-next-line */
+          right: (window.innerWidth - wrapContentEl.clientWidth) / 2,
+          opacity: 1
+        });
+      }
+    });
+    /**
+     * Nav
+     */
+    // Turn last nav item into a tag
+
+    $('.nav-top .menu-item:not(.search-link)').last().addClass('tagged').find('a').on('click', function () {
+      $(this).width($(this).width()).html('<i class="far fa-fw fa-spinner-third fa-spin"></i> Loading');
+    });
+  },
+  finalize: function finalize() {
+    // JavaScript to be fired on all pages, after page specific JS is fired
+
+    /**
+     * Animation; elements with data-scroll
+     * Count up numbers if needed
+     */
+    scroll_out__WEBPACK_IMPORTED_MODULE_2___default()({
+      onShown: function onShown(el) {
+        $(el).addClass('fadeInUp animated');
+
+        if ($(el).hasClass('count-up')) {
+          var countTargetEl = el.querySelector('.count-up-target');
+          var countEnd = countTargetEl.dataset.end;
+          var countDecimals = 0;
+
+          if (countEnd < 20) {
+            countDecimals = 1;
+            countEnd = countEnd - 0.1;
+          }
+
+          var countThis = new countup_js__WEBPACK_IMPORTED_MODULE_4__["CountUp"](countTargetEl, countEnd, {
+            startVal: 0,
+            decimalPlaces: countDecimals,
+            duration: 3
+          });
+          setTimeout(function () {
+            return countThis.start(function () {
+              if (countDecimals > 0) {
+                countTargetEl.innerText = countEnd + 0.1;
+              }
+
+              $(el).removeClass('count-up');
+            });
+          }, 750);
+        }
+      },
+      once: true,
+      threshold: 0.2
+    });
+    /**
+     * Move search link into place
+     */
+
+    $('.site-header .search-link').appendTo('#menu-top-navigation').show();
+    /**
+     * Sticky header and footer
+     */
+    // Clone header
+
+    $('.site-header .nav-top').clone().appendTo('.sticky-header__nav-top');
+    $('.site-header .nav-primary').clone().appendTo('.sticky-header__nav-primary'); // Hide just off screen
+
+    $('.sticky-header').css({
+      /* stylelint-disable-next-line */
+      top: -$('.sticky-header').outerHeight()
+    });
+    $('.sticky-footer').css({
+      /* stylelint-disable-next-line */
+      bottom: -$('.sticky-footer').outerHeight()
+    }); // Hide sticky-footer when footer comes into view
+
+    scroll_out__WEBPACK_IMPORTED_MODULE_2___default()({
+      onHidden: function onHidden() {
+        $('.sticky-footer').addClass('in');
+      },
+      onShown: function onShown() {
+        $('.sticky-footer').removeClass('in');
+      },
+      targets: '.site-footer'
+    }); // Show/hide sticky-header/footer when header leaves view
+
+    scroll_out__WEBPACK_IMPORTED_MODULE_2___default()({
+      onHidden: function onHidden() {
+        $('.sticky-header').addClass('in');
+
+        if ($('.site-footer').attr('data-scroll') === 'out') {
+          $('.sticky-footer').addClass('in');
+        } // $( '.sticky-footer__wrap' ).height( $( '.sticky-footer' ).outerHeight() );
+
+      },
+      onShown: function onShown() {
+        $('.sticky-header').removeClass('in');
+        $('.sticky-footer').removeClass('in');
+      },
+      targets: '.site-header',
+      threshold: 0.1
+    }); // Mobile header (fixed)
+
+    $(window).on('window:resize', function () {
+      $('.share .position-sticky').css({
+        /* stylelint-disable-next-line */
+        top: $('.sticky-header').outerHeight() + 16
+      });
+
+      if (window.innerWidth <= window.jcf.breakpointXl) {
+        $('body').css({
+          marginTop: $('.sticky-header').height()
+        });
+      } else {
+        $('body').css({
+          marginTop: 0
+        });
+      }
+    });
+    /**
+     * Mobile nav
+     */
+    // Find last menu item (contact us), make it a button and move to top
+
+    $('.nav-mobile__top .menu-item').not('.search-link').last().find('a').addClass('btn btn-outline-light').insertBefore('.nav-modal .nav-mobile__top');
+    $('.nav-mobile__top .menu-item:empty').remove(); // Add arrows to items with dropdowns
+
+    $('.nav-mobile__primary .menu-item-has-children > a').append($('<div class="nav-arrow"><i class="fal fa-chevron-down"></i></div>')); // Show/hide submenus
+
+    $('.nav-mobile__primary .menu-item-has-children > a').on('click', function (e) {
+      e.preventDefault();
+
+      if ($(this).parent().hasClass('active')) {
+        $(this).next('.sub-menu').stop().slideUp();
+        $(this).parent().removeClass('active');
+      } else {
+        $('.nav-mobile__primary .menu-item-has-children.active').removeClass('active').find('.sub-menu').stop().slideUp();
+        $(this).parent().addClass('active');
+        $(this).next('.sub-menu').stop().slideDown();
+      }
+    });
+    /**
+     * Modal -- Video
+     */
+    // set the video to src
+
+    $('.modal--iframe-video').on('show.bs.modal', function () {
+      return $('.modal--iframe-video iframe').attr('src', $('.modal--iframe-video iframe').data('src'));
+    }); // on closing the modal
+    // stop the video
+
+    $('.modal--iframe-video').on('hidden.bs.modal', function () {
+      return $('.modal--iframe-video iframe').attr('src', null);
+    });
+    /**
+     * Modal -- Search
+     */
+
+    $('.modal--search').on('show.bs.modal', function () {
+      // Close all other modals
+      $('.modal').not($(this)).each(function () {
+        $(this).modal('hide');
+      });
+    }); // focus input
+
+    $('.modal--search').on('shown.bs.modal', function () {
+      return $('.modal--search .search-field').trigger('focuse');
+    });
+    /**
+     * Modal -- Popups
+     */
+
+    var howManyModals = 1;
+    $('.modal--popup').each(function () {
+      var popup = $(this);
+      var options = popup.data('options');
+      var cookieKey = "popup-".concat(options.modal_key);
+      var popupCookie = js_cookie__WEBPACK_IMPORTED_MODULE_3___default.a.get(cookieKey);
+      var popupData = {
+        pagesViewed: 0,
+        totalCount: 0,
+        dismissed: false,
+        actioned: false
+      };
+      var expiration = parseInt(options.modal_timeframe);
+
+      if (popupCookie) {
+        popupData = JSON.parse(popupCookie);
+      } // Exit this whole thing if they've reached the total count
+
+
+      if (popupData.totalCount >= options.modal_total_count) {
+        return;
+      } // Set new count
+
+
+      ++popupData.pagesViewed; // Reset page views and "dismissed" if at the interval
+
+      if (popupData.pagesViewed > options.modal_interval) {
+        popupData.pagesViewed = 1;
+        popupData.dismissed = false;
+      } // Set new cookie data, which bumps out the expiration
+
+
+      js_cookie__WEBPACK_IMPORTED_MODULE_3___default.a.set(cookieKey, JSON.stringify(_objectSpread({}, popupData)), {
+        expires: expiration
+      }); // Has this modal been dismissed or actioned?
+
+      if (popupData.dismissed || popupData.actioned) {
+        return;
+      } // Set "show" options
+
+
+      popup.on('show.bs.modal', function () {
+        $('body').addClass('modal--backdrop-shaded'); // Close all other modals
+
+        $('.modal').not(popup).each(function () {
+          $(this).modal('hide');
+        }); // Add "actioned" listener
+
+        popup.find('a').on('click', function () {
+          popupData.actioned = true; // Hide modal
+
+          popup.modal('hide');
+        });
+      }); // Set "hidden" options
+
+      popup.on('hidden.bs.modal', function () {
+        $('body').removeClass('modal--backdrop-shaded'); // Add to the totalCount
+
+        ++popupData.totalCount; // Set new cookie data
+
+        js_cookie__WEBPACK_IMPORTED_MODULE_3___default.a.set(cookieKey, JSON.stringify(_objectSpread(_objectSpread({}, popupData), {}, {
+          dismissed: true
+        })), {
+          expires: expiration
+        });
+      }); // Show modal if total pageviews greater than interval option, but only ONE
+
+      if (popupData.pagesViewed == options.modal_interval && howManyModals === 1 && !popupData.dismissed) {
+        // Open after the delay
+        setTimeout(function () {
+          popup.modal('show');
+        }, options.modal_delay * 1000);
+        ++howManyModals;
+      }
+    });
+    /**
+     * .collapsible pushState
+     */
+
+    $('.collapsible__trigger').on('click', function () {
+      var targetHash = $(this).find('.btn').data('target'),
+          $trigger = $(this).find('.btn'),
+          locationHref = window.location.href;
+
+      if (window.location.hash) {
+        locationHref = locationHref.replace(window.location.hash, '');
+      }
+
+      if (typeof targetHash === 'undefined') {
+        targetHash = '';
+      }
+
+      Object(_util_pushHistory__WEBPACK_IMPORTED_MODULE_6__["default"])(locationHref + targetHash, $trigger.text().trim() + ' | ' + window.jcf.siteTitle, $trigger.attr('href'));
+    }); // Expand .collapsible on page load
+
+    var $collapsibleTrigger = $('.collapsible__trigger a[href="' + window.location.hash + '"]');
+
+    if (window.location.hash && $collapsibleTrigger.length) {
+      $collapsibleTrigger.trigger('click');
+    }
+    /**
+     * Smooth scroll to anchors
+     * Fade out, scroll, fade in
+     */
+
+
+    $('main a[href^="#"]').not('[data-toggle="collapse"]').on('click', function (e) {
+      e.preventDefault();
+
+      if ($(this).attr('href') === '#' || $(this).attr('href') === '#1') {
+        return true;
+      }
+
+      var $target = $('main').find($(this).attr('href'));
+
+      if ($target.length > 0) {
+        var targetScrollTo = $target.offset().top - 100;
+        $('main').fadeTo(400, 0.001, function () {
+          $('html, body').animate({
+            scrollTop: targetScrollTo
+          }, 1);
+          $('main').fadeTo(400, 1);
+        });
+      } else {
+        return true;
+      }
+    });
+    /**
+     * Trigger scroll and resize events
+     */
+
+    setTimeout(function () {
+      return $(window).trigger('scroll').trigger('window:resize');
+    }, 250);
+    $(window).on('resize', function () {
+      return $(window).trigger('window:resize');
+    });
+  }
+});
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "jquery")))
+
+/***/ }),
+
+/***/ "./resources/assets/scripts/routes/home.js":
+/*!*************************************************!*\
+  !*** ./resources/assets/scripts/routes/home.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {// Normalize quote carousel height
+function quoteCarouselNormalization() {
+  var items = $('#quote-carousel .carousel-item'),
+      //grab all slides
+  heights = [],
+      //create empty array to store height values
+  tallest; //create variable to make note of the tallest slide
+
+  if (items.length) {
+    items.each(function () {
+      //add heights to array
+      $(this).css('min-height', '0'); //reset min-height
+
+      heights.push($(this).height());
+    });
+    tallest = Math.max.apply(null, heights); //cache largest value
+
+    items.each(function () {
+      $(this).css('min-height', tallest + 'px');
+    });
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  init: function init() {// JavaScript to be fired on the home page
+  },
+  finalize: function finalize() {
+    // JavaScript to be fired on the home page, after the init JS
+    // Normalize quote carousel height
+    $(window).on('window:resize', quoteCarouselNormalization());
+  }
+});
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "jquery")))
+
+/***/ }),
+
+/***/ "./resources/assets/scripts/routes/singlePost.js":
+/*!*******************************************************!*\
+  !*** ./resources/assets/scripts/routes/singlePost.js ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony default export */ __webpack_exports__["default"] = ({
+  init: function init() {// JavaScript to be fired on the single post page
+  },
+  finalize: function finalize() {
+    // Share links
+    $('.share__handlers a').on('click', function (e) {
+      e.preventDefault();
+      var popupWidth = 600;
+      var popupHeight = 400;
+      var leftPosition = screen.width ? (screen.width - popupWidth) / 2 : 0;
+      var topPosition = screen.height ? (screen.height - popupHeight) / 2 : 0;
+      window.open($(this).attr('href'), 'share', 'height=' + popupHeight + ',width=' + popupWidth + ',left=' + leftPosition + ',top=' + topPosition + ',resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no,status=no');
+    });
+  }
+});
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "jquery")))
+
+/***/ }),
+
+/***/ "./resources/assets/scripts/routes/templateApplicationForm.js":
+/*!********************************************************************!*\
+  !*** ./resources/assets/scripts/routes/templateApplicationForm.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _util_urlParameters__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../util/urlParameters */ "./resources/assets/scripts/util/urlParameters.js");
+
+var appStep = 0;
+var $appForm = $('.application-form > .gform_wrapper'); // Change the form step via body class
+
+function changeFormStep(step) {
+  $('body').removeClass(function (index, className) {
+    return (className.match(/(^|\s)app--step-\S+/g) || []).join(' ');
+  }).addClass('app--step-' + step);
+  appStep = step;
+
+  if (appStep === 0) {
+    // Move into postion
+    $appForm.appendTo($('.form__step-0')); // Change next button text
+
+    $('.form__step-0 .gform_next_button').val('Start Application'); // Hide the app
+
+    $('.form__app').slideUp();
+  } else {
+    // Move into position
+    $appForm.appendTo($('.form__entree')); // Change the step
+
+    $('.progress__step--' + appStep).addClass('is-active');
+    $('[class^="sidebar__step--"]').slideUp();
+    $('.sidebar__step--' + appStep).slideDown(); // Mobile scroll to progress indicator
+
+    if (window.innerWidth <= window.jcf.breakpointMd) {
+      setTimeout(function () {
+        var scrollOffset = $('.progress__step--' + appStep).offset();
+        $('.form__progress-bar').animate({
+          scrollLeft: scrollOffset.left
+        }, 250);
+      }, 1000);
+    } // Stylize add-another fields
+
+
+    $('.add-another').each(function (i, el) {
+      if (!$(el).hasClass('initiated')) {
+        $(el).prepend("<span class=\"add-another__button fa-stack\">\n                          <i class=\"fas fa-circle fa-stack-2x\"></i>\n                          <i class=\"fas fa-plus fa-stack-1x fa-inverse\"></i>\n                          <i class=\"fas fa-minus fa-stack-1x fa-inverse d-none\"></i>\n                      </span>");
+        $(el).addClass('initiated').data('toggled', false);
+      }
+    }); // Show the app
+
+    $('.form__app').slideDown();
+  }
+
+  $('html, body').animate({
+    scrollTop: 0
+  });
+}
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  init: function init() {},
+  finalize: function finalize() {
+    // JavaScript to be fired after the init JS
+    // Move form to correct initial position on page load
+    // If ?dev_form_page is set, go to that step (page - 1)
+    changeFormStep(typeof _util_urlParameters__WEBPACK_IMPORTED_MODULE_0__["default"].dev_form_page !== 'undefined' ? _util_urlParameters__WEBPACK_IMPORTED_MODULE_0__["default"].dev_form_page - 1 : 0); // Bind step 0 inputs; save field data for use in step 1
+
+    $('.remember-name .name_first input').on('change', function () {
+      $('.remembered-name .name_first input').val($(this).val());
+    });
+    $('.remember-name .name_last input').on('change', function () {
+      $('.remembered-name .name_last input').val($(this).val());
+    });
+    $('.remember-email input').on('change', function () {
+      $('.remembered-email input').val($(this).val());
+    }); // Bind to when next page is loaded
+
+    $(document).on('gform_page_loaded', function (event, form_id, current_page) {
+      changeFormStep(current_page - 1); // Step 0 == page 1
+    }); // Bind to when add-another is click
+
+    $('.form__app').on('click', '.add-another__button, .add-another label', function () {
+      var $parent = $(this).parent();
+
+      if (!$parent.data('toggled')) {
+        // Let's show it and set toggled to true
+        $parent.find('input:first').prop('checked', true).trigger('change');
+        $parent.find('label:first').text(function () {
+          return $(this).text().replace('Add another', 'Remove');
+        });
+        $parent.find('.fa-plus').addClass('d-none');
+        $parent.find('.fa-minus').removeClass('d-none');
+        $parent.data('toggled', true);
+      } else {
+        // Let's hide it and set toggled to false
+        $parent.find('input:last').prop('checked', true).trigger('change');
+        $parent.find('label:first').text(function () {
+          return $(this).text().replace('Remove', 'Add another');
+        });
+        $parent.find('.fa-plus').removeClass('d-none');
+        $parent.find('.fa-minus').addClass('d-none');
+        $parent.data('toggled', false);
+      }
+    });
+  }
+});
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "jquery")))
+
+/***/ }),
+
+/***/ "./resources/assets/scripts/routes/templateCalculator.js":
+/*!***************************************************************!*\
+  !*** ./resources/assets/scripts/routes/templateCalculator.js ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _components_calculator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/calculator */ "./resources/assets/scripts/components/calculator.js");
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  init: function init() {},
+  finalize: function finalize() {}
+});
+
+/***/ }),
+
+/***/ "./resources/assets/scripts/routes/templateContact.js":
+/*!************************************************************!*\
+  !*** ./resources/assets/scripts/routes/templateContact.js ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {function showHideForm($form, slug) {
+  if (window.innerWidth <= window.jcf.breakpointMd) {
+    $form.appendTo('#mobile-form__' + slug).show();
+    $('#desktop-form__' + slug + ' .gform_wrapper').detach();
+  } else {
+    $form.appendTo('#desktop-form__' + slug).show();
+    $('#mobile-form__' + slug + ' .gform_wrapper').detach();
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  init: function init() {// JavaScript to be fired
+  },
+  finalize: function finalize() {
+    // JavaScript to be fired, after the init JS
+    // Move forms around based on window width
+    $('.main .gform_wrapper').first().wrap('<div id="desktop-form__schedule"></div>'); // const $scheduleForm = $( '#desktop-form__schedule .gform_wrapper' );
+
+    var $emailForm = $('#desktop-form__email .gform_wrapper');
+    var $infoForm = $('#desktop-form__info .gform_wrapper');
+    $(window).on('window:resize', function () {
+      // showHideForm( $scheduleForm, 'schedule' );
+      showHideForm($emailForm, 'email');
+      showHideForm($infoForm, 'info');
+    });
+  }
+});
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "jquery")))
+
+/***/ }),
+
+/***/ "./resources/assets/scripts/util/Router.js":
+/*!*************************************************!*\
+  !*** ./resources/assets/scripts/util/Router.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _camelCase__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./camelCase */ "./resources/assets/scripts/util/camelCase.js");
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+
+/**
+ * DOM-based Routing
+ *
+ * Based on {@link http://goo.gl/EUTi53|Markup-based Unobtrusive Comprehensive DOM-ready Execution} by Paul Irish
+ *
+ * The routing fires all common scripts, followed by the page specific scripts.
+ * Add additional events for more control over timing e.g. a finalize event
+ */
+
+var Router = /*#__PURE__*/function () {
+  /**
+   * Create a new Router
+   * @param {Object} routes
+   */
+  function Router(routes) {
+    _classCallCheck(this, Router);
+
+    this.routes = routes;
+  }
+  /**
+   * Fire Router events
+   * @param {string} route DOM-based route derived from body classes (`<body class="...">`)
+   * @param {string} [event] Events on the route. By default, `init` and `finalize` events are called.
+   * @param {string} [arg] Any custom argument to be passed to the event.
+   */
+
+
+  _createClass(Router, [{
+    key: "fire",
+    value: function fire(route) {
+      var event = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'init';
+      var arg = arguments.length > 2 ? arguments[2] : undefined;
+      var fire = route !== '' && this.routes[route] && typeof this.routes[route][event] === 'function';
+
+      if (fire) {
+        this.routes[route][event](arg);
+      }
+    }
+    /**
+     * Automatically load and fire Router events
+     *
+     * Events are fired in the following order:
+     *  * common init
+     *  * page-specific init
+     *  * page-specific finalize
+     *  * common finalize
+     */
+
+  }, {
+    key: "loadEvents",
+    value: function loadEvents() {
+      var _this = this;
+
+      // Fire common init JS
+      this.fire('common'); // Fire page-specific init JS, and then finalize JS
+
+      document.body.className.toLowerCase().replace(/-/g, '_').split(/\s+/).map(_camelCase__WEBPACK_IMPORTED_MODULE_0__["default"]).forEach(function (className) {
+        _this.fire(className);
+
+        _this.fire(className, 'finalize');
+      }); // Fire common finalize JS
+
+      this.fire('common', 'finalize');
+    }
+  }]);
+
+  return Router;
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (Router);
+
+/***/ }),
+
+/***/ "./resources/assets/scripts/util/camelCase.js":
+/*!****************************************************!*\
+  !*** ./resources/assets/scripts/util/camelCase.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/**
+ * the most terrible camelizer on the internet, guaranteed!
+ * @param {string} str String that isn't camel-case, e.g., CAMeL_CaSEiS-harD
+ * @return {string} String converted to camel-case, e.g., camelCaseIsHard
+ */
+/* harmony default export */ __webpack_exports__["default"] = (function (str) {
+  return "".concat(str.charAt(0).toLowerCase()).concat(str.replace(/[\W_]/g, '|').split('|').map(function (part) {
+    return "".concat(part.charAt(0).toUpperCase()).concat(part.slice(1));
+  }).join('').slice(1));
+});
+
+/***/ }),
+
+/***/ "./resources/assets/scripts/util/ios.js":
+/*!**********************************************!*\
+  !*** ./resources/assets/scripts/util/ios.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * iOS hack: Add an optgroup to every select in order to avoid truncating the content
+ */
+if (navigator.userAgent.match(/(iPad|iPhone|iPod touch);/i)) {
+  var selects = document.querySelectorAll('select');
+
+  for (var i = 0; i < selects.length; i++) {
+    selects[i].appendChild(document.createElement('optgroup'));
+  }
+}
+
+/***/ }),
+
+/***/ "./resources/assets/scripts/util/jquery.enllax.js":
+/*!********************************************************!*\
+  !*** ./resources/assets/scripts/util/jquery.enllax.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery, $) {/* eslint-disable */
+
+/**
+ * MODIFIED FROM SOURCE
+ * Added jQuery local variable for use in webpack
+ * Added some background positioning options
+ *
+ * jQuery.enllax.js v1.1.0
+ * https://github.com/mmkjony/enllax.js
+ * demo: http://mmkjony.github.io/enllax.js/
+ *
+ * Copyright 2015, MMK Jony
+ * This content is released under the MIT license
+ **/
+;
+
+(function (jQuery) {
+  'use strict';
+  /**
+   * Added jQuery detection and setting of local variable
+   */
+
+  jQuery = jQuery || __webpack_provided_window_dot_jQuery;
+
+  if (!jQuery) {
+    return;
+  } // set local variable
+
+
+  $ = jQuery;
+
+  $.fn.enllax = function (opt) {
+    var elem = $('[data-enllax-ratio]');
+    elem.each(function () {
+      var $this = $(this);
+      $this.css({// 'position': 'absolute',
+        // 'left': '0',
+        // 'right': '0'
+      });
+    });
+    var winHeight = $(window).height();
+    var options = $.extend({
+      ratio: 0,
+      type: 'background',
+      //foreground
+      direction: 'vertical',
+      //horizontal
+      offset: 0,
+      align: 'center'
+    }, opt);
+    elem.each(function () {
+      var ratio;
+      var type;
+      var dir;
+      var offset;
+      var align;
+      var $this = $(this);
+      var docHeight = $(document).height();
+      var offsettop = $this.offset().top;
+      var height = $this.outerHeight();
+      var dataRat = $this.data('enllax-ratio');
+      var dataType = $this.data('enllax-type');
+      var dataDir = $this.data('enllax-direction');
+      var dataOffset = $this.data('enllax-offset');
+      var dataBkgdAlign = $this.data('enllax-background-align');
+
+      if (dataBkgdAlign) {
+        align = dataBkgdAlign;
+      } else {
+        align = options.align;
+      }
+
+      if (dataRat) {
+        ratio = dataRat;
+      } else {
+        ratio = options.ratio;
+      }
+
+      if (dataType) {
+        type = dataType;
+      } else {
+        type = options.type;
+      }
+
+      if (dataDir) {
+        dir = dataDir;
+      } else {
+        dir = options.direction;
+      }
+
+      if (dataOffset) {
+        offset = dataOffset;
+      } else {
+        offset = options.offset;
+      }
+
+      var bgY = Math.round(offsettop * ratio);
+      var transform = Math.round((offsettop - winHeight / 2) * ratio - offset);
+
+      if (type == 'background') {
+        if (dir == 'vertical') {
+          $this.css({
+            'background-position': "".concat(align, " ").concat(-bgY, "px")
+          });
+        } else if (dir == 'horizontal') {
+          $this.css({
+            'background-position': "".concat(-bgY, "px ").concat(align)
+          });
+        }
+      } else if (type == 'foreground') {
+        if (dir == 'vertical') {
+          $this.css({
+            '-webkit-transform': 'translateY(' + transform + 'px)',
+            '-moz-transform': 'translateY(' + transform + 'px)',
+            transform: 'translateY(' + transform + 'px)',
+            position: 'absolute',
+            left: '0',
+            right: '0'
+          });
+        } else if (dir == 'horizontal') {
+          $this.css({
+            '-webkit-transform': 'translateX(' + transform + 'px)',
+            '-moz-transform': 'translateX(' + transform + 'px)',
+            transform: 'translateX(' + transform + 'px)'
+          });
+        }
+      }
+
+      $(window).on('scroll', function () {
+        var docHeight = $(document).height();
+        var offsettop = $this.offset().top;
+        var height = $this.outerHeight();
+        var scrolling = $(this).scrollTop();
+        bgY = Math.round((offsettop - scrolling) * ratio);
+        transform = Math.round((offsettop - winHeight / 2 - scrolling) * ratio - offset);
+
+        if (type == 'background') {
+          if (dir == 'vertical') {
+            $this.css({
+              'background-position': "".concat(align, " ").concat(-bgY, "px")
+            });
+          } else if (dir == 'horizontal') {
+            $this.css({
+              'background-position': "".concat(-bgY, "px ").concat(align)
+            });
+          }
+        } else if (type == 'foreground' && scrolling < docHeight) {
+          if (dir == 'vertical') {
+            $this.css({
+              '-webkit-transform': 'translateY(' + transform + 'px)',
+              '-moz-transform': 'translateY(' + transform + 'px)',
+              transform: 'translateY(' + transform + 'px)',
+              position: 'absolute',
+              left: '0',
+              right: '0'
+            });
+          } else if (dir == 'horizontal') {
+            $this.css({
+              '-webkit-transform': 'translateX(' + transform + 'px)',
+              '-moz-transform': 'translateX(' + transform + 'px)',
+              transform: 'translateX(' + transform + 'px)'
+            });
+          }
+        }
+      });
+    });
+  };
+})();
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "jquery"), __webpack_require__(/*! jquery */ "jquery")))
+
+/***/ }),
+
+/***/ "./resources/assets/scripts/util/pushHistory.js":
+/*!******************************************************!*\
+  !*** ./resources/assets/scripts/util/pushHistory.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {var doPopState = true;
+window.addEventListener('popstate', function (event) {
+  if (event.state) {
+    if (event.state.trigger) {
+      doPopState = false;
+      $('.collapsible__trigger a[href="' + event.state.trigger + '"]').trigger('click');
+      doPopState = true;
+      return false;
+    }
+  }
+});
+
+function pushHistory(target, title, trigger) {
+  target = target || false;
+  title = title || false;
+  trigger = trigger || false;
+
+  if (!target || !title || !doPopState) {
+    return;
+  }
+
+  history.pushState({
+    targetHref: target,
+    trigger: trigger
+  }, title, target); // Google Tag Manager
+
+  if (typeof dataLayer !== 'undefined') {
+    window.dataLayer.push({
+      event: 'PushPageview',
+      pushPageURL: window.location.href.replace(window.location.origin, ''),
+      pushPageTitle: title
+    });
+  }
+
+  document.title = title;
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (pushHistory);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "jquery")))
+
+/***/ }),
+
+/***/ "./resources/assets/scripts/util/urlParameters.js":
+/*!********************************************************!*\
+  !*** ./resources/assets/scripts/util/urlParameters.js ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var urlParameters;
+(window.onpopstate = function () {
+  var match,
+      pl = /\+/g,
+      // Regex for replacing addition symbol with a space
+  search = /([^&=]+)=?([^&]*)/g,
+      decode = function decode(s) {
+    return decodeURIComponent(s.replace(pl, ' '));
+  },
+      query = window.location.search.substring(1);
+
+  urlParameters = {};
+
+  while (false == !(match = search.exec(query))) {
+    urlParameters[decode(match[1])] = decode(match[2]);
+  }
+})();
+/* harmony default export */ __webpack_exports__["default"] = (urlParameters);
+
+/***/ }),
+
+/***/ "./resources/assets/styles/block-editor.scss":
+/*!***************************************************!*\
+  !*** ./resources/assets/styles/block-editor.scss ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/assets/styles/login.scss":
+/*!********************************************!*\
+  !*** ./resources/assets/styles/login.scss ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/assets/styles/main.scss":
+/*!*******************************************!*\
+  !*** ./resources/assets/styles/main.scss ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 0:
+/*!*********************************************************************************************************************************************************************!*\
+  !*** multi ./resources/assets/scripts/main.js ./resources/assets/styles/main.scss ./resources/assets/styles/login.scss ./resources/assets/styles/block-editor.scss ***!
+  \*********************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! /Users/joshf/sites/jcfny/html/app/themes/philco-jcf/resources/assets/scripts/main.js */"./resources/assets/scripts/main.js");
+__webpack_require__(/*! /Users/joshf/sites/jcfny/html/app/themes/philco-jcf/resources/assets/styles/main.scss */"./resources/assets/styles/main.scss");
+__webpack_require__(/*! /Users/joshf/sites/jcfny/html/app/themes/philco-jcf/resources/assets/styles/login.scss */"./resources/assets/styles/login.scss");
+module.exports = __webpack_require__(/*! /Users/joshf/sites/jcfny/html/app/themes/philco-jcf/resources/assets/styles/block-editor.scss */"./resources/assets/styles/block-editor.scss");
+
+
+/***/ }),
+
+/***/ "jquery":
+/*!*************************!*\
+  !*** external "jQuery" ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = jQuery;
+
+/***/ }),
+
+/***/ "react":
+/*!************************!*\
+  !*** external "React" ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = React;
+
+/***/ })
+
+},[[0,"/scripts/manifest","/scripts/vendor"]]]);
