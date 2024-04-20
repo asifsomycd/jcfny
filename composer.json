@@ -71,7 +71,7 @@
     "wpackagist-plugin/sucuri-scanner": "1.*",
     "wpackagist-plugin/wordfence": "7.*",
     "wpackagist-plugin/wordpress-seo": "^22.1",
-    "wpackagist-plugin/wp-mail-smtp": "^3.4",
+    "wpackagist-plugin/wp-mail-smtp": "^4.0",
     "wpackagist-plugin/wp-super-cache": "1.*"
   },
   "require-dev": {
