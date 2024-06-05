@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ddd969a09a7d7cab52abbfc3f3476497",
+    "content-hash": "5d3c2dc97ead6647999b3bc85f8ee8f9",
     "packages": [
         {
             "name": "composer/installers",
@@ -979,6 +979,25 @@
             "homepage": "https://gravityforms.com"
         },
         {
+            "name": "satispress/wordpress-seo-premium",
+            "version": "22.8",
+            "dist": {
+                "type": "zip",
+                "url": "https://satispress.orangepineapple.com/satispress/wordpress-seo-premium/22.8",
+                "shasum": "d548e55168e9668b52b3ee47cc166ab576aa8b46"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "Team Yoast",
+                "homepage": "https://yoa.st/team-yoast-premium"
+            },
+            "description": "The first true all-in-one SEO solution for WordPress, including on-page content analysis, XML sitemaps and much more.",
+            "homepage": "https://yoa.st/2jc"
+        },
+        {
             "name": "symfony/polyfill-ctype",
             "version": "v1.29.0",
             "source": {
@@ -1483,15 +1502,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "22.5",
+            "version": "22.8",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/22.5"
+                "reference": "tags/22.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.22.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.22.8.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
