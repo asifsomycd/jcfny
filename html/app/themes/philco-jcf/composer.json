@@ -46,7 +46,7 @@
     "soberwp/controller": "~2.1.0",
     "mwdelaney/sage-bootstrap4-navwalker": "^1.2",
     "roots/sage-lib": "dev-feature/laravel-7",
-    "roots/support": "dev-master",
+    "roots/support": "^1.0",
     "mwdelaney/sage-acf-gutenberg-blocks": "^0.7"
   },
   "require-dev": {
