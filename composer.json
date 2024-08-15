@@ -55,7 +55,7 @@
     "roots/wp-password-bcrypt": "1.1.0",
     "satispress/advanced-custom-fields-pro": "^6.0",
     "satispress/backupbuddy": "^9.1",
-    "satispress/gravityforms": "2.8.12",
+    "satispress/gravityforms": "2.8.16",
     "satispress/gravityformsmailchimp": "^5.0",
     "satispress/gravityformspartialentries": "^1.5",
     "satispress/wordpress-seo-premium": "^22.8",
