@@ -58,7 +58,7 @@
     "satispress/gravityforms": "2.8.18",
     "satispress/gravityformsmailchimp": "^5.0",
     "satispress/gravityformspartialentries": "^1.5",
-    "satispress/wordpress-seo-premium": "^22.8",
+    "satispress/wordpress-seo-premium": "^23.6",
     "vlucas/phpdotenv": "^5.4",
     "wpackagist-plugin/acf-gravityforms-add-on": "1.*",
     "wpackagist-plugin/akismet": "5.*",
