@@ -1956,8 +1956,7 @@ input[type=month].form-control,
 .gform_wrapper input[type=month],
 .action-form .gform_body .ginput_container_email input[type=month],
 .search-form input[type=month].search-field {
-  -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 select.form-control:focus::-ms-value,
@@ -4785,8 +4784,7 @@ body.login.wp-core-ui .input-group > .input-group-prepend:first-child > .button-
   background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 1.02rem center/8px 10px;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
-  -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 .custom-select:focus {
   border-color: #4e10d8;
@@ -4897,8 +4895,7 @@ body.login.wp-core-ui .input-group > .input-group-prepend:first-child > .button-
   height: 1.4rem;
   padding: 0;
   background-color: transparent;
-  -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 .custom-range:focus {
   outline: none;
@@ -4924,8 +4921,7 @@ body.login.wp-core-ui .input-group > .input-group-prepend:first-child > .button-
   border-radius: 1rem;
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-webkit-slider-thumb {
