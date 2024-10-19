@@ -5,6 +5,6 @@ server:
 @development:
   path: html/wp
 @staging:
-  ssh: jcf-staging:/chroot/home/ad466004/staging.jcfny.org/html/wp
+  ssh: jcfny-staging:/chroot/home/ad466004/staging.jcfny.org/html/wp
 @production:
-  ssh: jcf:/chroot/home/a0d15d27/jcfny.org/html/wp
+  ssh: jcfny:/chroot/home/a0d15d27/jcfny.org/html/wp

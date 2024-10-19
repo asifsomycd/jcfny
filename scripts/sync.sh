@@ -7,10 +7,10 @@
 DEVDIR="html/app/uploads/"
 DEVSITE="https://jcfny.test"
 
-PRODDIR="jcf:/chroot/home/a0d15d27/jcfny.org/html/app/uploads/"
+PRODDIR="jcfny:/chroot/home/a0d15d27/jcfny.org/html/app/uploads/"
 PRODSITE="https://jcfny.org"
 
-STAGDIR="jcf-staging:/chroot/home/ad466004/staging.jcfny.org/html/app/uploads/"
+STAGDIR="jcfny-staging:/chroot/home/ad466004/staging.jcfny.org/html/app/uploads/"
 STAGSITE="https://staging.jcfny.org"
 
 LOCAL=false
