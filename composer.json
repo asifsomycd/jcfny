@@ -69,7 +69,7 @@
     "wpackagist-plugin/redirection": "^5.0",
     "wpackagist-plugin/safe-svg": "2.2.*",
     "wpackagist-plugin/sucuri-scanner": "1.*",
-    "wpackagist-plugin/wordfence": "7.*",
+    "wpackagist-plugin/wordfence": "8.*",
     "wpackagist-plugin/wordpress-seo": "^23.1",
     "wpackagist-plugin/wp-mail-smtp": "^4.0",
     "wpackagist-plugin/wp-super-cache": "1.*"
