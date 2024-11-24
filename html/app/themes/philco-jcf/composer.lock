@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "95361af7c5c49ddaf165733e63b4f589",
+    "content-hash": "37946a0686428cddec934ae455c8e8e9",
     "packages": [
         {
             "name": "brain/hierarchy",
@@ -964,21 +964,22 @@
         },
         {
             "name": "mwdelaney/sage-acf-gutenberg-blocks",
-            "version": "0.7",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MWDelaney/sage-acf-wp-blocks.git",
-                "reference": "795527e63b45c8426741a074270355953b28ce37"
+                "reference": "072430fd65464901472e86fc568f90678ea0d248"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MWDelaney/sage-acf-wp-blocks/zipball/795527e63b45c8426741a074270355953b28ce37",
-                "reference": "795527e63b45c8426741a074270355953b28ce37",
+                "url": "https://api.github.com/repos/MWDelaney/sage-acf-wp-blocks/zipball/072430fd65464901472e86fc568f90678ea0d248",
+                "reference": "072430fd65464901472e86fc568f90678ea0d248",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "files": [
@@ -1007,9 +1008,9 @@
             ],
             "support": {
                 "issues": "https://github.com/MWDelaney/sage-acf-wp-blocks/issues",
-                "source": "https://github.com/MWDelaney/sage-acf-wp-blocks/tree/0.7"
+                "source": "https://github.com/MWDelaney/sage-acf-wp-blocks/tree/master"
             },
-            "time": "2021-01-13T21:07:25+00:00"
+            "time": "2023-08-08T13:47:49+00:00"
         },
         {
             "name": "mwdelaney/sage-bootstrap4-navwalker",
@@ -1546,16 +1547,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v5.4.43",
+            "version": "v5.4.45",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "ae25a9145a900764158d439653d5630191155ca0"
+                "reference": "63741784cd7b9967975eec610b256eed3ede022b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/ae25a9145a900764158d439653d5630191155ca0",
-                "reference": "ae25a9145a900764158d439653d5630191155ca0",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/63741784cd7b9967975eec610b256eed3ede022b",
+                "reference": "63741784cd7b9967975eec610b256eed3ede022b",
                 "shasum": ""
             },
             "require": {
@@ -1589,7 +1590,7 @@
             "description": "Finds files and directories via an intuitive fluent interface",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/finder/tree/v5.4.43"
+                "source": "https://github.com/symfony/finder/tree/v5.4.45"
             },
             "funding": [
                 {
@@ -1605,7 +1606,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-08-13T14:03:51+00:00"
+            "time": "2024-09-28T13:32:08+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -1769,16 +1770,16 @@
         },
         {
             "name": "symfony/translation",
-            "version": "v6.4.12",
+            "version": "v6.4.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "cf8360b8352b086be620fae8342c4d96e391a489"
+                "reference": "bee9bfabfa8b4045a66bf82520e492cddbaffa66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/cf8360b8352b086be620fae8342c4d96e391a489",
-                "reference": "cf8360b8352b086be620fae8342c4d96e391a489",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/bee9bfabfa8b4045a66bf82520e492cddbaffa66",
+                "reference": "bee9bfabfa8b4045a66bf82520e492cddbaffa66",
                 "shasum": ""
             },
             "require": {
@@ -1844,7 +1845,7 @@
             "description": "Provides tools to internationalize your application",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/translation/tree/v6.4.12"
+                "source": "https://github.com/symfony/translation/tree/v6.4.13"
             },
             "funding": [
                 {
@@ -1860,7 +1861,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-09-16T06:02:54+00:00"
+            "time": "2024-09-27T18:14:25+00:00"
         },
         {
             "name": "symfony/translation-contracts",
@@ -2304,7 +2305,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "roots/sage-lib": 20
+        "roots/sage-lib": 20,
+        "mwdelaney/sage-acf-gutenberg-blocks": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
