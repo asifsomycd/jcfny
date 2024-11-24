@@ -3,6 +3,19 @@
 namespace App;
 
 /**
+ * WP attempts to read the Sage 9 `resources` directory like it's a json file
+ *
+ * @see https://discourse.roots.io/t/problems-with-theme-json-on-sage-9-after-wp-update-to-6-3/25856/6?u=joshf
+ */
+add_filter('theme_file_path', function ($path, $file) {
+    if ($file === 'theme.json') {
+        return false;
+    }
+
+    return $path;
+}, 0, 2);
+
+/**
  * Add <body> classes
  */
 add_filter('body_class', function (array $classes) {
