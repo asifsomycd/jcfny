@@ -44,7 +44,7 @@
   ],
   "require": {
     "php": ">=8.1",
-    "composer/installers": "^2.1",
+    "composer/installers": "^2.2",
     "jjgrainger/posttypes": "^2.2",
     "mdsimpson/contact-form-7-to-database-extension": "^2.10",
     "oscarotero/env": "^2.1",
@@ -59,7 +59,7 @@
     "satispress/gravityformsmailchimp": "^5.0",
     "satispress/gravityformspartialentries": "^1.5",
     "satispress/wordpress-seo-premium": "^23.6",
-    "vlucas/phpdotenv": "^5.4",
+    "vlucas/phpdotenv": "^5.5",
     "wpackagist-plugin/acf-gravityforms-add-on": "1.*",
     "wpackagist-plugin/akismet": "5.*",
     "wpackagist-plugin/enable-media-replace": "^4.0",
@@ -75,8 +75,8 @@
     "wpackagist-plugin/wp-super-cache": "1.*"
   },
   "require-dev": {
-    "squizlabs/php_codesniffer": "^3.6.2",
-    "roave/security-advisories": "dev-latest"
+    "roave/security-advisories": "dev-latest",
+    "laravel/pint": "^1.18"
   },
   "config": {
     "optimize-autoloader": true,
@@ -104,11 +104,7 @@
     "wordpress-install-dir": "html/wp"
   },
   "scripts": {
-    "post-root-package-install": [
-      "php -r \"copy('.env.example', '.env');\""
-    ],
-    "test": [
-      "phpcs"
-    ]
+    "lint": "pint --test",
+    "lint:fix": "pint"
   }
 }
