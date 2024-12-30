@@ -121,5 +121,12 @@
 
   <div class="application-form">
     {!! $application_form !!}
+    {{--
+      Force form to show
+      @see {https://stackoverflow.com/a/67741301/1331870}
+    --}}
+    <script>
+      jQuery('.gform_wrapper').show();
+    </script>
   </div>
 @endsection
