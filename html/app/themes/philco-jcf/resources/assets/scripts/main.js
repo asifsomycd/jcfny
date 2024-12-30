@@ -25,4 +25,17 @@ const routes = new Router({
 })
 
 // Load Events
-jQuery(document).ready(() => routes.loadEvents())
+jQuery(() => {
+  routes.loadEvents()
+
+  /**
+   * Force Gravity Forms to show. Has to be some weird JS timing issue with the form.
+   * @see https://stackoverflow.com/a/67741301/1331870
+   */
+  window.document.dispatchEvent(
+    new Event('DOMContentLoaded', {
+      bubbles: true,
+      cancelable: true,
+    })
+  )
+})

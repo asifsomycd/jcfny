@@ -166,6 +166,19 @@
     display: none;
   }
 
+  fieldset {
+    border: 0;
+    padding: 0;
+
+    .gfield_radio {
+      padding-left: 1.25rem;
+    }
+  }
+
+  legend {
+    font-size: inherit;
+  }
+
   ul {
     @extend .list-unstyled;
   }
