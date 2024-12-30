@@ -121,15 +121,5 @@
 
   <div class="application-form">
     {!! $application_form !!}
-    {{--
-      Force form to show. Has to be some weird JS timing issue with the form.
-      @see {https://stackoverflow.com/a/67741301/1331870}
-    --}}
-    <script>
-      window.document.dispatchEvent(new Event("DOMContentLoaded", {
-        bubbles: true,
-        cancelable: true
-      }));
-    </script>
   </div>
 @endsection
