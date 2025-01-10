@@ -72,7 +72,7 @@
     "wpackagist-plugin/wordfence": "8.*",
     "wpackagist-plugin/wordpress-seo": "^24.1",
     "wpackagist-plugin/wp-mail-smtp": "^4.0",
-    "wpackagist-plugin/wp-super-cache": "1.*"
+    "wpackagist-plugin/wp-super-cache": "2.*"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
