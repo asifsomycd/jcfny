@@ -1499,15 +1499,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "24.1",
+            "version": "24.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/24.1"
+                "reference": "tags/24.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.24.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.24.3.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2486,5 +2486,5 @@
         "php": ">=8.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }
