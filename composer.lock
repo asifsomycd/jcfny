@@ -901,11 +901,11 @@
         },
         {
             "name": "satispress/backupbuddy",
-            "version": "9.1.14",
+            "version": "9.1.15",
             "dist": {
                 "type": "zip",
-                "url": "https://satispress.orangepineapple.com/satispress/backupbuddy/9.1.14",
-                "shasum": "5ef1b2ac7f58cc7b4c3140cec0417e475edd3ac4"
+                "url": "https://satispress.orangepineapple.com/satispress/backupbuddy/9.1.15",
+                "shasum": "4042a8f66f580c79c1ba5a4b1a41b7f76b484020"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2509,5 +2509,5 @@
         "php": "^8.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }
