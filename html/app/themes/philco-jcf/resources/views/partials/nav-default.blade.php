@@ -5,9 +5,11 @@
         <a
           class="brand"
           href="{{ home_url('/') }}"
-        ><img
+        >
+          <img
             src="@asset('images/jcf-logo.svg')"
             alt="{{ get_bloginfo('name', 'display') }}"
+            fetchpriority="high"
           ></a>
       </div>
       <div class="col-auto">
@@ -48,11 +50,13 @@
             class="d-none d-xl-block"
             src="@asset('images/jcf-badge.svg')"
             alt="{{ get_bloginfo('name', 'display') }}"
+            fetchpriority="high"
           >
           <img
             class="d-xl-none"
             src="@asset('images/jcf-horizontal.svg')"
             alt="{{ get_bloginfo('name', 'display') }}"
+            fetchpriority="high"
           >
         </a>
       </div>

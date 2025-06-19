@@ -1,5 +1,13 @@
 // Site Header
 
+body {
+  margin-top: 59px;
+
+  @include media-breakpoint-up(xl) {
+    margin-top: 0;
+  }
+}
+
 .site-header {
   border-bottom: 2px solid $pale-gray;
   position: relative;

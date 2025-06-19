@@ -5,31 +5,38 @@
 @extends('layouts.app')
 
 @section('post-header')
-    @include('partials.header-page')
+  @include('partials.header-page')
 @endsection
 
 @section('content')
-  @while(have_posts()) @php the_post() @endphp
+  @while (have_posts())
+    @php the_post() @endphp
     @include('partials.content-page')
   @endwhile
 @endsection
 
 @section('wrap-container')
-  @if($calculator)
-    <script>const calculatorParams = {!! $calculator !!};</script>
+  @if ($calculator)
+    <script>
+      const calculatorParams = {!! $calculator !!};
+    </script>
     <div id="react-calculator"></div>
   @endif
 
-  @if($impact)
+  @if ($impact)
     @include('acf-layouts.impact', [
-      'title' => $impact->title,
-      'text' => $impact->text,
-      'impact' => $impact->impact,
-      'button' => $impact->button,
+        'title' => $impact->title,
+        'text' => $impact->text,
+        'impact' => $impact->impact,
+        'button' => $impact->button,
+        'index' => 1,
     ])
   @endif
 
-  <div class="wrap container mt-5" role="document">
+  <div
+    class="wrap container mt-5"
+    role="document"
+  >
     <div class="content">
       <div class="row">
         <main class="main col-12 col-lg-10">

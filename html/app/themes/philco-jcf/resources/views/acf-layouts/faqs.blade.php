@@ -1,25 +1,31 @@
-@if (! $faqs)
+@if (!$area['faqs'])
   @php return; @endphp
 @endif
 
-<div class="layout-block__faq
+<div
+  class="layout-block__faq
     {{ $disable_parallax_backgrounds ? 'skip-parallax' : '' }}
   "
-  data-enllax-ratio="-0.1" data-enllax-background-align="left"
-  data-scroll
+  data-enllax-ratio="-0.1"
+  data-enllax-background-align="left"
+  @if ($index > 0) data-scroll @endif
 >
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-4">
-        <h2>{!! $title !!}</h2>
+        <h2>{!! $area['title'] !!}</h2>
       </div>
 
       <div class="col-12 col-lg-8">
         <div id="faqs">
-          @foreach ($faqs as $faq)
+          @foreach ($area['faqs'] as $faq)
             <div class="faq">
               <div class="faq__question">
-                <a class="btn btn-link" href="{{ $faq['link']['url'] }}" target="{{ $faq['link']['target'] }}">
+                <a
+                  class="btn btn-link"
+                  href="{{ $faq['link']['url'] }}"
+                  target="{{ $faq['link']['target'] }}"
+                >
                   <div class="row">
                     <div class="col-auto pr-0">
                       <div class="faq__indicator fa-fw">

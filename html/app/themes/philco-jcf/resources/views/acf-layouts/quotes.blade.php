@@ -1,16 +1,23 @@
-@if(! $quotes)
+@if (!$area['quotes'])
   @php return; @endphp
 @endif
 
-<div class="layout-block__quote
+<div
+  class="layout-block__quote
     {{ $disable_parallax_backgrounds ? 'skip-parallax' : '' }}
   "
-  data-enllax-ratio="-0.2" data-enllax-background-align="right"
-  data-scroll
+  data-enllax-ratio="-0.2"
+  data-enllax-background-align="right"
+  @if ($index > 0) data-scroll @endif
 >
-  <div id="quote-carousel" class="carousel slide" data-ride="carousel" data-interval="{{ $interval * 1000 }}">
+  <div
+    class="carousel slide"
+    id="quote-carousel"
+    data-ride="carousel"
+    data-interval="{{ $area['quote_interval'] * 1000 }}"
+  >
     <div class="carousel-inner">
-      @foreach ($quotes as $quote)
+      @foreach ($area['quotes'] as $quote)
         <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
 
           <div class="container">
