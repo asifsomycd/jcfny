@@ -925,11 +925,11 @@
         },
         {
             "name": "satispress/gravityforms",
-            "version": "2.9.6.1",
+            "version": "2.9.11",
             "dist": {
                 "type": "zip",
-                "url": "https://satispress.orangepineapple.com/satispress/gravityforms/2.9.6.1",
-                "shasum": "c5cb6c4a7e2d6a8c1647ea1cb95f2f03023e4165"
+                "url": "https://satispress.orangepineapple.com/satispress/gravityforms/2.9.11",
+                "shasum": "9c1e088ab00ec50ef6a187601b53fa835a1f2578"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2514,5 +2514,5 @@
         "php": "^8.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }
