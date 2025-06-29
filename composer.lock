@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "126fb44d007363112f49e152d44f2dff",
+    "content-hash": "606e0c78609155220fe2722fa45ca4e4",
     "packages": [
         {
             "name": "composer/installers",
@@ -1468,15 +1468,15 @@
         },
         {
             "name": "wpackagist-plugin/sucuri-scanner",
-            "version": "1.9.10",
+            "version": "2.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/sucuri-scanner/",
-                "reference": "tags/1.9.10"
+                "reference": "tags/2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/sucuri-scanner.1.9.10.zip"
+                "url": "https://downloads.wordpress.org/plugin/sucuri-scanner.2.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
