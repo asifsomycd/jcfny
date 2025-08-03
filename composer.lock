@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f16f8bd3b73071d7c0355a3e232f3a5e",
+    "content-hash": "7c903204b74fca1640118984c41b3bf6",
     "packages": [
         {
             "name": "composer/installers",
@@ -262,54 +262,6 @@
                 "source": "https://github.com/jjgrainger/posttypes"
             },
             "time": "2024-10-13T17:23:48+00:00"
-        },
-        {
-            "name": "mdsimpson/contact-form-7-to-database-extension",
-            "version": "2.10.37",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mdsimpson/contact-form-7-to-database-extension.git",
-                "reference": "fd4ebfd7e04ac0d06287ff9076a5350c145a403b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mdsimpson/contact-form-7-to-database-extension/zipball/fd4ebfd7e04ac0d06287ff9076a5350c145a403b",
-                "reference": "fd4ebfd7e04ac0d06287ff9076a5350c145a403b",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">5.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "3.7.*"
-            },
-            "suggest": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Simpson",
-                    "email": "michael.d.simpson@gmail.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Plugin that saves contact form submissions to your WordPress database and provides and administration page and shortcodes to view and display the data.",
-            "homepage": "https://cfdbplugin.com/",
-            "keywords": [
-                "cfdb",
-                "plugin",
-                "wordpress"
-            ],
-            "support": {
-                "issues": "https://github.com/mdsimpson/contact-form-7-to-database-extension/issues",
-                "source": "https://github.com/mdsimpson/contact-form-7-to-database-extension/tree/2.10.37"
-            },
-            "time": "2022-02-26T21:04:51+00:00"
         },
         {
             "name": "oscarotero/env",
@@ -1421,15 +1373,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "24.9",
+            "version": "25.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/24.9"
+                "reference": "tags/25.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.24.9.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.25.6.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"

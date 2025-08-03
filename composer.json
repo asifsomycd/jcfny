@@ -46,7 +46,6 @@
     "php": "^8.2",
     "composer/installers": "^2.2",
     "jjgrainger/posttypes": "^2.2",
-    "mdsimpson/contact-form-7-to-database-extension": "^2.10",
     "oscarotero/env": "^2.1",
     "roots/bedrock-autoloader": "^1.0",
     "roots/bedrock-disallow-indexing": "^2.0",
@@ -69,7 +68,7 @@
     "wpackagist-plugin/safe-svg": "2.3.*",
     "wpackagist-plugin/sucuri-scanner": "2.*",
     "wpackagist-plugin/wordfence": "8.*",
-    "wpackagist-plugin/wordpress-seo": "^24.1",
+    "wpackagist-plugin/wordpress-seo": "^25.6",
     "wpackagist-plugin/wp-mail-smtp": "^4.0",
     "wpackagist-plugin/wp-super-cache": "3.*"
   },
