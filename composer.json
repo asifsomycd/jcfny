@@ -50,7 +50,7 @@
     "oscarotero/env": "^2.1",
     "roots/bedrock-autoloader": "^1.0",
     "roots/bedrock-disallow-indexing": "^2.0",
-    "roots/wordpress": "6.8.1",
+    "roots/wordpress": "6.8.2",
     "roots/wp-config": "1.0.0",
     "satispress/advanced-custom-fields-pro": "^6.0",
     "satispress/backupbuddy": "^9.1",
