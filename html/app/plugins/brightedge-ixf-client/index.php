@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Author URI:  https://brightedge.com
  * Author:      BrightEdge
@@ -20,6 +21,11 @@ require 'be_ixf_client.php';
 
 use BrightEdge\BEIXFClient;
 
+// Skip instantiation during WP-CLI to avoid interfering with commands.
+if ((defined('WP_CLI') && constant('WP_CLI')) || (php_sapi_name() === 'cli')) {
+    return;
+}
+
 //IXF: the following array and constructor must be placed before any HTML is written to the page.
 $be_ixf = new BEIXFClient([
     BEIXFClient::$CAPSULE_MODE_CONFIG => BEIXFClient::$REMOTE_PROD_CAPSULE_MODE,
@@ -32,5 +38,4 @@ $be_ixf = new BEIXFClient([
     // IXF: By default, all URL parameters are ignored. If you have URL parameters that add value to
     // page content.  Add them to this config value, separated by the pipe character (|).
     BEIXFClient::$WHITELIST_PARAMETER_LIST_CONFIG => "ixf",
-
 ]);
