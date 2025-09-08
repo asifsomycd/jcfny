@@ -794,11 +794,11 @@
         },
         {
             "name": "satispress/gravityforms",
-            "version": "2.9.14",
+            "version": "2.9.17.1",
             "dist": {
                 "type": "zip",
-                "url": "https://satispress.orangepineapple.com/satispress/gravityforms/2.9.14",
-                "shasum": "e84712110bc0ddb838a68953f6ffefc53d59c1ac"
+                "url": "https://satispress.orangepineapple.com/satispress/gravityforms/2.9.17.1",
+                "shasum": "d300d95e2c79b513476d1f0072e8e1a09aa6cad8"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
