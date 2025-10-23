@@ -67,7 +67,7 @@
     "wpackagist-plugin/safe-svg": "^2.4",
     "wpackagist-plugin/sucuri-scanner": "^2.5",
     "wpackagist-plugin/wordfence": "^8.1",
-    "wpackagist-plugin/wordpress-seo": "^26.1",
+    "wpackagist-plugin/wordpress-seo": "^26.2",
     "wpackagist-plugin/wp-mail-smtp": "^4.6",
     "wpackagist-plugin/wp-super-cache": "^3.0"
   },
