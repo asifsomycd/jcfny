@@ -5,7 +5,7 @@
 # Copyright (c) Ben Word
 
 DEVDIR="html/app/uploads/"
-DEVSITE="https://jcfny.test"
+DEVSITE="http://jcfny.test"
 
 PRODDIR="jcfny:/chroot/home/a0d15d27/jcfny.org/html/app/uploads/"
 PRODSITE="https://jcfny.org"

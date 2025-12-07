@@ -8,6 +8,9 @@ html/app/uploads/*
 !html/app/uploads/.gitkeep
 html/app/db.php
 
+# Use html/ for Nexcess' file structure
+web
+
 # WordPress
 html/wp
 html/.htaccess
