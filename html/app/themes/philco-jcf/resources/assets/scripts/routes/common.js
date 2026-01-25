@@ -13,21 +13,6 @@ export default {
     // JavaScript to be fired on all pages
 
     /**
-     * Attempt to automatically remove text widows from headings
-     * Replaces the last space in a heading with non-breaking space
-     * Add 'data-widow-skip' to any heading to skip processing
-     */
-    $('h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6')
-      .not('.fix-widow-skip')
-      .each((i, el) =>
-        $(el).html(function() {
-          return $(this)
-            .html()
-            .replace(/\s([^\s<]+)\s*$/, '\u00A0$1')
-        })
-      )
-
-    /**
      * Enllax (parallax)
      */
     $('.wrap').imagesLoaded(

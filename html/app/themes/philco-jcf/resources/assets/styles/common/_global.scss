@@ -18,6 +18,8 @@ h6,
 .h4,
 .h5,
 .h6 {
+  text-wrap: pretty;
+
   em {
     font-family: $font-family-sans-serif;
   }

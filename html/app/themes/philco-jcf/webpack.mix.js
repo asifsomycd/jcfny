@@ -15,7 +15,7 @@ require('laravel-mix-copy-watched')
  */
 
 mix.setPublicPath('./dist').browserSync({
-  proxy: 'https://jcfny.test',
+  proxy: 'http://jcfny.test',
   open: false,
   reloadOnRestart: true,
 })
