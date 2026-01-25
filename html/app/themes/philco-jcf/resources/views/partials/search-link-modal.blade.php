@@ -1,4 +1,4 @@
-<li class="search-link menu-item">
+<li class="search-link menu-item d-flex align-items-center">
   @include('partials.search-link')
 
   @section('modal-body')
@@ -10,7 +10,7 @@
 
     @include('partials.modal', [
         'class' => 'search-modal',
-        'type'  => 'search',
-    ] )
+        'type' => 'search',
+    ])
   @endsection
 </li>

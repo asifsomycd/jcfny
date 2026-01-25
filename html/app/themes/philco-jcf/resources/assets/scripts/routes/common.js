@@ -40,10 +40,8 @@ export default {
      * Nav
      */
 
-    // Turn last nav item into a tag
-    $('.nav-top .menu-item:not(.search-link)')
-      .last()
-      .addClass('tagged')
+    // Animate tagged nav items
+    $('.menu-item.tagged')
       .find('a')
       .on('click', function() {
         $(this)
@@ -96,20 +94,9 @@ export default {
     })
 
     /**
-     * Move search link into place
-     */
-    $('.site-header .search-link')
-      .appendTo('#menu-top-navigation')
-      .show()
-
-    /**
      * Sticky header and footer
      */
 
-    // Clone header
-    $('.site-header .nav-top')
-      .clone()
-      .appendTo('.sticky-header__nav-top')
     $('.site-header .nav-primary')
       .clone()
       .appendTo('.sticky-header__nav-primary')
@@ -174,16 +161,6 @@ export default {
     /**
      * Mobile nav
      */
-
-    // Find last menu item (contact us), make it a button and move to top
-    $('.nav-mobile__top .menu-item')
-      .not('.search-link')
-      .last()
-      .find('a')
-      .addClass('btn btn-outline-light')
-      .insertBefore('.nav-modal .nav-mobile__top')
-
-    $('.nav-mobile__top .menu-item:empty').remove()
 
     // Add arrows to items with dropdowns
     $('.nav-mobile__primary .menu-item-has-children > a').append(

@@ -46,6 +46,7 @@ add_action('admin_menu', function () {
     // List of users that don't have pages removed
     $admins = [
         'PhilCo',
+        'joshuafredrickson',
     ];
 
     $current_user = wp_get_current_user();

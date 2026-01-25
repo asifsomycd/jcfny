@@ -25,6 +25,11 @@ class App extends Controller
         return get_field('footer_action_buttons', 'options');
     }
 
+    public function navExtras(): array
+    {
+        return get_field('nav_extras', 'options') ?: [];
+    }
+
     public function disableParallaxBackgrounds()
     {
         return get_field('disable_parallax_backgrounds');

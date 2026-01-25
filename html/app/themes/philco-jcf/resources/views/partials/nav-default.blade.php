@@ -14,13 +14,13 @@
       </div>
       <div class="col-auto">
         <nav class="nav-top">
-          @if (has_nav_menu('top_navigation'))
-            {!! wp_nav_menu([
-                'theme_location' => 'top_navigation',
-                'menu_class' => 'nav',
-            ]) !!}
-          @endif
-          @include('partials.search-link-modal')
+          <div class="menu-top-navigation-container">
+            @include('partials.nav-extras', [
+                'search_modal' => true,
+                'classes' => 'd-flex justify-content-end align-items-center',
+                'format_links' => true,
+            ])
+          </div>
         </nav>
       </div>
     </div>
@@ -60,8 +60,20 @@
           >
         </a>
       </div>
+
+      {{-- Upon scroll, show nav-primary items to the left --}}
       <div class="sticky-header__nav-primary col-6 d-none d-xl-block align-self-center"></div>
-      <div class="sticky-header__nav-top col-5 d-none d-xl-block ml-auto"></div>
+
+      {{-- Upon scroll, show nav-top items to the right --}}
+      <div class="sticky-header__nav-top col-5 d-none d-xl-block ml-auto">
+        @include('partials.nav-extras', [
+            'classes' => 'd-flex justify-content-end align-items-center',
+            'search_link' => true,
+            'format_links' => true,
+        ])
+      </div>
+
+      {{-- Upon scroll, show mobile menu button to the right --}}
       <div class="mobile-nav-bars col d-xl-none align-self-center ml-auto text-right">
         <span
           data-toggle="modal"
@@ -72,18 +84,26 @@
   </div>
 </header>
 
+{{-- Upon scroll, show nav-top items to the right --}}
+<div class="page-actions d-xl-none bg-primary">
+  @include('partials.nav-extras', [
+      'classes' => 'd-flex justify-content-center align-items-center',
+  ])
+</div>
+
 @section('modal-body')
+  @include('partials.nav-extras', [
+      'format_links' => false,
+  ])
+
   {!! wp_nav_menu([
       'theme_location' => 'primary_navigation',
       'menu_class' => 'nav-mobile__primary',
       'container' => false,
   ]) !!}
-  {!! wp_nav_menu([
-      'theme_location' => 'top_navigation',
-      'menu_class' => 'nav-mobile__top',
-      'container' => false,
-  ]) !!}
-  @include('partials.search-link')
+  <div class="mt-3">
+    @include('partials.search-link')
+  </div>
 @overwrite
 
 @section('modals')
