@@ -48,3 +48,4 @@ html/app/wp-cache-config.php
 html/*/cache
 *.bak
 *.sql
+.php-cs-fixer.dist.php

@@ -14,7 +14,7 @@
         <div class="row align-items-center">
           <div class="col-12 col-lg-5">
             <h1
-              class="entry-title fix-widow-skip"
+              class="entry-title"
               data-scroll
             >{!! get_the_title() !!}</h1>
           </div>
@@ -86,7 +86,7 @@
 
             <div class="sidebar__callout mt-5 d-none d-lg-block">
               <div class="h4">Any Questions?</div>
-              <div class="h3 fix-widow-skip">Call <a
+              <div class="h3">Call <a
                   class="link-white"
                   href="{{ $site_phone_url }}"
                 >{{ $site_phone }}</a></div>
