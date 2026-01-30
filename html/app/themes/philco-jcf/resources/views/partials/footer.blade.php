@@ -41,7 +41,7 @@
   @endforeach
 @endif
 
-{{-- CobrowseIO --}}
+{{-- CobrowseIO
 <script>
   (function(w, t, c, p, s, e) {
     p = new Promise(function(r) {
@@ -69,6 +69,7 @@
     CobrowseIO.start();
   });
 </script>
+--}}
 
 {{-- Pop-Up modals --}}
 @if (!$popups || isset($application_form))
