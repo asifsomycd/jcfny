@@ -30,17 +30,14 @@
   },
   "repositories": [
     {
+      "name": "wp-packages",
+      "type": "composer",
+      "url": "https://repo.wp-packages.org"
+    },
+    {
       "name": "my-yoast",
       "type": "composer",
       "url": "https://my.yoast.com/packages/"
-    },
-    {
-      "type": "composer",
-      "url": "https://wpackagist.org",
-      "only": [
-        "wpackagist-plugin/*",
-        "wpackagist-theme/*"
-      ]
     },
     {
       "type": "composer",
@@ -53,7 +50,7 @@
     "jjgrainger/posttypes": "^2.2",
     "oscarotero/env": "^2.1",
     "roots/bedrock-autoloader": "^1.0",
-    "roots/bedrock-disallow-indexing": "^2.0",
+    "roots/bedrock-disallow-indexing": "^2.1",
     "roots/wordpress": "^6.9",
     "roots/wp-config": "1.0.0",
     "satispress/advanced-custom-fields-pro": "^6.7",
@@ -62,20 +59,20 @@
     "satispress/gravityformsmailchimp": "^5.7",
     "satispress/gravityformspartialentries": "^1.8",
     "vlucas/phpdotenv": "^5.5",
-    "wpackagist-plugin/acf-gravityforms-add-on": "^1.3",
-    "wpackagist-plugin/akismet": "^5.6",
-    "wpackagist-plugin/enable-media-replace": "^4.1",
-    "wpackagist-plugin/gravity-forms-email-blacklist": "^2.6",
-    "wpackagist-plugin/page-links-to": "^3.3",
-    "wpackagist-plugin/redirection": "^5.7",
-    "wpackagist-plugin/safe-svg": "^2.4",
-    "wpackagist-plugin/sucuri-scanner": "^2.6",
-    "wpackagist-plugin/wordfence": "^8.1",
-    "wpackagist-plugin/wordpress-seo": "^27.0",
-    "wpackagist-plugin/wp-mail-smtp": "^4.7",
-    "wpackagist-plugin/wp-super-cache": "^3.0",
-    "yoast/wordpress-seo": "^27.0",
-    "yoast/wordpress-seo-premium": "^27.0"
+    "wp-plugin/acf-gravityforms-add-on": "^1.3",
+    "wp-plugin/akismet": "^5.6",
+    "wp-plugin/enable-media-replace": "^4.1",
+    "wp-plugin/gravity-forms-email-blacklist": "^2.6",
+    "wp-plugin/page-links-to": "^3.3",
+    "wp-plugin/redirection": "^5.7",
+    "wp-plugin/safe-svg": "^2.4",
+    "wp-plugin/sucuri-scanner": "^2.7",
+    "wp-plugin/wordfence": "^8.1",
+    "wp-plugin/wordpress-seo": "^27.2",
+    "wp-plugin/wp-mail-smtp": "^4.7",
+    "wp-plugin/wp-super-cache": "^3.0",
+    "yoast/wordpress-seo": "^27.2",
+    "yoast/wordpress-seo-premium": "^27.2"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
