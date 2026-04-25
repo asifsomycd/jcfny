@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b356ac24c1896c2e863fa714f3aabbca",
+    "content-hash": "1b483ec90c6fc1ba180b8aebf2aa3937",
     "packages": [
         {
             "name": "composer/installers",
@@ -756,11 +756,11 @@
         },
         {
             "name": "satispress/advanced-custom-fields-pro",
-            "version": "6.7.1",
+            "version": "6.8.0.1",
             "dist": {
                 "type": "zip",
-                "url": "https://satispress.orangepineapple.com/satispress/advanced-custom-fields-pro/6.7.1",
-                "shasum": "2c6a3b77b60af3e60cd594900aa8d4022188568d"
+                "url": "https://satispress.orangepineapple.com/satispress/advanced-custom-fields-pro/6.8.0.1",
+                "shasum": "8ff1f480fe9499057d30e26f363665da1dc845c6"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -794,11 +794,11 @@
         },
         {
             "name": "satispress/gravityforms",
-            "version": "2.9.30",
+            "version": "2.10.0",
             "dist": {
                 "type": "zip",
-                "url": "https://satispress.orangepineapple.com/satispress/gravityforms/2.9.30",
-                "shasum": "bb110e7c3f198604cc163cfc500587d0cec8c07f"
+                "url": "https://satispress.orangepineapple.com/satispress/gravityforms/2.10.0",
+                "shasum": "a3176245f4cf533e97c9b70333636a0d67f5e1a6"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -934,16 +934,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.33.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "6d857f4d76bd4b343eac26d6b539585d2bc56493"
+                "reference": "6a21eb99c6973357967f6ce3708cd55a6bec6315"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/6d857f4d76bd4b343eac26d6b539585d2bc56493",
-                "reference": "6d857f4d76bd4b343eac26d6b539585d2bc56493",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/6a21eb99c6973357967f6ce3708cd55a6bec6315",
+                "reference": "6a21eb99c6973357967f6ce3708cd55a6bec6315",
                 "shasum": ""
             },
             "require": {
@@ -995,7 +995,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.33.0"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.36.0"
             },
             "funding": [
                 {
@@ -1015,7 +1015,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-12-23T08:48:59+00:00"
+            "time": "2026-04-10T17:25:58+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
@@ -1214,19 +1214,19 @@
                 "issues": "https://wordpress.org/support/plugin/acf-gravityforms-add-on",
                 "source": "https://plugins.svn.wordpress.org/acf-gravityforms-add-on"
             },
-            "time": "2025-12-02T17:20:00+00:00"
+            "time": "2026-03-23T19:23:21+00:00"
         },
         {
             "name": "wp-plugin/akismet",
-            "version": "5.6",
+            "version": "5.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/akismet/",
-                "reference": "tags/5.6"
+                "reference": "tags/5.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.5.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/akismet.5.7.zip"
             },
             "require": {
                 "composer/installers": "~1.0|~2.0"
@@ -1245,19 +1245,19 @@
                 "issues": "https://wordpress.org/support/plugin/akismet",
                 "source": "https://plugins.svn.wordpress.org/akismet"
             },
-            "time": "2025-11-12T16:31:00+00:00"
+            "time": "2026-04-23T22:36:15+00:00"
         },
         {
             "name": "wp-plugin/enable-media-replace",
-            "version": "4.1.8",
+            "version": "4.1.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/enable-media-replace/",
-                "reference": "tags/4.1.8"
+                "reference": "tags/4.1.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/enable-media-replace.4.1.8.zip"
+                "url": "https://downloads.wordpress.org/plugin/enable-media-replace.4.1.9.zip"
             },
             "require": {
                 "composer/installers": "~1.0|~2.0"
@@ -1276,7 +1276,7 @@
                 "issues": "https://wordpress.org/support/plugin/enable-media-replace",
                 "source": "https://plugins.svn.wordpress.org/enable-media-replace"
             },
-            "time": "2026-03-03T10:21:00+00:00"
+            "time": "2026-04-22T16:35:59+00:00"
         },
         {
             "name": "wp-plugin/gravity-forms-email-blacklist",
@@ -1307,19 +1307,19 @@
                 "issues": "https://wordpress.org/support/plugin/gravity-forms-email-blacklist",
                 "source": "https://plugins.svn.wordpress.org/gravity-forms-email-blacklist"
             },
-            "time": "2025-02-20T17:40:00+00:00"
+            "time": "2026-03-23T19:23:21+00:00"
         },
         {
             "name": "wp-plugin/page-links-to",
-            "version": "3.3.7",
+            "version": "3.4.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/page-links-to/",
-                "reference": "tags/3.3.7"
+                "reference": "tags/3.4.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/page-links-to.3.3.7.zip"
+                "url": "https://downloads.wordpress.org/plugin/page-links-to.3.4.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0|~2.0"
@@ -1338,7 +1338,7 @@
                 "issues": "https://wordpress.org/support/plugin/page-links-to",
                 "source": "https://plugins.svn.wordpress.org/page-links-to"
             },
-            "time": "2024-03-26T21:00:00+00:00"
+            "time": "2026-04-04T06:20:50+00:00"
         },
         {
             "name": "wp-plugin/redirection",
@@ -1369,7 +1369,7 @@
                 "issues": "https://wordpress.org/support/plugin/redirection",
                 "source": "https://plugins.svn.wordpress.org/redirection"
             },
-            "time": "2026-03-01T07:42:00+00:00"
+            "time": "2026-03-23T19:23:21+00:00"
         },
         {
             "name": "wp-plugin/safe-svg",
@@ -1400,19 +1400,19 @@
                 "issues": "https://wordpress.org/support/plugin/safe-svg",
                 "source": "https://plugins.svn.wordpress.org/safe-svg"
             },
-            "time": "2026-01-04T21:05:00+00:00"
+            "time": "2026-04-14T13:36:11+00:00"
         },
         {
             "name": "wp-plugin/sucuri-scanner",
-            "version": "2.7",
+            "version": "2.7.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/sucuri-scanner/",
-                "reference": "tags/2.7"
+                "reference": "tags/2.7.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/sucuri-scanner.2.7.zip"
+                "url": "https://downloads.wordpress.org/plugin/sucuri-scanner.2.7.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0|~2.0"
@@ -1431,7 +1431,7 @@
                 "issues": "https://wordpress.org/support/plugin/sucuri-scanner",
                 "source": "https://plugins.svn.wordpress.org/sucuri-scanner"
             },
-            "time": "2026-03-07T01:07:00+00:00"
+            "time": "2026-04-23T01:45:43+00:00"
         },
         {
             "name": "wp-plugin/wordfence",
@@ -1462,19 +1462,19 @@
                 "issues": "https://wordpress.org/support/plugin/wordfence",
                 "source": "https://plugins.svn.wordpress.org/wordfence"
             },
-            "time": "2025-12-20T21:06:00+00:00"
+            "time": "2026-03-23T19:23:21+00:00"
         },
         {
             "name": "wp-plugin/wordpress-seo",
-            "version": "27.2",
+            "version": "27.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/27.2"
+                "reference": "tags/27.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.27.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.27.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0|~2.0"
@@ -1493,19 +1493,19 @@
                 "issues": "https://wordpress.org/support/plugin/wordpress-seo",
                 "source": "https://plugins.svn.wordpress.org/wordpress-seo"
             },
-            "time": "2026-03-17T09:35:00+00:00"
+            "time": "2026-04-14T10:15:51+00:00"
         },
         {
             "name": "wp-plugin/wp-mail-smtp",
-            "version": "4.7.1",
+            "version": "4.8.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-mail-smtp/",
-                "reference": "tags/4.7.1"
+                "reference": "tags/4.8.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-mail-smtp.4.7.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-mail-smtp.4.8.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0|~2.0"
@@ -1524,19 +1524,19 @@
                 "issues": "https://wordpress.org/support/plugin/wp-mail-smtp",
                 "source": "https://plugins.svn.wordpress.org/wp-mail-smtp"
             },
-            "time": "2025-11-26T15:18:00+00:00"
+            "time": "2026-04-16T15:16:32+00:00"
         },
         {
             "name": "wp-plugin/wp-super-cache",
-            "version": "3.0.3",
+            "version": "3.1.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-super-cache/",
-                "reference": "tags/3.0.3"
+                "reference": "tags/3.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-super-cache.3.0.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-super-cache.3.1.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0|~2.0"
@@ -1555,21 +1555,21 @@
                 "issues": "https://wordpress.org/support/plugin/wp-super-cache",
                 "source": "https://plugins.svn.wordpress.org/wp-super-cache"
             },
-            "time": "2025-11-11T16:21:00+00:00"
+            "time": "2026-04-14T15:50:51+00:00"
         },
         {
             "name": "yoast/wordpress-seo",
-            "version": "27.2",
+            "version": "27.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Yoast-dist/wordpress-seo.git",
-                "reference": "c68bb61a72c52f96795b5f88be8b85cc609f516c"
+                "reference": "1350a9a40bccf2b9453c73e99acc64f49f6c8a19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://my.yoast.com/packages/dist/yoast/wordpress-seo/yoast-wordpress-seo-c68bb61a72c52f96795b5f88be8b85cc609f516c-zip-b9d136.zip",
-                "reference": "c68bb61a72c52f96795b5f88be8b85cc609f516c",
-                "shasum": "a6a72d765bc1f7bbe2313cdef361e99672f3da2e"
+                "url": "https://my.yoast.com/packages/dist/yoast/wordpress-seo/yoast-wordpress-seo-1350a9a40bccf2b9453c73e99acc64f49f6c8a19-zip-a24eda.zip",
+                "reference": "1350a9a40bccf2b9453c73e99acc64f49f6c8a19",
+                "shasum": "15c12074d6257a3bb10773e29f2da37210017156"
             },
             "require": {
                 "composer/installers": "^1.12 || ^2.0",
@@ -1640,7 +1640,7 @@
                     "Yoast\\WP\\SEO\\Composer\\Actions::check_coding_standards"
                 ],
                 "check-cs-thresholds": [
-                    "@putenv YOASTCS_THRESHOLD_ERRORS=2393",
+                    "@putenv YOASTCS_THRESHOLD_ERRORS=2392",
                     "@putenv YOASTCS_THRESHOLD_WARNINGS=257",
                     "Yoast\\WP\\SEO\\Composer\\Actions::check_cs_thresholds"
                 ],
@@ -1735,26 +1735,26 @@
                 "source": "https://github.com/Yoast/wordpress-seo",
                 "security": "https://yoast.com/security-program/"
             },
-            "time": "2026-03-17T09:28:17+00:00"
+            "time": "2026-04-14T08:27:03+00:00"
         },
         {
             "name": "yoast/wordpress-seo-premium",
-            "version": "27.2",
+            "version": "27.4",
             "source": {
                 "type": "git",
                 "url": "git@github.com:Yoast-dist/wordpress-seo-premium.git",
-                "reference": "b4683f5e07707c6c8d1bac1b30c911f0d70ed26e"
+                "reference": "7a1fed51d34abd4755b58f691667cc879f269315"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://my.yoast.com/packages/dist/yoast/wordpress-seo-premium/yoast-wordpress-seo-premium-b4683f5e07707c6c8d1bac1b30c911f0d70ed26e-zip-099238.zip",
-                "reference": "b4683f5e07707c6c8d1bac1b30c911f0d70ed26e",
-                "shasum": "41d328ecbe2065e1d918bb5b8979bf4e775b1f22"
+                "url": "https://my.yoast.com/packages/dist/yoast/wordpress-seo-premium/yoast-wordpress-seo-premium-7a1fed51d34abd4755b58f691667cc879f269315-zip-c9472e.zip",
+                "reference": "7a1fed51d34abd4755b58f691667cc879f269315",
+                "shasum": "124c156ed5d46898d8a18ea63daad181e1ffcb83"
             },
             "require": {
                 "ext-filter": "*",
                 "php": "^7.4 || ^8.0",
-                "yoast/wordpress-seo": "^27.2"
+                "yoast/wordpress-seo": "^27.4"
             },
             "require-dev": {
                 "wp-cli/i18n-command": "^2.6.6",
@@ -1894,7 +1894,7 @@
                 "source": "https://github.com/Yoast/wordpress-seo-premium",
                 "security": "https://yoast.com/security-program/"
             },
-            "time": "2026-03-17T10:24:13+00:00"
+            "time": "2026-04-14T08:56:15+00:00"
         }
     ],
     "packages-dev": [
