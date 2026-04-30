@@ -253,3 +253,9 @@ add_action('acf/input/admin_footer', function () {
         $palette
     );
 });
+
+
+/**
+ * Enable legacy markup for Gravity Forms to ensure compatibility with custom styles
+ */
+add_filter( 'gform_enable_legacy_markup', '__return_true' );
