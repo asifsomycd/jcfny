@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "adac98becfd4ec6549b076b8bcf4714c",
+    "content-hash": "17f2c4627f5966d6db7b18e907662419",
     "packages": [
         {
             "name": "composer/installers",
@@ -252,24 +252,27 @@
         },
         {
             "name": "jjgrainger/posttypes",
-            "version": "v2.2.2",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jjgrainger/PostTypes.git",
-                "reference": "f5d5812992fe204409d585d936c7c110b8d23773"
+                "reference": "e94dd6a2a53de29fc8eb1196e36431c2265ec97f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jjgrainger/PostTypes/zipball/f5d5812992fe204409d585d936c7c110b8d23773",
-                "reference": "f5d5812992fe204409d585d936c7c110b8d23773",
+                "url": "https://api.github.com/repos/jjgrainger/PostTypes/zipball/e94dd6a2a53de29fc8eb1196e36431c2265ec97f",
+                "reference": "e94dd6a2a53de29fc8eb1196e36431c2265ec97f",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.2"
             },
             "require-dev": {
+                "phpstan/extension-installer": "^1.4",
+                "phpstan/phpstan": "^2.1",
                 "phpunit/phpunit": "^9.6",
-                "squizlabs/php_codesniffer": "3.*"
+                "squizlabs/php_codesniffer": "3.*",
+                "szepeviktor/phpstan-wordpress": "^2.0"
             },
             "type": "library",
             "autoload": {
@@ -297,7 +300,7 @@
                 "issues": "https://github.com/jjgrainger/posttypes/issues",
                 "source": "https://github.com/jjgrainger/posttypes"
             },
-            "time": "2026-01-25T17:36:17+00:00"
+            "time": "2026-02-18T18:54:41+00:00"
         },
         {
             "name": "oscarotero/env",

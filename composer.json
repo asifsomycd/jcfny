@@ -55,7 +55,7 @@
     "gravity/gravityforms": "*",
     "gravity/gravityformsmailchimp": "^5.7",
     "gravity/gravityformspartialentries": "^1.8",
-    "jjgrainger/posttypes": "^2.2",
+    "jjgrainger/posttypes": "^3.0",
     "oscarotero/env": "^2.1",
     "roots/bedrock-autoloader": "^1.0",
     "roots/bedrock-disallow-indexing": "^2.1",
