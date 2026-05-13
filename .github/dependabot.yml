@@ -1,10 +1,15 @@
 version: 2
 registries:
-  composer-repository-satispress-orangepineapple-com:
+  composer-repository-gravity:
     type: composer-repository
-    url: https://satispress.orangepineapple.com
-    username: "${{secrets.SATISPRESS_PASSWORD}}"
-    password: "${{secrets.SATISPRESS}}"
+    url: https://composer.gravity.io
+    username: "${{secrets.GRAVITY_USERNAME}}"
+    password: "${{secrets.GRAVITY_PASSWORD}}"
+  composer-repository-my-yoast:
+    type: composer-repository
+    url: https://my.yoast.com/packages/
+    username: token
+    password: "${{secrets.MY_YOAST_TOKEN}}"
 
 updates:
   - package-ecosystem: composer
@@ -18,7 +23,8 @@ updates:
         versions:
           - "> 1.11.0"
     registries:
-      - composer-repository-satispress-orangepineapple-com
+      - composer-repository-gravity
+      - composer-repository-my-yoast
   - package-ecosystem: composer
     directory: "/html/app/themes/philco-jcf"
     schedule:
@@ -26,4 +32,5 @@ updates:
       time: "23:00"
     open-pull-requests-limit: 99
     registries:
-      - composer-repository-satispress-orangepineapple-com
+      - composer-repository-gravity
+      - composer-repository-my-yoast
