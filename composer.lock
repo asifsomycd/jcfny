@@ -1705,17 +1705,17 @@
         },
         {
             "name": "yoast/wordpress-seo-premium",
-            "version": "27.6",
+            "version": "27.6.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:Yoast-dist/wordpress-seo-premium.git",
-                "reference": "2641ebba4672981b5670fc26ee42331b1196a976"
+                "reference": "93f5533a576355c5b7e181f10997535a722a9e06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://my.yoast.com/packages/dist/yoast/wordpress-seo-premium/yoast-wordpress-seo-premium-2641ebba4672981b5670fc26ee42331b1196a976-zip-bd2dd2.zip",
-                "reference": "2641ebba4672981b5670fc26ee42331b1196a976",
-                "shasum": "1a999d5169e445d0cb03af531a204c0034d3feb8"
+                "url": "https://my.yoast.com/packages/dist/yoast/wordpress-seo-premium/yoast-wordpress-seo-premium-93f5533a576355c5b7e181f10997535a722a9e06-zip-0ce582.zip",
+                "reference": "93f5533a576355c5b7e181f10997535a722a9e06",
+                "shasum": "cf01434386bab8fdef8af7c23adb29534a1212f7"
             },
             "require": {
                 "ext-filter": "*",
@@ -1774,7 +1774,7 @@
                 ],
                 "check-cs-thresholds": [
                     "@putenv YOASTCS_THRESHOLD_ERRORS=619",
-                    "@putenv YOASTCS_THRESHOLD_WARNINGS=73",
+                    "@putenv YOASTCS_THRESHOLD_WARNINGS=75",
                     "Yoast\\WP\\SEO\\Premium\\Config\\Composer\\Actions::check_cs_thresholds"
                 ],
                 "check-cs": [
@@ -1869,7 +1869,7 @@
                 "source": "https://github.com/Yoast/wordpress-seo-premium",
                 "security": "https://yoast.com/security-program/"
             },
-            "time": "2026-05-12T09:29:30+00:00"
+            "time": "2026-05-26T09:17:07+00:00"
         }
     ],
     "packages-dev": [
