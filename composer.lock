@@ -1516,17 +1516,17 @@
         },
         {
             "name": "yoast/wordpress-seo",
-            "version": "27.6",
+            "version": "27.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Yoast-dist/wordpress-seo.git",
-                "reference": "ae6b0fbdb12126559d7b1745d40d4aa7a45ec728"
+                "reference": "cc90f11d788cfb219ce8336fd27f26405065a39f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://my.yoast.com/packages/dist/yoast/wordpress-seo/yoast-wordpress-seo-ae6b0fbdb12126559d7b1745d40d4aa7a45ec728-zip-6359a0.zip",
-                "reference": "ae6b0fbdb12126559d7b1745d40d4aa7a45ec728",
-                "shasum": "00191c54872211ff1230ef6a85ddd11f333ff895"
+                "url": "https://my.yoast.com/packages/dist/yoast/wordpress-seo/yoast-wordpress-seo-cc90f11d788cfb219ce8336fd27f26405065a39f-zip-3455b3.zip",
+                "reference": "cc90f11d788cfb219ce8336fd27f26405065a39f",
+                "shasum": "314b9c3f656ac0bc322c2faba00ec919c5da7b0a"
             },
             "require": {
                 "composer/installers": "^1.12 || ^2.0",
@@ -1701,7 +1701,7 @@
                 "source": "https://github.com/Yoast/wordpress-seo",
                 "security": "https://yoast.com/security-program/"
             },
-            "time": "2026-05-12T08:55:54+00:00"
+            "time": "2026-05-27T09:33:34+00:00"
         },
         {
             "name": "yoast/wordpress-seo-premium",
