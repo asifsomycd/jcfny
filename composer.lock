@@ -1190,15 +1190,15 @@
         },
         {
             "name": "wp-plugin/enable-media-replace",
-            "version": "4.1.9",
+            "version": "4.2.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/enable-media-replace/",
-                "reference": "tags/4.1.9"
+                "reference": "tags/4.2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/enable-media-replace.4.1.9.zip"
+                "url": "https://downloads.wordpress.org/plugin/enable-media-replace.4.2.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0|~2.0"
@@ -1217,7 +1217,7 @@
                 "issues": "https://wordpress.org/support/plugin/enable-media-replace",
                 "source": "https://plugins.svn.wordpress.org/enable-media-replace"
             },
-            "time": "2026-04-22T16:35:59+00:00"
+            "time": "2026-06-28T20:50:55+00:00"
         },
         {
             "name": "wp-plugin/gravity-forms-email-blacklist",
