@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "adac98becfd4ec6549b076b8bcf4714c",
+    "content-hash": "96ef20e3249d6fe1632db96b78ba1294",
     "packages": [
         {
             "name": "composer/installers",
@@ -1407,15 +1407,15 @@
         },
         {
             "name": "wp-plugin/wordpress-seo",
-            "version": "27.6",
+            "version": "28.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/27.6"
+                "reference": "tags/28.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.27.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.28.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0|~2.0"
@@ -1434,7 +1434,7 @@
                 "issues": "https://wordpress.org/support/plugin/wordpress-seo",
                 "source": "https://plugins.svn.wordpress.org/wordpress-seo"
             },
-            "time": "2026-05-12T12:05:57+00:00"
+            "time": "2026-07-06T08:55:55+00:00"
         },
         {
             "name": "wp-plugin/wp-mail-smtp",
