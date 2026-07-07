@@ -1345,15 +1345,15 @@
         },
         {
             "name": "wp-plugin/sucuri-scanner",
-            "version": "2.7.2",
+            "version": "2.7.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/sucuri-scanner/",
-                "reference": "tags/2.7.2"
+                "reference": "tags/2.7.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/sucuri-scanner.2.7.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/sucuri-scanner.2.7.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0|~2.0"
@@ -1372,7 +1372,7 @@
                 "issues": "https://wordpress.org/support/plugin/sucuri-scanner",
                 "source": "https://plugins.svn.wordpress.org/sucuri-scanner"
             },
-            "time": "2026-04-23T01:45:43+00:00"
+            "time": "2026-07-07T15:45:52+00:00"
         },
         {
             "name": "wp-plugin/wordfence",
