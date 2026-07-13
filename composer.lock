@@ -1283,15 +1283,15 @@
         },
         {
             "name": "wp-plugin/redirection",
-            "version": "5.7.5",
+            "version": "5.9.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/redirection/",
-                "reference": "tags/5.7.5"
+                "reference": "tags/5.9.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redirection.5.7.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/redirection.5.9.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0|~2.0"
@@ -1310,7 +1310,7 @@
                 "issues": "https://wordpress.org/support/plugin/redirection",
                 "source": "https://plugins.svn.wordpress.org/redirection"
             },
-            "time": "2026-03-23T19:23:21+00:00"
+            "time": "2026-07-11T12:55:48+00:00"
         },
         {
             "name": "wp-plugin/safe-svg",
