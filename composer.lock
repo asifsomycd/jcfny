@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "adac98becfd4ec6549b076b8bcf4714c",
+    "content-hash": "d075fbf680b1796579ac2d608e7c1f97",
     "packages": [
         {
             "name": "composer/installers",
@@ -1407,15 +1407,15 @@
         },
         {
             "name": "wp-plugin/wordpress-seo",
-            "version": "27.6",
+            "version": "28.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/27.6"
+                "reference": "tags/28.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.27.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.28.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0|~2.0"
@@ -1427,14 +1427,14 @@
                     "name": "Yoast"
                 }
             ],
-            "description": "Improve your SEO with real-time feedback, schema, and clear guidance. Upgrade for AI tools, Google Docs integration, and 24/7 support, no hidden fees.",
+            "description": "Real-time SEO guidance, schema, and AI built in. Help search engines and AI systems understand your content. All AI tools included, no hidden fees.",
             "homepage": "https://yoa.st/1uj",
             "support": {
                 "changelog": "https://wordpress.org/plugins/wordpress-seo/#developers",
                 "issues": "https://wordpress.org/support/plugin/wordpress-seo",
                 "source": "https://plugins.svn.wordpress.org/wordpress-seo"
             },
-            "time": "2026-05-12T12:05:57+00:00"
+            "time": "2026-08-04T12:10:58+00:00"
         },
         {
             "name": "wp-plugin/wp-mail-smtp",
